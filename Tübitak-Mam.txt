@@ -1,0 +1,317 @@
+
+ARAŞTIRMACI
+İlan Kod:
+TBTK.MAM.A.2026-2
+Referans Kod:
+TBTK.MAM.A.2026-2.02
+
+GÖREV YERİ
+
+ANKARA
+
+İŞ YERİ
+
+MAM
+
+STATÜ / TECRÜBE
+
+Proje Personeli / 3 Yıl ve Daha Fazlası
+
+İSTİHDAM HEDEFİ
+
+3 Kişi
+
+SON BAŞVURU
+
+05/10/2026 - 17:00
+
+İş Tanımı ve Özellikleri
+Merkezimizde güç sistemleri araştırma alanında yürütülmekte olan projelerde; elektrik iletim ve dağıtım şebekeleri için analiz ve yazılım geliştirme çalışmalarında görev almak üzere Ar- Ge Personeli (Araştırmacı) istihdam edilecektir.
+
+İlgili Bölümler
+ELEKTRİK MÜHENDİSLİĞİ
+ELEKTRİK VE ELEKTRONİK MÜHENDİSLİĞİ
+ELEKTRİK-ELEKTRONİK MÜHENDİSLİĞİ
+Yabancı Dil Koşulları
+İNGİLİZCE
+ÜDS 70
+FCE C
+CPE C
+CAE B
+TOEFL-IBT 84
+TOEFL-CBT 221
+KPDS 70
+TOEFL-PBT 561
+YÖKDİL 70
+YDS 70
+İNGİLİZCE
+•
+Yurt Dışı Çalışma: Resmi dili İngilizce olan bir ülkede iş tanımında belirtilen alanlarda en az 3 (üç) yıl süreyle mesleğini uygulamış olanlardan İngilizce yeterlilik puanı aranmaz.
+•
+Resmi dili İngilizce olan bir ülkede; Lisans, Yüksek Lisans veya Doktora derecesi almış olanlardan İngilizce yeterlilik puanı aranmaz.
+•
+%100 İngilizce Öğrenim: Lisans öğrenimleri sırasında Türkçe, İnkılap Tarihi gibi asıl alanla ilgili olmayan dersler dışındaki tüm derslerinin %100'ünü İngilizce aldığını belgeleyen (üniversiteden alınmış onaylı belge) adaylardan İngilizce yeterlilik puanı aranmaz.
+Adaylarda Aranacak Özel Koşullar
+1- Yükseköğretim kurumlarının en az dört yıllık lisans eğitimi veren; Elektrik Mühendisliği veya Elektrik-Elektronik Mühendisliği bölümlerinden birinden mezun olmak. 
+
+ 
+
+2- 01/01/1991 tarihi ve sonrasında doğmuş olmak.
+
+ 
+
+3- İşin tanımında belirtilen alanlarda en az 3 (üç) yıl mesleki tecrübeye sahip olmak.
+
+ 
+
+4- Adayın aşağıda belirtilen konularda bilgi birikimine ve yetkinliğe sahip olması tercih sebebidir.
+
+ Elektrik enerjisi ve şebekeleri alanında geliştirilen yazılım projelerinde aktif çalışmış olmak,
+Güç Sistemleri Analizi ve Güç Dağıtım Sistemleri konularını içeren dersler almış olmak,
+Elektrik güç sistemi için güvenlik ve kararlılık analizleri, durum kestirimi konularında çalışma yapmış olmak,
+Optimizasyon teknikleri ve bilgisayar programlama dilleri (Java, Python, Javascript, MATLAB vb.) konusunda bilgi sahibi olmak,
+ Güç sistemlerinde dağıtım, koruma, kararlılık, ekonomik işletme ve planlama konularında ders almış/alıyor olmak,
+Güç sistemleri analiz yazılımları ile çalışma yapmış olmak,
+Güç sistemlerinde lisansüstü çalışma yapmış veya yapma motivasyonuna sahip olmak,
+Yeni uygulama geliştirme teknolojilerini araştırma ve öğrenme motivasyonuna sahip olmak,
+Araştırmaya istekli olmak, analitik düşünmek, problem analizi ve çözüm geliştirme becerilerine sahip olmak,
+Koordinasyon, organizasyon ve planlama becerisi yüksek olmak.
+Adaylarda Aranacak Genel Koşullar
+a) Başvurulan pozisyon için aşağıda yer alan asgari formül puan şartını sağlıyor olmak:
+
+
+Mesleki Tecrübe Şartı Aranmayan (Tecrübesiz) İlanlar İçin
+
+
+Ar-Ge Personeli (Araştırmacı) pozisyonu için;
+
+
+Lisans Genel Not Ortalaması + 10.000 / (Üniversite Yerleştirme Sınavı Sıralaması) + Özel Koşul Ek Puanı >= 3,20
+
+
+Teknik ve Destek Personeli pozisyonu için;
+
+
+Lisans Genel Not Ortalaması + 10.000 / (Üniversite Yerleştirme Sınavı Sıralaması) + Özel Koşul Ek Puanı >= 3,00
+
+
+
+Ar-Ge Personeli (Ar-Ge Proje/ Destek Teknisyeni) pozisyonu için;
+
+
+
+Ön Lisans Genel Not Ortalaması + Özel Koşul Ek Puanı >= 2,50
+
+
+
+
+Mesleki Tecrübe Şartı Aranan (Tecrübeli) İlanlar İçin
+
+
+Ar-Ge Personeli (Araştırmacı) pozisyonu için;
+
+
+Lisans Genel Not Ortalaması + 5 x (1 / (1 + e^(5 - tecrübe yılı))) + 10.000 / (Üniversiteye Yerleştirme Sınavı Sıralaması) + Özel Koşul Ek Puanı >= 3,20
+
+
+Teknik ve Destek Personeli pozisyonu için;
+
+
+Lisans Genel Not Ortalaması + 5 x (1 / (1 + e^(5 - tecrübe yılı))) + 10.000 / (Üniversiteye Yerleştirme Sınavı Sıralaması) + Özel Koşul Ek Puanı >= 3,00
+
+
+
+Ar-Ge Personeli (Ar-Ge Proje / Destek Teknisyeni) pozisyonu için;
+
+
+
+
+Ön Lisans Genel Not Ortalaması + 5 x (1 / (1 + e^(5 - tecrübe yılı))) + Özel Koşul Ek Puanı >= 2,50
+
+
+
+*Tecrübe yılı, başvurulan pozisyonda belirtilen alanlarda tam süreli çalışılan süreyi ifade etmektedir.
+
+
+Üniversite not sistemleri 100'lük sistemde olan adayların not ortalamaları, Yükseköğretim Kurulunun yayınlamış olduğu "4'lük Sistemdeki Notların 100'lük Sistemdeki Karşılıkları Tablosu" esas alınarak 4'lük sisteme dönüştürülecektir.
+
+
+Adayın yurt dışındaki bir üniversiteden mezun olması durumunda (10.000/Üniversite Yerleştirme Sıralaması) puan katkısı ve Lisans Genel Not Ortalaması yerine, Times Higher Education (THE) sıralamaları dikkate alınarak puan eklenecektir. Listede ilk 1000'de yer almayan üniversitelerden başvuru kabul edilmez.
+
+
+ÖSYM sınavına girmeden Türkiye'deki üniversitelere yerleştirilmiş yabancı öğrenciler veya Dikey Geçiş Sınavı vb. ile lisans öğrenimini tamamlamış öğrenciler için sıralama formülünde, üniversiteye yerleştirme sıralaması olarak mezun oldukları bölümün, adayın lisans bölümüne başladığı yıldaki en düşük üniversite yerleştirme sıralaması alınır.
+
+Özel Koşul Ek Puan Şartı
+
+Puan
+
+Tüm Pozisyonlar için;
+
+Ulusal/Uluslararası yarışma derecesine/ödülüne sahip olmak
+
+0,3
+
+
+Ön lisans/Lisans öğrenimi boyunca veya sonrasında alınan ön lisans/lisans/iş tanımı alanı ile ilgili birincilik, ikincilik veya üçüncülük derecesi/ödülü puan hesaplamasına dahil edilecektir.
+
+Adayın birden fazla derece/ödül sahibi olması durumunda en fazla 0,9 özel koşul ek puanı eklenecektir.
+
+b) Tecrübe değerlendirilmesinde istihdam edileceği faaliyet alanında değerlendirilen doktora mezuniyet durumu dört yıllık alan tecrübesine eşdeğer sayılır.
+
+c) Mesleki tecrübe şartı aranan pozisyonlar için, şart olarak aranan asgari tecrübe yılından az çalışma tecrübesi bulunan adayların başvuruları geçersiz sayılacaktır.
+
+d) Mesleki tecrübe şartı aranmayan pozisyonlar için, alanında 3 yıldan fazla mesleki tecrübesi bulunan veya alanında doktora yapmış adayların başvuruları geçersiz sayılacaktır.
+
+e) İngilizce yeterliliğini aşağıdaki sınavların birinden alınan puanla kanıtlamış olmak (Tabloda belirtilen sınavlardan alınan puanlarda herhangi bir geçerlilik süresi aranmaz).
+
+
+Sınav Türü
+
+KPD
+UDS
+YDS
+YÖKDİL
+
+TOEFL IBT
+
+TOEFL CBT
+
+TOEFL PBT
+
+
+FCE
+
+
+CAE
+
+
+CPE
+
+Ar-Ge Personeli (Araştırmacı) pozisyonu için;
+
+
+70
+
+84
+
+221
+
+561
+
+C
+
+B
+
+C
+
+
+Teknik ve Destek Personeli pozisyonu için;
+
+
+55
+
+
+66
+
+
+184
+
+
+514
+
+
+C
+
+
+C
+
+
+C
+
+
+
+Ar-Ge Personeli
+
+(Ar-Ge Proje / Destek Teknisyeni) pozisyonu için;
+
+
+
+
+İngilizce yeterlilik şartı aranmamaktadır.
+
+
+
+
+
+Lisans öğrenimleri sırasında Türkçe, İnkılap Tarihi gibi asıl alanla ilgili olmayan dersler dışındaki tüm derslerinin %100'ünü İngilizce aldığını belgeleyen (Üniversiteden alınmış, onaylı belge) adaylardan İngilizce yeterlilik puanı aranmaz.
+Resmi dili İngilizce olan bir ülkede; Lisans, Yüksek Lisans veya Doktora derecesi almış olanlar ile o ülkede iş tanımında belirtilen alanlarda en az 3 (üç) yıl süreyle mesleğini uygulamış olanlardan İngilizce yeterlilik puanı aranmaz.
+
+KPDS : Kamu Personeli Yabancı Dil Sınavı
+
+ÜDS : Üniversitelerarası Kurul Yabancı Dil Sınavı
+
+YDS : Yabancı Dil Bilgisi Seviye Tespit Sınavı
+
+YÖKDİL : Yükseköğretim Kurumları Yabancı Dil Sınavı
+
+TOEFL IBT : Test of English as a Foreign Language - Internet-Based Test
+
+TOEFL CBT : Test of English as a Foreign Language - Computer-Based Test
+
+TOEFL PBT : Test of English as a Foreign Language - Paper-Based Test
+
+FCE : First Certificate in English
+
+CAE : Certificate in Advanced English
+
+CPE : Certificate of Proficiency in English
+
+f) Kamu haklarından yasaklanmamış bulunmak.
+
+g) Erkek adaylar için, son başvuru tarihi itibariyle askerliğini tamamlamış, muaf veya tecilli olmak.
+
+h) Görevini devamlı yapmasına engel olabilecek hastalığı ya da bulaşıcı hastalığı bulunmamak.
+
+i) Taksirli suçlar, kısa süreli hapis cezasına seçenek yaptırımlara çevrilmiş suçlar ile aşağıda sayılan suçlar dışında tecil edilmiş hükümler hariç olmak üzere; altı aydan fazla hapis veyahut affa uğramış olsalar bile Devletin güvenliğine, anayasal düzene ve bu düzenin işleyişine karşı işlenen suçlarla, zimmet, irtikâp, rüşvet, hırsızlık, nitelikli hırsızlık, dolandırıcılık, sahtecilik, güveni kötüye kullanma, hileli iflas gibi yüz kızartıcı veya şeref ve haysiyeti kırıcı suçtan veya kaçakçılık, resmi ihale ve alım satımlara fesat karıştırma, göreve ilişkin sırrı açıklama, Devlet sırlarına karşı suçlardan dolayı hükümlü bulunmamak. 667 sayılı KHK kapsamında terör örgütlerine veya Milli Güvenlik Kurulunca Devletin milli güvenliğine karşı faaliyette bulunduğuna karar verilen yapı, oluşum veya gruplara üyeliği, mensubiyeti veya iltisakı yahut bunlarla irtibatı bulunmamak.
+
+Başvuru Süreci
+a)    İlana başvuruda bulunmak için https://kariyer.tubitak.gov.tr adresinden Kariyer Sistemine kayıt olmak gerekmektedir. Kariyer Sistemi yoluyla yapılan başvurular haricinde başvuru kabul edilmeyecektir.
+
+b)    Başvuruların en geç 05/10/2026 tarihi saat 17:00'a kadar yapılması gerekmektedir.
+
+c)    Başvurular, ilan referans kodu üzerinden değerlendirilecektir. Adaylar, kariyer sisteminden ilan referans kodunu seçerek başvuruda bulunabileceklerdir. Bir aday son başvuru 05/10/2026 tarihi olan TBTK ile başlayan referans kodlu pozisyonlardan en fazla 2 (iki) pozisyona başvuru yapabilecektir.
+
+d)    Her bir referans kodu için; "Adaylarda Aranacak Genel Koşullar" bölümünün (a) maddesine göre en yüksek puandan başlayarak oluşturulacak sıralamada alınacak personel sayısının 10 katı kadar aday mülakata çağrılacaktır. Son sıradaki adaylarla aynı puanı alan başka adaylar olması durumunda bu adaylar da mülakata çağrılacaktır.
+
+e)    Mülakat sınavında 100 üzerinden 70 ve üzeri puan alan adaylar arasında en yüksek puandan başlamak suretiyle yapılan sıralama sonucunda, ilanda belirtilen istihdam edilecek personel sayısı kadar asil aday ve en fazla asil aday sayısı kadar yedek aday belirlenecektir.
+
+f)     Mülakata çağrılacak adaylar, mülakat öncesi uygulama olarak envanter/teknik değerlendirmeye ve/veya online değerlendirme araçları kullanılarak değerlendirmeye tabi tutulabileceklerdir.
+
+g)    Adaylar başvuruları esnasında kariyer sistemine girmiş oldukları beyana göre değerlendirilecek olup, girilen bilgilerin hatalı olması veya aşağıda belirtilen belgelerden herhangi birinin eksik olması durumunda başvuru geçersiz sayılacaktır.
+
+Üniversiteye Giriş Sınavı Sonuç Belgesi (ÖSYM onaylı veya kontrol kodu olan internet çıktısı) (Ar-Ge Proje /Destek Teknisyeni pozisyonu hariç)
+Üniversiteye Giriş Sınavı Yerleştirme Belgesi (ÖSYM onaylı veya kontrol kodu olan internet çıktısı) / (Türkiye'deki üniversitelere yerleştirilmiş yabancı öğrenciler veya Dikey Geçiş Sınavı vb. ile yerleştirilmiş öğrenciler için durumunu gösterir belge) (Ar-Ge Proje /Destek Teknisyeni pozisyonu hariç),
+Ön lisans / Lisans -ve varsa üstü- Diploma/Çıkış Belgesi/ YÖK Mezun Belgesi (e-devlet üzerinden alınan ve kontrol kodu olan) (eğitimlerini yurt dışındaki yükseköğretim kurumlarında tamamlayanlar için Denklik Belgesi),
+Ön lisans / Lisans Transkript Belgesi,
+Yabancı Dil Sınav Sonuç Belgesi (Ar-Ge Proje / Destek Teknisyeni pozisyonu hariç),
+Deneyimi (mesleki tecrübesi) olan adaylardan ilgili işyerlerinden alınan onaylı Çalışma Belgesi ve Sigorta Hizmet Dökümü Belgesi (e-devlet üzerinden alınan ve kontrol kodu olan) (SGK Hizmet dökümünde Meslek Kodu ve İşyeri bilgisi bulunmayan adayların ayrıca çalışma belgesi yüklemesi zorunludur).
+h)    Adayların başvuruları esnasında kariyer sistemine girmiş oldukları ek bilgilerin doğrulanabilmesi / teyit edilebilmesi için aşağıdaki belgeleri yüklemesi gerekmektedir.
+
+Ulusal/Uluslararası yarışma derecesine/ödülüne sahip olan adaylar için (varsa) derece/ödül gösterir bilgi veya belge,
+Talep edilen sertifika belgesinin/belgelerinin Kariyer Sistemi'nde "Ek Bilgiler" alanına yüklenmesi gerekmektedir,
+Askerlik durumunu gösterir belge (erkek adaylar için).
+ 
+
+Not: Süreçle ilgili tüm gelişme ve duyurular, Kurumumuz web sayfasında (www.mam.tubitak.gov.tr / www.tubitak.gov.tr) ilan edilecektir.
+
+ 
+
+İletişim Bilgileri:
+
+Adres: TÜBİTAK Marmara Araştırma Merkezi İnsan Kaynakları Müdürlüğü
+
+Barış Mah. Dr. Zeki Acar Cad. No:1 41470 Gebze / Kocaeli
+
+E-Posta: mam.ik@tubitak.gov.tr
+
+Telefon   : 0262 677 21 79 / 80 / 83

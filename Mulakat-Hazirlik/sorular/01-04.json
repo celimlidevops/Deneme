@@ -1,0 +1,58 @@
+{
+  "id": "01-04",
+  "baslik": "Tercih sebebi ve kanıt",
+  "grup": "01  Kurum, ilan, süreç",
+  "geri": "goruntule.html#01-Kurum-Ilan-ve-Surec%2F04-Tercih-Sebebi-Kanit-Tablosu.md",
+  "sorular": [
+    {
+      "soru": "Tercih sebebi zorunlu koşul mudur? Tablodaki güçlü ve boş sütunları kim doldurur?",
+      "ipucu": "Öne çıkaran özellik. Tablo bir şablondur.",
+      "cevap": "Tercih sebebi zorunlu değildir, adayı öne çıkarır. Güçlü ve boş sütunlarını kendi özgeçmişinle doldurursun. Yıl, unvan ve proje adı hazır yazılmaz. Boş maddeyi dolu göstermek en hızlı puan kaybettiren şeydir."
+    },
+    {
+      "soru": "Üç strateji cümlesi nedir?",
+      "ipucu": "Güçlü olan, boş olan, aradaki köprü.",
+      "cevap": "Güçlü maddeleri somut kanıtla söyle: yazılım, öğrenme, koordinasyon. Boş maddeleri açıkça boş söyle ve ne yaptığını göster: bu klasör, sıfırdan yük akışı kodu, elle örnekler. Köprü: üretim yazılımı disiplinini analiz yazılımına taşımak."
+    },
+    {
+      "soru": "Üç yıl tecrübe şartını kim yorumlar?",
+      "ipucu": "İş tanımı analiz ve yazılım. Dipnot tam süreli çalışmayı söyler.",
+      "cevap": "İş tanımı, iletim ve dağıtım şebekeleri için analiz ve yazılım geliştirmedir. Yazılım tecrübesinin buna sayılıp sayılmayacağı kurumun kararıdır. Beyan, SGK hizmet dökümü ve çalışma belgesiyle karşılaştırılır. Emin değilsen mam.ik@tubitak.gov.tr adresine sorarsın."
+    },
+    {
+      "soru": "Hangi maddeler güçlü, hangileri boş, hangileri transkripte bağlı?",
+      "ipucu": "On madde. Programlama güçlü, ticari analiz yazılımı boş.",
+      "cevap": "Güçlü: 4 (programlama), 8 (yeni teknoloji öğrenme), 10 (koordinasyon). 9 güçlü olabilir. Boş veya büyük ihtimalle boş: 1 şebeke yazılımı, 3 güvenlik ve kestirim, 6 ticari analiz yazılımı. Transkripte bağlı: 2 ve 5, dersler. 7 motivasyondur."
+    },
+    {
+      "soru": "Boş olan 1, 3 ve 6. maddeleri hangi çalışmayla kapatıyorsun?",
+      "ipucu": "Kod örnekleri ve klasör numaraları.",
+      "cevap": "1 için 14-Programlama örnekleri: sıfırdan Newton-Raphson, WLS, ekonomik dağıtım ve testler. 3 için 07, 08, 09 elle örnekler ve wls_durum_kestirimi.py. 6 için PowerFactory ve PSS/E kullanmadığını söyleyip pandapower ile aynı iş akışını 15/02'den anlatırsın."
+    },
+    {
+      "soru": "Transkriptte düşük notu nasıl söylersin?",
+      "ipucu": "Saklama. Şimdi ne çözebildiğini göster.",
+      "cevap": "2 ve 5. maddeler transkriptle doğrulanabilir tek tercih sebebidir ve panel transkripti görür. Not düşükse saklama. 'O dönem zayıftım, şimdi şu örneği elle çözebiliyorum' de ve çöz."
+    },
+    {
+      "soru": "'Yazılımda iyiyim' yerine hangi cümle kurulur?",
+      "ipucu": "Iraksama ve artık.",
+      "cevap": "[Kaç] yıldır üretimde çalışan sistem. Ölçek ve verilen karar. Analiz yazılımındaki karşılığı: yük akışı ıraksadığında servis sessizce boş sonuç dönmemeli, nedenini ve son artığı dönmeli. Artık, denklemin o adımda ne kadar sağlanmadığını gösteren farktır. Bu cümle 1. maddedeki boşluğu örtmez. 4, 8 ve 9'u kanıtlar."
+    },
+    {
+      "soru": "Enerji şirketine yazılmış her yazılım şebeke yazılımı mıdır?",
+      "ipucu": "Müşteri ile işin konusu ayrıdır.",
+      "cevap": "Hayır. Müşteri enerji şirketi olabilir, yazılım muhasebe yazılımı olabilir. İkisini ayır ve olduğu gibi söyle."
+    },
+    {
+      "soru": "Liderlik tecrübesini bu kadroda nasıl çevirirsin?",
+      "ipucu": "Kadro araştırmacı kadrosudur.",
+      "cevap": "Yöneticilik diye değil, teknik karar ve koordinasyon diye çevir. Liderlik her kapıyı açmaz."
+    },
+    {
+      "soru": "90 saniyelik metin hangi üç boş maddeyi açıkça söyler?",
+      "ipucu": "Şebeke yazılımı, kestirim, ticari araç.",
+      "cevap": "Şebeke yazılımı projesi, güvenlik ve kestirim çalışması, ticari analiz yazılımı. Karşılığında yük akışı, durum kestirimi ve ekonomik dağıtımın sıfırdan kodlanıp elle örneklerle doğrulandığını ve testlerinin yazıldığını söyler. Katkı, analiz kodunu üretim kalitesine taşıma tecrübesidir."
+    }
+  ]
+}

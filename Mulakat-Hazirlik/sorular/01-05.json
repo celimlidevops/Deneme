@@ -1,0 +1,58 @@
+{
+  "id": "01-05",
+  "baslik": "Envanter ve online değerlendirme",
+  "grup": "01  Kurum, ilan, süreç",
+  "geri": "goruntule.html#01-Kurum-Ilan-ve-Surec%2F05-Envanter-ve-Online-Degerlendirme.md",
+  "sorular": [
+    {
+      "soru": "İlan, mülakat öncesi değerlendirme için ne diyor? Ne demiyor?",
+      "ipucu": "Fiil 'tutulabileceklerdir'. Üç şey yazmıyor.",
+      "cevap": "Adaylar envanter, teknik değerlendirme ve/veya online araçla değerlendirilebilecektir. Yapılacağı kesin değildir. Hangi araç, kaç soru ve sonucun mülakat puanına nasıl yansıyacağı ilanda yazmaz. Çağrı e-postası gelince orada yazanı esas alırsın."
+    },
+    {
+      "soru": "Çağrı, baraj ve seçim sayıları nedir? Duyuru nerede yayınlanır?",
+      "ipucu": "30, 70, 3 ve 3. İki site.",
+      "cevap": "Formül puanına göre kontenjanın 10 katı çağrılır: 3 kişilik kadro için yaklaşık 30 aday. Mülakatta 70 ve üzeri alanlar sıralanır. 3 asil, en fazla 3 yedek. Duyuru mam.tubitak.gov.tr ve tubitak.gov.tr üzerinden yapılır. Kariyer e-postasını ve istenmeyen klasörü her gün kontrol edersin."
+    },
+    {
+      "soru": "Üç olası biçim nedir ve her birinde senin riskin nedir?",
+      "ipucu": "Envanter, yetenek, teknik.",
+      "cevap": "Kişilik envanteri tutarlılığı ölçer, risk rol yapmaktır. Genel yetenek testi sayısal, sözel ve şekil akıl yürütmedir, risk süre baskısıdır. Teknik test veya kodlama alan bilgisi ya da kod sorar, risk güç sistemi sorularıdır. Hangisinin geleceği bilinmediği için üçüne de hazırlanılır."
+    },
+    {
+      "soru": "Envanterde neden 'ideal aday' oynanmaz?",
+      "ipucu": "Aynı özellik birkaç kez sorulur.",
+      "cevap": "Doğru cevap yoktur. Ölçülen şey tutarlılıktır. Rol yapmak tekrar eden sorularda çelişki üretir. Her zaman ve asla cevapları profili güvenilmez gösterir. Mülakatta envanter önlerinde olabilir. 'Tek başına çalışırım' işaretleyip 'tam bir takım oyuncusuyum' dersen bu fark sorulur."
+    },
+    {
+      "soru": "Genel yetenek testinde tempo nasıl korunur?",
+      "ipucu": "Takılmak, yanlışın puan götürüp götürmediği.",
+      "cevap": "Takıldığın soruyu geç. Çoğu zaman her soru eşit değerlidir. Yüzde, oran, tablo ve sayı dizisinde tempo çalış. Yanlış puan götürmüyorsa boş bırakma. Bu testler bilerek süreye sığmayacak şekilde tasarlanır."
+    },
+    {
+      "soru": "Kodlama gelirse bakmadan yazman beklenen iki işlev nedir?",
+      "ipucu": "Ybus ve Newton-Raphson. Dosya adı nr_yuk_akisi.py.",
+      "cevap": "ybus_kur admitans matrisini kurar. nr_coz yük akışını Newton-Raphson ile çözer. İkisi de 14-Programlama/ornekler/nr_yuk_akisi.py içindedir. Admitans matrisi, baraların birbirine hangi iletkenlikle bağlı olduğunu tutar."
+    },
+    {
+      "soru": "Hesap sorusunda üç refleks nedir?",
+      "ipucu": "Birim, mertebe, seçenek.",
+      "cevap": "Birimi yaz: kV mı V mu, MW mı pu mu, hat gerilimi mi faz gerilimi mi. Mertebeyi kontrol et. Seçenekleri ele: ikisi çoğu zaman √3 veya kare hatasının sonucudur."
+    },
+    {
+      "soru": "154 kV'ta 100 MVA yaklaşık kaç amper eder? 37 kA görürsen ne olmuştur?",
+      "ipucu": "Akım = S / (√3 × V). Birimleri VA ve V yap.",
+      "cevap": "Yaklaşık 375 A. Hesap 100.000.000 / (√3 × 154.000) ≈ 375 A. 37 kA çıkıyorsa √3 veya bin katı kaçmıştır."
+    },
+    {
+      "soru": "Bağlantı koparsa ne yaparsın? Sekme değiştirmek neden riskli?",
+      "ipucu": "Ekran, saat, aynı gün e-posta.",
+      "cevap": "Ekran görüntüsü al, saati yaz, aynı gün İnsan Kaynakları'na e-posta at. Bazı araçlar sekme değiştirmeyi kaydeder. Yönergede izin verilmeyen hiçbir şeyi açma."
+    },
+    {
+      "soru": "Dört yaygın yanlıştan ikisini söyle.",
+      "ipucu": "Envanter geçilmez. Online test önemsiz değildir.",
+      "cevap": "Envanter geçilmek için hazırlanılmaz, tutarlı doldurulur. Online test önemsiz değildir, otuz adayın arasından sıyrılmanın ilk verisi olabilir. Teknik testte yalnızca yazılım sorulacağını varsayma. Sürenin yeteceğini de varsayma."
+    }
+  ]
+}

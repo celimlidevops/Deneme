@@ -1,0 +1,83 @@
+{
+  "id": "01-02",
+  "baslik": "MAM, YTBS, SIPS ve Türkiye şebekesi",
+  "grup": "01  Kurum, ilan, süreç",
+  "geri": "goruntule.html#01-Kurum-Ilan-ve-Surec%2F02-MAM-YTBS-SIPS-ve-Turkiye-Sistemi.md",
+  "sorular": [
+    {
+      "soru": "Nominal ne demektir? 400 kV hat ve 50 Hz ile anlat.",
+      "ipucu": "Etiket değeri ile o an ölçülen değer aynı şey değildir.",
+      "cevap": "Nominal, ekipmanın etiketindeki tasarım değeridir. Hat 400 kV hat diye anılır; o an 389 kV ölçülebilir. Şebeke 50 Hz şebekedir; o an 49,9 Hz ölçülebilir. Yönetmelik bu yüzden hem etiketi hem izin verilen bandı verir."
+    },
+    {
+      "soru": "200 mHz kaç Hz'dir? Neden tehlikelidir?",
+      "ipucu": "Mili, binde bir demektir.",
+      "cevap": "200 mHz = 0,2 Hz'dir, 200 Hz değildir. Primer rezerv tanımı, frekansın bir anda 0,2 Hz değişmesi durumunu esas alır."
+    },
+    {
+      "soru": "Güç Sistemleri Araştırma Grubu ne yapar ve işi hangi üç biçimde yürür?",
+      "ipucu": "MAM'ın kendi sayfasındaki tanım. Gebze ile Ankara'yı ayır.",
+      "cevap": "İletim ve dağıtım, yenilenebilir entegrasyon, güvenlik, optimizasyon, simülasyon ve veri analitiği. Üç faaliyet birlikte yürür: uygulamalı Ar-Ge, ürün, danışmanlık. Gebze'deki genel MAM ile Ankara'daki enerji yazılım grubu ayrıdır."
+    },
+    {
+      "soru": "YTBS nedir, kim lisanslamıştır, THS 9 ne anlatır?",
+      "ipucu": "Yük tevzi, üretim ile tüketimi dengelemektir.",
+      "cevap": "Yük Tevzi Bilgi Sistemi, İngilizcesi Load Dispatch Information System. TEİAŞ'ın lisansladığı, bu grubun geliştirdiği enerji yönetim platformudur. THS 9, Teknoloji Hazırlık Seviyesi'nin en üst basamağıdır: ürünün gerçek işletmede kanıtlandığı iddiası."
+    },
+    {
+      "soru": "SCADA ile YTBS'nin iş bölümü nedir? Dijital ikiz burada ne demektir?",
+      "ipucu": "Biri ölçer ve kumanda eder. Diğeri ölçümü modele bağlar.",
+      "cevap": "SCADA ölçer ve kumanda eder. YTBS ölçümü modele bağlar, analizi ve kararı üretir, sonucu operatöre ve diğer sistemlere servis eder. Dijital ikiz, aynı şebekenin ölçümle güncellenen ve üzerinde senaryo koşulabilen hesap kopyasıdır. YTBS, SCADA'nın yerine geçtiğini iddia eden bir kutu değildir."
+    },
+    {
+      "soru": "Faz 3 duyurusundaki ölçek neden ezberlenir?",
+      "ipucu": "Övünmek için değil.",
+      "cevap": "30'dan fazla enerji yönetim modülü, 4000'den fazla arıza simülasyonu, on binlerce web servis çağrısı, çok kullanıcılı ve yoğun ziyaret edilen bir sistem. Rakam, hesap performansının ve veri modelinin işin parçası olduğunu anlatmak içindir."
+    },
+    {
+      "soru": "SIPS ile klasik röle arasındaki fark nedir?",
+      "ipucu": "Aynı koruma kelimesinin iki katmanı.",
+      "cevap": "SIPS, System Integrity Protection Scheme, Akıllı Koruma Sistemi. PMU fazörleriyle şebekenin anlık bütünlüğünü izler. Büyük arızada jeneratör veya yük atma gibi önceden tanımlı eylemleri otomatik tetikler. Amaç zincirleme çökmeyi durdurmaktır. Röle kendi bölgesindeki ekipmanı korur. SIPS sistem düzeyinde eylem alır."
+    },
+    {
+      "soru": "STATCOM bu ilanda senden ne ister?",
+      "ipucu": "İlan kart basmanı istemez.",
+      "cevap": "MAM'ın milli STATCOM'u güç elektroniği tabanlı reaktif kompanzasyondur. İlan STATCOM tasarımı istemez. Söyleyeceğin cümle şudur: STATCOM gibi hızlı reaktif kaynaklar, gerilim kararlılığı ve dinamik analizde modellenmesi gereken cihazlardır. Analiz yazılımı bunları hem statik hem dinamik temsil edebilmelidir."
+    },
+    {
+      "soru": "TEİAŞ, EPİAŞ ve EPDK ne iş yapar?",
+      "ipucu": "İletim, piyasa, kural.",
+      "cevap": "TEİAŞ iletim sistem işletmecisidir: 400, 154 ve 66 kV. Milli Yük Tevzi dengeyi, enterkonneksiyonu ve bölge merkezlerini yürütür, Dengeleme Güç Piyasası'nı işletir, AGC orada çalışır. EPİAŞ gün öncesi ve gün içi piyasayı işletir. EPDK lisans, tarife ve yönetmelik tarafıdır."
+    },
+    {
+      "soru": "400 kV için arıza öncesi planlama bandı ile normal işletme bandı nedir?",
+      "ipucu": "Planlama bandı daha dardır.",
+      "cevap": "Planlama 370–420 kV. Normal işletme 340–420 kV. 154 kV planlama 146–162 kV'dir. İletim kısıtı olan bölgede planlama kabulü 140–170 kV'ye genişler."
+    },
+    {
+      "soru": "Planlama yükü nedir? N-1'de ne bozulmamalıdır? Nükleerde kriter nedir?",
+      "ipucu": "Puantın biraz üstü. Bir eleman kaybı. Nükleerde bir kat daha.",
+      "cevap": "Planlama yükü, ilgili planlama yılında puantın %5 üzeridir. N-1'de gerilim ve frekans limit içinde, hatlar termik limitin altında, kullanıcı kaybı yok, kararlılık bozulmuyor, sistem adalara bölünmüyor. Nükleer bağlantı noktasında kriter N-2'dir."
+    },
+    {
+      "soru": "Nominal frekans, normal bant, LFSM eşikleri ve tasarım uçları nedir?",
+      "ipucu": "Normal bant ile uçlar aynı sayı değildir.",
+      "cevap": "Nominal 50 Hz. TEİAŞ normalde 49,8–50,2 Hz bandında kontrol eder. LFSM düşük mod eşiği 49,8 Hz, yüksek mod eşiği 50,2 Hz. Kararsız işletmede tasarımın gördüğü uçlar 47,5 Hz ve 51,5 Hz'dir."
+    },
+    {
+      "soru": "Primer, sekonder ve tersiyer kontrolün zaman ölçeği nedir? PSS kimde aranır?",
+      "ipucu": "Saniye, dakika, 15 dakika. PSS için iki MW eşiği.",
+      "cevap": "Primer rezerv, 200 mHz'lik basamakta en geç 30 saniyede verilebilecek azami güç değişimidir. Sekonder kontrol AGC ile dakikalar mertebesinde frekansı 50 Hz'e ve sınır programını hedefine çeker. Tersiyer, dengeleme piyasasında 15 dakikalık talimattır. PSS, 75 MW ve üzeri konvansiyonel ünitede veya 300 MW ve üzeri konvansiyonel santral ünitelerinde, 0–5 Hz salınımlar için aranır."
+    },
+    {
+      "soru": "2025 sonu kurulu güç ile ani puant nedir? Kurulu güç puantın iki katına yakınsa sistem bol mudur?",
+      "ipucu": "Güneş ve rüzgâr aynı anda puantta değildir.",
+      "cevap": "Kurulu güç 122.518,6 MW (TEİAŞ 2025 faaliyet raporu). Ani puant 60.414 MW, Temmuz 2025. Bu, sistemin bol olduğu anlamına gelmez. Güneş ve rüzgâr aynı anda puantta değildir. İletim kısıtı, atalet ve gerilim yerel kalır."
+    },
+    {
+      "soru": "Türkiye Kıta Avrupası ile nasıl ve ne zaman senkron oldu? HVDC bağlantı frekansı paylaşır mı?",
+      "ipucu": "İki tarih, iki ülke, 400 kV. Doğu hatları aynı ada değil.",
+      "cevap": "Yunanistan ve Bulgaristan 400 kV hatlarıyla. Deneme paralel işletme 2010, kalıcı senkron bağlantı 2015. Hatlar: Babaeski–Nea Santa ve Hamitabat–Maritsa. Gürcistan tarafında back-to-back HVDC vardır; bunu belirli bir hat adına bağlama. HVDC frekansı paylaşmaz, güç ayar noktasıyla kontrol edilir. Güncel MW sorulursa TEİAŞ enterkonneksiyon ve kapasite tahsis verisine bakarsın."
+    }
+  ]
+}

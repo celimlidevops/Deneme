@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kendini dene · Mülakat hazırlığı</title>
+<style>
+  :root {
+    --bg: #f4f1ea; --ink: #1c1915; --muted: #6d655c; --line: #e3dcd0;
+    --side: #fbf9f5; --accent: #0f6e56; --speak: #fff7e8; --speak-line: #e0a106;
+    --bad: #8f3d2c; color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121410; --ink: #ece7df; --muted: #a39b90; --line: #2a2d27;
+      --side: #181b16; --accent: #7dcea0; --speak: #2a2416; --bad: #f0b0a2;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { font-family: "Segoe UI", system-ui, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.55; }
+  .top, main { max-width: 720px; margin: 0 auto; padding: 28px 22px 0; }
+  main { padding-bottom: 72px; }
+  .back { color: var(--accent); text-decoration: none; font-size: 14px; }
+  .eyebrow { margin: 18px 0 0; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+  h1 { margin: 6px 0 0; font-size: 1.7rem; letter-spacing: -0.03em; line-height: 1.2; }
+  .alt { margin: 8px 0 0; color: var(--muted); }
+  .bar { margin-top: 16px; height: 4px; background: var(--line); border-radius: 99px; overflow: hidden; }
+  .bar span { display: block; height: 100%; width: 0; background: var(--accent); }
+  .soru, .cevap, .benim, .ipucu, .ozet div, .liste a {
+    background: var(--side); border: 1px solid var(--line); border-radius: 16px;
+  }
+  .soru, .cevap, .benim, .ipucu { padding: 18px; }
+  .soru p { margin: 0; font-size: 1.22rem; letter-spacing: -0.02em; }
+  textarea {
+    width: 100%; margin-top: 14px; min-height: 120px; resize: vertical;
+    border: 1px solid var(--line); background: var(--bg); color: var(--ink);
+    border-radius: 12px; padding: 12px 14px; font: inherit; line-height: 1.5;
+  }
+  textarea:focus { outline: 2px solid var(--accent); border-color: transparent; }
+  .satir { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  button, .linkbuton {
+    border: 1px solid var(--line); background: var(--side); color: var(--ink);
+    border-radius: 10px; padding: 9px 14px; font: inherit; font-size: 14.5px;
+    cursor: pointer; text-decoration: none;
+  }
+  button.asil, a.asil { background: var(--accent); border-color: var(--accent); color: #f7fffb; }
+  @media (prefers-color-scheme: dark) {
+    button.asil, a.asil { color: #102018; }
+  }
+  button:hover, .linkbuton:hover { border-color: var(--accent); }
+  .uyari { margin: 10px 0 0; color: var(--bad); font-size: 14px; }
+  .ipucu, .benim, .cevap { margin-top: 12px; }
+  .ipucu { background: var(--speak); }
+  .etiket { margin: 0 0 6px; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+  .cevap .etiket { color: var(--accent); }
+  .liste { display: grid; gap: 8px; margin-top: 8px; }
+  .liste a { display: block; text-decoration: none; color: var(--ink); padding: 12px 14px; border-radius: 12px; }
+  .liste a:hover { border-color: var(--accent); }
+  .liste small { display: block; color: var(--muted); margin-top: 2px; }
+  .ozet { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 8px 0 16px; }
+  .ozet div { padding: 12px; border-radius: 12px; }
+  .ozet strong { display: block; font-size: 1.4rem; }
+  .ozet span { color: var(--muted); font-size: 13px; }
+  .kacirilan { margin: 0; padding-left: 1.1em; }
+  .kacirilan li { margin: 0.45em 0; }
+  .kacirilan p { margin: 0.25em 0 0; color: var(--muted); }
+</style>
+</head>
+<body>
+  <header class="top">
+    <a class="back" id="geri" href="goruntule.html">Notlara dön</a>
+    <p class="eyebrow" id="grup">Kendini dene</p>
+    <h1 id="baslik">Sayfa seç</h1>
+    <p class="alt" id="alt">Soruyu gör, cevabını yaz, sonra aç.</p>
+    <div class="bar" id="bar" hidden><span id="dolu"></span></div>
+  </header>
+  <main id="ekran"></main>
+  <script src="test.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+{
+  "id": "01-03",
+  "baslik": "Güncel projeler, yayınlar, ürünler",
+  "grup": "01  Kurum, ilan, süreç",
+  "geri": "goruntule.html#01-Kurum-Ilan-ve-Surec%2F03-Guncel-Projeler-Yayinlar-Urunler.md",
+  "sorular": [
+    {
+      "soru": "Doğrulandı, ikincil ve bilinmiyor etiketleri mülakatta ne değiştirir?",
+      "ipucu": "Birini kurum sayfası, birini 'okuduğum kadarıyla', birini susmak.",
+      "cevap": "Doğrulandı, kurumun kendi sayfasında Kasım 2026'da okunmuş bilgidir. İkincil kaynakta 'okuduğum kadarıyla' dersin. Bilinmiyor etiketi uydurmamak içindir. Mülakattan önceki gün MAM devam eden projeler sayfasını ve ytbsbilgi.teias.gov.tr adresini yeniden açarsın."
+    },
+    {
+      "soru": "Birimin güncel adı nedir? Eski adı ve yayındaki İngilizce adı nedir?",
+      "ipucu": "Enstitü eski addır. MRC İngilizce karşılıktır.",
+      "cevap": "Enerji Teknolojileri Başkan Yardımcılığı. Eski adı Enerji Enstitüsü. Yayınlarda hâlâ TUBITAK MRC Energy Institute geçer. MRC, Marmara Research Center demektir. İlandaki iş Güç Sistemleri Araştırma Grubu'na aittir ve yeri Ankara'dır."
+    },
+    {
+      "soru": "RİTM'i bu grup mu yaptı? Açılımını söyleyebilir misin?",
+      "ipucu": "Ayrı bir grup var. Resmi açılım bu notlarda yok.",
+      "cevap": "Hayır. Rüzgâr tahmin sistemi RİTM'i Enerji İzleme ve Tahmin Araştırma Grubu geliştirmiştir. Bu notlarda RİTM'in resmi açılımı doğrulanmamıştır. Mülakatta açılım uydurma."
+    },
+    {
+      "soru": "Bir projeyi 'grubunuzun projesi' diye söylemek neden riskli?",
+      "ipucu": "YTBS ve SIPS dışında grup aidiyeti doğrulanmadı.",
+      "cevap": "Proje listesinde hangi işin hangi gruba ait olduğu, YTBS ve SIPS dışında doğrulanmadı. 'Başkan yardımcılığının sayfasında gördüğüm şu proje' de. 'Grubunuzun şu projesi' deme."
+    },
+    {
+      "soru": "YTBS Faz 3'ün sayfadaki ölçeği nedir?",
+      "ipucu": "Modül, arıza benzetimi, web servis, kullanıcı, ziyaret, THS.",
+      "cevap": "TEİAŞ müşterisi, 2022–2026. 30'dan fazla modül, 4000'den fazla arıza benzetimi, 85.000 web servis talebi, 12.000 kullanıcı, günde yaklaşık 100.000 ziyaret, THS 9."
+    },
+    {
+      "soru": "Güneş üretim tahmin projesinin ölçeği ve NMAE hedefi nedir?",
+      "ipucu": "Santral sayısı, megavat, hata oranı.",
+      "cevap": "TEİAŞ, 2023–2027. 34.259 santral, 23.140 MW, ulusal ölçekte NMAE %2, THS 9. NMAE, normalize edilmiş ortalama mutlak hatadır. Tahmin hatasının kurulu güce oranıdır. Küçük olması iyidir."
+    },
+    {
+      "soru": "YTBS Geliştirme Projesi 4 ne zaman imzalanmış? Bunu nasıl söylersin?",
+      "ipucu": "Tarih kesin. Kapsam çıkarımı kesin değil.",
+      "cevap": "18 Aralık 2025. Bunun dağıtım entegrasyonunun kadrosu olduğu bir çıkarımdır, doğrulanmış bilgi değildir. Sorarak kullan: 'Faz 4'ün kapsamında dağıtım şirketleriyle entegrasyonun payı nedir?'"
+    },
+    {
+      "soru": "Dört ürünün olgunluğu ve RİTM'in ufku nedir?",
+      "ipucu": "YTBS ve SIPS aynı THS. STATCOM'un THS'si tabloda yok.",
+      "cevap": "YTBS ve SIPS THS 9. STATCOM güç elektroniği tabanlı reaktif kompanzasyondur, tabloda olgunluk yazmaz. RİTM ayrı grubun ürünüdür: rüzgâr izleme ve tahmin, 6–72 saat ufuk, GFS, ECMWF ve WRF modelleri."
+    },
+    {
+      "soru": "SEERC 2025 bildirisi neyi anlatır? Yazar adını ezberler misin?",
+      "ipucu": "Dağıtık güneş ve güvenli işletme.",
+      "cevap": "Başlık, yüksek oranda dağıtık üretim varken güvenli işletme için güneş üretim tahmini yöntemidir. Yazarlar Yusuf Yanık, Sinan Eren, Melih Bilgen ve TEİAŞ'tan Utku Yılmaz. Ad ezberlenmez. Karşına panel üyesi çıkabileceklerini bilirsin. SEERC açılımı bu notlarda doğrulanmamıştır."
+    },
+    {
+      "soru": "YTBS'nin iç algoritmasını anlatan hakemli makale var mı? 2018 karar ağacı çalışması kimin?",
+      "ipucu": "Bilinmiyor etiketi. Üniversite çalışmasını kuruma bağlama.",
+      "cevap": "YTBS'nin durum kestirimi ve güvenlik analizini anlatan hakemli makale bulunamadı. 'Şu algoritmayı kullandığını okudum' deme. 'Modül adlarını gördüm, yöntem ayrıntısını bulamadım' de. 2018 tarihli karar ağacı çalışması MAM yayını değildir."
+    },
+    {
+      "soru": "Güneş tahmini neden bir güç sistemi problemidir?",
+      "ipucu": "Yedek, dengeleme maliyeti, net yük.",
+      "cevap": "Tahmin hatası yedek ihtiyacına ve dengeleme maliyetine döner. On binlerce lisanssız santral ölçülmediği için net yük belirsizleşir. Güvenlik analizi yanlış yük dağılımıyla koşar. Net yük, tüketimden görünmeyen yerel üretimin düşülmesiyle kalan yüktür."
+    },
+    {
+      "soru": "THS 9, araştırmanın bittiği anlamına gelir mi?",
+      "ipucu": "Faz 3 ve Faz 4 hâlâ duruyor.",
+      "cevap": "Hayır. THS 9, ürünün gerçek ortamda kanıtlandığını söyler. Faz 3 ve Faz 4, geliştirmenin sürdüğünü gösterir. Rakamı da kaynaksız kesin söyleme: 'MAM'ın proje sayfasına göre' de."
+    }
+  ]
+}

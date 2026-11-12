@@ -1,0 +1,68 @@
+{
+  "id": "01-01",
+  "baslik": "İlan, puan ve mülakat",
+  "grup": "01  Kurum, ilan, süreç",
+  "geri": "goruntule.html#01-Kurum-Ilan-ve-Surec%2F01-Ilan-Puan-ve-Mulakat.md",
+  "sorular": [
+    {
+      "soru": "İlan kodu, referans kodu, görev yeri, kontenjan ve son başvuru nedir?",
+      "ipucu": "Referans, ilan kodunun sonuna .02 eklenmiş halidir.",
+      "cevap": "İlan kodu TBTK.MAM.A.2026-2. Referans TBTK.MAM.A.2026-2.02. Görev yeri Ankara, kontenjan 3. Son başvuru 05.10.2026 saat 17:00. Başvuru yalnızca kariyer.tubitak.gov.tr üzerinden."
+    },
+    {
+      "soru": "Aynı dönemde en fazla kaç TBTK ilanına başvurabilirsin?",
+      "ipucu": "Kod TBTK ile başlıyor ve son başvuru tarihi aynı.",
+      "cevap": "Kodu TBTK ile başlayan ve son başvurusu aynı tarih olan ilanlardan en fazla 2."
+    },
+    {
+      "soru": "İş tanımındaki tek cümleden çıkan dört iş parçası nedir?",
+      "ipucu": "Model, analiz, karar, yazılım.",
+      "cevap": "Modeli kurmak. Analizi koşmak. Sonucu karara çevirmek. Bunu başkasının kullanacağı yazılıma koymak: algoritma, veri, servis, arayüz, test."
+    },
+    {
+      "soru": "Yalnızca 400 kV anlatmak neden ilanın yarısını kaçırır?",
+      "ipucu": "İlan iki şebeke seviyesi birden yazar.",
+      "cevap": "İlan hem iletim hem dağıtım yazar. 400 kV iletimin, 34,5 kV dağıtımın tipik gerilimidir. Yalnızca fiziği anlatıp yazılımı 'öğrenirim' diye geçiştirmek de aynı şekilde eksiktir."
+    },
+    {
+      "soru": "Zorunlu tecrübe şartı nedir? Doktora nasıl sayılır?",
+      "ipucu": "Üç tam yıl. Doktora için ayrı bir sayı var.",
+      "cevap": "İş tanımındaki alanda en az 3 tam yıl. Bundan az başvuru geçersizdir. Doktora, istihdam edileceği alanda 4 yıl tecrübeye sayılır."
+    },
+    {
+      "soru": "YDS ve TOEFL iBT barajı nedir? Eski sonuç geçer mi?",
+      "ipucu": "İki sınav, iki sayı. Süre sorusu ayrıca.",
+      "cevap": "YDS, YÖKDİL, KPDS veya ÜDS için 70. TOEFL iBT için 84. Bu puanlarda geçerlilik süresi aranmaz."
+    },
+    {
+      "soru": "İngilizce puanı aranmayan üç hal nedir?",
+      "ipucu": "Eğitim dili, ülke, o ülkede meslek.",
+      "cevap": "Alan dışı dersler hariç %100 İngilizce lisans ve üniversite onayı. Resmi dili İngilizce olan ülkede lisans, yüksek lisans veya doktora. Ya da o ülkede iş tanımındaki alanda en az 3 yıl meslek."
+    },
+    {
+      "soru": "Puan formülü ne işe yarar ve alt sınır kaçtır? Tecrübe teriminin tavanı nedir?",
+      "ipucu": "Bu formül mülakat notu değildir.",
+      "cevap": "Mülakata kimin çağrılacağını sıralar. Dört terimin toplamı en az 3,20 olmalıdır. Tecrübe terimi lojistik doygunluktur, tavanı 5 puandır. 5 yılda tam 2,50 verir."
+    },
+    {
+      "soru": "Özel koşul ek puanı nasıl işler?",
+      "ipucu": "Ödül başına sabit bir sayı, bir de tavan.",
+      "cevap": "Alanla ilgili her birincilik, ikincilik, üçüncülük veya ödül 0,3 puan. Tavan 0,9. Ön lisans, lisans veya sonrası sayılır. Belgesiz beyan puan üretmez."
+    },
+    {
+      "soru": "Mülakata kaç kişi çağrılır, baraj kaçtır, kaç asil ve yedek vardır?",
+      "ipucu": "Kontenjan 3. Çağrı kontenjanın katıdır.",
+      "cevap": "Her referans için kontenjanın 10 katı çağrılır: 30 aday. Son sıradaki puanı paylaşanlar da girer. Mülakat 100 üzerinden 70 barajlıdır. 3 asil, en fazla 3 yedek. 70 altı, formül puanı yüksek olsa da elenir."
+    },
+    {
+      "soru": "Aday araştırmacı ilanındaki yazılım yığını senin ilanında zorunlu mu?",
+      "ipucu": "Java, JavaScript, REST/SOAP, Git, Maven, Jenkins, GitLab.",
+      "cevap": "Hayır, senin ilanın bu listeyi zorunlu tutmaz; analiz tarafındasın. Aynı ürün ailesine kod yazılacağı için yığını tanımak gerekir. Mülakat öncesi envanter, kod veya kısa analiz sorusu da elemedir."
+    },
+    {
+      "soru": "Beyan neden tehlikelidir ve hangi belgeler istenir?",
+      "ipucu": "Kariyer sistemindeki beyan esastır.",
+      "cevap": "Hatalı bilgi veya eksik belge başvuruyu düşürür. Transkript, diploma, YKS sonucu, yabancı dil, SGK hizmet dökümü, meslek kodu yoksa çalışma belgesi, varsa ödül, erkek adayda askerlik. Mülakatta anlattığın tecrübe bu belgelerle aynı hikâyeyi anlatmalıdır."
+    }
+  ]
+}

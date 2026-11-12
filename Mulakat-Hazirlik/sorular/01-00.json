@@ -1,0 +1,48 @@
+{
+  "id": "01-00",
+  "baslik": "Klasör haritası",
+  "grup": "01  Kurum, ilan, süreç",
+  "geri": "goruntule.html#01-Kurum-Ilan-ve-Surec%2F00-Alt-Basliklar.md",
+  "sorular": [
+    {
+      "soru": "Bu klasör hangi kurumu tanıtıyor ve MAM'ın açılımı nedir?",
+      "ipucu": "Başvurduğun araştırma merkezi.",
+      "cevap": "TÜBİTAK Marmara Araştırma Merkezi. İlanın istediği iş, puan, grubun yaptığı iş ve Türkiye elektrik sisteminin kuralları bu klasörde."
+    },
+    {
+      "soru": "İlan kodu, puan formülü ve 70 barajı hangi sayfada?",
+      "ipucu": "Klasördeki ilk içerik sayfası.",
+      "cevap": "01-Ilan-Puan-ve-Mulakat. Kimlik, zorunlu koşullar, formül, çağrı ve beyan orada."
+    },
+    {
+      "soru": "YTBS, SIPS, gerilim bantları ve enterkonneksiyon hangi sayfada?",
+      "ipucu": "Türkiye sistemi de aynı sayfada.",
+      "cevap": "02-MAM-YTBS-SIPS-ve-Turkiye-Sistemi. Grup, ürünler, kurumlar, yönetmelik sınırları ve komşu ülke bağlantıları orada."
+    },
+    {
+      "soru": "Doğrulandı, ikincil ve bilinmiyor etiketleri hangi sayfada?",
+      "ipucu": "Projeler ve yayınlar.",
+      "cevap": "03-Guncel-Projeler-Yayinlar-Urunler. Bir bilgiyi ne kadar kesin söyleyebileceğini bu etiket belirler."
+    },
+    {
+      "soru": "Tercih sebeplerinin sayısı konusunda klasörde nasıl bir uyarı var?",
+      "ipucu": "İçindekiler başlığı ile 04'teki tablo aynı sayıyı söylemiyor.",
+      "cevap": "İçindekiler başlığı dokuz diyor, 04 sayfasındaki tablo on madde sayıyor. Sayıyı ilan metninden teyit etmen gerekiyor."
+    },
+    {
+      "soru": "Mülakat öncesi envanter hangi sayfada ayrıntılanıyor?",
+      "ipucu": "01'de de adı geçer, hazırlık ayrı sayfadadır.",
+      "cevap": "05-Envanter-ve-Online-Degerlendirme. 01 sayfası bu turun da eleme olduğunu söyler, hazırlık 05'tedir."
+    },
+    {
+      "soru": "EERA nedir ve hangi sayfada geçer?",
+      "ipucu": "Avrupa araştırma işbirliği. Üyelik listesi ezberlenmez.",
+      "cevap": "European Energy Research Alliance, Avrupa Enerji Araştırma İttifakı. Grup Smart Grids ve Hydropower üyesidir. Anlatım 02 sayfasındadır."
+    },
+    {
+      "soru": "EPİAŞ ve EPDK'yı hangi sayfada, hangi işle ayırırsın?",
+      "ipucu": "Biri piyasa işletir, biri kural koyar.",
+      "cevap": "02 sayfasında. EPİAŞ gün öncesi ve gün içi piyasayı işletir. EPDK lisans, tarife ve yönetmelik tarafıdır. Elektrik Şebeke Yönetmeliği bu ilanın milli kriter kaynağıdır."
+    }
+  ]
+}
