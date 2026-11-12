@@ -187,6 +187,6 @@ Aşağıdaki konuşma metni üç parçalıdır: birimi tanıt, bildiğin işleri
 
 ## Bu sayfayı dene
 
-Soruyu gör, cevabını yaz, sonra aç. Bilemediğin soru tekrar gelir.
+Çoktan seçmeli. Bilemediğin soru tarayıcıda saklanır ve doğru bilinene kadar yeniden sorulur.
 
 [Bu sayfanın sorularına geç](test.html?sayfa=01-03)

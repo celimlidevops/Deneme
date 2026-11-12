@@ -5,64 +5,840 @@
   "geri": "goruntule.html#01-Kurum-Ilan-ve-Surec%2F01-Ilan-Puan-ve-Mulakat.md",
   "sorular": [
     {
-      "soru": "İlan kodu, referans kodu, görev yeri, kontenjan ve son başvuru nedir?",
-      "ipucu": "Referans, ilan kodunun sonuna .02 eklenmiş halidir.",
-      "cevap": "İlan kodu TBTK.MAM.A.2026-2. Referans TBTK.MAM.A.2026-2.02. Görev yeri Ankara, kontenjan 3. Son başvuru 05.10.2026 saat 17:00. Başvuru yalnızca kariyer.tubitak.gov.tr üzerinden."
+      "soru": "İlan kodu nedir?",
+      "secenekler": [
+        "TBTK.MAM.A.2026-2",
+        "TBTK.MAM.A.2026-2.02",
+        "TBTK.MAM.A.2025-2",
+        "MAM.ANKARA.02"
+      ],
+      "dogru": 0,
+      "neden": "Referans, ilan kodunun sonuna .02 eklenmiş halidir."
+    },
+    {
+      "soru": "Referans kodu nedir?",
+      "secenekler": [
+        "TBTK.MAM.A.2026-2.02",
+        "TBTK.MAM.A.2026-2",
+        "TBTK.MAM.A.2026-2.01",
+        "2026-2"
+      ],
+      "dogru": 0,
+      "neden": "Başvuru bu alt koda yapılır."
+    },
+    {
+      "soru": "Görev yeri, kontenjan ve son başvuru nedir?",
+      "secenekler": [
+        "Ankara, 3 kişi, 05.10.2026 saat 17:00",
+        "Gebze, 3 kişi, 05.10.2026",
+        "Ankara, 10 kişi, 01.01.2026",
+        "Ankara, 30 kişi, 05.10.2026"
+      ],
+      "dogru": 0,
+      "neden": "30, çağrılan aday sayısıdır; kontenjan 3'tür."
+    },
+    {
+      "soru": "Başvuru nereden yapılır?",
+      "secenekler": [
+        "Yalnızca kariyer.tubitak.gov.tr",
+        "E-posta ile mam.byet",
+        "Şahsen Gebze",
+        "EPİAŞ portalı"
+      ],
+      "dogru": 0,
+      "neden": "İlan başka kanal kabul etmez."
     },
     {
       "soru": "Aynı dönemde en fazla kaç TBTK ilanına başvurabilirsin?",
-      "ipucu": "Kod TBTK ile başlıyor ve son başvuru tarihi aynı.",
-      "cevap": "Kodu TBTK ile başlayan ve son başvurusu aynı tarih olan ilanlardan en fazla 2."
+      "secenekler": [
+        "Kodu TBTK ile başlayan ve son başvurusu aynı tarih olanlardan en fazla 2",
+        "1",
+        "3",
+        "Sınır yok"
+      ],
+      "dogru": 0,
+      "neden": "Kural hem kod önekine hem tarihe bağlıdır."
     },
     {
-      "soru": "İş tanımındaki tek cümleden çıkan dört iş parçası nedir?",
-      "ipucu": "Model, analiz, karar, yazılım.",
-      "cevap": "Modeli kurmak. Analizi koşmak. Sonucu karara çevirmek. Bunu başkasının kullanacağı yazılıma koymak: algoritma, veri, servis, arayüz, test."
+      "soru": "Statü ne anlama gelir?",
+      "secenekler": [
+        "Proje personeli: kadro belirli projelere bağlıdır",
+        "Kadrolu memur",
+        "Stajyer",
+        "Danışman şirket personeli"
+      ],
+      "dogru": 0,
+      "neden": "İlan statüyü proje personeli diye yazar."
     },
     {
-      "soru": "Yalnızca 400 kV anlatmak neden ilanın yarısını kaçırır?",
-      "ipucu": "İlan iki şebeke seviyesi birden yazar.",
-      "cevap": "İlan hem iletim hem dağıtım yazar. 400 kV iletimin, 34,5 kV dağıtımın tipik gerilimidir. Yalnızca fiziği anlatıp yazılımı 'öğrenirim' diye geçiştirmek de aynı şekilde eksiktir."
+      "soru": "Ankara görev yeri neyi ayırır?",
+      "secenekler": [
+        "Gebze'deki genel MAM adresinden ayrıdır",
+        "İş Gebze'dedir",
+        "Hem Gebze hem Ankara zorunludur",
+        "Görev yeri yazılmaz"
+      ],
+      "dogru": 0,
+      "neden": "Birim Enerji Teknolojileri Başkan Yardımcılığı, Ankara'dır."
     },
     {
-      "soru": "Zorunlu tecrübe şartı nedir? Doktora nasıl sayılır?",
-      "ipucu": "Üç tam yıl. Doktora için ayrı bir sayı var.",
-      "cevap": "İş tanımındaki alanda en az 3 tam yıl. Bundan az başvuru geçersizdir. Doktora, istihdam edileceği alanda 4 yıl tecrübeye sayılır."
+      "soru": "Grubun iletişim bilgisi nedir?",
+      "secenekler": [
+        "0312 210 18 30 ve mam.byet-gsag@tubitak.gov.tr",
+        "0216 ve Gebze santrali",
+        "EPİAŞ çağrı merkezi",
+        "EPDK kurumsal posta"
+      ],
+      "dogru": 0,
+      "neden": "Telefon ve e-posta 01'in kimlik tablosundadır."
     },
     {
-      "soru": "YDS ve TOEFL iBT barajı nedir? Eski sonuç geçer mi?",
-      "ipucu": "İki sınav, iki sayı. Süre sorusu ayrıca.",
-      "cevap": "YDS, YÖKDİL, KPDS veya ÜDS için 70. TOEFL iBT için 84. Bu puanlarda geçerlilik süresi aranmaz."
+      "soru": "İş tanımından çıkan dört parça hangisidir?",
+      "secenekler": [
+        "Modeli kur, analizi koş, karara çevir, yazılıma koy",
+        "Yalnızca yük akışı ve röle",
+        "Piyasa fiyatı ve tarife",
+        "Saha montajı ve test"
+      ],
+      "dogru": 0,
+      "neden": "Yazılım parçası algoritma, veri, servis, arayüz ve testtir."
     },
     {
-      "soru": "İngilizce puanı aranmayan üç hal nedir?",
-      "ipucu": "Eğitim dili, ülke, o ülkede meslek.",
-      "cevap": "Alan dışı dersler hariç %100 İngilizce lisans ve üniversite onayı. Resmi dili İngilizce olan ülkede lisans, yüksek lisans veya doktora. Ya da o ülkede iş tanımındaki alanda en az 3 yıl meslek."
+      "soru": "Yalnızca 400 kV anlatmak neden eksiktir?",
+      "secenekler": [
+        "İlan hem iletim hem dağıtım yazar; 34,5 kV dağıtımın tipik gerilimidir",
+        "400 kV artık kullanılmıyor",
+        "İlan yalnız dağıtım ister",
+        "34,5 kV iletim gerilimidir"
+      ],
+      "dogru": 0,
+      "neden": "400 kV iletim, 34,5 kV dağıtımdır."
     },
     {
-      "soru": "Puan formülü ne işe yarar ve alt sınır kaçtır? Tecrübe teriminin tavanı nedir?",
-      "ipucu": "Bu formül mülakat notu değildir.",
-      "cevap": "Mülakata kimin çağrılacağını sıralar. Dört terimin toplamı en az 3,20 olmalıdır. Tecrübe terimi lojistik doygunluktur, tavanı 5 puandır. 5 yılda tam 2,50 verir."
+      "soru": "Kodu 'öğrenirim' diye geçiştirmek hangi maddeye çarpar?",
+      "secenekler": [
+        "Yazılım projelerinde aktif çalışmış olmak",
+        "Yaş şartı",
+        "Askerlik",
+        "YDS 70"
+      ],
+      "dogru": 0,
+      "neden": "İlan analiz ile yazılımı yan yana ister."
+    },
+    {
+      "soru": "Bara ne demektir?",
+      "secenekler": [
+        "Hat, trafo ve yüklerin birleştiği düğüm",
+        "Kesici",
+        "Piyasa fiyatı",
+        "Frekans sapması"
+      ],
+      "dogru": 0,
+      "neden": "Model kurmanın ilk elemanıdır."
+    },
+    {
+      "soru": "Zorunlu bölüm şartı nedir?",
+      "secenekler": [
+        "Elektrik veya Elektrik-Elektronik, en az 4 yıllık lisans",
+        "Herhangi bir mühendislik",
+        "Yalnızca yüksek lisans",
+        "Ön lisans yeter"
+      ],
+      "dogru": 0,
+      "neden": "Bu sağlanmazsa başvuru geçersizdir."
+    },
+    {
+      "soru": "Doğum tarihi şartı nedir?",
+      "secenekler": [
+        "01.01.1991 ve sonrası",
+        "01.01.1985 ve sonrası",
+        "1995 ve sonrası",
+        "Yaş sınırı yok"
+      ],
+      "dogru": 0,
+      "neden": "Tarih gün, ay, yıl olarak 01.01.1991'dir."
+    },
+    {
+      "soru": "Tecrübe şartı ve doktoranın sayılması nasıldır?",
+      "secenekler": [
+        "Alanda en az 3 tam yıl; doktora o alanda 4 yıla sayılır",
+        "1 yıl yeter",
+        "Doktora 3 yıla sayılır",
+        "Tecrübe aranmaz"
+      ],
+      "dogru": 0,
+      "neden": "3 yıldan az başvuru geçersizdir."
+    },
+    {
+      "soru": "Erkek adayda askerlik şartı nedir?",
+      "secenekler": [
+        "Son başvuru itibarıyla bitmiş, muaf veya tecilli",
+        "Mutlaka yapılmış olmalı, tecil sayılmaz",
+        "Mülakattan sonra bakılır",
+        "Askerlik sorulmaz"
+      ],
+      "dogru": 0,
+      "neden": "Tecilli, askerliğin yasal ertelenmesidir."
+    },
+    {
+      "soru": "YDS, YÖKDİL, KPDS ve ÜDS barajı nedir?",
+      "secenekler": [
+        "70, geçerlilik süresi aranmaz",
+        "80, son 5 yıl",
+        "50, son 2 yıl",
+        "84"
+      ],
+      "dogru": 0,
+      "neden": "84, TOEFL iBT barajıdır."
+    },
+    {
+      "soru": "TOEFL iBT, CBT ve PBT barajları nedir?",
+      "secenekler": [
+        "84, 221 ve 561",
+        "70, 70 ve 70",
+        "100, 250 ve 600",
+        "84, 84 ve 84"
+      ],
+      "dogru": 0,
+      "neden": "Üç sürümün puan ölçekleri farklıdır."
+    },
+    {
+      "soru": "Cambridge düzeyleri nasıldır?",
+      "secenekler": [
+        "FCE C, CAE B, CPE C",
+        "Hepsi A",
+        "FCE A, CAE C, CPE B",
+        "Yalnızca IELTS 6,5"
+      ],
+      "dogru": 0,
+      "neden": "İlan IELTS yazmaz; FCE, CAE ve CPE yazar."
+    },
+    {
+      "soru": "İngilizce puanı aranmayan haller hangisidir?",
+      "secenekler": [
+        "%100 İngilizce lisans, İngilizce ülkede derece, ya da o ülkede alanda 3 yıl",
+        "Her YÖK mezunu",
+        "Yalnızca doktora",
+        "Şirket içi kurs"
+      ],
+      "dogru": 0,
+      "neden": "%100 İngilizce iddiası üniversite onayı ister; alan dışı dersler hariçtir."
+    },
+    {
+      "soru": "Puan formülü ne işe yarar ve alt sınır kaçtır?",
+      "secenekler": [
+        "Mülakata çağrıyı sıralar; toplam en az 3,20",
+        "Mülakat notudur; 70",
+        "İngilizce notudur; 70",
+        "GNO'nun kendisidir; 4,00"
+      ],
+      "dogru": 0,
+      "neden": "Formül mülakat notu değildir."
+    },
+    {
+      "soru": "Tecrübe teriminin tavanı ve 5 yıldaki değeri nedir?",
+      "secenekler": [
+        "Tavan 5; 5 yılda tam 2,50",
+        "Tavan 10; 5 yılda 5",
+        "Tavan 3,20; 5 yılda 3,20",
+        "Tavan 0,9; 5 yılda 0,3"
+      ],
+      "dogru": 0,
+      "neden": "5 yılda üs sıfır olur, e^0 = 1, terim 5 × 1/2 = 2,50."
+    },
+    {
+      "soru": "3, 7 ve 10 yıl için tecrübe terimi yaklaşık kaçtır?",
+      "secenekler": [
+        "0,56; 4,41; 4,97",
+        "2,50; 2,50; 2,50",
+        "5; 5; 5",
+        "0,9; 0,9; 0,9"
+      ],
+      "dogru": 0,
+      "neden": "Not, hesap makinesiyle 3 yıl için yaklaşık 0,60 bulunabileceğini de söyler. Tablodaki 0,56 korunmuştur."
+    },
+    {
+      "soru": "100 üzerinden not nasıl 4'lüğe çevrilir?",
+      "secenekler": [
+        "YÖK dönüşüm tablosuyla",
+        "Olduğu gibi bölünerek 25'e",
+        "YKS sıralamasına bölünerek",
+        "Çevrilmez"
+      ],
+      "dogru": 0,
+      "neden": "YÖK, Yükseköğretim Kurulu'dur."
+    },
+    {
+      "soru": "Yurt dışı mezuniyette ne kullanılır?",
+      "secenekler": [
+        "Times Higher Education; ilk 1000 dışında başvuru alınmaz",
+        "Yalnızca YKS",
+        "Herhangi bir diploma",
+        "QS ilk 500"
+      ],
+      "dogru": 0,
+      "neden": "GNO ve sıralamanın yerine bu sıralama konur."
+    },
+    {
+      "soru": "ÖSYM'siz veya DGS ile gelen adayda sıralama nereden alınır?",
+      "secenekler": [
+        "Başladığı yıldaki bölümün en düşük yerleştirme sıralaması",
+        "Adayın kendi YKS sıralaması uydurulur",
+        "Sıralama terimi silinir",
+        "1 kabul edilir"
+      ],
+      "dogru": 0,
+      "neden": "DGS, ön lisanstan lisansa geçiştir."
     },
     {
       "soru": "Özel koşul ek puanı nasıl işler?",
-      "ipucu": "Ödül başına sabit bir sayı, bir de tavan.",
-      "cevap": "Alanla ilgili her birincilik, ikincilik, üçüncülük veya ödül 0,3 puan. Tavan 0,9. Ön lisans, lisans veya sonrası sayılır. Belgesiz beyan puan üretmez."
+      "secenekler": [
+        "Her derece veya ödül 0,3; tavan 0,9; belgesiz beyan puan vermez",
+        "Her ödül 1 puan, tavan yok",
+        "Yalnızca doktora 0,9",
+        "İngilizce belgesi 0,3"
+      ],
+      "dogru": 0,
+      "neden": "En fazla üç ödül puan getirir: 3 × 0,3 = 0,9."
     },
     {
-      "soru": "Mülakata kaç kişi çağrılır, baraj kaçtır, kaç asil ve yedek vardır?",
-      "ipucu": "Kontenjan 3. Çağrı kontenjanın katıdır.",
-      "cevap": "Her referans için kontenjanın 10 katı çağrılır: 30 aday. Son sıradaki puanı paylaşanlar da girer. Mülakat 100 üzerinden 70 barajlıdır. 3 asil, en fazla 3 yedek. 70 altı, formül puanı yüksek olsa da elenir."
+      "soru": "Mülakata kim çağrılır?",
+      "secenekler": [
+        "Kontenjanın 10 katı, yani 30; son sıradaki puanı paylaşanlar da girer",
+        "Yalnızca ilk 3",
+        "70 üstü herkes otomatik",
+        "Formülü geçen herkes"
+      ],
+      "dogru": 0,
+      "neden": "Kontenjan 3 olduğu için 30'dur."
     },
     {
-      "soru": "Aday araştırmacı ilanındaki yazılım yığını senin ilanında zorunlu mu?",
-      "ipucu": "Java, JavaScript, REST/SOAP, Git, Maven, Jenkins, GitLab.",
-      "cevap": "Hayır, senin ilanın bu listeyi zorunlu tutmaz; analiz tarafındasın. Aynı ürün ailesine kod yazılacağı için yığını tanımak gerekir. Mülakat öncesi envanter, kod veya kısa analiz sorusu da elemedir."
+      "soru": "Mülakat barajı, asil ve yedek nedir?",
+      "secenekler": [
+        "100 üzerinden 70; 3 asil, en fazla 3 yedek",
+        "50 baraj; 10 asil",
+        "3,20 baraj; yedek yok",
+        "70 baraj; 30 asil"
+      ],
+      "dogru": 0,
+      "neden": "70 altı, formül puanı yüksek olsa da elenir."
     },
     {
-      "soru": "Beyan neden tehlikelidir ve hangi belgeler istenir?",
-      "ipucu": "Kariyer sistemindeki beyan esastır.",
-      "cevap": "Hatalı bilgi veya eksik belge başvuruyu düşürür. Transkript, diploma, YKS sonucu, yabancı dil, SGK hizmet dökümü, meslek kodu yoksa çalışma belgesi, varsa ödül, erkek adayda askerlik. Mülakatta anlattığın tecrübe bu belgelerle aynı hikâyeyi anlatmalıdır."
+      "soru": "Formül puanı yüksek, mülakat 65 olan aday ne olur?",
+      "secenekler": [
+        "Elenir",
+        "Asil olur",
+        "Yedek olur",
+        "İngilizce ile telafi edilir"
+      ],
+      "dogru": 0,
+      "neden": "Formül yalnızca kapıdan içeri sokar."
+    },
+    {
+      "soru": "Mülakat öncesi tur nedir?",
+      "secenekler": [
+        "Envanter, kod veya kısa analiz gelebilir ve bu tur da elemedir",
+        "Yalnızca bir formalitedir",
+        "Zorunlu değildir ve elenmez",
+        "Yalnızca İngilizce sözlüdür"
+      ],
+      "dogru": 0,
+      "neden": "Ayrıntı 05'tedir."
+    },
+    {
+      "soru": "Aday araştırmacı ilanındaki yazılım yığını senin ilanında zorunlu mudur?",
+      "secenekler": [
+        "Hayır; analiz tarafındasın ama aynı ürün ailesi için tanımak gerekir",
+        "Evet, Maven bilmeden başvuru düşer",
+        "Yalnızca Java zorunludur",
+        "Liste senin ilanındadır"
+      ],
+      "dogru": 0,
+      "neden": "Yığın: Java, JavaScript, ilişkisel veritabanı, REST/SOAP, Git, Maven, Jenkins, GitLab."
+    },
+    {
+      "soru": "REST ile SOAP farkı nedir?",
+      "secenekler": [
+        "REST daha hafif, SOAP daha katı kurallıdır",
+        "İkisi aynı protokoldür",
+        "SOAP bir programlama dilidir",
+        "REST bir veri tabanıdır"
+      ],
+      "dogru": 0,
+      "neden": "İkisi de web servis biçimidir."
+    },
+    {
+      "soru": "Beyan neden tehlikelidir?",
+      "secenekler": [
+        "Kariyer sistemindeki beyan esastır; hatalı bilgi veya eksik belge başvuruyu düşürür",
+        "Beyan yalnızca referanstır",
+        "Yalnızca mülakat sözü esas alınır",
+        "Belge istenmez"
+      ],
+      "dogru": 0,
+      "neden": "Anlattığın tecrübe belgelerle aynı hikâyeyi anlatmalıdır."
+    },
+    {
+      "soru": "İstenen belgelerden hangisi doğrudur?",
+      "secenekler": [
+        "Transkript, diploma, YKS, yabancı dil, SGK dökümü, gerekirse çalışma ve askerlik belgesi",
+        "Yalnızca diploma",
+        "Yalnızca pasaport",
+        "Banka hesap dökümü"
+      ],
+      "dogru": 0,
+      "neden": "Meslek kodu yoksa çalışma belgesi, varsa ödül belgesi de istenir."
+    },
+    {
+      "soru": "Unvan nedir?",
+      "secenekler": [
+        "Uzman araştırmacı",
+        "Proje yöneticisi",
+        "Araştırmacı (Ar-Ge personeli)",
+        "Aday araştırmacı"
+      ],
+      "dogru": 2,
+      "neden": "Kimlik tablosunun ilk satırıdır."
+    },
+    {
+      "soru": "İş yeri olarak ne yazılır?",
+      "secenekler": [
+        "TEİAŞ Genel Müdürlüğü",
+        "Gebze belediyesi",
+        "MAM",
+        "EPİAŞ"
+      ],
+      "dogru": 2,
+      "neden": "Görev yeri ayrıca Ankara'dır."
+    },
+    {
+      "soru": "Kimlik tablosundaki tecrübe satırı ne der?",
+      "secenekler": [
+        "Tecrübe aranmaz",
+        "3 yıl ve daha fazlası",
+        "10 yıl",
+        "1 yıl"
+      ],
+      "dogru": 1,
+      "neden": "Ayrıntısı zorunlu koşullardadır: alanda tam 3 yıl."
+    },
+    {
+      "soru": "Referans kodu neyi gösterir?",
+      "secenekler": [
+        "SGK meslek kodunu",
+        "Aynı ilan içindeki belirli kadroyu; başvuru bu alt koda yapılır",
+        "Bütün TBTK ilanlarını",
+        "Yalnızca İngilizce belgesini"
+      ],
+      "dogru": 1,
+      "neden": "İlan kodu TBTK.MAM.A.2026-2, referans .02 ile biter."
+    },
+    {
+      "soru": "Aynı dönem kuralı hangi iki şarta bağlıdır?",
+      "secenekler": [
+        "Sınır yoktur",
+        "Aynı unvanda en fazla 3",
+        "Kod TBTK ile başlar ve son başvuru tarihi aynıdır; en fazla 2",
+        "Aynı şehirde en fazla 2"
+      ],
+      "dogru": 2,
+      "neden": "Her TBTK ilanı değil, bu iki şartı tutanlar sayılır."
+    },
+    {
+      "soru": "Bu sayfadaki iletim tanımı nedir?",
+      "secenekler": [
+        "Yalnızca 34,5 kV",
+        "Elektriği santrallerden şehirlere yüksek gerilimle taşıyan ana şebeke",
+        "Piyasa fiyatının oluştuğu yer",
+        "Ev prizine kadar giden yerel şebeke"
+      ],
+      "dogru": 1,
+      "neden": "Dağıtım, daha düşük gerilimle yerel ulaştırır."
+    },
+    {
+      "soru": "Modeli kurmanın içinde neler vardır?",
+      "secenekler": [
+        "Yalnızca fiyat eğrisi",
+        "Bara, hat, trafo, üretim, yük ve koruma",
+        "Yalnızca Jenkins ve Maven",
+        "Yalnızca İngilizce belgesi"
+      ],
+      "dogru": 1,
+      "neden": "Dört iş parçasının ilkidir."
+    },
+    {
+      "soru": "Analizi koşmanın içinde hangisi vardır?",
+      "secenekler": [
+        "Yalnızca saha montajı",
+        "Yalnızca tarife onayı",
+        "Yalnızca arayüz tasarımı",
+        "Yük akışı, kısa devre, güvenlik, kararlılık, durum kestirimi, ekonomik işletme, planlama"
+      ],
+      "dogru": 3,
+      "neden": "İkinci iş parçasıdır."
+    },
+    {
+      "soru": "Sonucu karara çevirmenin içinde ne vardır?",
+      "secenekler": [
+        "Diploma ve transkript",
+        "Git, Maven, Jenkins",
+        "Yalnızca frekans bandı",
+        "Limit ihlali, yatırım, işletme talimatı, koruma ayarı"
+      ],
+      "dogru": 3,
+      "neden": "Üçüncü iş parçasıdır."
+    },
+    {
+      "soru": "Yazılıma koymanın beş parçası nedir?",
+      "secenekler": [
+        "Algoritma, veri, servis, arayüz, test",
+        "Bara, hat, trafo, yük, koruma",
+        "YDS, TOEFL, FCE, CAE, CPE",
+        "Java, yalnızca Java, yine Java, Maven"
+      ],
+      "dogru": 0,
+      "neden": "Dördüncü iş parçasıdır."
+    },
+    {
+      "soru": "Yük akışı ne hesaplar?",
+      "secenekler": [
+        "Belli üretim ve tüketimde hatlardan geçen gücü ve bara gerilimlerini",
+        "Arıza akımını",
+        "İngilizce puanını",
+        "Yıllık fatura tutarını"
+      ],
+      "dogru": 0,
+      "neden": "Temel analizdir."
+    },
+    {
+      "soru": "Kısa devre analizi neyin hesabıdır?",
+      "secenekler": [
+        "Arıza anında akan akım",
+        "Piyasa takas fiyatı",
+        "Trafo yağ sıcaklığı",
+        "Normal yükteki gerilim"
+      ],
+      "dogru": 0,
+      "neden": "Analiz listesindedir."
+    },
+    {
+      "soru": "Bu sayfada durum kestirimi nasıl tanımlanır?",
+      "secenekler": [
+        "Koruma rölesini ayarlamak",
+        "Yalnızca frekansı 50 yapmak",
+        "Kesin sayaç okumasını kopyalamak",
+        "Hatalı olabilecek ölçümlerden şebekenin en olası gerçek durumunu bulmak"
+      ],
+      "dogru": 3,
+      "neden": "Yazılımda da aynı terim geçer."
+    },
+    {
+      "soru": "Limit ihlali ne demektir?",
+      "secenekler": [
+        "Başvuru formunun eksik kalması",
+        "Bir büyüklüğün izin verilen sınırı aşması",
+        "70 barajının altı",
+        "Kontenjanın dolması"
+      ],
+      "dogru": 1,
+      "neden": "Karara çevirme parçasıdır."
+    },
+    {
+      "soru": "Genel şartlar neleri kapsar?",
+      "secenekler": [
+        "Kamu haklarından yasaklı olmamak, görevi sürekli engelleyecek hastalık bulunmamak, ilandaki adli şartlar",
+        "Yalnızca YDS 70",
+        "Yalnızca Ankara'da ikamet",
+        "Yalnızca 3 yıl tecrübe"
+      ],
+      "dogru": 0,
+      "neden": "Bunlar da sağlanmazsa başvuru geçersizdir."
+    },
+    {
+      "soru": "YDS'nin açılımı nedir?",
+      "secenekler": [
+        "Yükseköğretim Dil İzleme Sınavı",
+        "Yabancı Dil Sertifika Testi",
+        "Yerleştirme Dil Sınavı",
+        "Yabancı Dil Bilgisi Seviye Tespit Sınavı"
+      ],
+      "dogru": 3,
+      "neden": "Baraj 70'tir ve süre aranmaz."
+    },
+    {
+      "soru": "YÖKDİL'in açılımı nedir?",
+      "secenekler": [
+        "Yüksek Okul Kamu Dil Sınavı",
+        "Yönetmelik Kurul Dil İlanı",
+        "Yabancı Ülke Kabul Dil Sınavı",
+        "Yükseköğretim Kurumları Yabancı Dil Sınavı"
+      ],
+      "dogru": 3,
+      "neden": "Baraj YDS ile aynıdır: 70."
+    },
+    {
+      "soru": "KPDS nedir?",
+      "secenekler": [
+        "Güncel tek sınav",
+        "Cambridge sertifikası",
+        "Kamu Personeli Yabancı Dil Bilgisi Seviye Tespit Sınavı; eski sınav",
+        "TOEFL'ın kâğıt sürümü"
+      ],
+      "dogru": 2,
+      "neden": "ÜDS de eski sınavdır: Üniversitelerarası Kurul Yabancı Dil Sınavı."
+    },
+    {
+      "soru": "TOEFL iBT, CBT ve PBT neyin sürümleridir?",
+      "secenekler": [
+        "İnternet, bilgisayar ve kâğıt tabanlı",
+        "Hepsi 70 barajlı YDS türü",
+        "Yalnızca sözlü sınavlar",
+        "Üç ayrı Cambridge düzeyi"
+      ],
+      "dogru": 0,
+      "neden": "Barajlar 84, 221 ve 561'dir."
+    },
+    {
+      "soru": "FCE, CAE ve CPE'nin açık adları nedir?",
+      "secenekler": [
+        "İlan bunları yazmaz",
+        "Üçü de TOEFL sürümüdür",
+        "Hepsi YDS'nin eski adıdır",
+        "First Certificate in English, Certificate in Advanced English, Certificate of Proficiency in English"
+      ],
+      "dogru": 3,
+      "neden": "Düzeyler C, B ve C'dir."
+    },
+    {
+      "soru": "%100 İngilizce lisans istisnasının şartı nedir?",
+      "secenekler": [
+        "Onay gerekmez",
+        "Yalnızca hazırlık sınıfı yeter",
+        "Herhangi bir İngilizce ders yeter",
+        "Alan dışı dersler hariçtir ve üniversite onaylamalıdır"
+      ],
+      "dogru": 3,
+      "neden": "Üç istisnadan birincisidir."
+    },
+    {
+      "soru": "İngilizce puanı aranmayan ikinci ve üçüncü hal nedir?",
+      "secenekler": [
+        "Şirket içi kurs",
+        "IELTS 6",
+        "Her yurt dışı diploma",
+        "Resmi dili İngilizce olan ülkede lisans, YL veya doktora; ya da o ülkede alanda en az 3 yıl"
+      ],
+      "dogru": 3,
+      "neden": "İlan IELTS yazmaz."
+    },
+    {
+      "soru": "Bu ilan neden bu puan formülünü kullanır?",
+      "secenekler": [
+        "Araştırmacı ve tecrübe şartlı ilan olduğu için",
+        "Yalnızca yabancı aday için",
+        "Her TÜBİTAK ilanı aynı formülü kullanır",
+        "Mülakat notu olduğu için"
+      ],
+      "dogru": 0,
+      "neden": "Formül mülakat notu değildir."
+    },
+    {
+      "soru": "Formülün dört terimi nedir?",
+      "secenekler": [
+        "Java, Git, Maven, Jenkins",
+        "70 baraj, 3 asil, 3 yedek, 30 çağrı",
+        "Lisans GNO, tecrübe lojistiği, 10000 bölü YKS sıralaması, özel koşul ek puanı",
+        "YDS, TOEFL, yaş, kontenjan"
+      ],
+      "dogru": 2,
+      "neden": "Toplam en az 3,20 olmalıdır."
+    },
+    {
+      "soru": "GNO ve YKS bu formülde ne anlama gelir?",
+      "secenekler": [
+        "İngilizce notu ve yaş",
+        "İşyeri puanı ve SGK günü",
+        "Mülakat ve envanter notu",
+        "4'lük lisans ortalaması ve yerleştiğin sınav sıralaması"
+      ],
+      "dogru": 3,
+      "neden": "Sıralama küçüldükçe üçüncü terim büyür."
+    },
+    {
+      "soru": "Tecrübe terimi neden lojistik doygunluk denir?",
+      "secenekler": [
+        "Her yıl sabit 1 puan ekler",
+        "Başta yavaş artar, ortada hızlanır, tavana yaklaşıp yatay kalır",
+        "5 yıldan sonra sıfırlanır",
+        "Yalnızca 3. yılda puan verir"
+      ],
+      "dogru": 1,
+      "neden": "e yaklaşık 2,718'dir. Kabın hacmi 5 puandır."
+    },
+    {
+      "soru": "3 yıl ile 7 yıl arasında formül ne der?",
+      "secenekler": [
+        "7 yıl tavanı aşar",
+        "İkisi de 2,50 verir",
+        "Kıdem tek başına GNO'yu ezmez ama bu aralıkta ciddi fark açar",
+        "3 yıl zaten tavan 5'tedir"
+      ],
+      "dogru": 2,
+      "neden": "Tabloda 3 yıl yaklaşık 0,56, 7 yıl yaklaşık 4,41'dir."
+    },
+    {
+      "soru": "Hesap makinesi notu ne söyler?",
+      "secenekler": [
+        "3 yıl için yaklaşık 0,60, 7 yıl için yaklaşık 4,40 bulunabilir; tablodaki 0,56 ve 4,41 korundu",
+        "Hesap makinesi yasaktır",
+        "10 yıl 2,50 eder",
+        "Tablo kesin ve tek doğrudur"
+      ],
+      "dogru": 0,
+      "neden": "Kesin sayı söyleyeceksen kendin hesapla."
+    },
+    {
+      "soru": "Özel koşulda ne sayılır ve hangi dönem?",
+      "secenekler": [
+        "Her sertifika",
+        "Alanla ilgili ulusal veya uluslararası birincilik, ikincilik, üçüncülük ya da ödül; ön lisans, lisans veya sonrası",
+        "Yalnızca doktora diploması",
+        "Yalnızca iş tecrübesi"
+      ],
+      "dogru": 1,
+      "neden": "Her biri 0,3, tavan 0,9'dur."
+    },
+    {
+      "soru": "Çağrı hangi birim için yapılır?",
+      "secenekler": [
+        "Her referans kodu için, en yüksek puandan, kontenjanın 10 katı",
+        "Alfabetik 30 kişi",
+        "Yalnızca ilk 3",
+        "Tüm ilan kodu için tek liste, 100 kişi"
+      ],
+      "dogru": 0,
+      "neden": "30. ile aynı puanı alan herkes de girer."
+    },
+    {
+      "soru": "Barajı geçenler nasıl sıralanır?",
+      "secenekler": [
+        "Yaşa göre",
+        "İngilizce puanına göre",
+        "Kendi içlerinde; 3 asil ve en fazla 3 yedek",
+        "Formül puanına geri dönülerek 30 asil"
+      ],
+      "dogru": 2,
+      "neden": "70 altı formülü yüksek olsa da elenir."
+    },
+    {
+      "soru": "Mülakat öncesi gelebilecek üç biçim nedir?",
+      "secenekler": [
+        "Yalnızca SGK kontrolü",
+        "Kod, kısa analiz sorusu, kişilik envanteri",
+        "Yalnızca sözlü İngilizce",
+        "Yalnızca saha gezisi"
+      ],
+      "dogru": 1,
+      "neden": "Bu tur da elemedir. Ayrıntı 05'tedir."
+    },
+    {
+      "soru": "Aday araştırmacı ilanındaki yığın neden seni ilgilendirir?",
+      "secenekler": [
+        "Listenin tamamı zorunludur",
+        "Yalnızca Java zorunludur",
+        "Senin ilanın zorunlu tutmaz; aynı ürün ailesine kod yazılacağı için tanımak gerekir",
+        "Analiz tarafı bu listeyi görmez"
+      ],
+      "dogru": 2,
+      "neden": "Analiz tarafındasın."
+    },
+    {
+      "soru": "JavaScript bu yığında ne için anılır?",
+      "secenekler": [
+        "Sürüm kontrol",
+        "Web arayüzü ve programlama dili",
+        "Veri tabanı",
+        "Sürekli entegrasyon"
+      ],
+      "dogru": 1,
+      "neden": "Java ise programlama dilidir."
+    },
+    {
+      "soru": "İlişkisel veri tabanı ne işe yarar?",
+      "secenekler": [
+        "Otomatik test koşmak",
+        "Veriyi tablolar halinde saklamak",
+        "Web arayüzü çizmek",
+        "Git deposu barındırmak"
+      ],
+      "dogru": 1,
+      "neden": "YTBS'nin merkezi veri tabanıyla aynı aileden düşün."
+    },
+    {
+      "soru": "Git, Maven, Jenkins ve GitLab sırasıyla nedir?",
+      "secenekler": [
+        "Dört İngilizce sınavı",
+        "Dört programlama dili",
+        "Dört gerilim bandı",
+        "Sürüm kontrol; Java derleme ve bağımlılık; otomatik derleme ve test; depo ve iş akışı"
+      ],
+      "dogru": 3,
+      "neden": "SOAP daha katı, REST daha hafif servis biçimidir."
+    },
+    {
+      "soru": "SOAP'ın açılımı nedir?",
+      "secenekler": [
+        "Senkron Ölçüm ve Analiz Protokolü",
+        "Simple Object Access Protocol",
+        "System Operator Access Point",
+        "Static Object Application Process"
+      ],
+      "dogru": 1,
+      "neden": "REST, Representational State Transfer'dır."
+    },
+    {
+      "soru": "İstenen belgelerden YKS belgesi hangisidir?",
+      "secenekler": [
+        "Banka dökümü",
+        "Yalnızca diploma",
+        "Yalnızca pasaport",
+        "YKS sonuç ve yerleştirme belgesi"
+      ],
+      "dogru": 3,
+      "neden": "Ayrıca transkript, diploma, yabancı dil, SGK, gerekirse çalışma, ödül ve askerlik belgesi istenir."
+    },
+    {
+      "soru": "Meslek kodu yoksa hangi belge istenir?",
+      "secenekler": [
+        "İkametgâh",
+        "Hiçbiri",
+        "Çalışma belgesi",
+        "Sağlık kurulu"
+      ],
+      "dogru": 2,
+      "neden": "Ödül varsa ödül belgesi de istenir."
+    },
+    {
+      "soru": "90 saniyelik metin hangi hesapları sayar?",
+      "secenekler": [
+        "Yalnızca STATCOM kartı",
+        "Yalnızca İngilizce puanı",
+        "Yalnızca trafo sayıları",
+        "Yük akışı, güvenlik, kararlılık ve durum kestirimi; yazılımda veri modeli, servis ve test"
+      ],
+      "dogru": 3,
+      "neden": "Metin kontenjan 3, baraj 70 ve online değerlendirme ihtimalini de söyler."
+    },
+    {
+      "soru": "90 saniyelik metin grubun hangi iki ürününü anar?",
+      "secenekler": [
+        "YTBS ve geniş alan ölçümüne dayanan SIPS",
+        "EPİAŞ ve EPDK",
+        "RİTM ve STATCOM kartı",
+        "Yalnızca PSS/E"
+      ],
+      "dogru": 0,
+      "neden": "Kadro Ankara'daki Güç Sistemleri Araştırma Grubu'ndadır."
     }
   ]
 }

@@ -37,7 +37,14 @@
     border: 1px solid var(--line); background: var(--bg); color: var(--ink);
     border-radius: 12px; padding: 12px 14px; font: inherit; line-height: 1.5;
   }
-  textarea:focus { outline: 2px solid var(--accent); border-color: transparent; }
+  .secenekler { display: grid; gap: 8px; margin-top: 14px; }
+  .secenek { text-align: left; width: 100%; padding: 12px 14px; border-radius: 12px; }
+  .secenek.dogru { background: var(--accent); border-color: var(--accent); color: #f7fffb; }
+  .secenek.yanlis { background: var(--bad); border-color: var(--bad); color: #fff; }
+  .secenek:disabled { cursor: default; }
+  @media (prefers-color-scheme: dark) {
+    .secenek.dogru { color: #102018; }
+  }
   .satir { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
   button, .linkbuton {
     border: 1px solid var(--line); background: var(--side); color: var(--ink);
@@ -72,7 +79,7 @@
     <a class="back" id="geri" href="goruntule.html">Notlara dön</a>
     <p class="eyebrow" id="grup">Kendini dene</p>
     <h1 id="baslik">Sayfa seç</h1>
-    <p class="alt" id="alt">Soruyu gör, cevabını yaz, sonra aç.</p>
+    <p class="alt" id="alt">Çoktan seçmeli. Bilemediğin soru saklanır ve yeniden gelir.</p>
     <div class="bar" id="bar" hidden><span id="dolu"></span></div>
   </header>
   <main id="ekran"></main>

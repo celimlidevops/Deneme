@@ -7,6 +7,7 @@ const KATALOG = [
   { id: "01-05", baslik: "Envanter ve online değerlendirme", grup: "01  Kurum, ilan, süreç" }
 ];
 
+const ANAHTAR = "mam-secmeli:";
 const ekran = document.getElementById("ekran");
 const baslik = document.getElementById("baslik");
 const grupEl = document.getElementById("grup");
@@ -14,44 +15,75 @@ const alt = document.getElementById("alt");
 const geri = document.getElementById("geri");
 const bar = document.getElementById("bar");
 const dolu = document.getElementById("dolu");
-
 const sayfa = new URLSearchParams(location.search).get("sayfa");
 
 function kacis(s) {
-  return String(s)
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;");
+  return String(s).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
+}
+
+function oku(id) {
+  try { return JSON.parse(localStorage.getItem(ANAHTAR + id) || "null"); }
+  catch { return null; }
+}
+
+function yaz(id, veri) {
+  localStorage.setItem(ANAHTAR + id, JSON.stringify(veri));
+}
+
+function taze(n) {
+  return { toplam: n, ogrenilen: [], kuyruk: Array.from({ length: n }, (_, i) => i), yanlis: {} };
+}
+
+function duzelt(paket, kayit) {
+  const n = paket.sorular.length;
+  if (!kayit || !Array.isArray(kayit.kuyruk) || !Array.isArray(kayit.ogrenilen)) {
+    return taze(n);
+  }
+  kayit.toplam = n;
+  const gecer = (i) => Number.isInteger(i) && i >= 0 && i < n;
+  kayit.ogrenilen = [...new Set(kayit.ogrenilen.filter(gecer))];
+  const bildi = new Set(kayit.ogrenilen);
+  kayit.kuyruk = kayit.kuyruk.filter((i) => gecer(i) && !bildi.has(i));
+  for (let i = 0; i < n; i++) {
+    if (!bildi.has(i) && !kayit.kuyruk.includes(i)) kayit.kuyruk.push(i);
+  }
+  kayit.yanlis = kayit.yanlis || {};
+  return kayit;
 }
 
 function menu() {
   grupEl.textContent = "01  Kurum, ilan, süreç";
   baslik.textContent = "Hangi sayfayı deneyeceksin?";
-  alt.textContent = "Her sayfanın soruları kendi dosyasında. Cevabı önce sen yaz.";
+  alt.textContent = "Çoktan seçmeli. Bilemediğin soru bu tarayıcıda kalır.";
+  bar.hidden = true;
   ekran.innerHTML = `<div class="liste">${KATALOG.map((k) => {
     const kayit = oku(k.id);
-    const n = kayit && kayit.bitti ? "Son tur bitti" : "Henüz bitmedi";
-    return `<a href="test.html?sayfa=${k.id}">${kacis(k.baslik)}<small>${n}</small></a>`;
+    let durum = "Henüz başlamadın";
+    if (kayit && kayit.toplam) {
+      const kalan = kayit.toplam - (kayit.ogrenilen || []).length;
+      durum = kalan === 0 ? "Hepsi öğrenildi" : `${kalan} soru kaldı`;
+    }
+    return `<a href="test.html?sayfa=${k.id}">${kacis(k.baslik)}<small>${durum}</small></a>`;
   }).join("")}</div>`;
 }
 
-function oku(id) {
-  try {
-    return JSON.parse(localStorage.getItem("mam-quiz:" + id) || "null");
-  } catch {
-    return null;
+function karistir(dizi) {
+  const kopya = dizi.slice();
+  for (let i = kopya.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [kopya[i], kopya[j]] = [kopya[j], kopya[i]];
   }
+  return kopya;
 }
 
-function yaz(id, veri) {
-  localStorage.setItem("mam-quiz:" + id, JSON.stringify(veri));
+function ilerleme(paket, kayit) {
+  const oran = paket.sorular.length ? (kayit.ogrenilen.length / paket.sorular.length) * 100 : 0;
+  bar.hidden = false;
+  dolu.style.width = oran + "%";
 }
 
 async function yukle() {
-  if (!sayfa) {
-    menu();
-    return;
-  }
+  if (!sayfa) { menu(); return; }
   let paket;
   try {
     const yanit = await fetch("sorular/" + sayfa + ".json");
@@ -59,141 +91,81 @@ async function yukle() {
     paket = await yanit.json();
   } catch {
     baslik.textContent = "Sorular açılmadı";
-    alt.textContent = "Bu adres sunucudan açılmalı. Dosyayı çift tıklayarak açarsan JSON okunamaz.";
+    alt.textContent = "Sayfayı sunucudan aç. Dosyaya çift tıklarsan soru dosyası okunamaz.";
     ekran.innerHTML = `<p><a class="linkbuton asil" href="test.html">Sayfa listesine dön</a></p>`;
     return;
   }
   geri.href = paket.geri || "goruntule.html";
   grupEl.textContent = paket.grup || "";
   baslik.textContent = paket.baslik;
-  const kayit = oku(paket.id) || { sira: 0, notlar: {}, tur: "hepsi" };
-  if (!Array.isArray(kayit.kuyruk) || kayit.kuyruk.length !== paket.sorular.length && kayit.tur === "hepsi") {
-    kayit.kuyruk = paket.sorular.map((_, i) => i);
-    kayit.sira = 0;
-    kayit.notlar = {};
-    kayit.tur = "hepsi";
-    kayit.bitti = false;
-  }
-  ciz(paket, kayit);
-}
-
-function ilerleme(kayit) {
-  const oran = kayit.kuyruk.length ? (kayit.sira / kayit.kuyruk.length) * 100 : 0;
-  bar.hidden = false;
-  dolu.style.width = oran + "%";
+  ciz(paket, duzelt(paket, oku(paket.id)));
 }
 
 function ciz(paket, kayit) {
   yaz(paket.id, kayit);
-  if (kayit.sira >= kayit.kuyruk.length) {
-    sonuc(paket, kayit);
-    return;
-  }
-  const indeks = kayit.kuyruk[kayit.sira];
+  ilerleme(paket, kayit);
+  if (kayit.kuyruk.length === 0) { sonuc(paket, kayit); return; }
+  const indeks = kayit.kuyruk[0];
   const soru = paket.sorular[indeks];
-  ilerleme(kayit);
-  alt.textContent = `Soru ${kayit.sira + 1} / ${kayit.kuyruk.length}. Önce yaz, sonra aç.`;
+  const secenekler = karistir(soru.secenekler.map((metin, i) => ({ metin, i })));
+  const tekrar = (kayit.yanlis[indeks] || 0) > 0;
+  alt.textContent = tekrar
+    ? `Yeniden: ${kayit.ogrenilen.length} / ${paket.sorular.length} öğrenildi. Kuyrukta ${kayit.kuyruk.length} soru var.`
+    : `${kayit.ogrenilen.length} / ${paket.sorular.length} öğrenildi. Kuyrukta ${kayit.kuyruk.length} soru var.`;
   ekran.innerHTML = `
     <section class="soru"><p>${kacis(soru.soru)}</p></section>
-    <textarea id="yazi" placeholder="Aklına geleni yaz. Tam cümle olmak zorunda değil."></textarea>
-    <p class="uyari" id="uyari" hidden>Önce bir cümle dene. Hiç bilmiyorsan düğmeye bir kez daha bas.</p>
-    <div class="satir">
-      <button type="button" class="asil" id="ac">Cevabı aç</button>
-      <button type="button" id="ipucu">İpucu</button>
+    <div class="secenekler" id="secenekler">
+      ${secenekler.map((s, gorunen) => `<button type="button" class="secenek" data-i="${s.i}">${kacis(s.metin)}</button>`).join("")}
     </div>
-    <div class="ipucu" id="ipucuKutu" hidden>
-      <p class="etiket">İpucu</p>
-      <p>${kacis(soru.ipucu || "")}</p>
-    </div>`;
-  const yazi = document.getElementById("yazi");
-  const uyari = document.getElementById("uyari");
-  let zorladi = false;
-  document.getElementById("ipucu").addEventListener("click", () => {
-    document.getElementById("ipucuKutu").hidden = false;
-  });
-  document.getElementById("ac").addEventListener("click", () => {
-    if (!zorladi && yazi.value.trim().length < 2) {
-      zorladi = true;
-      uyari.hidden = false;
-      return;
-    }
-    goster(paket, kayit, indeks, yazi.value.trim());
-  });
-  yazi.focus();
-}
-
-function goster(paket, kayit, indeks, benim) {
-  const soru = paket.sorular[indeks];
-  alt.textContent = "Cevabı kendi cümlenle karşılaştır. Ezber aynısı olmak zorunda değil.";
-  const benimHtml = benim
-    ? `<div class="benim"><p class="etiket">Senin yazdığın</p><p>${kacis(benim)}</p></div>`
-    : "";
-  ekran.innerHTML = `
-    <section class="soru"><p>${kacis(soru.soru)}</p></section>
-    ${benimHtml}
-    <div class="cevap"><p class="etiket">Sayfadaki cevap</p><p>${kacis(soru.cevap)}</p></div>
-    <div class="satir">
-      <button type="button" class="asil" data-not="biliyordum">Biliyordum</button>
-      <button type="button" data-not="eksik">Eksik kaldı</button>
-      <button type="button" data-not="bilmiyordum">Bilmiyordum</button>
-    </div>`;
-  ekran.querySelectorAll("[data-not]").forEach((dugme) => {
+    <div class="cevap" id="sonuc" hidden></div>
+    <div class="satir"><button type="button" class="asil" id="devam" hidden>Devam</button></div>`;
+  const dugmeler = [...ekran.querySelectorAll(".secenek")];
+  dugmeler.forEach((dugme) => {
     dugme.addEventListener("click", () => {
-      kayit.notlar[indeks] = dugme.dataset.not;
-      kayit.sira += 1;
-      ciz(paket, kayit);
+      if (dugme.disabled) return;
+      const secilen = Number(dugme.dataset.i);
+      const bildi = secilen === soru.dogru;
+      dugmeler.forEach((d) => {
+        d.disabled = true;
+        if (Number(d.dataset.i) === soru.dogru) d.classList.add("dogru");
+        else if (d === dugme) d.classList.add("yanlis");
+      });
+      const kutu = document.getElementById("sonuc");
+      kutu.hidden = false;
+      kutu.innerHTML = bildi
+        ? `<p class="etiket">Doğru</p><p>${kacis(soru.neden || soru.secenekler[soru.dogru])}</p>`
+        : `<p class="etiket">Bu soru yeniden gelecek</p><p>${kacis(soru.neden || ("Doğru cevap: " + soru.secenekler[soru.dogru]))}</p>`;
+      document.getElementById("devam").hidden = false;
+      document.getElementById("devam").onclick = () => {
+        if (bildi) {
+          kayit.ogrenilen.push(indeks);
+          kayit.kuyruk.shift();
+        } else {
+          kayit.yanlis[indeks] = (kayit.yanlis[indeks] || 0) + 1;
+          kayit.kuyruk.shift();
+          kayit.kuyruk.push(indeks);
+        }
+        ciz(paket, kayit);
+      };
     });
   });
 }
 
 function sonuc(paket, kayit) {
-  kayit.bitti = true;
-  yaz(paket.id, kayit);
-  bar.hidden = false;
+  const yanlisAdet = Object.values(kayit.yanlis).reduce((a, b) => a + b, 0);
+  alt.textContent = "Bu sayfadaki soruların hepsini en az bir kez doğru bildin.";
   dolu.style.width = "100%";
-  const say = { biliyordum: 0, eksik: 0, bilmiyordum: 0 };
-  kayit.kuyruk.forEach((i) => {
-    say[kayit.notlar[i]] = (say[kayit.notlar[i]] || 0) + 1;
-  });
-  const kacir = kayit.kuyruk.filter((i) => kayit.notlar[i] !== "biliyordum");
-  alt.textContent = kacir.length
-    ? "Eksik kalanlar bir sonraki turda yeniden gelir."
-    : "Bu turda hepsini biliyordun.";
-  const liste = kacir.map((i) => {
-    const s = paket.sorular[i];
-    return `<li><strong>${kacis(s.soru)}</strong><p>${kacis(s.cevap)}</p></li>`;
-  }).join("");
   ekran.innerHTML = `
     <div class="ozet">
-      <div><strong>${say.biliyordum}</strong><span>Biliyordum</span></div>
-      <div><strong>${say.eksik}</strong><span>Eksik</span></div>
-      <div><strong>${say.bilmiyordum}</strong><span>Bilmiyordum</span></div>
+      <div><strong>${paket.sorular.length}</strong><span>Soru</span></div>
+      <div><strong>${yanlisAdet}</strong><span>Yanlış deneme</span></div>
+      <div><strong>${kayit.ogrenilen.length}</strong><span>Öğrenilen</span></div>
     </div>
-    ${liste ? `<ol class="kacirilan">${liste}</ol>` : ""}
     <div class="satir">
-      ${kacir.length ? `<button type="button" class="asil" id="tekrar">Eksikleri tekrarla</button>` : ""}
-      <button type="button" id="bastan">Baştan başla</button>
+      <button type="button" class="asil" id="bastan">Baştan başla</button>
       <a class="linkbuton" href="test.html">Diğer sayfalar</a>
     </div>`;
-  const tekrar = document.getElementById("tekrar");
-  if (tekrar) {
-    tekrar.addEventListener("click", () => {
-      kacir.forEach((i) => delete kayit.notlar[i]);
-      kayit.kuyruk = kacir;
-      kayit.sira = 0;
-      kayit.tur = "eksik";
-      kayit.bitti = false;
-      ciz(paket, kayit);
-    });
-  }
-  document.getElementById("bastan").addEventListener("click", () => {
-    kayit.kuyruk = paket.sorular.map((_, i) => i);
-    kayit.sira = 0;
-    kayit.notlar = {};
-    kayit.tur = "hepsi";
-    kayit.bitti = false;
-    ciz(paket, kayit);
-  });
+  document.getElementById("bastan").onclick = () => ciz(paket, taze(paket.sorular.length));
 }
 
 yukle();
