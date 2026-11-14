@@ -1,149 +1,51 @@
-# Ybus matrisi: elle kurulum ve seyrek yapı
+# Ybus — “bu ne?”
 
-Ybus (bara admitans matrisi), şebekenin kendisidir. Yük akışı, kısa devre, durum kestirimi ve güvenlik analizi aynı matrisi kullanır.
+[01’deki](01-Guc-Birim-Sistem-Modeller.md) 7 numaralı kart. Hesap yok; mantık var.
 
-Mülakatta "üç baralı bir şebekenin Ybus'unu yaz" sorusu, temel bilgisini ölçmenin en kısa yoludur.
+## Ybus nedir?
 
-## Tanım
+Şebekeyi bilgisayarda tutmanın yolu.
 
-Her bara için Kirchhoff akım yasası yazılır: baraya giren akım, o baradan hatlara çıkan akımların toplamıdır. Bunu bütün baralar için matrisle yazınca tek denklem çıkar:
+- **Bara** = düğüm (hatların buluştuğu nokta)
+- **Hat** = iki düğümü bağlayan yol
+- **Ybus** = “kim kime bağlı?” tablosu (matris)
 
-```
-I = Y V
-```
+Bu tablo şunu söyler: baralara giren akımlar ile baraların gerilimleri birbirine nasıl bağlı.
 
-| Sembol | Anlamı |
-| --- | --- |
-| `I` | Bara enjeksiyon akımları (baraya dışarıdan verilen akım) |
-| `V` | Bara gerilimleri |
-| `Y` | Bara admitans matrisi |
+Kısaca: **şebekenin bağlantı haritası**.
 
-Kurulum iki kuraldan ibarettir:
+Yük akışı, kısa devre, durum kestirimi hep aynı haritayı kullanır.
 
-- **Köşegen dışı:** `Y_ik = −y_ik`. İki bara arasındaki hattın admitansının eksilisi. Hat yoksa sıfır.
-- **Köşegen:** `Y_ii`, o baraya bağlı bütün admitansların toplamı. Hatlar, hat şöntleri, kapasitör, reaktör dahil.
+## Tablo nasıl doldurulur? (fikir yeter)
 
-Önce empedansı admitansa çevirirsin: `y = 1/z`. Saf reaktans için `1/(jx) = −j/x`.
+İki kural:
 
-## Elle örnek: üç bara
+1. **İki bara arasında hat varsa** o iki baranın kesişiminde bir sayı vardır (bağlantının “eksi” hali).
+2. **Bir baranın kendi kutusunda** o baraya değen her şeyin toplamı vardır.
 
-Hatlar (direnç ihmal): `z12 = j0,10`, `z13 = j0,20`, `z23 = j0,25` pu.
+Toprağa bağlı ekstra parçalar (şönt) yalnız o baranın kendi kutusuna yazılır.
 
-Adım 1, admitanslar. Bu adım, her hattın empedansını `1/(jx) = −j/x` kuralıyla admitansa çevirir.
+**Hata kontrolü (kolay):** ekstra şönt yoksa bir satırdaki sayıların toplamı sıfır çıkar. Tutmuyorsa yazım hatası vardır.
 
-```
-y12 = 1/(j0,10) = −j10
-y13 = 1/(j0,20) = −j5
-y23 = 1/(j0,25) = −j4
-```
+## “Seyrek” ne demek?
 
-Adım 2, köşegen dışı (eksilisi). Bu adım, iki bara arasındaki admitansın işaretini çevirip matrisin simetrik iki hücresine yazar.
+Gerçek şebekede bir bara birkaç komşuya bağlıdır, hepsine değil. Tablonun çoğu kutusu boştur.
 
-```
-Y12 = Y21 = +j10
-Y13 = Y31 = +j5
-Y23 = Y32 = +j4
-```
+Bu yüzden:
 
-Adım 3, köşegen (bağlı olanların toplamı). Bu adım, her baraya dokunan bütün hat admitanslarını toplar.
+- Bütün tabloyu ters çevirmek (tersini almak) kötü fikirdir — boşluklar dolar, bellek şişer.
+- Boşlukları koruyan çözüm yöntemleri kullanılır.
 
-```
-Y11 = y12 + y13 = −j15
-Y22 = y12 + y23 = −j14
-Y33 = y13 + y23 = −j9
-```
+**Panel cümlesi:** “Ybus seyrektir; tersini almam, seyrek çözerim.”
 
-Sonuç. Bu blok, üç adımın çıktısını tek matriste birleştirir.
+## Hat açılırsa ne olur?
 
-```
-        [ −j15   j10    j5  ]
-Ybus =  [  j10  −j14    j4  ]
-        [  j5    j4    −j9  ]
-```
+O hatta ait dört kutu değişir: iki ucun kendi kutuları ve aralarındaki iki kesişim. Bütün Türkiye haritasını baştan çizmek zorunda değilsin; sadece o bağlantıyı güncellersin.
 
-Kontrol: şönt eleman yoksa her satırın toplamı sıfırdır. −15 + 10 + 5 = 0. Tuttu.
+## Yazılım köprüsü (tek cümle)
 
-Bu kontrol, elle kurulumda hata yakalamanın en hızlı yoludur.
-
-## Dirençli hat ve şönt
-
-Gerçek hatta direnç vardır: `z = 0,02 + j0,10`.
-
-Aşağıdaki blok bu hattın admitansını hesaplar. Ortadaki adım, pay ve paydayı eşlenikle çarpıp paydayı gerçek sayı yapar.
-
-```
-y = 1/(0,02 + j0,10) = (0,02 − j0,10) / (0,02² + 0,10²) = 1,923 − j9,615
-```
-
-Eşlenikle çarpıp paydayı gerçek yaparsın. Gerçek kısım iletkenlik `G`, sanal kısım süseptans `B`'dir. `Y = G + jB`.
-
-Hattın kapasitesi π modelinde iki uca yarı yarıya şönt olarak konur:
-
-- Toplam şönt `jb` ise her iki uçtaki baranın köşegenine `jb/2` eklenir.
-- Köşegen dışına eklenmez.
-- O zaman satır toplamı artık sıfır olmaz; kalan değer baranın toprağa şöntüdür.
-
-Kademeli trafoda (oran `t`), seri admitans `y` ise:
-
-| Hücre | Değer |
-| --- | --- |
-| Kademe tarafındaki köşegen | `y/t²` |
-| Diğer köşegen | `y` |
-| Köşegen dışları | `−y/t` |
-
-Kademe 1,0 iken sıradan bir hatla aynıdır.
-
-## Seyrek matris
-
-Gerçek şebekede bir bara ortalama 2–4 komşuya bağlıdır.
-
-On bin baralı sistemde:
-
-- Matrisin 100 milyon hücresi vardır.
-- Sıfırdan farklı olan yaklaşık 40 bin tanesidir.
-- Doluluk on binde dörttür.
-
-Yazılım sonucu:
-
-- Yoğun (dense) saklarsan 100 milyon karmaşık sayı, yaklaşık 1,6 GB eder. Seyrek saklarsan bir megabaytın altındadır.
-- Yoğun çarpanlara ayırma `n³` ile, seyrek çözücü yaklaşık `n` ile büyür. Fark, saatler ile milisaniyeler arasıdır.
-- Biçimler: kurarken koordinat listesi (COO, Coordinate), çözerken sıkıştırılmış satır veya sütun (CSR, Compressed Sparse Row; CSC, Compressed Sparse Column).
-- Matrisin tersi alınmaz. Tersi yoğundur, yani seyrekliği yok eder. Bunun yerine LU çarpanları (alt üçgen L ve üst üçgen U matrisleri) saklanır ve her sağ taraf için ileri-geri yerine koyma yapılır.
-- Çarpanlara ayırırken yeni sıfır olmayanlar oluşur (fill-in). Satır ve sütunları akıllı sıralamak (minimum derece, AMD, Approximate Minimum Degree) bunu azaltır.
-- Güç sistemi için özel olarak yazılmış çözücü KLU'dur.
-
-Python karşılığı:
-
-- Matrisi tutmak için `scipy.sparse.csr_matrix`.
-- Çözmek için `scipy.sparse.linalg.spsolve`.
-- Çarpanları saklamak için `splu`.
-
-`14-Programlama/ornekler/nr_yuk_akisi.py` çözümü `spsolve` ile yapar.
-
-Ybus ayrıca simetriktir (faz kaydırıcı trafo yoksa).
-
-Zbus (bara empedans matrisi), Ybus'un tersidir. Yoğundur ve kısa devre hesabında yalnızca gereken sütunu hesaplanır.
-
-## Yaygın yanlış
-
-- **"Köşegen dışı elemanlar pozitif admitanstır."** Hayır, eksilisidir. İşaret hatası en sık yapılan hatadır.
-- **"Hat şöntü köşegen dışına da girer."** Hayır, yalnız köşegene.
-- **"Ybus'un tersini alıp gerilimi bulurum."** Küçük örnekte olur, gerçek sistemde bellek ve süre patlar. Çarpanlara ayır, yerine koy.
-- **"İki bara arasında bağlantı yoksa küçük bir değer yazarım."** Sıfır yazılır. Tersine, kesiciyi çok küçük empedansla modellemek matrisi sayısal olarak hasta eder; iki barayı birleştirmek doğrusudur.
-- **"Ybus topolojiden bağımsızdır."** Bir kesici açıldığında değişir. N-1 analizinde (her seferinde bir elemanın devre dışı kaldığı senaryolar) her arıza için baştan kurmak yerine düşük ranklı güncelleme veya LODF (Line Outage Distribution Factor, hat açılma dağılım katsayısı) kullanılır.
-
-## Panel takip sorusu
-
-"Bir hat devre dışı kalırsa Ybus'ta ne değişir?"
-
-> Mülakatta şöyle söyle: "Dört eleman. İki köşegenden `y` çıkar, iki köşegen dışı sıfırlanır. Bütün matrisi yeniden çarpanlara ayırmadan düşük ranklı güncelleme yapılabilir."
-
-"Satır toplamı ne zaman sıfır olmaz?"
-
-> Mülakatta şöyle söyle: "Toprağa şönt varsa: hat kapasitesi, kapasitör, reaktör, nominalden farklı kademe."
-
-Aşağıdaki metin, bu sayfanın tamamını mülakatta 90 saniyede anlatmak içindir.
+Python’da seyrek matris araçları vardır (`scipy.sparse`). Örnek kod `14-Programlama/ornekler` altındadır — şimdi açmana gerek yok; “biliyorum, seyrek çözerim” demen yeter.
 
 ## 90 saniye
 
-> "Ybus, akım eşittir admitans çarpı gerilim denkleminin matrisidir. Köşegen dışına iki bara arasındaki admitansın eksilisini, köşegene o baraya bağlı bütün admitansların toplamını yazarım; şöntler yalnız köşegene girer. Şönt yoksa satır toplamı sıfırdır, bu benim hata kontrolümdür. Matris seyrektir, çünkü bir bara birkaç komşuya bağlıdır. Tersini almam; seyrek LU çarpanlarını saklar, her çözümde yerine koyma yaparım."
+> “Ybus şebekenin kim-kime-bağlı tablosudur. Köşegen dışı bağlantıyı, köşegen o baraya değenleri tutar. Çoğu kutu boştur; tersini almam, seyrek çözerim.”

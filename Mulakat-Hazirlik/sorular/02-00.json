@@ -1,0 +1,162 @@
+{
+  "id": "02-00",
+  "baslik": "Temeller — bu ne?",
+  "grup": "02  Temeller",
+  "geri": "goruntule.html#02-Guc-Sistemleri-Temelleri%2F00-Alt-Basliklar.md",
+  "sorular": [
+    {
+      "soru": "Aktif güç (P) ne işe yarar?",
+      "secenekler": [
+        "Yalnızca gerilimi yükseltir",
+        "Gerçekten iş yapan kısımdır (lamba, motor)",
+        "Sadece trafonun plakasındaki yazıdır",
+        "Yalnızca kayıp üretir"
+      ],
+      "dogru": 1,
+      "neden": "Aktif güç iş yapan elektriki anlatır. Reaktif güç iş yapmaz ama hattı doldurur."
+    },
+    {
+      "soru": "Reaktif güç için en doğru düz anlatım hangisidir?",
+      "secenekler": [
+        "Tamamen kayıp güçtür, yok edilmelidir",
+        "İş yapmaz ama hattı doldurur; gerilimi etkiler",
+        "Frekansı tek başına belirler",
+        "Yalnızca güneş panellerinde vardır"
+      ],
+      "dogru": 1,
+      "neden": "Reaktif 'yararsız trafik' gibidir: iş yapmaz ama yolu doldurur, gerilimi etkiler. Kayıp değildir."
+    },
+    {
+      "soru": "Frekans ile gerilim farkı nedir?",
+      "secenekler": [
+        "İkisi de mahalle mahalle değişir",
+        "Frekans ülkede aynıdır (aktif denge); gerilim yerlidir (reaktif denge)",
+        "Gerilim ülkede aynıdır; frekans mahalle mahalle değişir",
+        "İkisi de yalnız gece ölçülür"
+      ],
+      "dogru": 1,
+      "neden": "Frekans = ülke sağlığı. Gerilim = mahalle sağlığı."
+    },
+    {
+      "soru": "Yüksek gerilim iletim neden tercih edilir?",
+      "secenekler": [
+        "Daha tehlikeli olsun diye",
+        "Aynı gücü küçük akımla taşıyıp kaybı azaltmak için",
+        "Trafo çalışmasın diye",
+        "Reaktif gücü yok etmek için"
+      ],
+      "dogru": 1,
+      "neden": "Akım küçülünce tel daha az ısınır. Trafo gerilimi yükseltip düşürür."
+    },
+    {
+      "soru": "Fazör neyi anlatır?",
+      "secenekler": [
+        "Yalnızca kablonun rengini",
+        "Salınan dalgayı büyüklük ve açı diye iki sayıyla",
+        "Yalnızca trafo markasını",
+        "Yalnızca frekansı"
+      ],
+      "dogru": 1,
+      "neden": "50 Hz ortak olduğu için her dalga büyüklük + açı ile özetlenir."
+    },
+    {
+      "soru": "\"400 kV\" denince ne kastedilir?",
+      "secenekler": [
+        "Bir faz ile nötr arası",
+        "İki faz arası hat gerilimi",
+        "Akımın amperi",
+        "Frekans"
+      ],
+      "dogru": 1,
+      "neden": "İletim gerilimleri hat gerilimi (iki faz arası) olarak söylenir."
+    },
+    {
+      "soru": "Per-unit (birim sistem) ne işe yarar?",
+      "secenekler": [
+        "Elektriği kesmek için",
+        "Farklı gerilim seviyelerini aynı dile getirmek için",
+        "Yalnızca fatura hesaplamak için",
+        "Röleyi açmak için"
+      ],
+      "dogru": 1,
+      "neden": "400 kV ile 230 V aynı tabloda 'normale bölünmüş' halde buluşur. Sağlıklı gerilim ~1 görünür."
+    },
+    {
+      "soru": "Ybus nedir?",
+      "secenekler": [
+        "Bir trafo markası",
+        "Şebekenin kim-kime-bağlı tablosu (bağlantı haritası)",
+        "Yalnızca frekans ölçeri",
+        "Güneş paneli modeli"
+      ],
+      "dogru": 1,
+      "neden": "Ybus baralar ve hatların bilgisayardaki bağlantı haritasıdır."
+    },
+    {
+      "soru": "Reaktif güç neden yükün yanında üretilmek istenir?",
+      "secenekler": [
+        "Çünkü yönetmelik yasaklar",
+        "Uzun yolda zayıflar; uzaktan yerel gerilim kolay kurtarılmaz",
+        "Çünkü aktif güçten daha pahalıdır",
+        "Çünkü frekansı bozar"
+      ],
+      "dogru": 1,
+      "neden": "Gerilim yerlidir. Reaktif uzun hatta 'erir'; yakında üretilir."
+    },
+    {
+      "soru": "Kondansatör ile STATCOM farkı (düz cümle) hangisi?",
+      "secenekler": [
+        "İkisi de aynı şeydir",
+        "Kondansatör ucuz ama gerilim düşünce zayıflar; STATCOM hızlıdır",
+        "STATCOM yalnız doğru akımda çalışır",
+        "Kondansatör frekansı tutar, STATCOM akımı keser"
+      ],
+      "dogru": 1,
+      "neden": "Zor / hızlı ihtiyaçta STATCOM; ucuz taban ihtiyaçta kondansatör. MAM STATCOM ailesindendir."
+    },
+    {
+      "soru": "Trafo kademesi (OLTC) reaktif üretir mi?",
+      "secenekler": [
+        "Evet, asıl reaktif kaynağıdır",
+        "Hayır; gerilimi kaydırır, reaktif üretmez",
+        "Yalnızca gece üretir",
+        "Yalnızca kısa devrede üretir"
+      ],
+      "dogru": 1,
+      "neden": "Kademe ayardır, kaynak değildir. Sorunu öteki tarafa kaydırabilir."
+    },
+    {
+      "soru": "\"Sabit güç yükü\" gerilim düşünce neden zor kabul edilir?",
+      "secenekler": [
+        "Çünkü hemen kapanır",
+        "Güç aynı kalsın ister, akımı artırır; gerilimi daha da zorlar",
+        "Çünkü frekansı yükseltir",
+        "Çünkü yalnız ısıtıcıdır"
+      ],
+      "dogru": 1,
+      "neden": "Isıtıcı gibi yükler gerilimle birlikte hafifler; sabit güç hafiflemez."
+    },
+    {
+      "soru": "Dyn11 için doğru düz anlatım hangisi?",
+      "secenekler": [
+        "Bir frekans değeridir",
+        "Dağıtımda yaygın trafo bağlantısı: yüksek taraf üçgen, alçak taraf nötrlü yıldız",
+        "Bir kablo kesitidir",
+        "Ybus satır sayısıdır"
+      ],
+      "dogru": 1,
+      "neden": "D = üçgen (YG), yn = nötrlü yıldız (AG), 11 = açı kayması."
+    },
+    {
+      "soru": "Toprak arızası akımı neden her zaman her tarafta görünmez?",
+      "secenekler": [
+        "Çünkü arıza yoktur",
+        "Üçgen bağlantı bu özel yolu diğer tarafa geçirmez",
+        "Çünkü per-unit yasaktır",
+        "Çünkü frekans 50 değildir"
+      ],
+      "dogru": 1,
+      "neden": "Toprak yolu (sıfır dizi) yalnız topraklı yıldızdan akar; üçgen diğer tarafa geçirmez."
+    }
+  ]
+}

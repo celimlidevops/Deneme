@@ -5,598 +5,213 @@
   "geri": "goruntule.html#01-Kurum-Ilan-ve-Surec%2F00-Alt-Basliklar.md",
   "sorular": [
     {
-      "soru": "Bu klasördeki MAM kısaltması neyin açılımıdır?",
+      "soru": "Panelin cevaplarında aradığı zincir hangi sırayla kurulur?",
       "secenekler": [
-        "TÜBİTAK Marmara Araştırma Merkezi",
-        "Milli Ana Merkez",
-        "Merkezi Analiz Müdürlüğü",
-        "Mühendislik Araştırma Merkezi"
-      ],
-      "dogru": 0,
-      "neden": "MAM, TÜBİTAK Marmara Araştırma Merkezi'dir."
-    },
-    {
-      "soru": "İlan kodu, puan formülü ve 70 barajı hangi dosyadadır?",
-      "secenekler": [
-        "01-Ilan-Puan-ve-Mulakat",
-        "02-MAM-YTBS-SIPS",
-        "04-Tercih-Sebebi",
-        "05-Envanter"
-      ],
-      "dogru": 0,
-      "neden": "Kimlik, zorunlu koşullar, formül, çağrı ve beyan 01 dosyasındadır."
-    },
-    {
-      "soru": "YTBS, SIPS, gerilim bantları ve enterkonneksiyon hangi dosyadadır?",
-      "secenekler": [
-        "02-MAM-YTBS-SIPS-ve-Turkiye-Sistemi",
-        "03-Guncel-Projeler",
-        "01-Ilan-Puan",
-        "05-Envanter"
-      ],
-      "dogru": 0,
-      "neden": "Grup, ürünler, kurumlar, yönetmelik ve komşu bağlantılar 02'dedir."
-    },
-    {
-      "soru": "Doğrulandı, ikincil ve bilinmiyor etiketleri hangi dosyadadır?",
-      "secenekler": [
-        "03-Guncel-Projeler-Yayinlar-Urunler",
-        "02-MAM-YTBS",
-        "04-Tercih-Sebebi",
-        "00-Alt-Basliklar"
-      ],
-      "dogru": 0,
-      "neden": "Bir bilgiyi ne kadar kesin söyleyeceğini 03 belirler."
-    },
-    {
-      "soru": "Tercih sebeplerinin kanıt tablosu hangi dosyadadır?",
-      "secenekler": [
-        "04-Tercih-Sebebi-Kanit-Tablosu",
-        "01-Ilan-Puan",
-        "05-Envanter",
-        "03-Guncel-Projeler"
-      ],
-      "dogru": 0,
-      "neden": "On maddelik kanıt tablosu 04'tedir."
-    },
-    {
-      "soru": "Mülakat öncesi envanterin ayrıntılı hazırlığı hangi dosyadadır?",
-      "secenekler": [
-        "05-Envanter-ve-Online-Degerlendirme",
-        "Yalnızca 01",
-        "02",
-        "03"
-      ],
-      "dogru": 0,
-      "neden": "01 bu turun eleme olduğunu söyler; hazırlık 05'tedir."
-    },
-    {
-      "soru": "İçindekiler başlığı ile 04'teki tablo tercih sebebi sayısında ne der?",
-      "secenekler": [
-        "Başlık dokuz der, tablo on madde sayar; ilan metninden teyit et",
-        "İkisi de on der",
-        "İkisi de dokuz der",
-        "Tablo yirmi madde sayar"
-      ],
-      "dogru": 0,
-      "neden": "Sayfa bu uyuşmazlığı açıkça not eder."
-    },
-    {
-      "soru": "EERA nedir ve nerede anlatılır?",
-      "secenekler": [
-        "Avrupa Enerji Araştırma İttifakı; 02",
-        "Türkiye iletim işletmecisi; 01",
-        "Piyasa operatörü; 03",
-        "Koruma sistemi; 05"
-      ],
-      "dogru": 0,
-      "neden": "European Energy Research Alliance. Üyelik listesi ezberlenmez."
-    },
-    {
-      "soru": "EPİAŞ ile EPDK'yı hangi dosya ayırır?",
-      "secenekler": [
-        "02: EPİAŞ piyasayı işletir, EPDK kural koyar",
-        "01: ikisi de puan formülündedir",
-        "04: ikisi tercih sebebidir",
-        "05: ikisi envanter kurumudur"
-      ],
-      "dogru": 0,
-      "neden": "Elektrik Şebeke Yönetmeliği, EPDK tarafındaki milli kriter kaynağıdır."
-    },
-    {
-      "soru": "İş tanımının dört iş parçasına çözümü hangi maddenin konusudur?",
-      "secenekler": [
-        "Madde 2, dosya 01",
-        "Madde 13, dosya 02",
-        "Madde 8, dosya 05",
-        "Madde 21, dosya 04"
-      ],
-      "dogru": 0,
-      "neden": "Kısa iş tanımı model, analiz, karar ve yazılım diye açılır."
-    },
-    {
-      "soru": "Zorunlu koşullar (bölüm, yaş, 3 yıl, İngilizce) nerede öğrenilir?",
-      "secenekler": [
-        "01",
-        "03",
-        "04'ün yalnızca 90 saniyesi",
-        "00'ın kendisi bir ders değildir"
-      ],
-      "dogru": 0,
-      "neden": "00 bir içindekilerdir; koşulların kendisi 01'dedir."
-    },
-    {
-      "soru": "Özel koşul ek puanının tavanı nerede anlatılır?",
-      "secenekler": [
-        "01, madde 6",
-        "02, büyüklükler",
-        "03, ürün tablosu",
-        "05, yetenek testi"
-      ],
-      "dogru": 0,
-      "neden": "Her ödül 0,3, tavan 0,9. Bu formül 01'dedir."
-    },
-    {
-      "soru": "10 kat çağrı, 70 baraj, asil ve yedek nerede?",
-      "secenekler": [
-        "01, madde 7; 05 de aynı sayıları tekrarlar",
-        "Yalnızca 03",
-        "Yalnızca 04",
-        "02'deki N-1 bölümü"
-      ],
-      "dogru": 0,
-      "neden": "Eleme kuralının asıl yeri 01'dir."
-    },
-    {
-      "soru": "Belge ve beyan riski hangi dosyadadır?",
-      "secenekler": [
-        "01; ayrıntı 04'teki tecrübe uyarısına da bağlanır",
-        "Yalnızca 03",
-        "Yalnızca 05",
-        "02'deki hat listesi"
-      ],
-      "dogru": 0,
-      "neden": "SGK dökümü ve tutarlı hikâye 01 ve 04'te geçer."
-    },
-    {
-      "soru": "Grubun on bir çalışma alanı hangi dosyadadır?",
-      "secenekler": [
-        "02",
-        "01",
-        "05",
-        "04"
-      ],
-      "dogru": 0,
-      "neden": "MAM sayfasındaki tam liste 02'dedir."
-    },
-    {
-      "soru": "STATCOM'un bu ilanla ilişkisi nerede anlatılır?",
-      "secenekler": [
-        "02: tasarım istenmez, modelde temsil edilir",
-        "03: tek ürün odur",
-        "01: puan formülüne girer",
-        "05: envanter sorusudur"
-      ],
-      "dogru": 0,
-      "neden": "İlan kart basmanı istemez."
-    },
-    {
-      "soru": "Kurulu güç, puant, hat ve trafo büyüklüğü nerede?",
-      "secenekler": [
-        "02, madde 18",
-        "03'ün yalnızca yayınları",
-        "05'in 375 A örneği",
-        "01'in kontenjanı"
-      ],
-      "dogru": 0,
-      "neden": "Rakamlar kaynağıyla 02'dedir."
-    },
-    {
-      "soru": "Milli Yük Tevzi ve frekans kontrolünün kurumsal yeri nerede?",
-      "secenekler": [
-        "02, madde 20",
-        "04, madde 10",
-        "05, yetenek testi",
-        "01, İngilizce tablosu"
-      ],
-      "dogru": 0,
-      "neden": "Primer, sekonder ve tersiyer 02'dedir."
-    },
-    {
-      "soru": "Üç dakikalık giriş iskeleti hangi dosyalara bağlanır?",
-      "secenekler": [
-        "02 ve 04",
-        "Yalnızca 05",
-        "Yalnızca 03",
-        "Yalnızca 01'in puan formülü"
-      ],
-      "dogru": 0,
-      "neden": "Madde 21 bu iki dosyayı işaret eder."
-    },
-    {
-      "soru": "00 dosyasının kendisi nedir?",
-      "secenekler": [
-        "İçindekiler: her maddede bir cümle ve dosya bağlantısı",
-        "Puan formülünün hesabı",
-        "Proje tablosu",
-        "Çoktan seçmeli sınavın kendisi"
-      ],
-      "dogru": 0,
-      "neden": "Ders içeriği buraya kopyalanmaz."
-    },
-    {
-      "soru": "İçindekilerde 1. madde ne öğretir?",
-      "secenekler": [
-        "Unvan, ilan ve referans kodu, görev yeri, kontenjan ve son başvuru. Dosya: 01.",
-        "Yalnızca 90 saniyelik metin. Dosya: 05.",
-        "Puan formülünün hesap makinesi ispatı. Dosya: 03.",
-        "RİTM hava modelleri. Dosya: 21."
-      ],
-      "dogru": 0,
-      "neden": "00 bir içindekilerdir; dersin kendisi bağlı dosyadadır."
-    },
-    {
-      "soru": "İçindekilerde 2. madde ne öğretir?",
-      "secenekler": [
-        "Yalnızca 90 saniyelik metin. Dosya: 05.",
-        "Kısa iş tanımının somut iş parçaları: analiz, yazılım, iletim, dağıtım. Dosya: 01.",
-        "RİTM hava modelleri. Dosya: 21.",
-        "Puan formülünün hesap makinesi ispatı. Dosya: 03."
+        "Yazılım → fizik → karar → hesap",
+        "Fizik → hesap → karar → yazılım",
+        "Hesap → fizik → yazılım → karar",
+        "Karar → hesap → fizik → yazılım"
       ],
       "dogru": 1,
-      "neden": "00 bir içindekilerdir; dersin kendisi bağlı dosyadadır."
+      "neden": "Önce problem fizikten kurulur, sayısal yönteme dökülür, sonuç işletme kararına çevrilir ve bu karar çalışan bir yazılıma bağlanır. Halkalardan biri eksikse cevap havada kalır."
     },
     {
-      "soru": "İçindekilerde 3. madde ne öğretir?",
+      "soru": "Bir aday mülakatta yalnızca Newton-Raphson'ın matematiğini anlatıp durursa hangi halka eksik kalır?",
       "secenekler": [
-        "Bölüm, yaş, 3 yıl, İngilizce eşikleri ve genel şartlar. Dosya: 01.",
-        "RİTM hava modelleri. Dosya: 21.",
-        "Puan formülünün hesap makinesi ispatı. Dosya: 03.",
-        "Yalnızca 90 saniyelik metin. Dosya: 05."
-      ],
-      "dogru": 0,
-      "neden": "00 bir içindekilerdir; dersin kendisi bağlı dosyadadır."
-    },
-    {
-      "soru": "İçindekilerde 4. madde ne öğretir?",
-      "secenekler": [
-        "Puan formülünün hesap makinesi ispatı. Dosya: 03.",
-        "Tercih sebeplerinin mülakat karşılığı; başlık dokuz, tablo on diyor. Dosya: 04.",
-        "Yalnızca 90 saniyelik metin. Dosya: 05.",
-        "RİTM hava modelleri. Dosya: 21."
-      ],
-      "dogru": 1,
-      "neden": "00 bir içindekilerdir; dersin kendisi bağlı dosyadadır."
-    },
-    {
-      "soru": "İçindekilerde 5. madde ne öğretir?",
-      "secenekler": [
-        "Puan formülünün hesap makinesi ispatı. Dosya: 03.",
-        "RİTM hava modelleri. Dosya: 21.",
-        "Yalnızca 90 saniyelik metin. Dosya: 05.",
-        "Tecrübeli araştırmacı puan formülü ve tecrübe teriminin davranışı. Dosya: 01."
-      ],
-      "dogru": 3,
-      "neden": "00 bir içindekilerdir; dersin kendisi bağlı dosyadadır."
-    },
-    {
-      "soru": "İçindekilerde 6. madde ne öğretir?",
-      "secenekler": [
-        "Yalnızca 90 saniyelik metin. Dosya: 05.",
-        "Ödül ve derecelerin ek puanı ile tavanı. Dosya: 01.",
-        "Puan formülünün hesap makinesi ispatı. Dosya: 03.",
-        "RİTM hava modelleri. Dosya: 21."
-      ],
-      "dogru": 1,
-      "neden": "00 bir içindekilerdir; dersin kendisi bağlı dosyadadır."
-    },
-    {
-      "soru": "İçindekilerde 7. madde ne öğretir?",
-      "secenekler": [
-        "Puan formülünün hesap makinesi ispatı. Dosya: 03.",
-        "RİTM hava modelleri. Dosya: 21.",
-        "10 kat çağrı, 70 puan, asil ve yedek. Dosya: 01.",
-        "Yalnızca 90 saniyelik metin. Dosya: 05."
+        "Fizik halkası; matematik fizik sayılmaz",
+        "Hiçbiri; yöntem doğruysa cevap tamdır",
+        "Karar ve yazılım halkaları; sonucun işletmeye ve ürüne bağı yok",
+        "Hesap halkası; Newton-Raphson bir model olduğundan hesap sayılmaz"
       ],
       "dogru": 2,
-      "neden": "00 bir içindekilerdir; dersin kendisi bağlı dosyadadır."
+      "neden": "Panel yöntemi bilmeni yeterli görmez; sonucun hangi kararı değiştirdiğini ve bunun başkasının kullanacağı yazılıma nasıl konduğunu da ister."
     },
     {
-      "soru": "İçindekilerde 8. madde ne öğretir?",
+      "soru": "İlandaki iş cümlesi \"iletim ve dağıtım şebekeleri için analiz ve yazılım\"dır. Bu cümleden çıkan doğru sonuç hangisidir?",
       "secenekler": [
-        "Yalnızca 90 saniyelik metin. Dosya: 05.",
-        "RİTM hava modelleri. Dosya: 21.",
-        "Mülakat öncesi testlerin olası biçimleri. Dosya: 01 ve 05.",
-        "Puan formülünün hesap makinesi ispatı. Dosya: 03."
+        "Analiz asıl iş, yazılım yan beceridir; kod sonradan öğrenilir",
+        "İletim asıl iş, dağıtım yalnızca ek bilgidir; 34,5 kV sorulmaz",
+        "Yazılım asıl iş, analiz öğrenilebilir; grup üretim yazılımı yazar",
+        "İki çift de birlikte istenir; birini boş bırakmak eksik cevaptır"
+      ],
+      "dogru": 3,
+      "neden": "İlan 'analiz ve yazılım'ı yan yana, 'iletim ve dağıtım'ı yan yana koyar. Yalnızca 400 kV anlatıp 34,5 kV'yi atlamak ya da kodu 'öğrenirim' diye geçiştirmek eksik cevaptır."
+    },
+    {
+      "soru": "Dört katmandan hangisi ilandaki tercih sebeplerinden 'ekonomik işletme, planlama, yenilenebilir entegrasyon' maddelerini karşılar?",
+      "secenekler": [
+        "Karar katmanı",
+        "Şebeke fiziği katmanı",
+        "Analiz katmanı",
+        "Yazılım katmanı"
+      ],
+      "dogru": 0,
+      "neden": "Katmanlar: fizik (temeller, kısa devre, koruma), analiz (yük akışı, N-1, kararlılık, kestirim), karar (ekonomik işletme, planlama, optimizasyon, yenilenebilir) ve yazılım."
+    },
+    {
+      "soru": "N-1 ölçütünün doğru tanımı hangisidir?",
+      "secenekler": [
+        "Şebekeden bir eleman eksiltilerek maliyetin düşürülmesi",
+        "Herhangi tek bir eleman devre dışıyken sistemin güvenli kalması",
+        "Şebekede en az bir jeneratörün sürekli yedekte tutulması",
+        "Bir arızadan sonra bir dakika içinde frekansın toparlanması"
+      ],
+      "dogru": 1,
+      "neden": "N eleman varken herhangi birinin (hat, trafo, santral) kaybında gerilim, frekans, termik limit ve kararlılığın korunması şartıdır. Güvenlik analizinin temelidir."
+    },
+    {
+      "soru": "'Dijital ikiz' bu hazırlıkta ne anlama gelir?",
+      "secenekler": [
+        "Şebekenin yedek SCADA sunucusunda tutulan kopyası",
+        "Şebekenin bire bir ölçekli fiziksel laboratuvar maketi",
+        "Ölçümlerle sürekli güncellenen, senaryo koşulabilen şebeke modeli",
+        "Aynı analiz yazılımının iki ayrı sunucuda çalışan kopyası"
       ],
       "dogru": 2,
-      "neden": "00 bir içindekilerdir; dersin kendisi bağlı dosyadadır."
+      "neden": "Dijital ikiz pazarlama sözü değildir: ölçümle güncellenen ve 'şimdi ne olur, ne yapmalı' sorusuna cevap veren hesap kopyasıdır. YTBS'nin temel yeteneklerinden biridir."
     },
     {
-      "soru": "İçindekilerde 9. madde ne öğretir?",
+      "soru": "Teknik katmanların yanında panelin ölçeceği üç davranış ölçütü hangi şıkta doğru verilmiştir?",
       "secenekler": [
-        "Puan formülünün hesap makinesi ispatı. Dosya: 03.",
-        "Yalnızca 90 saniyelik metin. Dosya: 05.",
-        "İstenen belgeler ve beyanın mülakat anlatısıyla aynı olması. Dosya: 01.",
-        "RİTM hava modelleri. Dosya: 21."
+        "Araştırmaya istek, analitik problem çözme, koordinasyon",
+        "Liderlik, satış becerisi, akıcı İngilizce ve sunum tekniği",
+        "Hız, disiplin, yöneticilik tecrübesi ve kurumsal sadakat",
+        "Sunum becerisi, ezber gücü, özgüven"
+      ],
+      "dogru": 0,
+      "neden": "İlanın tercih sebeplerindeki davranışsal maddeler bunlardır. Ayrıca lisansüstü motivasyonu ayrı sorulur."
+    },
+    {
+      "soru": "Hazırlık klasörünün çalışma sırasında neden önce 01 numaralı klasör gelir?",
+      "secenekler": [
+        "En kısa klasör olduğu için ısınma görevi görür",
+        "Kurum ve sistem bilinmeden teknik cevap havada kalır",
+        "Diğer klasörler bu klasördeki terimlerle açılır",
+        "Panel yalnızca bu klasörün içeriğinden soru sorar"
+      ],
+      "dogru": 1,
+      "neden": "Teknik cevabın değeri, grubun ürünlerine (YTBS, SIPS) ve TEİAŞ'ın işletme kurallarına bağlanınca ortaya çıkar. Bu bağlam 01'dedir."
+    },
+    {
+      "soru": "Ezber rakam söylerken bu hazırlığın koyduğu kural nedir?",
+      "secenekler": [
+        "Rakamı yuvarlayıp söyle; panel ayrıntı istemez",
+        "Rakamı hiç söyleme; doğrudan kaynağa yönlendir",
+        "Rakamla birlikte ayını ve kaynağını söyle",
+        "Rakamı yalnızca sorulursa, tam ondalığıyla söyle"
       ],
       "dogru": 2,
-      "neden": "00 bir içindekilerdir; dersin kendisi bağlı dosyadadır."
+      "neden": "Kurulu güç her ay değişir. '2025 sonunda 122.518,6 MW, Eylül 2026 sonu 127.355,2 MW' gibi tarihli söylemek rakamı ezberlediğini değil, kaynağını bildiğini gösterir."
     },
     {
-      "soru": "İçindekilerde 10. madde ne öğretir?",
+      "soru": "2025 yılının ani puantı ne zaman ve ne kadardı?",
       "secenekler": [
-        "Puan formülünün hesap makinesi ispatı. Dosya: 03.",
-        "RİTM hava modelleri. Dosya: 21.",
-        "Yalnızca 90 saniyelik metin. Dosya: 05.",
-        "Grubun ne iş yaptığı ve hangi birime bağlı olduğu. Dosya: 02 ve 03."
-      ],
-      "dogru": 3,
-      "neden": "00 bir içindekilerdir; dersin kendisi bağlı dosyadadır."
-    },
-    {
-      "soru": "İçindekilerde 11. madde ne öğretir?",
-      "secenekler": [
-        "RİTM hava modelleri. Dosya: 21.",
-        "Yalnızca 90 saniyelik metin. Dosya: 05.",
-        "Puan formülünün hesap makinesi ispatı. Dosya: 03.",
-        "Grubun saydığı on bir çalışma alanı. Dosya: 02."
-      ],
-      "dogru": 3,
-      "neden": "00 bir içindekilerdir; dersin kendisi bağlı dosyadadır."
-    },
-    {
-      "soru": "İçindekilerde 12. madde ne öğretir?",
-      "secenekler": [
-        "RİTM hava modelleri. Dosya: 21.",
-        "Puan formülünün hesap makinesi ispatı. Dosya: 03.",
-        "Yalnızca 90 saniyelik metin. Dosya: 05.",
-        "İşin hangi kanallardan çıktığı ve EERA üyeliği. Dosya: 02."
-      ],
-      "dogru": 3,
-      "neden": "00 bir içindekilerdir; dersin kendisi bağlı dosyadadır."
-    },
-    {
-      "soru": "İçindekilerde 13. madde ne öğretir?",
-      "secenekler": [
-        "YTBS platformu ve SCADA'dan farkı. Dosya: 02.",
-        "RİTM hava modelleri. Dosya: 21.",
-        "Yalnızca 90 saniyelik metin. Dosya: 05.",
-        "Puan formülünün hesap makinesi ispatı. Dosya: 03."
-      ],
-      "dogru": 0,
-      "neden": "00 bir içindekilerdir; dersin kendisi bağlı dosyadadır."
-    },
-    {
-      "soru": "İçindekilerde 14. madde ne öğretir?",
-      "secenekler": [
-        "RİTM hava modelleri. Dosya: 21.",
-        "SIPS ve klasik röleden farkı. Dosya: 02.",
-        "Yalnızca 90 saniyelik metin. Dosya: 05.",
-        "Puan formülünün hesap makinesi ispatı. Dosya: 03."
+        "Ocak 2025, 122.518,6 MW",
+        "Temmuz 2025, 60.414 MW",
+        "Ağustos 2025, 127.355,2 MW",
+        "Temmuz 2025, 360,9 MW"
       ],
       "dogru": 1,
-      "neden": "00 bir içindekilerdir; dersin kendisi bağlı dosyadadır."
+      "neden": "Ani puant yıl içindeki en yüksek anlık tüketimdir: Temmuz 2025'te 60.414 MW. 122.518,6 MW ve 127.355,2 MW kurulu güç değerleridir; 360,9 ise TWh cinsinden yıllık tüketimdir."
     },
     {
-      "soru": "İçindekilerde 15. madde ne öğretir?",
+      "soru": "Kurulu güç ile ani puant arasındaki fark nedir?",
       "secenekler": [
-        "RİTM hava modelleri. Dosya: 21.",
-        "STATCOM'un analiz işiyle bağı. Dosya: 02.",
-        "Yalnızca 90 saniyelik metin. Dosya: 05.",
-        "Puan formülünün hesap makinesi ispatı. Dosya: 03."
-      ],
-      "dogru": 1,
-      "neden": "00 bir içindekilerdir; dersin kendisi bağlı dosyadadır."
-    },
-    {
-      "soru": "İçindekilerde 16. madde ne öğretir?",
-      "secenekler": [
-        "TEİAŞ, EPİAŞ, EPDK, dağıtım ve üretim. Dosya: 02.",
-        "Puan formülünün hesap makinesi ispatı. Dosya: 03.",
-        "Yalnızca 90 saniyelik metin. Dosya: 05.",
-        "RİTM hava modelleri. Dosya: 21."
-      ],
-      "dogru": 0,
-      "neden": "00 bir içindekilerdir; dersin kendisi bağlı dosyadadır."
-    },
-    {
-      "soru": "İçindekilerde 17. madde ne öğretir?",
-      "secenekler": [
-        "Gerilim bantları, planlama kriteri ve N-1. Dosya: 02.",
-        "Yalnızca 90 saniyelik metin. Dosya: 05.",
-        "Puan formülünün hesap makinesi ispatı. Dosya: 03.",
-        "RİTM hava modelleri. Dosya: 21."
-      ],
-      "dogru": 0,
-      "neden": "00 bir içindekilerdir; dersin kendisi bağlı dosyadadır."
-    },
-    {
-      "soru": "İçindekilerde 18. madde ne öğretir?",
-      "secenekler": [
-        "Puan formülünün hesap makinesi ispatı. Dosya: 03.",
-        "RİTM hava modelleri. Dosya: 21.",
-        "Yalnızca 90 saniyelik metin. Dosya: 05.",
-        "Kurulu güç, puant, hat ve trafo büyüklüğü. Dosya: 02."
+        "Kurulu güç yıllık toplam tüketim, puant ise aylık ortalama tüketimdir",
+        "Kurulu güç bir anlık ölçüm, puant ise yıl boyunca ölçülen ortalamadır",
+        "İkisi aynı büyüklüğün farklı birimle yazımıdır",
+        "Kurulu güç toplam etiket kapasitesi, puant en yüksek anlık tüketimdir"
       ],
       "dogru": 3,
-      "neden": "00 bir içindekilerdir; dersin kendisi bağlı dosyadadır."
+      "neden": "Kurulu güç bir tür nominal değerdir: hepsi aynı anda tam çalışsa ulaşılacak üretim. Puant ise gerçekte ölçülen en yüksek anlık yüktür."
     },
     {
-      "soru": "İçindekilerde 19. madde ne öğretir?",
+      "soru": "TEİAŞ bu hazırlıkta hangi rolde geçer?",
       "secenekler": [
-        "ENTSO-E, komşu hatlar, senkron ve HVDC farkı. Dosya: 02.",
-        "RİTM hava modelleri. Dosya: 21.",
-        "Yalnızca 90 saniyelik metin. Dosya: 05.",
-        "Puan formülünün hesap makinesi ispatı. Dosya: 03."
-      ],
-      "dogru": 0,
-      "neden": "00 bir içindekilerdir; dersin kendisi bağlı dosyadadır."
-    },
-    {
-      "soru": "İçindekilerde 20. madde ne öğretir?",
-      "secenekler": [
-        "Şebekeyi gerçek zamanda kim yönetir, frekans hangi kademeyle toparlanır. Dosya: 02.",
-        "RİTM hava modelleri. Dosya: 21.",
-        "Puan formülünün hesap makinesi ispatı. Dosya: 03.",
-        "Yalnızca 90 saniyelik metin. Dosya: 05."
-      ],
-      "dogru": 0,
-      "neden": "00 bir içindekilerdir; dersin kendisi bağlı dosyadadır."
-    },
-    {
-      "soru": "İçindekilerde 21. madde ne öğretir?",
-      "secenekler": [
-        "RİTM hava modelleri. Dosya: 21.",
-        "Puan formülünün hesap makinesi ispatı. Dosya: 03.",
-        "Üç dakikalık girişin sırası ve gruba köprü. Dosya: 02 ve 04.",
-        "Yalnızca 90 saniyelik metin. Dosya: 05."
+        "Gün öncesi ve gün içi piyasayı işleten piyasa operatörü",
+        "Lisans, tarife ve yönetmelik çıkaran düzenleyici kurum",
+        "İletim şebekesini işleten şirket ve grubun ana müşterisi",
+        "MAM'ın bağlı olduğu üst araştırma kurumu"
       ],
       "dogru": 2,
-      "neden": "00 bir içindekilerdir; dersin kendisi bağlı dosyadadır."
+      "neden": "TEİAŞ, Türkiye Elektrik İletim A.Ş.'dir. YTBS ve SIPS onun için geliştirilmiştir. Piyasa operatörü EPİAŞ, düzenleyici EPDK'dır."
     },
     {
-      "soru": "Bu klasörün anlattığı kurum hangisidir?",
+      "soru": "SIPS'in işlevi hangi şıkta doğru anlatılmıştır?",
       "secenekler": [
-        "MAM, yani TÜBİTAK Marmara Araştırma Merkezi",
-        "EPİAŞ",
-        "EPDK",
-        "TEİAŞ Milli Yük Tevzi"
-      ],
-      "dogru": 0,
-      "neden": "Klasör ilanı ve kurumu tanıtır."
-    },
-    {
-      "soru": "00 sayfasındaki SIPS açılımı nedir?",
-      "secenekler": [
-        "Static Integrity Power Switch",
-        "System Integrity Protection Scheme, Akıllı Koruma Sistemi",
-        "Sistem İçi Piyasa Sayacı",
-        "Senkron İletim Planlama Sistemi"
+        "Tek bir hattı aşırı akımdan koruyan hızlı röle",
+        "Geniş alan ölçümüyle zincirleme çökmeyi önleyen koruma sistemi",
+        "Üretimi frekansa göre otomatik ayarlayan kontrol sistemi",
+        "Sahadan ölçüm toplayıp kumanda gönderen sistem"
       ],
       "dogru": 1,
-      "neden": "Açılım içindekiler tablosunda parantezle verilir."
+      "neden": "SIPS, System Integrity Protection Scheme'dir. Röle tek ekipmanı korur; SIPS sistem düzeyinde jeneratör veya yük atma gibi eylemlerle bütünlüğü korur. Üçüncü şık AGC, dördüncüsü SCADA'dır."
     },
     {
-      "soru": "00 sayfasında STATCOM nasıl açılır?",
+      "soru": "YTBS kısaltması neyi anlatır?",
       "secenekler": [
-        "Sistem talep ölçer",
-        "Statik iletim sayacı",
-        "Senkron trafo koruma modülü",
-        "Statik senkron kompanzatör"
-      ],
-      "dogru": 3,
-      "neden": "İngilizcesi Static Synchronous Compensator'dır; o açılım 02'dedir."
-    },
-    {
-      "soru": "SCADA'nın 00'daki açılımı nedir?",
-      "secenekler": [
-        "System Control and Dispatch Application",
-        "Static Compensation and Data Archive",
-        "Senkron Kontrol ve Dağıtım Analizi",
-        "Supervisory Control and Data Acquisition, Denetleyici Kontrol ve Veri Toplama"
-      ],
-      "dogru": 3,
-      "neden": "YTBS maddesinde SCADA'dan farkı öğrenilir."
-    },
-    {
-      "soru": "N-1, 00 sayfasında ne demektir?",
-      "secenekler": [
-        "Bir şebeke elemanı devre dışıyken",
-        "İlk nükleer ünite",
-        "Nominal eksi bir hertz",
-        "Bir ülkenin hat kapasitesi"
-      ],
-      "dogru": 0,
-      "neden": "Ayrıntı 02'dedir."
-    },
-    {
-      "soru": "HVDC'nin 00'daki açılımı nedir?",
-      "secenekler": [
-        "Hybrid Voltage Dynamic Control",
-        "Harmonic Voltage Data Channel",
-        "High Voltage Distribution Circuit",
-        "High Voltage Direct Current, Yüksek Gerilim Doğru Akım"
-      ],
-      "dogru": 3,
-      "neden": "Enterkonneksiyon maddesindedir."
-    },
-    {
-      "soru": "ENTSO-E'nin 00'daki açılımı nedir?",
-      "secenekler": [
-        "European Network of Trade and Settlement Operators",
-        "Elektrik Nakil ve Senkron Operasyon Enstitüsü",
-        "Energy National Transmission System Office",
-        "European Network of Transmission System Operators for Electricity"
-      ],
-      "dogru": 3,
-      "neden": "Türkçesi Avrupa Elektrik İletim Sistemi İşletmecileri Ağı'dır."
-    },
-    {
-      "soru": "EERA'nın 00'daki açılımı nedir?",
-      "secenekler": [
-        "Enerji Etüt ve Araştırma Ajansı",
-        "Elektrik Enterkonneksiyon Rezerv Anlaşması",
-        "European Energy Research Alliance, Avrupa Enerji Araştırma İttifakı",
-        "European Electricity Regulation Authority"
+        "Yüksek Teknoloji Bilgi Sistemi; MAM'ın genel veri tabanı",
+        "Yük Tahmin Benzetim Sistemi; TEİAŞ'ın tahmin aracı",
+        "Yük Tevzi Bilgi Sistemi; TEİAŞ için enerji yönetim platformu",
+        "Yenilenebilir Takip ve Bağlantı Sistemi; EPDK'nın lisans aracı"
       ],
       "dogru": 2,
-      "neden": "Üyelik listesi ezberlenmez."
+      "neden": "Yük tevzi, üretim ile tüketimin dağıtılıp dengelenmesidir. YTBS dijital ikiz, güvenlik analizi, tahmin ve optimizasyon yapan platformdur."
     },
     {
-      "soru": "EPİAŞ'ın açılımı nedir?",
+      "soru": "Bu hazırlık klasöründe bilinçli olarak yer almayan ve mülakatta da bildiğin iddia edilmemesi gereken bilgi hangisidir?",
       "secenekler": [
-        "Enterkonneksiyon Planlama İşletmesi",
-        "Elektrik Piyasası İzleme Ajansı",
-        "Enerji Planlama ve İletim A.Ş.",
-        "Enerji Piyasaları İşletme A.Ş."
-      ],
-      "dogru": 3,
-      "neden": "Piyasa operatörüdür."
-    },
-    {
-      "soru": "EPDK'nın açılımı nedir?",
-      "secenekler": [
-        "Elektrik Piyasası Dağıtım Kurumu",
-        "Enerji Piyasası Düzenleme Kurumu",
-        "Enerji Planlama Daire Kurulu",
-        "Enterkonneksiyon Planlama Denetim Kurulu"
-      ],
-      "dogru": 1,
-      "neden": "Lisans, tarife ve yönetmelik buradadır."
-    },
-    {
-      "soru": "TEİAŞ'ın açılımı nedir?",
-      "secenekler": [
-        "Toptan Elektrik İşletme A.Ş.",
-        "Türkiye Elektrik İletim A.Ş.",
-        "Türkiye Enerji İzleme A.Ş.",
-        "Teknik Etüt ve Analiz Şirketi"
-      ],
-      "dogru": 1,
-      "neden": "İletim sistem işletmecisidir."
-    },
-    {
-      "soru": "Madde 4'teki sayı uyarısı nedir?",
-      "secenekler": [
-        "Başlık dokuz der, 04'teki tablo on madde sayar; ilan metninden teyit et",
-        "Sayı uyarısı yoktur",
-        "İkisi de on bir der",
-        "Tablo üç madde sayar"
+        "YTBS'nin iç mimarisi ve gerçek röle ayarları",
+        "TEİAŞ faaliyet raporundaki kurulu güç değerleri",
+        "Elektrik Şebeke Yönetmeliği'ndeki gerilim bantları",
+        "MAM'ın kendi sayfasında yayımladığı ürün yetenekleri"
       ],
       "dogru": 0,
-      "neden": "Bu uyuşmazlık içindekilerde açıkça yazılır."
+      "neden": "Gizli TEİAŞ modeli, gerçek röle ayarı, iç yazılım kodu ve personel bilgisi hazırlıkta yoktur. Ürünleri MAM'ın yayımladığı yeteneklerle anlat; içerideki mimariyi bildiğini iddia etme."
     },
     {
-      "soru": "00 sayfası dersin kendisi midir?",
+      "soru": "Her teknik klasördeki 90 saniye kutusu ne işe yarar?",
       "secenekler": [
-        "Hayır, içindekilerdir; her maddede bir cümle ve dosya bağlantısı vardır",
-        "Evet, puan formülü burada hesaplanır",
-        "Evet, proje tablosu buradadır",
-        "Evet, 90 saniyelik metin yalnızca buradadır"
+        "Konunun ezberlenecek formül listesidir",
+        "Mülakatta takılınca kullanılacak sözlü iskelettir",
+        "Panelin soracağı soruların tahmini listesidir",
+        "Online sınavda açık tutulacak özet metindir"
+      ],
+      "dogru": 1,
+      "neden": "Kutu sayfanın sözlü özetidir. Sesli söyleyerek çalışmak, mülakatta anlatımın akmasını sağlar."
+    },
+    {
+      "soru": "Online teknik sınav ya da envanter konusunda ilan ne der?",
+      "secenekler": [
+        "Yapılmayacağını açıkça yazar",
+        "Yalnızca aday araştırmacı ilanında geçer",
+        "Mülakattan önce gelebileceğini yazar; biçimini yazmaz",
+        "Mülakattan sonra, atamadan önce yapılacağını yazar"
+      ],
+      "dogru": 2,
+      "neden": "İlanın (f) maddesi 'tabi tutulabileceklerdir' der. Soru bankasındaki kısa cevaplar ve ornekler klasörü bu sınav içindir."
+    },
+    {
+      "soru": "EERA nedir ve bu grubun EERA ile ilişkisi mülakatta nasıl kullanılır?",
+      "secenekler": [
+        "Avrupa Enerji Araştırma İttifakı; tek cümlede işbirliği olarak anılır",
+        "Avrupa iletim işletmecileri ağı; senkron bağlantı buradan anlatılır",
+        "Avrupa enerji düzenleyicisi; lisans kurallarının kaynağı olarak anılır",
+        "Avrupa yük tevzi merkezi; AGC'nin kurumsal yeri olarak anılır"
       ],
       "dogru": 0,
-      "neden": "Ayrıntı bağlı sayfadadır."
+      "neden": "EERA, European Energy Research Alliance'tır. Grup Smart Grids ve Hydropower üyesidir. İkinci şık ENTSO-E'nin tanımıdır."
+    },
+    {
+      "soru": "Klasörde geçen 'P–δ ve Q–V' kısaltmaları hangi temel ilişkiyi anlatır?",
+      "secenekler": [
+        "Aktif güç gerilimle, reaktif güç frekansla ilişkilidir",
+        "Aktif güç yük açısıyla, reaktif güç gerilimle ilişkilidir",
+        "Aktif güç akımla, reaktif güç dirençle ilişkilidir",
+        "Aktif güç kayıpla, reaktif güç maliyetle ilişkilidir"
+      ],
+      "dogru": 1,
+      "neden": "Güç sistemleri temellerinin iki sütunu: P akışı açı farkıyla, Q akışı gerilim farkıyla sürülür. Bu ilişki yük akışının ayrık hızlı çözümünü de açıklar."
     }
   ]
 }

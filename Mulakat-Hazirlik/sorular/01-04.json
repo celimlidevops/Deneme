@@ -5,433 +5,202 @@
   "geri": "goruntule.html#01-Kurum-Ilan-ve-Surec%2F04-Tercih-Sebebi-Kanit-Tablosu.md",
   "sorular": [
     {
-      "soru": "Tercih sebebi ne demektir?",
+      "soru": "'Tercih sebebi' ile 'zorunlu koşul' arasındaki fark nedir?",
       "secenekler": [
-        "Mülakat barajı",
-        "Puan formülünün kendisi",
-        "Zorunlu olmayan ama adayı öne çıkaran özellik",
-        "Başvuruyu geçersiz kılan şart"
+        "Tercih sebebi sağlanmazsa başvuru geçersizdir; zorunlu koşul puan getirir",
+        "Zorunlu koşul sağlanmazsa başvuru geçersizdir; tercih sebebi adayı öne çıkarır",
+        "İkisi aynıdır; ilan farklı başlıklarla iki kez yazar",
+        "Tercih sebebi yalnızca formül puanına ek puan olarak eklenir"
       ],
-      "dogru": 2,
-      "neden": "İlanda on tercih sebebi vardır. İçindekiler başlığı dokuz diyebilir; tablo on sayar."
+      "dogru": 1,
+      "neden": "Bölüm, yaş, 3 yıl, İngilizce zorunludur. On tercih sebebi ise panelin her biri için kanıt aradığı, puanı belirleyen özelliklerdir."
     },
     {
-      "soru": "Tablo nasıl kullanılır?",
+      "soru": "Boş olduğun bir tercih sebebini dolu göstermeye çalışmak neden mülakatta en hızlı puan kaybettiren şeydir?",
       "secenekler": [
-        "Şablondur; yıl, unvan ve proje adı hazır yazılmaz, özgeçmişle doldurulur",
-        "Aynen okunur",
-        "Boş maddeler dolu gösterilir",
-        "Yalnızca güçlü maddeler kalır"
+        "Çünkü ilan metni bunu açıkça yasaklar",
+        "Çünkü panel alanın içindendir; tek takip sorusu yeter",
+        "Çünkü envanter sonucu panelin önünde olur",
+        "Çünkü SGK dökümü her maddeyi tek tek gösterir ve panel bunu okur"
+      ],
+      "dogru": 1,
+      "neden": "Strateji: güçlü maddeyi somut kanıtla söyle, boş maddeyi açıkça boş söyle ve üstüne ne koyduğunu göster, aradaki köprüyü kur."
+    },
+    {
+      "soru": "Üç cümlelik stratejinin 'köprü' cümlesi nedir?",
+      "secenekler": [
+        "Üretim yazılımı disiplinini analiz yazılımına taşımak",
+        "Güç sistemi derslerini yeniden alıp notu yükseltmek",
+        "Alanı öğrenene kadar yalnızca yazılım tarafında kalmak",
+        "Liderlik tecrübesini yöneticilik olarak sunmak"
       ],
       "dogru": 0,
-      "neden": "Boş maddeyi dolu göstermek en hızlı puan kaybıdır."
+      "neden": "Panel alan bilgisini öğretebilir; dürüstlüğü ve öğrenme hızını öğretemez. Köprü, eksik alan bilgisinin üstüne ne koyacağını gösterir."
     },
     {
-      "soru": "Üç cümlelik strateji nedir?",
+      "soru": "Yazılım geliştirme tecrübesinin ilanın '3 yıl mesleki tecrübe' tanımına sayılıp sayılmayacağına kim karar verir?",
       "secenekler": [
-        "Üçünü de dolu say",
-        "Güçlüyü kanıtla, boşu açık söyle ve ne yaptığını göster, yazılım disiplinini analize taşı",
-        "Yalnızca liderlik anlat",
-        "Boş maddeleri atla"
+        "Aday; SGK dökümünü kendi yorumlayarak",
+        "Bu hazırlık notlarının yazarı; tabloya göre",
+        "Kurum; emin değilsen İnsan Kaynakları'na sorulur",
+        "Panel; mülakat sırasında anlatıma göre"
+      ],
+      "dogru": 2,
+      "neden": "Tanım: 'belirtilen alanlarda tam süreli çalışılan süre'. Yorum sana ya da bana ait değildir. Adres: mam.ik@tubitak.gov.tr."
+    },
+    {
+      "soru": "SGK dökümündeki her işyeri için yazılacak satırda 'enerji veya şebekeyle ilişkisi' sütunu nasıl doldurulur?",
+      "secenekler": [
+        "Yalnızca 'var' veya 'yok' yazılır; ara durum kabul edilmez",
+        "'var / dolaylı / yok' işaretlenir; 'dolaylı' tek cümleyle açıklanır",
+        "Her işyeri için 'dolaylı' yazılır; yazılım her sektöre dokunur",
+        "Sütun boş bırakılır; panel sorarsa sözlü anlatılır"
       ],
       "dogru": 1,
-      "neden": "Panel alan bilgisini öğretebilir; dürüstlüğü öğretemez."
+      "neden": "Mülakatta 'bu üç yılın hangisi şebekeyle ilgili' sorusu gelebilir. Cevabın SGK dökümü ve çalışma belgesiyle aynı olmalıdır."
     },
     {
-      "soru": "Üçüncü özel koşul neyi şart koşar?",
+      "soru": "Hazır cevap iskeletinde 'getirdiğim şey' olarak ne söylenir?",
       "secenekler": [
-        "Herhangi bir işte 3 yıl",
-        "Yalnızca ders",
-        "1 yıl yazılım",
-        "İş tanımındaki alanlarda en az 3 tam yıl"
+        "Güç sistemi analizinde uzun yıllara dayanan doğrudan iş tecrübesi",
+        "PowerFactory ve PSS/E'de ileri düzey, sertifikalı kullanım",
+        "Analiz kodunu test edilebilir ve servis edilebilir kılma disiplini",
+        "Alanla ilgili tamamlanmış bir lisansüstü tez"
       ],
-      "dogru": 3,
-      "neden": "İş tanımı iletim ve dağıtım için analiz ve yazılım geliştirmedir."
+      "dogru": 2,
+      "neden": "İskelet: tecrübe yazılımda; güç sistemi analizinde iş tecrübesi yok; lisans dersleri var; son haftalarda yük akışı, durum kestirimi ve ekonomik dağıtım sıfırdan kodlanıp elle örneklerle doğrulandı."
     },
     {
-      "soru": "Yazılım tecrübesi bu 3 yıla sayılır mı?",
+      "soru": "'Ekonomik dağıtım' bu sayfada nasıl tanımlanır?",
       "secenekler": [
-        "Otomatik sayılır",
-        "Kurumun kararıdır; senin yorumun değildir",
-        "Yalnızca İngilizce ile sayılır",
-        "Hiç sayılmaz"
+        "Elektriği tüketicilere en ucuz hat üzerinden ulaştırmak",
+        "Talebi santraller arasında en düşük maliyetle paylaştırmak",
+        "Dağıtım şirketlerinin uygulayacağı tarifeyi belirlemek",
+        "Yük akışını en az iterasyon sayısıyla çözmek"
       ],
       "dogru": 1,
-      "neden": "Beyan, SGK dökümü ve çalışma belgesiyle karşılaştırılır."
+      "neden": "Üç terim: yük akışı (bara gerilimleri ve hat akışları), durum kestirimi (gürültülü ölçümden en olası durum), ekonomik dağıtım (en düşük maliyetli üretim paylaşımı)."
     },
     {
-      "soru": "SGK tablosunda ilişki nasıl işaretlenir?",
+      "soru": "Tabloda 'büyük ihtimalle boş' sayılan üç madde hangileridir?",
       "secenekler": [
-        "Tablo istenmez",
-        "Hepsi var yazılır",
-        "Dolaylı gizlenir",
-        "var / dolaylı / yok; yok ise mülakatta da yok de"
+        "4 (programlama), 8 (öğrenme motivasyonu), 10 (koordinasyon)",
+        "2 (analiz dersleri), 5 (dağıtım ve koruma dersleri), 7 (lisansüstü)",
+        "1 (şebeke yazılımı projesi), 3 (güvenlik ve kestirim), 6 (analiz yazılımı)",
+        "3 (güvenlik ve kestirim), 7 (lisansüstü), 9 (araştırmaya istek)"
       ],
-      "dogru": 3,
-      "neden": "Emin değilsen mam.ik@tubitak.gov.tr adresine sor."
+      "dogru": 2,
+      "neden": "Güçlü: 4, 8, 10 (9 güçlü olabilir). Boş: 1, 3, 6. Transkripte bağlı: 2, 5. Motivasyon: 7."
     },
     {
-      "soru": "Hazır cevapta güç sistemi iş tecrübesi yoksa ne söylenir?",
+      "soru": "1 numaralı maddedeki (enerji alanında yazılım projesi) boşluk nasıl kapatılır?",
       "secenekler": [
-        "Yok; lisans ve son haftalarda yük akışı, durum kestirimi, ekonomik dağıtım kodlandı",
-        "Tecrübe sorma",
-        "Ticari yazılım kullandım",
-        "Üç yıl şebekede çalıştım"
+        "Enerji sektöründeki müşteriye yazılan muhasebe yazılımıyla",
+        "Sıfırdan yazılmış Newton-Raphson, WLS ve ekonomik dağıtım koduyla",
+        "'Öğrenirim' denilerek ve konunun kapatılmasıyla",
+        "Madde atlanarak; en üstteki madde olsa da sorulmaz"
+      ],
+      "dogru": 1,
+      "neden": "Bu ilanın en üstteki maddesidir, sorulur. Enerji müşterisine yapılan muhasebe yazılımı şebeke yazılımı değildir; ikisini ayır ve olduğu gibi söyle."
+    },
+    {
+      "soru": "6 numaralı madde (güç sistemi analiz yazılımlarıyla çalışma) için dürüst kalıp nedir?",
+      "secenekler": [
+        "'PowerFactory'e biraz baktım, temel modüllerini bilirim'",
+        "'PowerFactory ve PSS/E kullanmadım; pandapower ile aynı akışı kurdum'",
+        "'Bütün ticari araçları bilirim; hepsi aynı mantıkla çalışır'",
+        "'Araç önemli değil; matematik her yerde aynıdır'"
+      ],
+      "dogru": 1,
+      "neden": "'Biraz baktım' dersen takip sorusu 'hangi modülünü?' olur. pandapower açık kaynaklı Python güç sistemi kütüphanesidir; aynı iş akışı 15/02 dosyasındadır."
+    },
+    {
+      "soru": "Transkriptle doğrulanabilen tek tercih sebebi hangisidir ve neden önemlidir?",
+      "secenekler": [
+        "Madde 4; programlama dersleri transkriptte görünür",
+        "Madde 2 ve 5; 'ders almış olmak' der ve panel transkripti görür",
+        "Madde 7; lisansüstü kaydı transkriptte yer alır",
+        "Hiçbiri; transkript yalnızca formül puanı için kullanılır"
+      ],
+      "dogru": 1,
+      "neden": "Transkriptte Güç Sistemleri Analizi, Enerji İletimi, Enerji Dağıtımı, Koruma, Sayısal Yöntemler gibi dersleri işaretle; her biri için dönem, not ve hatırladığın tek konuyu yaz."
+    },
+    {
+      "soru": "Transkriptte ilgili dersin notu düşükse ne yapılır?",
+      "secenekler": [
+        "Ders hiç anılmaz; panel transkripti ayrıntılı incelemez",
+        "Not saklanır; yalnızca ders adı ve dönemi söylenir, not sorulursa geçiştirilir",
+        "'O dönem zayıftım, şimdi şu örneği çözebiliyorum' denir ve çözülür",
+        "Dersin hocasının zor olduğu anlatılır"
+      ],
+      "dogru": 2,
+      "neden": "Panel transkripti görür; saklamak işe yaramaz. Bugün elle çözebildiğini göstermek notu yorumsuz bırakmaktan güçlüdür."
+    },
+    {
+      "soru": "'Yazılımda iyiyim' cümlesinin güçlü karşılığında hangi teknik örnek verilir?",
+      "secenekler": [
+        "Iraksayan yük akışında servisin boş sonuç yerine nedeni ve son artığı dönmesi",
+        "Kodun daha hızlı derlenmesi için Maven bağımlılık ayarlarının düzenlenmesi",
+        "Arayüzün mobil cihazlarda da sorunsuz görüntülenmesi",
+        "Veri tabanının gece yedeklenmesi ve geri yükleme testi"
       ],
       "dogru": 0,
-      "neden": "Köşeli parantez yalnızca doğrudan şebeke işi varsa söylenir."
+      "neden": "Iraksamak: yinelemeli çözümün sonuca yaklaşmayıp uzaklaşması. Artık: denklemin o adımda ne kadar sağlanmadığı. Bu cümle 4, 8 ve 9'u kanıtlar ama 1'deki boşluğu örtmez."
     },
     {
-      "soru": "Yük akışı, durum kestirimi ve ekonomik dağıtım ne yapar?",
+      "soru": "Yük akışı yakınsıyorsa 'artık' nasıl davranır?",
       "secenekler": [
-        "Üçü de aynı hesap",
-        "Bara gerilimi ve hat gücü; gürültülü ölçümden en olası durum; talebi en düşük maliyetle paylaştırma",
-        "Üçü de İngilizce sınavı",
-        "Üçü de kişilik envanteri"
-      ],
-      "dogru": 1,
-      "neden": "WLS, durum kestiriminin temel yöntemidir."
-    },
-    {
-      "soru": "Madde 1, 3 ve 6'nın şablondaki durumu nedir?",
-      "secenekler": [
-        "Transkripte bağlı",
-        "Yalnızca motivasyon",
-        "Üçü de güçlü",
-        "Boş veya büyük ihtimalle boş"
-      ],
-      "dogru": 3,
-      "neden": "Güçlü olanlar 4'ün programlama kısmı, 8 ve 10'dur. 9 güçlü olabilir."
-    },
-    {
-      "soru": "Madde 1'in açığı nasıl kapatılır?",
-      "secenekler": [
-        "PowerFactory sertifikası uydurulur",
-        "Madde atlanır",
-        "14-Programlama/ornekler: Newton-Raphson, WLS, ekonomik dağıtım, 7 test",
-        "Liderlik anlatılır"
+        "Her adımda büyür",
+        "Sabit kalır",
+        "Sıfıra yaklaşır",
+        "İşaret değiştirir"
       ],
       "dogru": 2,
-      "neden": "Madde, enerji ve şebeke yazılım projesinde aktif çalışmış olmaktır."
+      "neden": "Artık, güç denklemlerinin o adımda ne kadar sağlanmadığını gösteren farktır. Sıfıra yaklaşıyorsa çözüm yakınsıyordur; uzaklaşıyorsa ıraksıyordur."
     },
     {
-      "soru": "Madde 4'te ne güçlüdür ve örnek nedir?",
+      "soru": "Liderlik tecrübesi araştırmacı kadrosunda nasıl sunulur?",
       "secenekler": [
-        "Ders notu tek kanıt",
-        "Madde boştur ve kapatılmaz",
-        "Ticari analiz yazılımı güçlü",
-        "Programlama güçlü, optimizasyon değişken; linprog ile DC-OPF"
-      ],
-      "dogru": 3,
-      "neden": "Diller: Java, Python, JavaScript, MATLAB. Klasör 13."
-    },
-    {
-      "soru": "Madde 6 için dürüst kalıp nedir?",
-      "secenekler": [
-        "Siemens'te çalıştım",
-        "Biraz baktım",
-        "Uzmanım",
-        "PowerFactory ve PSS/E kullanmadım; pandapower ile aynı iş akışı"
-      ],
-      "dogru": 3,
-      "neden": "Takip sorusu 'hangi modül?' olur. Dosya 15/02."
-    },
-    {
-      "soru": "Madde 2 ve 5 neden ayrıdır?",
-      "secenekler": [
-        "Envanter sorusudur",
-        "Transkriptle doğrulanabilen tek tercih sebepleridir; panel transkripti görür",
-        "Puan formülüne 0,9 ekler",
-        "İngilizce belgesidir"
-      ],
-      "dogru": 1,
-      "neden": "Not düşükse saklama: o dönem zayıftım, şimdi örneği elle çözüyorum."
-    },
-    {
-      "soru": "Transkriptte aranacak derslerden biri değildir?",
-      "secenekler": [
-        "Enerji Ekonomisi ve Optimizasyon",
-        "Envanter ve kişilik",
-        "Güç Sistemleri Analizi ve Enerji İletimi",
-        "Koruma ve Yüksek Gerilim"
-      ],
-      "dogru": 1,
-      "neden": "Her ders için dönem, not ve hatırlanan tek konu yazılır."
-    },
-    {
-      "soru": "Güçlü yazılım cümlesindeki artık ne demektir?",
-      "secenekler": [
-        "Artık kullanılmayan kod",
-        "Denklemin o adımda ne kadar sağlanmadığını gösteren fark",
-        "Kurulu güç",
-        "Mülakat puanı"
-      ],
-      "dogru": 1,
-      "neden": "Iraksamak, yinelemenin sonuçtan uzaklaşmasıdır. Servis sessizce boş sonuç dönmemelidir."
-    },
-    {
-      "soru": "Enerji müşterisine yazılım yapmak neden yetmez?",
-      "secenekler": [
-        "SGK'ya gerek kalmaz",
-        "Madde 1'i doldurur",
-        "Otomatik şebeke tecrübesidir",
-        "Müşteri enerji şirketi, yazılım muhasebe olabilir; olduğu gibi ayır"
-      ],
-      "dogru": 3,
-      "neden": "Boş madde ilanın en üstündedir, sorulur."
-    },
-    {
-      "soru": "Liderlik nasıl çevrilir?",
-      "secenekler": [
-        "Araştırmacı kadrosunda yöneticilik",
-        "Madde 1'in kanıtı",
-        "Teknik karar ve koordinasyon; yöneticilik diye değil",
-        "Söylenmez"
+        "Yöneticilik olarak; panel yönetici arar",
+        "Hiç anılmaz; araştırmacı yalnız çalışır",
+        "Teknik karar ve koordinasyon olarak",
+        "Ekip büyüklüğüyle övünerek"
       ],
       "dogru": 2,
-      "neden": "Kadro araştırmacı kadrosudur."
+      "neden": "'Liderlik tecrübem her kapıyı açar' yaygın yanlıştır. 10 numaralı madde koordinasyon, organizasyon ve planlamadır; ekip büyüklüğü, teslim ve bağımlılık yönetimi kanıt olarak verilir."
     },
     {
-      "soru": "90 saniyede güçlü ve boş üçlü hangisidir?",
+      "soru": "9 numaralı madde (araştırmaya istek, analitik düşünme, problem çözme) için hangi kanıt önerilir?",
       "secenekler": [
-        "Hepsi güçlü",
-        "Hepsi boş",
-        "Güçlü olan yalnızca ders notu",
-        "Güçlü: programlama, öğrenme, koordinasyon. Boş: şebeke yazılımı, güvenlik ve kestirim, ticari analiz yazılımı"
-      ],
-      "dogru": 3,
-      "neden": "Katkı, analiz kodunu üretim kalitesine taşımaktır."
-    },
-    {
-      "soru": "İlanın üçüncü özel koşulu tam olarak ne ister?",
-      "secenekler": [
-        "İş tanımındaki alanlarda en az 3 yıl mesleki tecrübe",
-        "Herhangi bir işte 3 yıl",
-        "1 yıl staj",
-        "Yalnızca yüksek lisans"
-      ],
-      "dogru": 0,
-      "neden": "Dipnot, yılı belirtilen alanlarda tam süreli süre diye tanımlar."
-    },
-    {
-      "soru": "İlanın g maddesi ne der?",
-      "secenekler": [
-        "İngilizce barajını",
-        "THS seviyesini",
-        "Hatalı bilginin başvuruyu geçersiz kıldığını",
-        "Kontenjanı"
-      ],
-      "dogru": 2,
-      "neden": "Beyan, SGK dökümü ve onaylı çalışma belgesiyle karşılaştırılır."
-    },
-    {
-      "soru": "İnsan Kaynakları'na hangi adresten sorulur?",
-      "secenekler": [
-        "kariyer formu",
-        "mam.ik@tubitak.gov.tr",
-        "ytbsbilgi.teias.gov.tr",
-        "mam.byet-gsag@tubitak.gov.tr"
+        "Okuduğun makale sayısı ve takip ettiğin dergiler",
+        "Kök nedenini bulduğun bir üretim hatası: belirti, hipotez, test, sonuç",
+        "Aldığın sertifikalar ve katıldığın eğitimler",
+        "Yazdığın toplam kod satırı ve kapattığın görev sayısı gibi hacim ölçüleri"
       ],
       "dogru": 1,
-      "neden": "Emin olmadığın tecrübe ilişkisi için, mülakattan önce."
+      "neden": "Belirti → hipotez → test → sonuç zinciri, araştırma yönteminin kendisidir. Üretim hatasında bu zinciri işletmiş olmak analitik problem çözmenin somut kanıtıdır."
     },
     {
-      "soru": "SGK satırında dolaylı ne yapılır?",
+      "soru": "Madde 4'te hangi dört dil sayılır ve 'optimizasyon' tarafı nasıl kapatılır?",
       "secenekler": [
-        "Var diye yükseltilir",
-        "İlişki bir cümleyle anlatılır",
-        "Satır silinir",
-        "Yok yazılır"
+        "C, C++, Go, Rust; 13 klasörü ve MILP ünite tahsisi örneğiyle",
+        "Java, Python, JavaScript, MATLAB; linprog ile DC-OPF örneğiyle",
+        "Python, R, Julia, SQL; pandapower örneğiyle",
+        "Java, Kotlin, Swift, PHP; Jenkins boru hattı örneğiyle"
       ],
       "dogru": 1,
-      "neden": "Yok ise mülakatta da yok denir."
+      "neden": "Programlama güçlü, optimizasyon değişkendir. linprog SciPy'nin doğrusal programlama çözücüsüdür; DC-OPF yalnızca aktif gücü hesaplayan doğrusal modelle optimal güç akışıdır."
     },
     {
-      "soru": "Madde 1'in ilan cümlesi nedir?",
+      "soru": "90 saniyelik metinde 'öğrenmem gereken' olarak ne söylenir?",
       "secenekler": [
-        "PowerFactory kullanmış olmak",
-        "Güç sistemleri dersi almış olmak",
-        "Elektrik enerjisi ve şebekeleri alanında geliştirilen yazılım projelerinde aktif çalışmış olmak",
-        "Liderlik yapmış olmak"
-      ],
-      "dogru": 2,
-      "neden": "Şablonda büyük ihtimalle boş veya dolaylıdır."
-    },
-    {
-      "soru": "Madde 2 hangi dersleri ve hangi klasörleri işaret eder?",
-      "secenekler": [
-        "Yalnızca 19/02",
-        "Güç Sistemleri Analizi ve Güç Dağıtım Sistemleri; klasör 02, 04 ve 05",
-        "Yalnızca envanter",
-        "Yalnızca Python; klasör 13"
+        "Yeni bir programlama dili",
+        "Alanın kendisi",
+        "Ticari yazılımların lisans fiyatları",
+        "İngilizce"
       ],
       "dogru": 1,
-      "neden": "Transkripte bağlıdır."
-    },
-    {
-      "soru": "Madde 3'ün ilan konusu ve kapatma yolu nedir?",
-      "secenekler": [
-        "Koordinasyon; 19/02",
-        "Güvenlik, kararlılık ve durum kestirimi; klasör 07, 08, 09 ve wls_durum_kestirimi.py",
-        "Ticari yazılım; 15/02",
-        "Optimizasyon; linprog"
-      ],
-      "dogru": 1,
-      "neden": "Şablonda boştur. İş olarak yapmadım denir."
-    },
-    {
-      "soru": "Madde 4'ün ilan dilleri nelerdir?",
-      "secenekler": [
-        "Java, Python, JavaScript ve MATLAB",
-        "Yalnızca PSS/E",
-        "Yalnızca C#",
-        "Yalnızca pandapower"
-      ],
-      "dogru": 0,
-      "neden": "Programlama güçlü, optimizasyon değişkendir. Klasör 13."
-    },
-    {
-      "soru": "Madde 5 hangi konuları sayar?",
-      "secenekler": [
-        "Yalnızca liderlik",
-        "Yalnızca Git",
-        "Dağıtım, koruma, kararlılık, ekonomik işletme ve planlama dersleri",
-        "Yalnızca İngilizce"
-      ],
-      "dogru": 2,
-      "neden": "Almadıysan almadım de. Klasörler 04, 08, 10, 11, 12."
-    },
-    {
-      "soru": "Madde 6, 7, 8, 9 ve 10'un şablon durumu nedir?",
-      "secenekler": [
-        "6 boş; 7 motivasyon; 8 güçlü; 9 güçlü olabilir; 10 güçlü",
-        "Hepsi boş",
-        "Hepsi transkript",
-        "6 güçlü, 10 boş"
-      ],
-      "dogru": 0,
-      "neden": "6 ticari analiz yazılımıdır. 7'nin dosyası 19/02'dir."
-    },
-    {
-      "soru": "WLS açılımı nedir?",
-      "secenekler": [
-        "Web Load Service",
-        "Wide Load Sharing",
-        "West Line Stability",
-        "Weighted Least Squares, ağırlıklı en küçük kareler"
-      ],
-      "dogru": 3,
-      "neden": "Durum kestiriminin temel yöntemidir."
-    },
-    {
-      "soru": "Newton-Raphson burada neyin yöntemidir?",
-      "secenekler": [
-        "Kişilik envanterinin",
-        "İngilizce puanının",
-        "Yük akışını yinelemeli çözmenin",
-        "Hat uzunluğunun"
-      ],
-      "dogru": 2,
-      "neden": "Örnekler 14-Programlama/ornekler altındadır; 7 test yazılır."
-    },
-    {
-      "soru": "DC-OPF neyi hesaplar?",
-      "secenekler": [
-        "Frekansı",
-        "Bütün reaktif gücü tam modelle",
-        "Yalnızca aktif gücü, doğrusal yaklaşık modelle optimal güç akışını",
-        "Kısa devre akımını"
-      ],
-      "dogru": 2,
-      "neden": "linprog, SciPy'deki doğrusal programlama çözücüsüdür."
-    },
-    {
-      "soru": "PowerFactory, PSS/E ve pandapower kimin aracıdır?",
-      "secenekler": [
-        "Üçü de MAM ürünüdür",
-        "Üçü de Siemens",
-        "DIgSILENT; Siemens iletim analizi; açık kaynak Python kütüphanesi",
-        "Üçü de açık kaynaktır"
-      ],
-      "dogru": 2,
-      "neden": "Kullanmadıysan kullanmadım de. İş akışı 15/02'dedir."
-    },
-    {
-      "soru": "Gruplama tablosu nasıldır?",
-      "secenekler": [
-        "Güçlü 4, 8, 10 ve belki 9; boş 1, 3, 6; transkript 2 ve 5; motivasyon 7",
-        "Boş olan yalnızca 10",
-        "Hepsi güçlü",
-        "Transkript 1 ve 6"
-      ],
-      "dogru": 0,
-      "neden": "9 araştırmaya istek ve problem çözmedir."
-    },
-    {
-      "soru": "Transkript taramasında her ders için ne yazılır?",
-      "secenekler": [
-        "Yalnızca dersin adı",
-        "Hiçbir şey",
-        "Yalnızca hoca",
-        "Dönem, not ve hatırlanan tek konu"
-      ],
-      "dogru": 3,
-      "neden": "Not düşükse saklanmaz."
-    },
-    {
-      "soru": "Listelenen ders adlarından ikisi hangisidir?",
-      "secenekler": [
-        "Enerji İletimi ve Enerji Dağıtımı",
-        "Envanter ve kişilik",
-        "FCE ve CAE",
-        "Git ve Jenkins"
-      ],
-      "dogru": 0,
-      "neden": "Ayrıca makineler, yüksek gerilim, güç elektroniği, koruma, tesis, enerji ekonomisi, kontrol, sayısal yöntemler, optimizasyon vardır."
-    },
-    {
-      "soru": "Zayıf ve güçlü yazılım cümlesi farkı nedir?",
-      "secenekler": [
-        "Zayıf olan daha inandırıcıdır",
-        "Zayıf olan yazılımda iyiyim der; güçlü olan ölçek, karar ve ıraksayan yük akışında artığı anlatır",
-        "İkisi aynıdır",
-        "Güçlü olan ders notunu okur"
-      ],
-      "dogru": 1,
-      "neden": "Artık sıfıra yaklaşıyorsa çözüm yakınsıyordur."
-    },
-    {
-      "soru": "Bu cümle madde 1'i kapatır mı?",
-      "secenekler": [
-        "Evet, madde 1 dolu sayılır",
-        "Evet, SGK'yı değiştirir",
-        "Yalnızca madde 6'yı kapatır",
-        "Hayır; 4, 8 ve 9'u kanıtlar, alan boşluğunu örtmez"
-      ],
-      "dogru": 3,
-      "neden": "Eksik alan bilgisinin üstüne ne koyacağını gösterir."
-    },
-    {
-      "soru": "15/02'deki dürüst kalıp ne zaman kullanılır?",
-      "secenekler": [
-        "Puan formülünde",
-        "İngilizce belgesinde",
-        "Kullanmadığın aracı biraz baktım diye söylemek yerine",
-        "Liderliği yöneticilik diye anlatırken"
-      ],
-      "dogru": 2,
-      "neden": "Takip sorusu hangi modül olur."
-    },
-    {
-      "soru": "90 saniyede getirilen katkı nasıl söylenir?",
-      "secenekler": [
-        "Yöneticilik",
-        "Analiz kodunu üretim kalitesine taşıma tecrübesi; öğrenilecek olan alanın kendisi",
-        "Ticari yazılım uzmanlığı",
-        "Üç boş madde doludur"
-      ],
-      "dogru": 1,
-      "neden": "Boşlar dolu gösterilmez."
+      "neden": "Metin: üç madde güçlü, üç madde boş; boşları dolu göstermeyeceğim; sıfırdan kodladım ve doğruladım; katkım analiz kodunu üretim kalitesine taşımak, öğrenmem gereken alanın kendisi."
     }
   ]
 }

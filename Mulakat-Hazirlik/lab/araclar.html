@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Analiz Araçları · Kavram Kartları</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  .atlas { display: grid; gap: 14px; }
+  .tool {
+    padding: 22px; display: grid; gap: 12px;
+    grid-template-columns: 160px 1fr;
+    align-items: start;
+  }
+  @media (max-width: 720px) { .tool { grid-template-columns: 1fr; } }
+  .tool-name {
+    font-size: 1.15rem; margin: 0; letter-spacing: -0.02em;
+  }
+  .tool-kind {
+    display: inline-block; margin-top: 8px; font-size: 0.72rem;
+    letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); font-weight: 700;
+  }
+  .cols { display: grid; gap: 10px; grid-template-columns: 1fr 1fr; }
+  @media (max-width: 720px) { .cols { grid-template-columns: 1fr; } }
+  .mini {
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px;
+    background: rgba(8,14,24,0.45);
+  }
+  .mini h3 { margin: 0 0 6px; font-size: 0.8rem; color: var(--muted); font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
+  .mini p, .mini li { margin: 0; font-size: 0.92rem; color: var(--ink); }
+  .mini ul { margin: 0; padding-left: 1.1em; }
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+  .filters button.active { background: rgba(46,196,182,0.18); border-color: rgba(46,196,182,0.5); }
+  .hidden { display: none !important; }
+</style>
+</head>
+<body>
+  <div class="shell">
+    <header class="topnav">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div>
+          <strong>Analiz Araçları</strong>
+          <span>Kullandım / bilirim / dürüst strateji</span>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Hub</a>
+        <a href="nr.html">NR yük akışı</a>
+        <a href="wls.html">WLS kestirim</a>
+        <a href="dcopf.html">DC OPF</a>
+        <a class="active" href="araclar.html">Araçlar</a>
+      </nav>
+    </header>
+
+    <section class="panel" style="padding:22px; margin-bottom:16px;">
+      <p class="eyebrow">Dürüst strateji</p>
+      <h1 style="margin:0; font-size:1.7rem; letter-spacing:-0.03em;">Ticari yazılım kullanmadıysan ne dersin?</h1>
+      <p class="lede" style="margin-top:10px;">
+        PowerFactory / PSS®E lisansı yoksa uydurma. Bunun yerine:
+        <strong style="color:var(--ink); font-weight:600;">kendi NR + pandapower doğrulama</strong> yaptığını söyle,
+        OpenDSS/PowerFactory’nin <em>ne işe yaradığını</em> ve <em>hangi probleme hangisini seçtiğini</em> bil.
+      </p>
+      <div class="filters" id="filters">
+        <button class="btn active" data-f="all">Tümü</button>
+        <button class="btn" data-f="yaptim">Ben yaptım</button>
+        <button class="btn" data-f="acik">Açık kaynak</button>
+        <button class="btn" data-f="ticari">Ticari</button>
+      </div>
+    </section>
+
+    <div class="atlas" id="atlas">
+
+      <article class="panel tool" data-tags="yaptim acik">
+        <div>
+          <p class="tool-kind">Senin kartın</p>
+          <h2 class="tool-name">pandapower + kendi NR</h2>
+        </div>
+        <div>
+          <div class="cols">
+            <div class="mini">
+              <h3>Ne için</h3>
+              <p>Dengeli AC yük akışı, kısa devre (IEC 60909), OPF, durum kestirimi. pandas tabloları = şebeke modeli.</p>
+            </div>
+            <div class="mini">
+              <h3>Sen ne yaptın</h3>
+              <ul>
+                <li>NumPy ile Newton-Raphson (3 bara + IEEE 14)</li>
+                <li><code class="mono">case14</code> ile karşılaştırma</li>
+                <li>Bu lab’da adım adım görselleştirme</li>
+              </ul>
+            </div>
+          </div>
+          <div class="speak" style="margin-top:12px">
+            <p class="etiket">Mülakatta söyle</p>
+            <p>‘Ticari paket lisansı kullanmadım. Bunun yerine yük akışını sıfırdan yazıp pandapower ile doğruladım; böylece hem fiziği hem yazılımı kontrol edebiliyorum.’</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="panel tool" data-tags="acik">
+        <div>
+          <p class="tool-kind">Açık kaynak · dağıtım</p>
+          <h2 class="tool-name">OpenDSS</h2>
+        </div>
+        <div>
+          <div class="cols">
+            <div class="mini">
+              <h3>Güçlü yanı</h3>
+              <ul>
+                <li>Dengesiz, çok fazlı dağıtım yük akışı</li>
+                <li>8760 saatlik zaman serisi</li>
+                <li>DG, harmonik, barındırma kapasitesi</li>
+              </ul>
+            </div>
+            <div class="mini">
+              <h3>Zayıf yanı</h3>
+              <p>İletim için tasarlanmadı. Veri modeli betik tabanlı; pandapower kadar “Python-native” değil (COM / dss-python köprüleri var).</p>
+            </div>
+          </div>
+          <div class="speak" style="margin-top:12px">
+            <p class="etiket">Mülakatta söyle</p>
+            <p>‘OpenDSS’i üretimde kullanmadım; kavram olarak dağıtımda dengesiz üç faz ve yıllık zaman serisi için seçerdim. İletim tarafında pandapower / MATPOWER yeter.’</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="panel tool" data-tags="ticari">
+        <div>
+          <p class="tool-kind">Ticari · Avrupa / TR</p>
+          <h2 class="tool-name">DIgSILENT PowerFactory</h2>
+        </div>
+        <div>
+          <div class="cols">
+            <div class="mini">
+              <h3>Güçlü yanı</h3>
+              <ul>
+                <li>İletim + dağıtım tek pakette</li>
+                <li>Dinamik, koruma, RMS / EMT</li>
+                <li>Türkiye’de TEİAŞ / danışmanlık ekosisteminde yaygın</li>
+              </ul>
+            </div>
+            <div class="mini">
+              <h3>Ne bilmen yeter</h3>
+              <p>Proje / Study / Network Data modeli; load flow, short circuit, contingency, stability. Python / DPL ile otomasyon.</p>
+            </div>
+          </div>
+          <div class="speak" style="margin-top:12px">
+            <p class="etiket">Mülakatta söyle</p>
+            <p>‘PowerFactory’de proje yürütmedim. Ama bilirim: sürekli hâl + dinamik + koruma aynı modelde. Öğrenme eğrim pandapower üzerindeki yük akışı / OPF temeline dayanır; kurum lisansında hızla adapte olurum.’</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="panel tool" data-tags="acik">
+        <div>
+          <p class="tool-kind">Açık kaynak · akademik</p>
+          <h2 class="tool-name">MATPOWER</h2>
+        </div>
+        <div>
+          <div class="cols">
+            <div class="mini">
+              <h3>Güçlü yanı</h3>
+              <p>Yük akışı ve OPF referansı. <code class="mono">mpc</code> vaka biçimi fiilî standart. IEEE test vakaları.</p>
+            </div>
+            <div class="mini">
+              <h3>Ne zaman</h3>
+              <p>Bir OPF makalesini yeniden üretirken veya pandapower sonucunu bağımsız MATLAB/Octave ile kıyaslarken.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="panel tool" data-tags="ticari">
+        <div>
+          <p class="tool-kind">Ticari · iletim</p>
+          <h2 class="tool-name">PSS®E (Siemens)</h2>
+        </div>
+        <div>
+          <div class="cols">
+            <div class="mini">
+              <h3>Tipik kullanım</h3>
+              <p>İletim planlama, dinamik kararlılık. Kuzey Amerika’da fiilî standart; .raw / .dyr veri dünyası.</p>
+            </div>
+            <div class="mini">
+              <h3>Kardeşleri</h3>
+              <p>ETAP (tesis/koruma), PSCAD/EMTP (EMT), PLEXOS (piyasa), CYME/Synergi (dağıtım).</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="footer-note">
+      Detaylı not: <code class="mono">15-Analiz-Yazilimlari/02-Acik-Kaynak-Araclar-ve-Durust-Strateji.md</code>
+    </p>
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll("#filters button");
+    const cards = document.querySelectorAll("#atlas .tool");
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        buttons.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        const f = btn.dataset.f;
+        cards.forEach((c) => {
+          const tags = c.dataset.tags.split(/\s+/);
+          c.classList.toggle("hidden", f !== "all" && !tags.includes(f));
+        });
+      });
+    });
+  </script>
+</body>
+</html>

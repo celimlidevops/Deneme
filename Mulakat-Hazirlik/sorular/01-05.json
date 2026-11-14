@@ -5,400 +5,224 @@
   "geri": "goruntule.html#01-Kurum-Ilan-ve-Surec%2F05-Envanter-ve-Online-Degerlendirme.md",
   "sorular": [
     {
-      "soru": "Envanter ile online değerlendirme farkı nedir?",
+      "soru": "İlanın (f) maddesi mülakat öncesi değerlendirme için ne kadar kesinlik verir?",
       "secenekler": [
-        "İkisinin de tek doğru cevabı vardır",
-        "Online test yapılmaz",
-        "Envanter kişilik ve yetkinlik anketidir, doğru cevabı yoktur; online test yetenek veya teknik sınav olabilir",
-        "Envanter kod sınavıdır"
+        "Kesin yapılacağını ve biçiminin kodlama sınavı olacağını yazar",
+        "'Tabi tutulabileceklerdir' der; araç, soru sayısı ve etkisi yazılmaz",
+        "Yalnızca kişilik envanteri yapılacağını yazar",
+        "Hiçbir ön değerlendirme yapılmayacağını açıkça yazar"
+      ],
+      "dogru": 1,
+      "neden": "Çağrı e-postası geldiğinde orada yazanı esas al; belirsizse İnsan Kaynakları'na sor. Kariyer sistemindeki e-postayı ve istenmeyen posta klasörünü her gün kontrol et."
+    },
+    {
+      "soru": "Biçim ilanda yazmadığı için hangi üç ihtimale hazırlanılır?",
+      "secenekler": [
+        "Yazılı sınav, sözlü sınav, sunum",
+        "Kişilik envanteri, genel yetenek testi, teknik değerlendirme",
+        "İngilizce sınavı, IQ testi, vaka çalışması",
+        "Referans görüşmesi, portföy incelemesi, bir günlük deneme çalışması"
+      ],
+      "dogru": 1,
+      "neden": "Her birinin riski farklıdır: envanterde rol yapmak, yetenek testinde süre baskısı, teknik testte güç sistemi soruları."
+    },
+    {
+      "soru": "Kişilik envanteri aslında neyi ölçer ve 'ideal aday' profilini oynamak neden sorun çıkarır?",
+      "secenekler": [
+        "Bilgiyi ölçer; rol yapmak bilgi eksikliğini gizler",
+        "Tutarlılığı ölçer; rol yapmak tekrar sorularda çelişki üretir",
+        "Hızı ölçer; rol yapmak zaman kaybettirir",
+        "Liderliği ölçer; rol yapmak yöneticilik puanını düşürür"
+      ],
+      "dogru": 1,
+      "neden": "Envanterin doğru cevabı yoktur; geçilmez, tutarlı doldurulur. İlk tepki çoğunlukla en tutarlı olandır."
+    },
+    {
+      "soru": "Envanterde çok sayıda 'her zaman' ve 'asla' işaretlemenin sonucu nedir?",
+      "secenekler": [
+        "Profil kararlı ve özgüvenli görünür",
+        "Profil güvenilmez görünür",
+        "Puan yükselir",
+        "Hiçbir etkisi yoktur"
+      ],
+      "dogru": 1,
+      "neden": "Uç cevapların çokluğu profilin güvenilirliğini düşürür. Olduğun gibi ve fazla düşünmeden işaretle."
+    },
+    {
+      "soru": "Envanterde 'tek başına çalışmayı tercih ederim' işaretleyen aday mülakatta 'tam bir takım oyuncusuyum' derse ne olur?",
+      "secenekler": [
+        "Panel bunu fark etmez; envanter ayrı değerlendirilir",
+        "Panel envanter sonucunu görebilir; bu fark sorulur",
+        "Envanter sonucu gizlidir; sorun çıkmaz",
+        "Mülakattaki ifade esas alınır; envanter silinir"
+      ],
+      "dogru": 1,
+      "neden": "Envanter sonucu mülakatta panelin önünde olabilir. Envanter ile mülakattaki anlatım aynı kişiyi tarif etmelidir."
+    },
+    {
+      "soru": "Genel yetenek testinde takılınan soru için kural nedir?",
+      "secenekler": [
+        "Çözene kadar üzerinde durulur; yarım bırakılmaz",
+        "Geçilir; soruların değeri çoğu zaman eşittir, süre yetmez",
+        "Rastgele işaretlenip geçilir; yanlış puan götürmez",
+        "Boş bırakılır; bir daha geri dönülmez"
+      ],
+      "dogru": 1,
+      "neden": "Ana zorluk süre baskısıdır. Yanlışın puan götürüp götürmediğini yönergeden oku; götürmüyorsa boş bırakma. Yüzde, oran, tablo-grafik okuma ve sayı dizisinden birer deneme çöz."
+    },
+    {
+      "soru": "Teknik kodlama sorusu senin profilinde neden yine de risk taşır?",
+      "secenekler": [
+        "Çünkü Java yerine Python istenebilir",
+        "Çünkü soru güç sistemi bağlamında gelebilir: Ybus kur, WLS çöz",
+        "Çünkü kod yazmak online araçta yasak olabilir ve yalnızca sözlü sorulur",
+        "Çünkü süre kodlama için çok kısa tutulur"
+      ],
+      "dogru": 1,
+      "neden": "Hazırlık: nr_yuk_akisi.py içindeki ybus_kur ve nr_coz işlevlerini bakmadan yeniden yaz."
+    },
+    {
+      "soru": "Admitans matrisi (Ybus) nedir?",
+      "secenekler": [
+        "Her hattın termik limitini ve uzunluğunu tutan tablo",
+        "Baraların hangi iletkenlikle bağlı olduğunu tutan matris",
+        "Ölçümlerin ağırlıklarını tutan köşegen hata matrisi",
+        "Santral maliyet katsayılarının matrisi"
+      ],
+      "dogru": 1,
+      "neden": "Ybus şebeke topolojisini ve hat parametrelerini özetler. Newton-Raphson (NR) bu matrisle güç denklemlerini adım adım düzelterek çözer."
+    },
+    {
+      "soru": "'En küçük kareler' çözümü hangi analizin temelidir ve neyi en aza indirir?",
+      "secenekler": [
+        "Yük akışının; Newton-Raphson iterasyon sayısını",
+        "Ekonomik dağıtımın; toplam yakıt maliyetini",
+        "Durum kestiriminin; ölçüm-model farkının karelerini",
+        "Kısa devrenin; arıza akımını"
       ],
       "dogru": 2,
-      "neden": "İlan 'tutulabileceklerdir' der; yapılacağı kesin değildir."
+      "neden": "Ağırlıklı en küçük kareler (WLS), gürültülü ölçümlerden şebekenin en olası durumunu bulur. Hazırlık dosyası wls_durum_kestirimi.py'dir."
     },
     {
-      "soru": "İlanın yazmadığı üç şey nedir?",
+      "soru": "Hesap sorularında önerilen üç refleks hangileridir?",
       "secenekler": [
-        "Hangi araç, kaç soru, sonucun mülakat puanına nasıl yansıyacağı",
-        "Asil sayısının 3 olduğu",
-        "Kaç aday çağrılacağı",
-        "Barajın 70 olduğu"
-      ],
-      "dogru": 0,
-      "neden": "Çağrı e-postası esas alınır; belirsizse İnsan Kaynakları'na sorulur."
-    },
-    {
-      "soru": "Çağrı, baraj ve kadro nedir?",
-      "secenekler": [
-        "10 asil, 10 yedek",
-        "3 aday, baraj 3,20",
-        "70 aday, 30 asil",
-        "Kontenjanın 10 katı, yaklaşık 30 aday; 70 ve üzeri sıralanır; 3 asil, en fazla 3 yedek"
-      ],
-      "dogru": 3,
-      "neden": "Duyuru mam.tubitak.gov.tr ve tubitak.gov.tr adreslerindedir."
-    },
-    {
-      "soru": "Üç olası biçim hangisidir?",
-      "secenekler": [
-        "Kişilik envanteri, genel yetenek, teknik veya kodlama",
-        "Yalnızca SGK kontrolü",
-        "Yalnızca saha stajı",
-        "Yalnızca İngilizce"
-      ],
-      "dogru": 0,
-      "neden": "Hangisinin geleceği bilinmez; üçüne de hazırlanılır."
-    },
-    {
-      "soru": "Envanterde asıl risk nedir?",
-      "secenekler": [
-        "Bilgi eksiği",
-        "Rol yapmak; tekrar eden sorularda çelişki",
-        "Süre",
-        "Formül puanı"
+        "Formülü ezberle, hızlı çöz, ilk seçeneği işaretle",
+        "Birimi yaz, mertebe kontrolü yap, seçenekleri ele",
+        "Hesap makinesi kullan, sonucu yuvarla, kontrol etme",
+        "Soruyu atla, sonra dön, tahmin et"
       ],
       "dogru": 1,
-      "neden": "Her zaman ve asla çok sayıda olursa profil güvenilmez görünür."
+      "neden": "Birim: kV mı V mu, MW mı pu mu, hat mı faz gerilimi mi. Mertebe: 154 kV'ta 100 MVA yaklaşık 375 A. Seçenek: dört şıktan ikisi çoğunlukla √3 veya kare hatasının sonucudur."
     },
     {
-      "soru": "Envanter sonucu mülakatta neden önemli?",
+      "soru": "154 kV hat gerilimine sahip bir şebekede 100 MVA görünür güç için akım yaklaşık kaç amperdir?",
       "secenekler": [
-        "İşaretlediğin cümle ile söylediğin cümle çelişirse sorulur",
-        "Sonuç açıklanmaz",
-        "Panel görmez",
-        "Yalnızca kod notu vardır"
-      ],
-      "dogru": 0,
-      "neden": "Tek başına çalışırım deyip takım oyuncusuyum demek fark edilir."
-    },
-    {
-      "soru": "Yetenek testinde tempo nasıl korunur?",
-      "secenekler": [
-        "Takıldığın soruyu geç; yanlış puan götürmüyorsa boş bırakma",
-        "Yanlış götürmese de boş bırak",
-        "Her soruda sonuna kadar kal",
-        "Yalnızca şekil sorularını çöz"
-      ],
-      "dogru": 0,
-      "neden": "Amaç yüzde, oran, tablo ve sayı dizisinde tempo tutmaktır."
-    },
-    {
-      "soru": "Kodlamada iki örnek soru nedir?",
-      "secenekler": [
-        "Piyasa fiyatı ezberle",
-        "Kişilik cümlesi seç",
-        "Yalnızca CSS yaz",
-        "Admitans matrisini kur; ölçümlerden en küçük kareler çöz"
-      ],
-      "dogru": 3,
-      "neden": "Hazırlık: ybus_kur ve nr_coz işlevlerini bakmadan yazmak."
-    },
-    {
-      "soru": "Ybus nedir?",
-      "secenekler": [
-        "Frekans bandı",
-        "Piyasa fiyat eğrisi",
-        "Kişilik anketi",
-        "Baraların birbirine hangi iletkenlikle bağlı olduğunu tutan matris; yük akışının girdisi"
-      ],
-      "dogru": 3,
-      "neden": "En küçük kareler, ölçüm-model farkının karelerini küçültür."
-    },
-    {
-      "soru": "Newton-Raphson burada ne işe yarar?",
-      "secenekler": [
-        "Kişilik profili çıkarır",
-        "Yük akışını adım adım düzelterek çözer",
-        "Tek adımda kesin frekans verir",
-        "İngilizce puanı çevirir"
+        "Yaklaşık 650 A",
+        "Yaklaşık 375 A",
+        "Yaklaşık 37 kA",
+        "Yaklaşık 216 A"
       ],
       "dogru": 1,
-      "neden": "nr_coz bu döngüdür. Ayrıntı 14/02'dedir."
+      "neden": "I = S / (√3 × V_hat) = 100.000.000 / (√3 × 154.000) ≈ 100.000.000 / 266.700 ≈ 375 A. 650 A, √3'ü unutmanın; 37 kA, bin katının kaçmasının; 216 A, √3'e iki kez bölmenin sonucudur."
     },
     {
-      "soru": "Güç sistemi çoktan seçmelide üç refleks nedir?",
+      "soru": "Üç fazlı hesapta 100 MVA / 154 kV için sonucun 37 kA çıktığını gördün. En olası hata nedir?",
       "secenekler": [
-        "Birimi yaz, mertebeyi kontrol et, seçenek ele",
-        "Birimi sonradan düzelt",
-        "İlk seçeneği işaretle",
-        "Süreyi tek soruya harca"
-      ],
-      "dogru": 0,
-      "neden": "Hazırlık 20-Soru-Bankasi ve 21-Calisma-Plani mini sınavlarıdır."
-    },
-    {
-      "soru": "154 kV'ta 100 MVA yaklaşık kaç amper eder?",
-      "secenekler": [
-        "37 A",
-        "37 kA",
-        "375 kA",
-        "375 A"
-      ],
-      "dogru": 3,
-      "neden": "37 kA çıkıyorsa √3 veya bin katı kaçmıştır."
-    },
-    {
-      "soru": "375 A hangi formülle bulunur?",
-      "secenekler": [
-        "100 MVA × √3",
-        "100.000.000 VA / (√3 × 154.000 V)",
-        "154 / √3",
-        "100 MW × 154 kV"
+        "√3 ile fazladan bir kez daha çarpılmıştır",
+        "kV–MVA dönüşümünde bin katı kaçmıştır",
+        "Formül doğru; sonuç kabul edilir",
+        "Güç faktörü hesaba katılmamıştır"
       ],
       "dogru": 1,
-      "neden": "Payda yaklaşık 266.700'dir."
+      "neden": "Doğru mertebe yüzlerce amperdir. kA mertebesinde bir sonuç, kV–MVA dönüşümünde bin katının ya da √3'ün kaçtığını gösterir."
     },
     {
-      "soru": "Hat gerilimi ile faz gerilimi farkı nedir?",
+      "soru": "Hat gerilimi ile faz gerilimi arasındaki ilişki nedir?",
       "secenekler": [
-        "Aynı şeydir",
-        "Fark 1000 kattır",
-        "Yalnızca doğru akımda vardır",
-        "Hat iki faz arası, faz bir fazla nötr arasıdır; aralarında √3 vardır"
-      ],
-      "dogru": 3,
-      "neden": "pu, seçilen baza oranlanan birim değerdir."
-    },
-    {
-      "soru": "Teknik hazırlıkta bağlantı koparsa ne yapılır?",
-      "secenekler": [
-        "Testi sessizce yeniden aç",
-        "Ertesi hafta bekle",
-        "Yalnızca telefonla ara, kayıt tutma",
-        "Ekran görüntüsü, saat ve aynı gün İnsan Kaynakları'na e-posta"
-      ],
-      "dogru": 3,
-      "neden": "Kamera ve mikrofon önceden denenir. İzinsiz sekme açılmaz."
-    },
-    {
-      "soru": "Yaygın yanlışlardan doğru olan hüküm hangisidir?",
-      "secenekler": [
-        "Envanter geçilmez, tutarlı doldurulur; online test ilk eleme verisi olabilir",
-        "Online test önemsizdir",
-        "Süre tasarım olarak yeter",
-        "Teknik testte yalnız yazılım sorulur"
-      ],
-      "dogru": 0,
-      "neden": "İlanın alanı güç sistemidir; zayıf taraftan sorulacağı varsayılır."
-    },
-    {
-      "soru": "90 saniyelik hazırlık cümlesi neyi kapsar?",
-      "secenekler": [
-        "Yalnızca STATCOM tasarımı",
-        "Test yapılmayacak",
-        "Yalnızca 70 barajı",
-        "Biçim belli değil; envanterde tutarlılık, yetenekte tempo, teknikte birim ve mertebe, kodda Ybus ve NR"
-      ],
-      "dogru": 3,
-      "neden": "Dört parça: ilanın dediği, envanter, yetenek, teknik."
-    },
-    {
-      "soru": "İlanın (f) maddesi ne der?",
-      "secenekler": [
-        "Mülakata çağrılacaklar, öncesinde envanter, teknik ve/veya online değerlendirmeye tabi tutulabileceklerdir",
-        "Yalnızca sözlü yapılır",
-        "Test yoktur",
-        "Test zorunludur ve 50 sorudur"
-      ],
-      "dogru": 0,
-      "neden": "Tutulabilecekler yazar; yapılacağı kesin değildir."
-    },
-    {
-      "soru": "Süreç tablosunda duyuru nerede yayınlanır?",
-      "secenekler": [
-        "Yalnızca e-posta",
-        "mam.tubitak.gov.tr ve tubitak.gov.tr",
-        "Yalnızca Resmî Gazete'nin bu sayfadaki adresi",
-        "Yalnızca EPİAŞ"
+        "Hat gerilimi faz geriliminin tam 3 katıdır; nötr hesaba girmez",
+        "Hat gerilimi iki faz arası, faz gerilimi faz-nötr; √3 kat fark",
+        "İkisi aynıdır; yalnızca ölçüm yeri ve adı farklıdır",
+        "Faz gerilimi hat geriliminin 2 katıdır"
       ],
       "dogru": 1,
-      "neden": "Kariyer e-postası ve istenmeyen klasör her gün kontrol edilir."
+      "neden": "Çoğu hesap hatası buradan çıkar. 400/230 V alçak gerilimde 400 V hat, 230 V faz gerilimidir; 400/230 ≈ √3."
     },
     {
-      "soru": "Formül puanı bu sayfada nasıl tanımlanır?",
+      "soru": "'pu' (per unit) ne demektir?",
       "secenekler": [
-        "İlandaki formülle hesaplanan ve kimi çağıracağını belirleyen ön sıralama puanı",
-        "İngilizce notu",
-        "Envanter tutarlılık skoru",
-        "Mülakat notu"
-      ],
-      "dogru": 0,
-      "neden": "30 çağrı bu sıralamaya göredir."
-    },
-    {
-      "soru": "Envanterde uç cevap neden risklidir?",
-      "secenekler": [
-        "Her zaman ve asla çok sayıda olunca profil güvenilmez görünür",
-        "Puanı artırır",
-        "Zorunludur",
-        "Yalnızca teknik testte geçerlidir"
-      ],
-      "dogru": 0,
-      "neden": "İlk tepki çoğunlukla en tutarlı olandır."
-    },
-    {
-      "soru": "Envanterde ideal aday oynamak ne üretir?",
-      "secenekler": [
-        "Muafiyet",
-        "Tekrar eden sorularda çelişki",
-        "Doğru cevap",
-        "Daha yüksek baraj"
+        "Güç birimi; 1 pu = 1 MW",
+        "Büyüklüğün seçilen baz değere oranı",
+        "Hat kaybının yüzde cinsinden değeri",
+        "Gerilim birimi; 1 pu = 1 kV"
       ],
       "dogru": 1,
-      "neden": "Doğru cevap yoktur; ölçülen tutarlılıktır."
+      "neden": "Baz değer seçildikten sonra gerilim, akım, güç ve empedans boyutsuz oranlarla yazılır. 1,02 pu gerilim, nominalin %2 üstüdür."
     },
     {
-      "soru": "Yetenek testinde soru değerleri çoğu zaman nasıldır?",
+      "soru": "MW ile MVA arasındaki fark nedir?",
       "secenekler": [
-        "Eşittir; takılınca geçilir",
-        "Süre sınırsızdır",
-        "İlk soru bütün puanı taşır",
-        "Boş bırakmak her zaman daha iyidir"
+        "MW aktif güç, MVA görünür güçtür; trafo MVA ile verilir",
+        "MW görünür güç, MVA aktif güçtür; santral MVA ile verilir",
+        "MW enerji, MVA güçtür; tüketim MW ile verilir",
+        "İkisi aynıdır; MVA eski gösterimdir"
       ],
       "dogru": 0,
-      "neden": "Yüzde, oran, tablo, grafik ve sayı dizisi çalışılır."
+      "neden": "Görünür güç aktif ve reaktif gücün bileşkesidir. Hesaplarda akım görünür güçten bulunur; bu yüzden formülde S kullanılır."
     },
     {
-      "soru": "Yanlışın puan götürüp götürmediği nereden okunur?",
+      "soru": "Online sınav sırasında bağlantı koparsa ne yapılır?",
       "secenekler": [
-        "Mülakat sonunda söylenir",
-        "Hiçbir testte götürmez",
-        "Yönergeden; götürmüyorsa boş bırakma",
-        "Her testte götürür"
-      ],
-      "dogru": 2,
-      "neden": "Süre baskısı bu testin ana zorluğudur."
-    },
-    {
-      "soru": "Kod hazırlığı hangi dosyadadır?",
-      "secenekler": [
-        "14-Programlama/ornekler/nr_yuk_akisi.py içindeki ybus_kur ve nr_coz; ayrıntı 14/02",
-        "01'in puan formülü",
-        "20 yalnızca",
-        "05'in kendisi kodu verir"
-      ],
-      "dogru": 0,
-      "neden": "İşlevler bakmadan yeniden yazılır."
-    },
-    {
-      "soru": "nr_coz neyin kısaltmasıdır?",
-      "secenekler": [
-        "Hat akımının",
-        "Kişilik skorunun",
-        "YKS sıralamasının",
-        "Yük akışını Newton-Raphson ile çözen işlev"
-      ],
-      "dogru": 3,
-      "neden": "NR, sonucu adım adım düzelterek yaklaşan yinelemeli yöntemdir."
-    },
-    {
-      "soru": "Çoktan seçmeli güç sistemi hazırlığı nerede?",
-      "secenekler": [
-        "20-Soru-Bankasi ve 21-Calisma-Plani/Mini-Sinavlar",
-        "Yalnızca Git dokümanı",
-        "Yalnızca 01",
-        "Yalnızca envanter"
-      ],
-      "dogru": 0,
-      "neden": "Zayıf taraf budur."
-    },
-    {
-      "soru": "pu ne demektir?",
-      "secenekler": [
-        "Primer ünite",
-        "Puant",
-        "Per unit, birim değer; büyüklüğün seçilen baza oranı",
-        "Puan"
-      ],
-      "dogru": 2,
-      "neden": "Birim yazmadan işlem yapma."
-    },
-    {
-      "soru": "MVA ve MW farkı nedir?",
-      "secenekler": [
-        "MW birim değerdir",
-        "MVA gerilimdir",
-        "İkisi de akımdır",
-        "MVA görünür güç, MW aktif güçtür"
-      ],
-      "dogru": 3,
-      "neden": "A ve kA akımdır; 1 kA = 1000 A, 1 kV = 1000 V."
-    },
-    {
-      "soru": "375 A hesabının üçüncü adımı neyi garantiler?",
-      "secenekler": [
-        "Birimin MW kalmasını",
-        "N-1'i",
-        "Payda √3 × 154.000 ≈ 266.700; √3 unutulmamıştır",
-        "Sonucun kA olmasını"
-      ],
-      "dogru": 2,
-      "neden": "Dördüncü adım 100.000.000 / 266.700 ≈ 375 A'dır."
-    },
-    {
-      "soru": "Dört seçenekte sık görülen tuzak nedir?",
-      "secenekler": [
-        "Birim fark etmez",
-        "İkisi √3 veya kare hatasının sonucudur",
-        "İlk seçenek her zaman doğrudur",
-        "Hepsi aynı mertebededir"
+        "Sınav bitene kadar beklenir; sonra İnsan Kaynakları aranır",
+        "Ekran görüntüsü alınır, saat yazılır, aynı gün e-posta atılır",
+        "Başka cihazdan yeniden girilir; kimseye söylenmez",
+        "Sınav geçersiz sayılır; yeni tarih beklenir"
       ],
       "dogru": 1,
-      "neden": "Seçenek elemenin nedeni budur."
+      "neden": "Teknik hazırlık: sabit internet, şarjlı bilgisayar, yedek telefon bağlantısı, denenmiş kamera ve mikrofon, sessiz oda, kâğıt ve kalem."
     },
     {
-      "soru": "Sınav ortamında ne hazırlanır?",
+      "soru": "Sınav sırasında tarayıcı sekmesi değiştirmek için kural nedir?",
       "secenekler": [
-        "Yalnızca telefon",
-        "Açık ders notu",
-        "İkinci monitörde sayfa",
-        "Sabit internet, şarjlı bilgisayar, yedek telefon, sessiz oda, kâğıt, kalem"
+        "Serbesttir; yalnızca başka kişiden kopya çekmek yasaktır",
+        "Yönergede izin verilmeyen hiçbir şey açılmaz; sekme değişimi kaydedilebilir",
+        "Yalnızca hesap makinesi sekmesi açılabilir",
+        "Kamera kapalıysa sekme değiştirmek fark edilmez; bu yüzden sorun olmaz"
       ],
-      "dogru": 3,
-      "neden": "Hesap makinesi yalnızca izin varsa kullanılır."
+      "dogru": 1,
+      "neden": "Bazı araçlar sekme değişimini kaydeder ve raporlar. İzin verilen tek yardımcı yönergede yazandır."
     },
     {
-      "soru": "Kamera, mikrofon ve sekme için kural nedir?",
+      "soru": "'Online test önemsizdir, asıl mülakat' yargısı neden yanlıştır?",
       "secenekler": [
-        "İkisi önceden denenir; yönergede yasak sekmeye girilmez, bazı araçlar sekme değişimini kaydeder",
-        "Mikrofon kapalı tutulur",
-        "Kamera gerekmez",
-        "Sekme serbesttir"
+        "Çünkü online test mülakatın yerine geçer",
+        "Çünkü otuz aday arasından sıyrılmak için ilk veri olabilir",
+        "Çünkü online testten 70 almak zorunludur",
+        "Çünkü online test puanı doğrudan formül puanına eklenir"
+      ],
+      "dogru": 1,
+      "neden": "İlan sonucun mülakat puanına etkisini yazmaz; bu belirsizlik testi önemsiz yapmaz. Bu tur da elemedir."
+    },
+    {
+      "soru": "'Teknik testte yazılım sorulur, hazırım' varsayımı neden tehlikelidir?",
+      "secenekler": [
+        "Çünkü testte yalnızca Java soruları sorulur",
+        "Çünkü ilanın alanı güç sistemidir; zayıf tarafından sorulur",
+        "Çünkü teknik test yapılmayacağı kesindir",
+        "Çünkü kod soruları kâğıt üzerinde elle çözdürülür, bilgisayar verilmez"
+      ],
+      "dogru": 1,
+      "neden": "Güç sistemi çoktan seçmeli senin zayıf tarafındır. Hazırlık: 20-Soru-Bankasi ve mini sınavlar."
+    },
+    {
+      "soru": "Mülakata çağrılan adaylarla ilgili süreç bilgileri hangi şıkta doğru verilmiştir?",
+      "secenekler": [
+        "Yaklaşık 30 aday çağrılır; 70 ve üzeri sıralanır; 3 asil, en fazla 3 yedek",
+        "Yaklaşık 10 aday çağrılır; 60 ve üzeri sıralanır; 3 asil, 1 yedek",
+        "3,20'yi geçen herkes çağrılır; 70 barajı uygulanmaz; 3 asil, 3 yedek",
+        "Yaklaşık 30 aday çağrılır; 70 üzeri alanlar doğrudan atanır"
       ],
       "dogru": 0,
-      "neden": "Koparsa ekran görüntüsü, saat ve aynı gün e-posta."
-    },
-    {
-      "soru": "Online testin önemsiz sayılması neden yanlıştır?",
-      "secenekler": [
-        "Çünkü yalnızca kişilik ölçülür",
-        "Otuz adayın arasından sıyrılmak için kullanılan ilk veri olabilir",
-        "Çünkü test yapılmaz",
-        "Çünkü baraj 3,20'dedir"
-      ],
-      "dogru": 1,
-      "neden": "Teknik testte de zayıf taraftan sorulacağı varsayılır."
-    },
-    {
-      "soru": "Sürenin yetmeyecek şekilde tasarlanması neyi değiştirir?",
-      "secenekler": [
-        "Envanteri sınav yapar",
-        "Boş bırakmayı zorunlu kılar",
-        "Takıldığın soruda kalmayı; tempoyu korumak gerekir",
-        "Birim kontrolünü kaldırır"
-      ],
-      "dogru": 2,
-      "neden": "Yaygın yanlışlardan biridir."
-    },
-    {
-      "soru": "90 saniye kodlama cümlesi neyi söyleyebildiğini iddia eder?",
-      "secenekler": [
-        "Sürenin yeteceğini",
-        "Admitans matrisini ve Newton-Raphson döngüsünü bakmadan yazabildiğini",
-        "PSS/E uzmanı olduğunu",
-        "Envanterde ideal profil oynadığını"
-      ],
-      "dogru": 1,
-      "neden": "Teknik testte birim, mertebe ve seçenek eleme de söylenir."
+      "neden": "Kontenjanın 10 katı aday; mülakatta 100 üzerinden 70 barajı; 3 asil ve en fazla 3 yedek. Duyuru kurum sitelerinde yayımlanır."
     }
   ]
 }

@@ -57,7 +57,7 @@ Tablo her gün için iki şey söyler. “Klasör” sütunu o gün çalışaca�
 | Gün | Klasör | Akşam çıktısı |
 | --- | --- | --- |
 | 1 | 01 kurum, YTBS, SIPS, Türkiye sistemi | Üç dakikalık “nereye başvurdum” |
-| 2 | 02 temeller, birim sistem, simetrik bileşen | Tahtada tek faz-toprak eşdeğeri |
+| 2 | 02 temeller — 01 mülakat kartları + 07 yoklama | 12 kartı sesli söyle; test.html?sayfa=02-00 |
 | 3 | 03 iletim, 04 dağıtım | İletim ve dağıtım farkını beş maddede söyle |
 | 4 | 05 yük akışı + `dc_yuk_akisi.py` | NR bloklarını ve DC’nin kör noktasını söyle |
 | 5 | 06 kısa devre, 10 koruma ve topraklama | Azami ve asgari hesabı ayır |

@@ -5,1280 +5,455 @@
   "geri": "goruntule.html#01-Kurum-Ilan-ve-Surec%2F02-MAM-YTBS-SIPS-ve-Turkiye-Sistemi.md",
   "sorular": [
     {
-      "soru": "Nominal ne demektir?",
+      "soru": "Bir 400 kV hattın voltmetresi o an 389 kV gösteriyor. Hangi ifade doğrudur?",
       "secenekler": [
-        "Yalnızca frekans için kullanılan birim",
-        "Yönetmeliğin izin verdiği alt sınır",
-        "O anda voltmetrede okunan değer",
-        "Etiket, yani tasarım değeri; o an ölçülen değer değildir"
+        "Hat artık 389 kV hattı olarak anılır; etiket ölçüme göre güncellenir",
+        "Hat yine 400 kV hattıdır; 389 kV o anki ölçümdür ve bant içindedir",
+        "389 kV planlama bandının dışındadır; hat limit ihlalindedir",
+        "Ölçüm hatalıdır; 400 kV hat her zaman 400 kV göstermelidir"
       ],
-      "dogru": 3,
-      "neden": "400 kV hat o an 389 kV olabilir. Şişedeki '1 litre' yazısı gibidir."
+      "dogru": 1,
+      "neden": "Nominal, şişenin üstündeki '1 litre' yazısıdır. 389 kV, 400 kV için planlama bandı 370–420 ve normal işletme bandı 340–420 kV içindedir."
     },
     {
-      "soru": "400 kV hat o an 389 kV gösteriyorsa hat nasıl anılır?",
+      "soru": "200 mHz'lik bir frekans düşüşü 50,0 Hz'i nereye indirir?",
       "secenekler": [
-        "Yine 400 kV hat; 389 o anki gerilimdir",
-        "Nominali 389 kV'a güncellenir",
-        "Bant dışına çıktığı için arızalıdır",
-        "Artık 389 kV hat olmuştur"
-      ],
-      "dogru": 0,
-      "neden": "389 kV hem planlama hem normal işletme bandının içindedir."
-    },
-    {
-      "soru": "Türkiye şebekesinin nominal frekansı ve örnek ölçüm nedir?",
-      "secenekler": [
-        "Nominal 50 Hz; o an 49,9 Hz ölçülebilir",
-        "Nominal 60 Hz",
-        "Nominal 49,8 Hz",
-        "Nominal 49,9 Hz"
-      ],
-      "dogru": 0,
-      "neden": "49,9 Hz, 49,8–50,2 bandının içindedir."
-    },
-    {
-      "soru": "200 mHz kaç hertz eder?",
-      "secenekler": [
-        "0,02 Hz",
-        "20 Hz",
-        "0,2 Hz",
-        "200 Hz"
-      ],
-      "dogru": 2,
-      "neden": "Mili, binde bir demektir. 200 Hz değildir."
-    },
-    {
-      "soru": "200 mHz'lik düşüş, 50,0 Hz'den nereye iner?",
-      "secenekler": [
-        "49,98 Hz",
-        "30 Hz",
         "48,0 Hz",
-        "49,8 Hz"
-      ],
-      "dogru": 3,
-      "neden": "Primer rezerv tanımı bu 0,2 Hz'lik basamağı esas alır."
-    },
-    {
-      "soru": "1 kV ve 1 MW sırasıyla nedir?",
-      "secenekler": [
-        "1.000.000 V ve 1 kW",
-        "100 V ve 100 kW",
-        "1.000 V ve 1.000 kW",
-        "10 V ve 10 kW"
+        "49,98 Hz",
+        "49,8 Hz",
+        "30 Hz"
       ],
       "dogru": 2,
-      "neden": "kV gerilim, MW o anki güçtür."
+      "neden": "Mili binde bir demektir: 200 mHz = 0,2 Hz. 50,0 − 0,2 = 49,8 Hz. Bu değer TEİAŞ'ın normal kontrol bandının alt ucu ve LFSM düşük mod eşiğidir."
     },
     {
-      "soru": "MVA ile TWh neyi ölçer?",
+      "soru": "Trafo büyüklüğü ve yıllık tüketim sırasıyla hangi birimle verilir?",
       "secenekler": [
-        "İkisi de akım ölçer",
-        "İkisi de frekans ölçer",
-        "MVA trafonun görünür gücünü, TWh bir süredeki enerjiyi",
-        "MVA enerji, TWh gerilim ölçer"
-      ],
-      "dogru": 2,
-      "neden": "Yıllık tüketim TWh, trafo büyüklüğü MVA'dır."
-    },
-    {
-      "soru": "Evdeki priz hangi gerilim sınıfındadır?",
-      "secenekler": [
-        "Alçak gerilim",
-        "Orta gerilim iletim",
-        "400 kV iletim",
-        "154 kV iletim"
-      ],
-      "dogru": 0,
-      "neden": "Alçak gerilim yönetmelikte 400/230 V'dur."
-    },
-    {
-      "soru": "Grubun tanımında sayılan alanlar hangisidir?",
-      "secenekler": [
-        "Yalnızca röle imalatı",
-        "İletim ve dağıtım, yenilenebilir entegrasyon, güvenlik, optimizasyon, simülasyon, veri analitiği",
-        "Yalnızca piyasa fiyatı",
-        "Yalnızca saha montajı"
+        "MW ve MVA",
+        "MVA ve TWh",
+        "kV ve MW",
+        "TWh ve MVA"
       ],
       "dogru": 1,
-      "neden": "MAM sayfasındaki tanımdır."
+      "neden": "MVA görünür güç, ekipman kapasitesi için kullanılır (toplam trafo gücü yaklaşık 237.700 MVA). TWh bir süre boyunca tüketilen enerjidir (2025 tüketimi yaklaşık 360,9 TWh)."
     },
     {
-      "soru": "İletim ile dağıtım farkı nedir?",
+      "soru": "Statik analiz ile dinamik analiz arasındaki fark hangi şıkta doğru verilmiştir?",
       "secenekler": [
-        "İletim ev prizine kadar gider",
-        "İkisi aynı gerilimdedir",
-        "İletim yüksek gerilimle taşır; dağıtım daha düşük gerilimle yerel ulaştırır",
-        "Dağıtım yalnızca 400 kV'dir"
+        "Statik analiz belli bir andaki dengeli hali, dinamik analiz arıza sonrası saniyeleri izler",
+        "Statik analiz dağıtım şebekesi için, dinamik analiz iletim şebekesi için kullanılır",
+        "Statik analiz elle çözülebilir, dinamik analiz ise bilgisayar benzetimi gerektirir",
+        "Statik analiz kararlılığı, dinamik analiz yük akışını ve gerilimleri hesaplar"
+      ],
+      "dogru": 0,
+      "neden": "Yük akışı ve güvenlik analizi statiktir. Geçici hal kararlılığı ('jeneratörler birlikte dönmeye devam ediyor mu') dinamiktir."
+    },
+    {
+      "soru": "Grubun çalışma alanları listesinde yer ALMAYAN madde hangisidir?",
+      "secenekler": [
+        "Topraklama analizi ve tasarımı",
+        "Koruma-koordinasyon ve özel koruma sistemleri",
+        "Güç elektroniği kartı tasarımı ve üretimi",
+        "Derin öğrenme destekli iletim planlama araçları"
       ],
       "dogru": 2,
-      "neden": "Yenilenebilir entegrasyon, güneş ve rüzgârın sorunsuz bağlanmasıdır."
+      "neden": "On bir alan analiz, planlama, koruma, topraklama, benzetim, bilgi sistemi ve veri odaklıdır. 'Grubun güç elektroniği kartı basan ekip olduğunu' varsayma; STATCOM ayrı bir MAM ürünüdür."
     },
     {
-      "soru": "Grupta birlikte yürüyen üç faaliyet nedir?",
+      "soru": "Grubun yazdığı beş iş paketi ile ilandaki tercih sebepleri arasındaki ilişki nedir?",
       "secenekler": [
-        "Saha, test, bakım",
-        "Uygulamalı Ar-Ge, ürün ve danışmanlık",
-        "Yalnızca üretim, satış, montaj",
-        "Piyasa, tarife, lisans"
+        "İkisi birbirinden bağımsızdır; iş paketleri iç belgedir",
+        "İş paketleri, tercih sebeplerinin açık halidir",
+        "İş paketleri yalnızca aday araştırmacı ilanı içindir",
+        "Tercih sebepleri daha geniştir; iş paketleri alt kümedir"
       ],
       "dogru": 1,
-      "neden": "İş dört kapıdan çıkar: Ar-Ge, ürün, danışmanlık, karar destek."
+      "neden": "Paketler: yatırım planlaması, yenilenebilir ve depolama entegrasyonu, karar destek algoritmaları, gerçek zamanlı modelleme ve dijital ikiz, bilgi sistemi ve yazılım."
     },
     {
-      "soru": "İş paketlerinden biri hangisi değildir?",
+      "soru": "'THS 9' bir ürün için ne iddia eder?",
       "secenekler": [
-        "Şebeke işletimi için karar destek algoritmaları",
-        "Fayda/maliyet ve risk/etki eksenli yatırım planlaması",
-        "STATCOM kartı basmak",
-        "Gerçek zamanlı modelleme ve dijital ikiz"
+        "Ürünün 9 ayrı modülden oluştuğunu",
+        "Ürünün araştırmasının bitip geliştirmenin durduğunu",
+        "Ürünün gerçek işletme ortamında kanıtlandığını",
+        "Ürünün 9 yıldır geliştirilmekte olduğunu"
       ],
       "dogru": 2,
-      "neden": "İlan kart basmanı istemez. Diğerleri iş paketidir."
+      "neden": "Teknoloji Hazırlık Seviyesi 1'den 9'a gider; 9 en üst basamaktır. 'THS 9 araştırma bitti demektir' yaygın yanlıştır: Faz 3 ve Faz 4 geliştirmenin sürdüğünü gösterir."
     },
     {
-      "soru": "Statik analiz ne sorar?",
+      "soru": "YTBS ile SCADA arasındaki iş bölümü hangi şıkta doğru anlatılmıştır?",
       "secenekler": [
-        "Bu yükte hangi hat ne kadar dolu, gerilimler ne?",
-        "Komşu ülkeye kaç MW satılır?",
-        "Jeneratörler arızadan sonra birlikte dönüyor mu?",
-        "Frekans 30 saniyede nasıl toparlanır?"
+        "YTBS sahadan ölçüm toplar; SCADA bu ölçümler üzerinde analiz yapar",
+        "YTBS bir SCADA'dır; TEİAŞ'ın eski SCADA'sının yerine geçmiştir",
+        "SCADA ölçer ve kumanda eder; YTBS ölçümü modele bağlayıp karar üretir",
+        "SCADA uzun vadeli planlama, YTBS gerçek zamanlı kumanda içindir"
       ],
-      "dogru": 0,
-      "neden": "Dinamik analiz zaman içindeki davranışı izler."
+      "dogru": 2,
+      "neden": "SCADA şebekenin gözü ve elidir. YTBS, gözün gördüğünü haritaya işleyip 'şimdi ne olur, ne yapmalı' diye düşünen beyindir. 'YTBS bir SCADA'dır' yaygın yanlıştır."
     },
     {
-      "soru": "EERA üyeliği nasıldır?",
+      "soru": "YTBS'nin MAM tarafından sayılan yetenekleri arasında hangisi YOKTUR?",
       "secenekler": [
-        "Üyelik yoktur",
-        "Yalnızca nükleer üyesidir",
-        "ENTSO-E'nin işletmecisidir",
-        "Smart Grids ve Hydropower üyesi; liste ezberlenmez"
-      ],
-      "dogru": 3,
-      "neden": "Mülakatta 'Avrupa araştırma işbirliğini takip ediyoruz' yeter."
-    },
-    {
-      "soru": "YTBS'nin açılımı nedir?",
-      "secenekler": [
-        "Yük Tevzi Bara Sayısı",
-        "Yerel Tüketim Bilgi Sayacı",
-        "Yüksek Trafo Bakım Sistemi",
-        "Yük Tevzi Bilgi Sistemi; Load Dispatch Information System"
-      ],
-      "dogru": 3,
-      "neden": "Yük tevzi, üretimi tüketimle dengelemektir."
-    },
-    {
-      "soru": "YTBS'nin lisans ve olgunluğu nedir?",
-      "secenekler": [
-        "TEİAŞ lisanslı, THS 9, geliştiren bu gruptur",
-        "EPİAŞ lisanslı, THS 4",
-        "EPDK lisanslı, THS 1",
-        "Lisanssız prototip"
-      ],
-      "dogru": 0,
-      "neden": "THS 9, gerçek işletmede kanıtlandığı iddiasıdır."
-    },
-    {
-      "soru": "THS ölçeğinde 1 ve 9 ne demektir?",
-      "secenekler": [
-        "1 temel fikir, 9 gerçek işletmede kanıt",
-        "1 en olgun, 9 laboratuvar",
-        "İkisi de aynı",
-        "9 yalnızca yayın demektir"
-      ],
-      "dogru": 0,
-      "neden": "THS, Teknoloji Hazırlık Seviyesi'dir."
-    },
-    {
-      "soru": "YTBS yeteneklerinden biri değildir?",
-      "secenekler": [
-        "Yaşayan dijital ikiz",
-        "En düşük maliyet ve yüksek güvenilirlik için optimizasyon",
+        "Dijital ikiz üzerinde senaryo ve analiz",
+        "Kesicilere doğrudan açma-kapama komutu",
         "Yapay zekâ destekli güvenlik analizi ve tahmin",
-        "Sahadaki kesiciye doğrudan SCADA yerine kumanda vermek"
+        "SCADA/EMS ile web servisi üzerinden veri alışverişi"
       ],
-      "dogru": 3,
-      "neden": "YTBS SCADA'nın yerine geçmez."
+      "dogru": 1,
+      "neden": "Kumanda SCADA'nın işidir. YTBS dijital ikiz, güvenlik analizi, tahmin, optimizasyon ve merkezi veri tabanı sunar; sonucu web servisiyle paylaşır."
     },
     {
-      "soru": "SCADA ve EMS ne demektir?",
+      "soru": "TEİAŞ eğitim duyurularında geçen 'sistem ataleti hesabı' modülü neden gereklidir?",
       "secenekler": [
-        "EMS bir hat adıdır",
-        "SCADA bir gerilim bandıdır",
-        "SCADA ölçer ve kumanda eder; EMS ölçüm üzerinde şebeke hesabı yapar",
-        "İkisi de piyasa fiyatıdır"
+        "Dönen jeneratör kütlesinin frekans değişimine direnci; yenilenebilir arttıkça azalabilir",
+        "Hatların termik limitini belirleyen büyüklük; hava sıcaklığıyla saat saat değişir",
+        "Trafo kayıplarını hesaplamak için gereken parametre; yük arttıkça birlikte değişir",
+        "Piyasa fiyatını tahmin eden gösterge; gün öncesi piyasada kullanılır"
+      ],
+      "dogru": 0,
+      "neden": "Evirici tabanlı kaynaklar dönen kütle getirmez. Atalet düştükçe aynı arızada frekans daha hızlı değişir; bu yüzden sürekli hesaplanır."
+    },
+    {
+      "soru": "YTBS Faz 3 ölçeğinin (30'dan fazla modül, 4000'den fazla arıza benzetimi, on binlerce web servis çağrısı) mülakatta anılma amacı nedir?",
+      "secenekler": [
+        "Grubun büyüklüğüyle övünmek ve adayı rakamla etkilemek",
+        "Bunun prototip değil üretim yazılımı olduğunu göstermek",
+        "Adayın bu rakamları eksiksiz ezberlediğini kanıtlamak",
+        "Faz 4'ün gereksiz olduğunu rakamla anlatmak"
+      ],
+      "dogru": 1,
+      "neden": "Rakam, çok kullanıcılı ve yoğun kullanılan bir analiz yazılımında performans, veri modeli ve doğrulamanın neden önemli olduğunu anlatmak içindir."
+    },
+    {
+      "soru": "SIPS'in çalışma şekli hangi şıkta doğru anlatılmıştır?",
+      "secenekler": [
+        "Her hattın kendi rölesinin ayarını merkezden uzaktan değiştirir",
+        "Yalnızca olay kaydı tutar ve operatöre rapor sunar",
+        "Geniş alan ölçümüyle bütünlüğü izler; büyük arızada jeneratör veya yük atar",
+        "Frekans düşünce santrallerin üretimini AGC ile dakikalar içinde otomatik artırır"
       ],
       "dogru": 2,
-      "neden": "YTBS bunlarla web servisi üzerinden veri alışverişi yapar."
+      "neden": "Amaç zincirleme çökmeyi durdurmaktır. 'Atmak', bir jeneratörü ya da yük grubunu bilerek şebekeden ayırmaktır. Ürün tanımında ayrıca web arayüzü, olay kaydı ve modüler büyüme vardır."
     },
     {
-      "soru": "Güvenlik analizi hangi soruyu sorar?",
+      "soru": "PMU ölçümlerinin uzak noktaları karşılaştırılabilir kılan özelliği nedir?",
       "secenekler": [
-        "Hangi röle markası ucuzdur?",
-        "Şu hat veya jeneratör aniden düşerse ne olur?",
-        "Yıllık fatura kaçtır?",
-        "Priz gerilimi kaç volttur?"
+        "Saniyede binlerce örnekle çok yüksek hızda ölçüm yapması",
+        "Büyüklük ve açıyı ortak saate bağlı zaman damgasıyla ölçmesi",
+        "Ölçümü doğrudan SCADA sunucusuna şifreli göndermesi",
+        "Yalnızca 400 kV baralara takılabilmesi"
       ],
       "dogru": 1,
-      "neden": "Önceden hesaplanan beklenmedik kayıp analizidir."
+      "neden": "Fazör 'büyüklük + açı' ölçümüdür. Farklı PMU'lar aynı saate bağlı olduğu için şebekenin uzak noktaları aynı anda karşılaştırılabilir; SIPS bu sayede geniş alan görür."
     },
     {
-      "soru": "TEİAŞ eğitim duyurularındaki YTBS modüllerinden biri değildir?",
+      "soru": "Klasik röle ile SIPS arasındaki fark için verilen benzetme hangisidir?",
       "secenekler": [
-        "Yük tahmini",
-        "Gerilim planlaması ve arz güvenilirliği",
-        "STATCOM kart tasarımı",
-        "Sistem ataleti ve geçici hal kararlılığı"
+        "Röle tek evin sigortası; SIPS mahalle karanlığa gömülmesin diye sokak kesen merkez",
+        "Röle şebekenin düşünen beyni; SIPS ise şebekenin gören gözü ve tutan eli",
+        "Röle saniyeler içinde refleks; SIPS on beş dakikalık piyasa talimatı gibidir",
+        "Röle iletim şebekesinin koruması; SIPS ise dağıtım şebekesinin korumasıdır"
+      ],
+      "dogru": 0,
+      "neden": "Röle kendi koruma bölgesindeki tek ekipmanı korur; SIPS sistem bütünlüğü için sistem düzeyinde eylem alır. İlanda koruma, güvenlik ve kararlılık birlikte geçtiği için bu ayrım sorulabilir."
+    },
+    {
+      "soru": "İlan STATCOM konusunda ne ister ve mülakatta STATCOM nasıl konumlandırılır?",
+      "secenekler": [
+        "İlan STATCOM tasarımı ister; güç elektroniği devresi anlatılır",
+        "İlan tasarım istemez; STATCOM dinamik analizde modellenecek cihazdır",
+        "STATCOM bu grubun ürünü değildir; mülakatta hiç anılmaz",
+        "STATCOM yalnızca dağıtımda kullanılır; ilanla ilgisi yoktur"
+      ],
+      "dogru": 1,
+      "neden": "STATCOM (statik senkron kompanzatör), güç elektroniği tabanlı reaktif kompanzasyondur. Analiz yazılımı onu hem statik hem dinamik olarak temsil edebilmelidir."
+    },
+    {
+      "soru": "Reaktif güç bu sayfada nasıl tanımlanır?",
+      "secenekler": [
+        "Santralin talebin üstünde ürettiği fazla enerji",
+        "Hatlarda ısıya dönüşüp kaybolan güç bileşeni",
+        "İş yapmayan ama gerilimi ayakta tutan güç bileşeni",
+        "Yalnızca güneş santrallerinin ürettiği güç türü"
       ],
       "dogru": 2,
-      "neden": "Atalet, dönen kütlenin frekans değişimine direncidir."
+      "neden": "Kompanzasyon, bu ihtiyacı yerinde karşılamaktır. Q ile V ilişkisi: reaktif güç gerilimle ilişkilidir."
     },
     {
-      "soru": "Faz 3 duyurusundaki ölçek hangisidir?",
+      "soru": "Dengeleme Güç Piyasası'nı kim işletir, gün öncesi ve gün içi piyasayı kim işletir?",
       "secenekler": [
-        "30'dan fazla modül, 4000'den fazla arıza simülasyonu, on binlerce web servis",
-        "3 modül ve 30 kullanıcı",
-        "Yalnızca 1 arıza senaryosu",
-        "4000 kullanıcı ve 30 servis"
+        "İkisini de EPİAŞ işletir; TEİAŞ yalnızca şebekeyi işletir",
+        "İkisini de TEİAŞ işletir; EPİAŞ yalnızca fiyat yayımlar",
+        "Dengeleme piyasasını TEİAŞ, gün öncesi ve gün içini EPİAŞ işletir",
+        "Dengeleme piyasasını EPDK, gün öncesi piyasayı EPİAŞ işletir"
       ],
-      "dogru": 0,
-      "neden": "Rakam, hesap performansı ve veri modelinin işin parçası olduğunu anlatır."
+      "dogru": 2,
+      "neden": "Dengeleme piyasası gerçek zamanda üretim-tüketim farkını kapatan talimat piyasasıdır ve sistem işletmecisi TEİAŞ'tadır. EPİAŞ piyasa operatörüdür. EPDK düzenleyicidir; lisans, tarife ve yönetmelik verir."
     },
     {
-      "soru": "SIPS'in açılımı ve Türkçe adı nedir?",
+      "soru": "Bu ilanın 'milli kriter' kaynağı olan Elektrik Şebeke Yönetmeliği'ni hangi kurum çıkarır?",
       "secenekler": [
-        "System Integrity Protection Scheme; Akıllı Koruma Sistemi",
-        "Static Integrity Power Switch",
-        "Senkron İletim Planlama Sistemi",
-        "Sistem İçi Piyasa Sayacı"
-      ],
-      "dogru": 0,
-      "neden": "Kelime kelime sistem bütünlüğü koruma düzenidir. THS 9 ve TEİAŞ lisanslıdır."
-    },
-    {
-      "soru": "PMU ne ölçer?",
-      "secenekler": [
-        "Gerilim ve akımı büyüklük ve açıyla, hassas zaman damgasıyla",
-        "Yalnızca yıllık enerjiyi",
-        "Piyasa fiyatını",
-        "Yalnızca reaktif gücü"
-      ],
-      "dogru": 0,
-      "neden": "Fazör, büyüklük artı açıdır."
-    },
-    {
-      "soru": "SIPS büyük arızada ne yapar?",
-      "secenekler": [
-        "Frekansı 60 Hz yapar",
-        "Jeneratör veya yük atma gibi önceden tanımlı eylemleri otomatik tetikler",
-        "Yalnızca alarm yazar, eylem almaz",
-        "Piyasa fiyatını değiştirir"
+        "TEİAŞ",
+        "EPDK",
+        "EPİAŞ",
+        "TÜBİTAK MAM"
       ],
       "dogru": 1,
-      "neden": "Amaç zincirleme çökmeyi durdurmaktır."
+      "neden": "EPDK (Enerji Piyasası Düzenleme Kurumu) lisans, tarife ve yönetmelikten sorumludur. TEİAŞ yönetmeliğe göre işletir."
     },
     {
-      "soru": "SIPS ürün tanımında ayrıca ne vardır?",
+      "soru": "Milli Yük Tevzi Merkezi'nin (MYTM) görevleri arasında hangisi YOKTUR?",
       "secenekler": [
-        "Nükleer lisans",
-        "Web arayüzü, olay kaydı ve modüler büyüme",
-        "Trafo imalatı",
-        "Tarife belirleme"
-      ],
-      "dogru": 1,
-      "neden": "Klasik röle tek ekipmanı korur; SIPS sistem düzeyindedir."
-    },
-    {
-      "soru": "STATCOM nedir ve ilan ne ister?",
-      "secenekler": [
-        "İlan kart basmanı ister",
-        "Bir iletim hattının adıdır",
-        "Bir piyasa ürünüdür",
-        "Statik senkron kompanzatör; ilan tasarım istemez, modelde temsil edilir"
-      ],
-      "dogru": 3,
-      "neden": "Reaktif güç gerilimi ayakta tutar; kompanzasyon bunu yerinde karşılar."
-    },
-    {
-      "soru": "TEİAŞ hangi gerilimleri işletir ve AGC nerededir?",
-      "secenekler": [
-        "Yalnızca alçak gerilim",
-        "400, 154 ve 66 kV; AGC TEİAŞ'tadır",
-        "Yalnızca 34,5 kV; AGC EPİAŞ'tadır",
-        "400 kV EPDK'dadır"
-      ],
-      "dogru": 1,
-      "neden": "TEİAŞ dengeleme güç piyasasını da işletir."
-    },
-    {
-      "soru": "EPİAŞ ile EPDK farkı nedir?",
-      "secenekler": [
-        "EPİAŞ gün öncesi ve gün içi piyasayı işletir; EPDK lisans, tarife ve yönetmelik koyar",
-        "İkisi de iletim işletir",
-        "EPDK piyasa fiyatını anlık belirler",
-        "EPİAŞ yönetmelik yazar"
-      ],
-      "dogru": 0,
-      "neden": "Elektrik Şebeke Yönetmeliği milli kriter kaynağıdır."
-    },
-    {
-      "soru": "Dağıtım ve üretim için sayfadaki sayılar nedir?",
-      "secenekler": [
-        "21 dağıtım şirketi; 2025 sonu yaklaşık 51,9 milyon tüketici",
-        "3 şirket ve 30 milyon",
-        "81 şirket ve 10 milyon",
-        "Sayı verilmez"
-      ],
-      "dogru": 0,
-      "neden": "Tüketici sayısı CIGRE 2026 Türkiye özetindendir. Model lisanslı ve lisanssızı birlikte görür."
-    },
-    {
-      "soru": "MYTM'nin görevlerinden biri değildir?",
-      "secenekler": [
-        "Üretim, iletim ve tüketimi güvenli ve ekonomik işletmek",
-        "Gün öncesi piyasasının fiyatını belirlemek",
         "Gerçek zamanlı dengeyi sağlamak",
-        "Dengeleme piyasasını işletmek ve uluslararası hatları koordine etmek"
-      ],
-      "dogru": 1,
-      "neden": "Gün öncesi piyasa EPİAŞ'tadır. MYTM, Milli Yük Tevzi Merkezi'dir."
-    },
-    {
-      "soru": "400 kV planlama ve normal işletme bantları nedir?",
-      "secenekler": [
-        "Planlama 370–420 kV, normal 340–420 kV",
-        "400–420 ve 300–310",
-        "İkisi de 380–400",
-        "Planlama 340–420, normal 370–420"
-      ],
-      "dogru": 0,
-      "neden": "Kaynak Elektrik Şebeke Yönetmeliği'dir."
-    },
-    {
-      "soru": "154 kV planlama bandı ve iletim kısıtındaki kabul nedir?",
-      "secenekler": [
-        "62–70 kV",
-        "370–420 kV",
-        "140–170 her yerde planlama bandıdır",
-        "146–162 kV; kısıtlı bölgede planlama kabulü 140–170 kV"
+        "Dengeleme piyasasını işletmek",
+        "Uluslararası hatları koordine etmek",
+        "Üretim lisansı vermek"
       ],
       "dogru": 3,
-      "neden": "Normal işletme 154 kV için 140–170 kV'dir."
+      "neden": "MYTM üretimi, iletimi ve tüketimi güvenli, kaliteli ve ekonomik işletir; dengeyi sağlar; dengeleme piyasasını işletir; uluslararası hatları koordine eder. Lisans EPDK'nındır."
     },
     {
-      "soru": "66 kV bantları nasıldır?",
+      "soru": "Bir 154 kV bara iletim kısıtı olmayan bir bölgede planlama çalışmasında 144 kV çıkıyor. Değerlendirme nedir?",
       "secenekler": [
-        "146–162 kV",
-        "370–420 kV",
-        "Planlama 62–70 kV; 66 kV ve altı iletimde normal işletme ±%10",
-        "Yalnızca tam 66 kV"
-      ],
-      "dogru": 2,
-      "neden": "Nominal iletim gerilimleri 400, 154 ve 66 kV'dir."
-    },
-    {
-      "soru": "İletim sistemi içindeki dağıtım ve iç ihtiyaç seviyelerinden biri değildir?",
-      "secenekler": [
-        "31,5 kV ve 15,8 kV",
-        "34,5 kV ve 33 kV",
-        "400/230 V",
-        "10,5 kV ve 6,3 kV"
-      ],
-      "dogru": 2,
-      "neden": "400/230 V alçak gerilimdir. İç ihtiyaç, tesisin kendi elektriğidir."
-    },
-    {
-      "soru": "Planlama yükü nedir?",
-      "secenekler": [
-        "Kurulu gücün %5'i",
-        "İlgili planlama yılında puantın %5 üzeri",
-        "Puantın kendisi",
-        "Puantın iki katı"
+        "Uygundur; 154 kV planlama bandı 140–170 kV'dir",
+        "Uygun değildir; planlama bandı 146–162 kV'dir",
+        "Uygundur; nominalin ±%10'u içinde kalır",
+        "Uygun değildir; 154 kV için sapma kabul edilmez"
       ],
       "dogru": 1,
-      "neden": "Puant, dönemdeki en yüksek tüketim anıdır."
+      "neden": "154 kV için planlama bandı 146–162 kV'dir. 140–170 kV bandı normal işletme için ve iletim kısıtı olan bölgede planlama kabulü olarak geçerlidir. ±%10 kuralı 66 kV ve altı içindir."
     },
     {
-      "soru": "N-1'de sağlanması gerekenlerden biri değildir?",
+      "soru": "400 kV için arıza öncesi planlama bandı ile normal işletme bandı arasındaki fark nedir?",
       "secenekler": [
-        "Bir kullanıcı grubunun bilerek kaybedilmesi",
-        "Kararlılık bozulmaz ve sistem adalara bölünmez",
-        "Hatlar termik limitin altında",
-        "Gerilim ve frekans limit içinde"
-      ],
-      "dogru": 0,
-      "neden": "Nükleer bağlantı noktasında kriter N-2'dir."
-    },
-    {
-      "soru": "LFSM eşikleri ve kararsız uçlar nedir?",
-      "secenekler": [
-        "Eşik 49,0 ve 51,0",
-        "Düşük 49,8, yüksek 50,2; uçlar 47,5 ve 51,5 Hz",
-        "Uçlar 49,8 ve 50,2'dir",
-        "45 ve 55 Hz uçtur"
-      ],
-      "dogru": 1,
-      "neden": "LFSM, sınırlı frekans duyarlı moddur. Santral bu uçlarda asgari süre bağlı kalacak şekilde tasarlanır."
-    },
-    {
-      "soru": "Primer rezervin tanımı ve süresi nedir?",
-      "secenekler": [
-        "AGC ile dakikalar",
-        "15 dakikalık piyasa talimatı",
-        "0–5 Hz salınım sönümü",
-        "200 mHz basamakta verilebilecek azami güç; en geç 30 saniye"
-      ],
-      "dogru": 3,
-      "neden": "200 mHz = 0,2 Hz."
-    },
-    {
-      "soru": "Sekonder ve tersiyer nedir?",
-      "secenekler": [
-        "İkisi de 30 saniyedir",
-        "Sekonder HVDC ayarıdır",
-        "Tersiyer refleks, sekonder piyasadır",
-        "Sekonder AGC ile dakikalar mertebesinde 50 Hz'e ve sınır programına çeker; tersiyer 15 dakikalık dengeleme talimatıdır"
-      ],
-      "dogru": 3,
-      "neden": "Sınır programı, ülkeler arası planlanan güç alışverişidir."
-    },
-    {
-      "soru": "PSS hangi ünitelerde ve hangi salınımlar için aranır?",
-      "secenekler": [
-        "Hiçbir ünitede aranmaz",
-        "Yalnızca 10 MW; 10–20 Hz",
-        "75 MW ve üzeri konvansiyonel ünite veya 300 MW ve üzeri santral üniteleri; 0–5 Hz elektromekanik ve bölgeler arası",
-        "Her güneş santrali; 50 Hz"
+        "Planlama 340–420 kV, işletme 370–420 kV; işletme daha dardır",
+        "İkisi de 370–420 kV'dir; yönetmelik tek bant verir",
+        "Planlama 370–420 kV, işletme 340–420 kV; işletme daha geniştir",
+        "Planlama 380–420 kV, işletme 360–440 kV; üst sınır farklıdır"
       ],
       "dogru": 2,
-      "neden": "PSS, uyarma sistemine eklenen dengeleyicidir."
+      "neden": "Planlama, henüz arıza yokken hedeflenen dar aralıktır; işletme günlük işletmede izin verilen geniş aralıktır. Üst sınır ikisinde de 420 kV'dir."
     },
     {
-      "soru": "2025 sonu kurulu güç, ani puant ve tüketim nedir?",
-      "secenekler": [
-        "122.518,6 MW; 60.414 MW (Temmuz); yaklaşık 360,9 TWh",
-        "127.355,2 MW; 122.518 MW; 60 TWh",
-        "237.700 MW kurulu",
-        "60.414 MW kurulu; 122.518 puant"
-      ],
-      "dogru": 0,
-      "neden": "Puantın ayrıca kaynak yazılmamış olduğu not edilir. Tüketim raporda geçicidir."
-    },
-    {
-      "soru": "Eylül 2026 kurulu güç ve Ekim 2026 hat uzunluğu nedir?",
-      "secenekler": [
-        "77.863 MW ve 127 km",
-        "360,9 MW ve 400 km",
-        "127.355,2 MW ve 77.863 km devre",
-        "122.518,6 MW ve 51,9 milyon km"
-      ],
-      "dogru": 2,
-      "neden": "Devre uzunluğunda aynı direkteki iki devre ayrı sayılır."
-    },
-    {
-      "soru": "2025 sonu trafo sayıları ve toplam güç nedir?",
-      "secenekler": [
-        "450, 18 ve 1.756 ters sırada",
-        "400 kV'de 450, 154 kV'de 1.756, 66 kV'de 18; yaklaşık 237.700 MVA",
-        "Yalnızca 21 trafo",
-        "237.700 adet trafo"
-      ],
-      "dogru": 1,
-      "neden": "Bu satırların ayrıca kaynak yazılmamış olduğu belirtilir."
-    },
-    {
-      "soru": "Kurulu güç puantın yaklaşık iki katıysa ne dersin?",
-      "secenekler": [
-        "Puantın yanlış ölçüldüğünü",
-        "Sistem bol demek değildir; güneş ve rüzgâr aynı anda puantta değildir, kısıt yerel kalır",
-        "Tüm santrallerin aynı anda çalıştığını",
-        "Sistemin bol olduğunu"
-      ],
-      "dogru": 1,
-      "neden": "Kurulu güç etiket kapasitesidir."
-    },
-    {
-      "soru": "ENTSO-E senkron bağlantının yılları ve hatları nedir?",
-      "secenekler": [
-        "Yalnızca HVDC",
-        "2015 deneme, 2010 kalıcı",
-        "Deneme 2010, kalıcı 2015; Yunanistan ve Bulgaristan 400 kV",
-        "İran ve Ermenistan 154 kV"
-      ],
-      "dogru": 2,
-      "neden": "Hatlar: Hamitabat–Maritsa ve Babaeski–Nea Santa."
-    },
-    {
-      "soru": "Doğu bağlantılar nasıl anlatılır?",
-      "secenekler": [
-        "Hepsi 400 kV AC'dir",
-        "Bağlantı yoktur",
-        "Aynı senkron adanın parçası gibi anlatılmaz; Gürcistan'da back-to-back HVDC, İran ve Ermenistan ayrı rejim",
-        "Hepsi ENTSO-E ile senkrondur"
-      ],
-      "dogru": 2,
-      "neden": "Back-to-back HVDC belirli bir hatta bağlanmaz."
-    },
-    {
-      "soru": "Hopa–Batum, Kars–Gümrü ve Doğubeyazıt–Bazargan gerilimleri nedir?",
-      "secenekler": [
-        "154, 400 ve 66",
-        "220 kV, 220 kV ve 154 kV",
-        "Hepsi 400 kV",
-        "220, 154 ve 400"
-      ],
-      "dogru": 1,
-      "neden": "Borçka–Ahıska 400 kV'dir ve Gürcistan'adır."
-    },
-    {
-      "soru": "Transfer kapasitesi sorulursa ne dersin?",
-      "secenekler": [
-        "Kapasite sıfırdır",
-        "TEİAŞ enterkonneksiyon ve kapasite tahsis verisinden bakarım",
-        "EPDK tarifesinden okurum",
-        "Ezberdeki sabit MW'ı söylerim"
-      ],
-      "dogru": 1,
-      "neden": "Kapasite mevsimsel ve anlaşmaya bağlıdır."
-    },
-    {
-      "soru": "Senkron ile HVDC farkı nedir?",
-      "secenekler": [
-        "Senkron güç ayar noktasıyla çalışır",
-        "İkisi aynıdır",
-        "HVDC de aynı frekansı zorlar",
-        "Senkron frekansı paylaşır; HVDC frekansı paylaşmaz, güç ayar noktasıyla kontrol edilir"
-      ],
-      "dogru": 3,
-      "neden": "Senkron alanda primer rezerv paylaşımı, salınım ve N-1 komşuya etki konuşulur."
-    },
-    {
-      "soru": "90 saniyelik metindeki iki kontrol noktası nedir?",
-      "secenekler": [
-        "36 kV yönetmelik tablosundadır",
-        "154 kV de senkron bağlantıdır",
-        "Metin aynen doğrudur",
-        "Senkronu 400 kV Yunanistan–Bulgaristan diye düzelt; '36 kV ve altı' bu sayfada başka geçmez, teyit et"
-      ],
-      "dogru": 3,
-      "neden": "Metin '400 ve 154 kV'de ENTSO-E ile senkron' der; bölüm 9 yalnızca 400 kV der."
-    },
-    {
-      "soru": "Üç dakikalık girişin sırası nedir?",
-      "secenekler": [
-        "Önce STATCOM kartı, sonra fiyat",
-        "Önce EERA listesi, sonra adres",
-        "Yalnızca 90 saniyelik metin",
-        "Kimlik ve 3 yıl, model büyüklüğü, kararın nasıl değiştiği, gruba köprü"
-      ],
-      "dogru": 3,
-      "neden": "Köprü: servise taşımak veya tekrarlanabilir araca bağlamak."
-    },
-    {
-      "soru": "Hz neyi ölçer?",
-      "secenekler": [
-        "Alternatif akımın saniyede kaç kez yön değiştirdiğini; nominal 50 Hz",
-        "Trafo gücünü",
-        "Yıllık enerjiyi",
-        "Gerilimi"
-      ],
-      "dogru": 0,
-      "neden": "mHz, hertz'in binde biridir."
-    },
-    {
-      "soru": "Alçak gerilim yönetmelikte kaçar volttur?",
+      "soru": "Yönetmelikte 'iletim sistemi içindeki dağıtım ve iç ihtiyaç seviyeleri' arasında hangi değer YOKTUR?",
       "secenekler": [
         "34,5 kV",
-        "154 kV",
-        "400/230 V",
-        "66 kV"
-      ],
-      "dogru": 2,
-      "neden": "İç ihtiyaç seviyeleri arasında değildir."
-    },
-    {
-      "soru": "Grubun dört çıkış kapısı nedir?",
-      "secenekler": [
-        "Yalnızca saha bakımı",
-        "Yalnızca kart üretimi",
-        "Ar-Ge projesi, sektöre ürün, iletim ve dağıtıma danışmanlık, kamu ve özele karar destek",
-        "Yalnızca piyasa işletmeciliği"
-      ],
-      "dogru": 2,
-      "neden": "Üç faaliyet biçimi Ar-Ge, ürün ve danışmanlıktır."
-    },
-    {
-      "soru": "Beş iş paketinden depolama ile ilgili olan hangisidir?",
-      "secenekler": [
-        "STATCOM kart basımı",
-        "Yenilenebilir enerji ve depolama entegrasyonu",
-        "Tarife belirleme",
-        "Sayaç okuma"
+        "66 kV",
+        "10,5 kV",
+        "6,3 kV"
       ],
       "dogru": 1,
-      "neden": "Diğer paketler yatırım planlaması, karar destek, dijital ikiz ve yazılım bilgisidir."
+      "neden": "Bu seviyeler 34,5; 33; 31,5; 15,8; 10,5 ve 6,3 kV'dir. 66 kV ise 400 ve 154 kV ile birlikte nominal iletim gerilimidir. Alçak gerilim 400/230 V'tur."
     },
     {
-      "soru": "İş paketlerinde yatırım nasıl ele alınır?",
+      "soru": "Planlama yılında beklenen puant 60.000 MW ise şebeke hangi yüke göre planlanır?",
       "secenekler": [
-        "Yalnızca nüfusa göre",
-        "Fayda/maliyet ve risk/etki eksenli",
-        "Yalnızca en ucuz hat",
-        "EPDK tarifesiyle"
+        "60.000 MW",
+        "63.000 MW",
+        "66.000 MW",
+        "120.000 MW"
       ],
       "dogru": 1,
-      "neden": "Karar destek algoritmaları işletim içindir."
+      "neden": "Planlama yükü puantın %5 üzeridir: 60.000 × 1,05 = 63.000 MW. Planlama kriteri ayrıca normal koşullarda santrallerin azami üretimi aktarabilmesini ister."
     },
     {
-      "soru": "1. çalışma alanı nedir?",
+      "soru": "N-1 durumunda sağlanması gereken şartlardan hangisi listede YOKTUR?",
       "secenekler": [
-        "İletim ve dağıtım için gelişmiş dinamik ve statik analiz, master plan, enterkonneksiyon analizi",
-        "Büyük veri araçları",
-        "Akıllı şebeke tümleştirmesi",
-        "Topraklama tasarımı"
-      ],
-      "dogru": 0,
-      "neden": "Liste on bir maddedir."
-    },
-    {
-      "soru": "2 ve 3. çalışma alanları nedir?",
-      "secenekler": [
-        "Topraklama ve PSS",
-        "Yenilenebilirin entegrasyonu ve uyumluluğu; akıllı şebeke teknolojilerinin tümleştirilmesi",
-        "Yalnızca piyasa",
-        "Yalnızca röle imalatı"
-      ],
-      "dogru": 1,
-      "neden": "4. madde fizibilite ve fayda/maliyet'tir."
-    },
-    {
-      "soru": "5. çalışma alanı nedir?",
-      "secenekler": [
-        "Alçak gerilim prizi",
-        "Yalnızca gün öncesi fiyat ezberi",
-        "Topraklama",
-        "Piyasa ile şebekeyi birlikte ele alan enerji ekonomisi"
+        "Hiçbir kullanıcı kaybedilmemeli",
+        "Sistem adalara bölünmemeli",
+        "Hatlar termik limitin altında kalmalı",
+        "Üretim maliyeti artmamalı"
       ],
       "dogru": 3,
-      "neden": "EPİAŞ ile şebeke fiziği burada birbirine değer."
+      "neden": "N-1 şartları teknik güvenlikle ilgilidir: gerilim ve frekans limit içinde, hatlar termik limitin altında, kullanıcı kaybı yok, kararlılık bozulmuyor, adalara bölünme yok. Maliyet N-1 şartı değildir."
     },
     {
-      "soru": "6 ve 7. çalışma alanları nedir?",
+      "soru": "Nükleer santral bağlantı noktasında planlama kriteri nedir?",
       "secenekler": [
-        "Yalnızca güneş tahmini",
-        "Koruma-koordinasyon ve özel koruma; topraklama analizi ve tasarımı",
-        "Yalnızca trafo sayımı",
-        "Yalnızca İngilizce"
+        "N-1",
+        "N-2",
+        "N-3",
+        "N-0; nükleer santral için özel kriter yoktur"
       ],
       "dogru": 1,
-      "neden": "SIPS, özel koruma tarafına oturur."
+      "neden": "Nükleer bağlantı noktasında iki elemanın birden devre dışı kalması (N-2) durumunda da sistem güvenli kalmalıdır."
     },
     {
-      "soru": "8 ve 9. çalışma alanları nedir?",
+      "soru": "Frekans 50,25 Hz'e çıktı. Hangi mekanizma devreye girer?",
       "secenekler": [
-        "Ekipmanın teknik yeterlilik ve performans değerlendirmesi; gerçek zamanlı modelleme ve benzetim",
-        "Yalnızca doktora dersi",
-        "Piyasa takası ve tarife",
-        "Yalnızca saha montajı"
-      ],
-      "dogru": 0,
-      "neden": "Benzetim, simülasyonun Türkçesidir."
-    },
-    {
-      "soru": "10 ve 11. çalışma alanları nedir?",
-      "secenekler": [
-        "Yalnızca CAD çizimi",
-        "Yalnızca insan kaynakları",
-        "Elektrik şebekesi bilgi sistemleri ve yazılımları; büyük veri, derin öğrenme ve optimizasyon destekli iletim araçları",
-        "Yalnızca muhasebe"
+        "LFSM düşük mod; frekans normal banttan çıkmıştır",
+        "Hiçbir şey; 50,25 Hz normal kontrol bandının içinde kalır",
+        "LFSM yüksek mod; 50,2 Hz eşiği aşıldığı için üretim azaltılır",
+        "Hiçbir şey; santraller 51,5 Hz'e kadar müdahale etmez"
       ],
       "dogru": 2,
-      "neden": "YTBS 10. maddenin ürün örneğidir."
+      "neden": "Normal kontrol bandı 49,8–50,2 Hz'dir. LFSM (Sınırlı Frekans Duyarlı Mod) yüksek mod eşiği 50,2 Hz, düşük mod eşiği 49,8 Hz'dir. 47,5 ve 51,5 Hz, tasarımın gördüğü uçlardır."
     },
     {
-      "soru": "Enterkonneksiyon bu sayfada ne demektir?",
+      "soru": "47,5 Hz ve 51,5 Hz değerlerinin anlamı nedir?",
       "secenekler": [
-        "Aynı baradaki iki hat",
-        "Trafo merkezi içi bara",
-        "Ülkeler arası şebeke bağlantısı",
-        "Dağıtım sayaç hattı"
+        "TEİAŞ'ın normal kontrol bandının alt ve üst sınırları",
+        "LFSM düşük ve yüksek modlarının devreye girme eşikleri",
+        "Kararsız işletmede santralin bağlı kalmak zorunda olduğu uçlar",
+        "Primer rezervin devreye girdiği alt ve üst eşikler"
       ],
       "dogru": 2,
-      "neden": "Ayrıntı bölüm 9'dadır."
+      "neden": "Frekans bu uçlara savrulsa bile santral hemen şebekeden kopmamalıdır; aksi halde arıza zincirleme büyür."
     },
     {
-      "soru": "EERA'da Smart Grids ve Hydropower ne demektir?",
+      "soru": "Bir santral aniden düştü ve frekans düşmeye başladı. İlk 30 saniye içinde devreye giren kademe hangisidir?",
       "secenekler": [
-        "Dağıtım ve sayaç",
-        "Akıllı şebekeler ve hidroelektrik",
-        "Piyasa ve tarife",
-        "Nükleer ve kömür"
+        "Tersiyer kontrol; dengeleme piyasası talimatıyla",
+        "Primer rezerv; 200 mHz basamakta en geç 30 saniyede",
+        "Sekonder kontrol; AGC ile dakikalar içinde",
+        "SIPS; yük atarak frekansı durdurur"
       ],
       "dogru": 1,
-      "neden": "Üyelik listesini ezberleme."
+      "neden": "Primer rezerv refleks gibidir, saniyeler içinde tepki verir. Sekonder kontrol AGC ile dakikalar mertebesinde frekansı 50 Hz'e ve sınır programını hedefine çeker. Tersiyer 15 dakikalık talimattır."
     },
     {
-      "soru": "Mülakatta Gebze ile Ankara için yeterli cümle nedir?",
+      "soru": "Sekonder kontrolün iki hedefi hangi şıkta doğru verilmiştir?",
       "secenekler": [
-        "Gebze'deki genel MAM ile Ankara'daki enerji yazılım grubunu ayırıyorum",
-        "Adresin tamamını okurum",
-        "İş Gebze'dedir",
-        "İkisi aynı binadır"
-      ],
-      "dogru": 0,
-      "neden": "İletişim, mülakatta adres okumak için değildir."
-    },
-    {
-      "soru": "Yük tevzi ne demektir?",
-      "secenekler": [
-        "Elektriğin üretim ve tüketim arasında dağıtılıp dengelenmesi",
-        "Yükün faturasının kesilmesi",
-        "Trafo yağının değiştirilmesi",
-        "Sayacın yerinde okunması"
-      ],
-      "dogru": 0,
-      "neden": "YTBS'nin İngilizcesi Load Dispatch Information System'dır."
-    },
-    {
-      "soru": "Dijital ikiz bu sayfada ne demektir?",
-      "secenekler": [
-        "Aynı şebekenin, ölçümle güncellenen, üzerinde senaryo koşulan hesap kopyası",
-        "Pazarlama sloganı",
-        "SCADA ekranının ekran görüntüsü",
-        "Trafo kartının üç boyutlu çizimi"
-      ],
-      "dogru": 0,
-      "neden": "YTBS bunu senaryo ve analiz için kullanır."
-    },
-    {
-      "soru": "YTBS'de yapay zekâ hangi işlere bağlanır?",
-      "secenekler": [
-        "Tarife onayı",
-        "Personel bordrosu",
-        "Güvenlik analizi, yük ve yenilenebilir üretim tahmini, işletme planlaması",
-        "Kart tasarımı"
-      ],
-      "dogru": 2,
-      "neden": "Optimizasyon en düşük maliyet ve yüksek güvenilirlik içindir."
-    },
-    {
-      "soru": "Merkezi veri tabanı kimlerle konuşur?",
-      "secenekler": [
-        "Hiçbir sistemle",
-        "Yalnızca e-posta ile",
-        "Yalnızca USB ile",
-        "SCADA/EMS ile web servisleri üzerinden"
-      ],
-      "dogru": 3,
-      "neden": "YTBS ölçümü modele bağlar."
-    },
-    {
-      "soru": "Atalet neden hesaplanır?",
-      "secenekler": [
-        "Dönen jeneratör kütlesi frekansın ani değişmesine direnir; güneş ve rüzgâr artınca bu direnç azalabilir",
-        "Piyasa fiyatını sabitlemek için",
-        "Trafo yağ seviyesini görmek için",
-        "N-2'yi iptal etmek için"
-      ],
-      "dogru": 0,
-      "neden": "Modül adı sistem ataleti hesabıdır."
-    },
-    {
-      "soru": "Geçici hal kararlılığı neyi sorar?",
-      "secenekler": [
-        "Büyük arızadan sonraki ilk saniyelerde jeneratörler uyumlu dönmeye devam ediyor mu?",
-        "Hat kaç kilometredir?",
-        "Yıllık enerji kaç TWh?",
-        "Hangi tarife uygulanır?"
-      ],
-      "dogru": 0,
-      "neden": "TEİAŞ eğitim duyurularındaki modüllerdendir."
-    },
-    {
-      "soru": "Faz 3 ölçeği neden bilinir?",
-      "secenekler": [
-        "Övünmek için değil; hesap performansı ve veri modeli işin parçasıdır diye",
-        "Puan formülüne eklemek için",
-        "Kontenjanı göstermek için",
-        "İngilizce barajı için"
-      ],
-      "dogru": 0,
-      "neden": "30'dan fazla modül, 4000'den fazla arıza simülasyonu, on binlerce servis çağrısı."
-    },
-    {
-      "soru": "PMU'nun açılımı nedir?",
-      "secenekler": [
-        "Protection Module for Utilities",
-        "Primary Monitoring Unit",
-        "Phasor Measurement Unit, Fazör Ölçüm Birimi",
-        "Power Management Utility"
-      ],
-      "dogru": 2,
-      "neden": "Fazör, büyüklük artı açıdır."
-    },
-    {
-      "soru": "Farklı PMU'lar neden karşılaştırılabilir?",
-      "secenekler": [
-        "Aynı röleye bağlı oldukları için",
-        "Aynı gerilimde oldukları için",
-        "Aynı saate bağlı oldukları için uzak noktalar aynı anda görülebilir",
-        "Aynı ülkede oldukları için"
-      ],
-      "dogru": 2,
-      "neden": "SIPS geniş alan ölçümüyle çalışır."
-    },
-    {
-      "soru": "Atmak fiili burada ne demektir?",
-      "secenekler": [
-        "Hat boyunu kısaltmak",
-        "Cihazı hurdaya çıkarmak",
-        "Puanı silmek",
-        "Jeneratörü veya yük grubunu bilerek şebekeden ayırmak"
-      ],
-      "dogru": 3,
-      "neden": "Amaç zincirleme çökmeyi durdurmaktır."
-    },
-    {
-      "soru": "Röle ile SIPS benzetmesi nedir?",
-      "secenekler": [
-        "Röle sistemin tamamını atar",
-        "İkisi aynı cihazdır",
-        "Röle tek evin sigortasıdır; SIPS mahalle kararlı kalsın diye bazı sokakları bilerek keser",
-        "SIPS yalnızca tek trafoyu korur"
-      ],
-      "dogru": 2,
-      "neden": "İkisi korumanın iki katmanıdır."
-    },
-    {
-      "soru": "Reaktif güç ne işe yarar?",
-      "secenekler": [
-        "Piyasa fiyatını belirler",
-        "İş yapmaz ama gerilimi ayakta tutar",
-        "Frekansı 60 Hz yapar",
-        "Sayacın yazdığı enerjiyi üretir"
+        "Gerilimi nominalde tutmak ve kayıpları azaltmak",
+        "Frekansı 50 Hz'e ve sınır programını hedefine çekmek",
+        "Piyasa fiyatını dengelemek ve rezervi yenilemek",
+        "Jeneratörleri senkron tutmak ve salınımı sönümlemek"
       ],
       "dogru": 1,
-      "neden": "Kompanzasyon bu ihtiyacı yerinde karşılamaktır."
+      "neden": "Sekonder kontrol AGC ile çalışır. Primer rezerv frekansı durdurur ama nominale getirmez; AGC bunu dakikalar içinde tamamlar."
     },
     {
-      "soru": "STATCOM hangi konularda anlatılır?",
+      "soru": "Yönetmeliğe göre PSS hangi ünitelerde aranır?",
       "secenekler": [
-        "Piyasa takası",
-        "Hat güzergâhı",
-        "Gerilim regülasyonu, geçici ve dinamik kararlılık, güç kalitesi",
-        "İngilizce sınavı"
+        "Bütün güneş ve rüzgâr santrallerinde",
+        "50 MW ve üzeri her santralde",
+        "75 MW ve üzeri konvansiyonel ünitelerde",
+        "Yalnızca nükleer santral ünitelerinde"
       ],
       "dogru": 2,
-      "neden": "Mülakat cümlesi: analiz yazılımı bunu statik ve dinamik temsil etmelidir."
+      "neden": "Şart: 75 MW ve üzeri konvansiyonel ünite veya 300 MW ve üzeri konvansiyonel santral üniteleri. PSS (Power System Stabilizer) jeneratörün uyarma sistemine eklenen, 0–5 Hz elektromekanik ve bölgeler arası salınımları sönümleyen kontrol devresidir. Konvansiyonel, dönen jeneratörlü santral demektir."
     },
     {
-      "soru": "CIGRE'nin açılımı nedir?",
+      "soru": "2025 sonu kurulu güç 122.518,6 MW, ani puant 60.414 MW. 'Kurulu güç puantın iki katı, sistem bol' yorumu neden yanlıştır?",
       "secenekler": [
-        "Bir yazılım yığını",
-        "Bir gerilim bandı",
-        "Conseil International des Grands Réseaux Électriques, Uluslararası Büyük Elektrik Sistemleri Konseyi",
-        "Bir dağıtım şirketinin adı"
-      ],
-      "dogru": 2,
-      "neden": "51,9 milyon tüketici bu özetten gelir."
-    },
-    {
-      "soru": "AGC'nin açılımı ve işi nedir?",
-      "secenekler": [
-        "Automatic Generation Control; santral üretimini artırıp azaltarak frekansı hedefte tutar",
-        "Bir trafo sayısıdır",
-        "Bir piyasa fiyatıdır",
-        "Bir hat adıdır"
-      ],
-      "dogru": 0,
-      "neden": "TEİAŞ'ta çalışır. Sekonder kontrol AGC iledir."
-    },
-    {
-      "soru": "Dengeleme Güç Piyasası nedir?",
-      "secenekler": [
-        "Dağıtım tarifesi",
-        "Kapasite ihaleleri yalnızca",
-        "Gerçek zamanda üretim-tüketim farkını kapatmak için santrale talimat verilen piyasa",
-        "Gün öncesi fiyat borsası"
-      ],
-      "dogru": 2,
-      "neden": "İşleteni TEİAŞ'tır. Tersiyer buradan 15 dakikalık talimat alır."
-    },
-    {
-      "soru": "Gün öncesi ve gün içi piyasa kimdedir?",
-      "secenekler": [
-        "TEİAŞ Milli Yük Tevzi",
-        "Dağıtım şirketleri",
-        "EPDK",
-        "EPİAŞ"
-      ],
-      "dogru": 3,
-      "neden": "Elektriğin bir gün önce ve aynı gün alınıp satılmasıdır."
-    },
-    {
-      "soru": "MYTM açılımı nedir?",
-      "secenekler": [
-        "Milli Yük Tevzi Merkezi",
-        "Merkezi Yüksek Trafo Müdürlüğü",
-        "Modüler Yedek Transfer Modülü",
-        "Mali Yükümlülük Takip Masası"
-      ],
-      "dogru": 0,
-      "neden": "TEİAŞ'ın gerçek zaman merkezi'dir."
-    },
-    {
-      "soru": "MYTM'nin dört işinden ikisi nedir?",
-      "secenekler": [
-        "Dağıtım sayacı okumak",
-        "Güvenli, kaliteli, ekonomik işletme ve gerçek zamanlı denge",
-        "Kart basmak",
-        "Gün öncesi fiyatı ilan etmek ve lisansı iptal etmek"
+        "Çünkü puant rakamı yanlış ölçülmüştür",
+        "Çünkü güneş ve rüzgâr aynı anda puantta değildir; kısıtlar yereldir",
+        "Çünkü kurulu güce ithal edilen elektrik de dahil edilir",
+        "Yorum doğrudur; Türkiye'de kalıcı bir üretim fazlası vardır"
       ],
       "dogru": 1,
-      "neden": "Diğer ikisi dengeleme piyasası ve uluslararası hat koordinasyonudur."
+      "neden": "Kurulu güç etiket değeridir. Güneş gece üretmez, rüzgâr her zaman esmez; bir bölgedeki üretim hat kapasitesi yetmezse taşınamaz. Bu cümle rakamı ezberlediğini değil yorumladığını gösterir."
     },
     {
-      "soru": "İletim kısıtı ne demektir?",
+      "soru": "2025 sonu kurulu güçteki artışın büyük kısmı hangi kaynaktan gelmiştir?",
       "secenekler": [
-        "Frekansın 49 Hz altına inmesi",
-        "Sayacın okunmaması",
-        "Santralin susması",
-        "Bir bölgede hatların taşıyabileceğinden fazla güç aktarılmak istenmesi"
-      ],
-      "dogru": 3,
-      "neden": "154 kV'de kısıtlı bölgenin planlama kabulü 140–170 kV'dir."
-    },
-    {
-      "soru": "İç ihtiyaç ne demektir?",
-      "secenekler": [
-        "Santral veya trafo merkezinin kendi çalışması için kullandığı elektrik",
-        "Evlerin tüketimi",
-        "İhracat",
-        "Kayıp kaçağın tamamı"
-      ],
-      "dogru": 0,
-      "neden": "Seviyeler arasında 34,5; 33; 31,5; 15,8; 10,5 ve 6,3 kV vardır."
-    },
-    {
-      "soru": "34,5 kV bu tabloda nereye girer?",
-      "secenekler": [
-        "İletim sistemi içindeki dağıtım ve iç ihtiyaç seviyelerine",
-        "ENTSO-E senkron gerilimine",
-        "Nominal iletim gerilimine",
-        "Alçak gerilime"
-      ],
-      "dogru": 0,
-      "neden": "Nominal iletim 400, 154 ve 66 kV'dir."
-    },
-    {
-      "soru": "Planlama kriteri neyi şart koşar?",
-      "secenekler": [
-        "Puant dikkate alınmasın",
-        "Normal koşullarda santraller azami üretimi aktarabilmeli",
-        "Her hat %50 boş kalsın",
-        "Yalnızca N-2 her yerde"
-      ],
-      "dogru": 1,
-      "neden": "Planlama yükü ayrıca puantın %5 üzeridir."
-    },
-    {
-      "soru": "N tane eleman varken N-1 ve N-2 ne demektir?",
-      "secenekler": [
-        "Gerilimin %1 ve %2 düşmesi",
-        "Bir ve iki dakikalık rezerv",
-        "Birinin ve ikisinin birden devre dışı kalması",
-        "Bir ve iki ülkeyle bağlantı"
-      ],
-      "dogru": 2,
-      "neden": "Nükleer bağlantı noktasında kriter N-2'dir."
-    },
-    {
-      "soru": "Termik limit ne demektir?",
-      "secenekler": [
-        "Frekansın alt eşiği",
-        "Hattın aşırı ısınmadan taşıyabileceği en yüksek akım",
-        "Trafonun nominal gerilimi",
-        "Piyasa tavan fiyatı"
-      ],
-      "dogru": 1,
-      "neden": "N-1'de hatlar bunun altında kalmalıdır."
-    },
-    {
-      "soru": "Adalara bölünmek ne demektir?",
-      "secenekler": [
-        "Şebekenin birbirinden kopmuş, ayrı ayrı çalışan parçalara ayrılması",
-        "Her ile ayrı şirket kurulması",
-        "Trafo merkezinin kapanması",
-        "HVDC'nin açılması"
-      ],
-      "dogru": 0,
-      "neden": "N-1'de buna izin verilmez."
-    },
-    {
-      "soru": "LFSM'nin açılımı ve iki modu nedir?",
-      "secenekler": [
-        "Yalnızca yüksek frekans rölesi",
-        "Bir yazılım lisansı",
-        "Limited Frequency Sensitive Mode; frekans düşünce düşük mod, yükselince yüksek mod",
-        "Bir hat adı"
-      ],
-      "dogru": 2,
-      "neden": "Eşikler 49,8 Hz ve 50,2 Hz'dir."
-    },
-    {
-      "soru": "47,5 Hz ve 51,5 Hz'de santral ne yapmalıdır?",
-      "secenekler": [
-        "Anında ayrılmalıdır",
-        "Yalnızca nükleerde geçerlidir",
-        "Yönetmelikteki asgari süre kadar bağlı kalacak şekilde tasarlanır; hemen kopmamalı",
-        "Nominal sayılır"
-      ],
-      "dogru": 2,
-      "neden": "Bunlar kararsız işletmenin tasarım uçlarıdır."
-    },
-    {
-      "soru": "Basamak değişim ne demektir?",
-      "secenekler": [
-        "Yıllık kademe",
-        "Trafo kademe değiştiricisi",
-        "15 dakikalık talimat",
-        "Kademeli değil, tek seferde ani değişim"
-      ],
-      "dogru": 3,
-      "neden": "Primer rezerv 200 mHz'lik basamağı esas alır."
-    },
-    {
-      "soru": "Sınır programı ne demektir?",
-      "secenekler": [
-        "EPDK tarife cetveli",
-        "Günlük vardiya",
-        "N-1 listesi",
-        "Ülkeler arası hatlardan planlanan güç alışverişi"
-      ],
-      "dogru": 3,
-      "neden": "Sekonder kontrol frekansı 50 Hz'e ve bu programı hedefine çeker."
-    },
-    {
-      "soru": "PSS'nin açılımı nedir?",
-      "secenekler": [
-        "Primary System Switch",
-        "Power Station Software",
-        "Protection Setting Sheet",
-        "Power System Stabilizer, Güç Sistemi Dengeleyicisi"
-      ],
-      "dogru": 3,
-      "neden": "Jeneratör uyarma sistemine eklenir."
-    },
-    {
-      "soru": "Konvansiyonel ünite ne demektir?",
-      "secenekler": [
-        "Dönen jeneratörlü geleneksel santral; termik ve hidro gibi",
-        "Her HVDC kutbu",
-        "Her batarya",
-        "Her güneş inverteri"
-      ],
-      "dogru": 0,
-      "neden": "PSS, 75 MW ve üzeri ünitede veya 300 MW ve üzeri santral ünitelerinde aranır."
-    },
-    {
-      "soru": "Elektromekanik salınım ve sönüm ne demektir?",
-      "secenekler": [
-        "Jeneratör hızlarının birbirine göre sallanması; sönüm bunu küçültüp yok etmektir",
-        "Fiyat dalgalanması",
-        "Hat uzunluğunun artması",
-        "Gerilim bandının genişlemesi"
-      ],
-      "dogru": 0,
-      "neden": "PSS 0–5 Hz ve bölgeler arası salınımlar içindir."
-    },
-    {
-      "soru": "Kurulu güç, ani puant ve devre uzunluğu tanımları nedir?",
-      "secenekler": [
-        "Etiket kapasitelerinin toplamı; yılın en yüksek anlık tüketimi; iki devre ayrı sayılan hat uzunluğu",
-        "Üçü de aynı ölçüdür",
-        "Üçü de trafo adedidir",
-        "Üçü de frekanstır"
-      ],
-      "dogru": 0,
-      "neden": "Kurulu güç de bir tür nominal değerdir."
-    },
-    {
-      "soru": "2025 kurulu güç artışının büyük kısmı nedendir?",
-      "secenekler": [
-        "Yalnızca ithal kömür",
+        "Doğal gaz santralleri",
+        "Hidroelektrik santraller",
         "Güneş ve rüzgâr",
-        "Hat inşaatı",
-        "Yalnızca nükleer"
-      ],
-      "dogru": 1,
-      "neden": "Değer 122.518,6 MW'dir. Kaynak TEİAŞ 2025 faaliyet raporudur."
-    },
-    {
-      "soru": "60.414 MW hangi aydadır ve kaynak notu nedir?",
-      "secenekler": [
-        "Kaynak TEİAŞ sayılarla elektrik",
-        "Ocak 2026; faaliyet raporu",
-        "Temmuz 2025; ayrıca kaynak yazılmamış",
-        "Eylül 2026; CIGRE"
+        "Nükleer"
       ],
       "dogru": 2,
-      "neden": "2025 ani puanttır."
+      "neden": "TEİAŞ 2025 faaliyet raporuna göre artışın büyük kısmı güneş ve rüzgârdır. Bu, atalet ve tahmin konularını neden önemli kıldığını açıklar."
     },
     {
-      "soru": "360,9 TWh için kaynak notu nedir?",
+      "soru": "Ekim 2026 sonu itibarıyla enerji iletim hattı devre uzunluğu ve 'devre uzunluğu' kavramı için hangi ifade doğrudur?",
       "secenekler": [
-        "CIGRE tüketici sayısı",
-        "Raporda geçici değer",
-        "Ayrıca kaynak yazılmamış trafo gücü",
-        "Kesinleşmiş sayım"
+        "77.863 km; aynı direkteki iki devre ayrı sayılır",
+        "127.355 km; direk hattı uzunluğu esas alınır",
+        "77.863 km; aynı direkteki iki devre tek sayılır",
+        "237.700 km; trafo bağlantıları da dahildir"
+      ],
+      "dogru": 0,
+      "neden": "Devre uzunluğu hatların toplam uzunluğudur; aynı direk üzerinde iki devre varsa ikisi ayrı sayılır. 127.355,2 MW kurulu güç, 237.700 MVA trafo gücüdür."
+    },
+    {
+      "soru": "2025 sonu için 400 kV ve 154 kV trafo sayıları yaklaşık nedir?",
+      "secenekler": [
+        "400 kV: 1.756; 154 kV: 450",
+        "400 kV: 450; 154 kV: 1.756",
+        "400 kV: 18; 154 kV: 450",
+        "400 kV: 4.150; 154 kV: 20.678"
       ],
       "dogru": 1,
-      "neden": "2025 tüketimidir."
+      "neden": "400 kV 450, 154 kV 1.756, 66 kV 18 transformatör; toplam kurulu trafo gücü yaklaşık 237.700 MVA. 4.150 ve 20.678 TEKİS-C projesinin rakamlarıdır."
     },
     {
-      "soru": "127.355,2 MW ve 77.863 km'nin kaynağı nedir?",
+      "soru": "Türkiye'nin Kıta Avrupası senkron bölgesi (ENTSO-E) ile bağlantısı hangi şıkta doğru anlatılmıştır?",
       "secenekler": [
-        "CIGRE",
-        "TEİAŞ sayılarla elektrik iletimi; kurulu güç Eylül 2026, hat Ekim 2026",
-        "EPDK tarifesi",
-        "Ayrıca kaynak yazılmamış"
+        "2015'te deneme, 2020'de kalıcı; Gürcistan ve Bulgaristan 400 kV hatları",
+        "2010'da deneme, 2015'te kalıcı; Yunanistan ve Bulgaristan 400 kV hatları",
+        "2010'da kalıcı bağlantı; İran ve Yunanistan 154 kV hatları",
+        "Senkron değil; ENTSO-E ile yalnızca HVDC üzerinden bağlı"
       ],
       "dogru": 1,
-      "neden": "Hat, devre uzunluğudur."
+      "neden": "Hatlar Hamitabat–Maritsa (Bulgaristan, 400 kV) ve Babaeski–Nea Santa (Yunanistan, 400 kV). Senkron çalışmak, aynı frekansta tek sistem gibi çalışmaktır."
     },
     {
-      "soru": "Trafo satırlarının kaynak notu nedir?",
+      "soru": "Gürcistan bağlantısı için hangi ifade doğrudur?",
       "secenekler": [
-        "TEİAŞ faaliyet raporu kesin",
-        "Yönetmelik",
-        "Ayrıca kaynak yazılmamış",
-        "CIGRE"
+        "Gürcistan, Türkiye ile aynı senkron adanın parçasıdır; frekans paylaşılır",
+        "Gürcistan tarafında back-to-back HVDC vardır; hangi hatta olduğu belirtilmez",
+        "Borçka–Ahıska hattı 220 kV'lik bir back-to-back HVDC hattıdır",
+        "Gürcistan bağlantısı yalnızca 154 kV seviyesindedir"
+      ],
+      "dogru": 1,
+      "neden": "Doğu ve kuzeydoğu bağlantıları (Gürcistan, Ermenistan, İran) senkron adanın parçası gibi anlatılmaz. Borçka–Ahıska 400 kV, Hopa–Batum 220 kV'dir; HVDC hangi hatta bağlı belirtilmemiştir."
+    },
+    {
+      "soru": "Hat çiftleri ve gerilimleri hangi şıkta doğru eşleştirilmiştir?",
+      "secenekler": [
+        "Doğubeyazıt–Bazargan 400 kV, Kars–Gümrü 154 kV",
+        "Hopa–Batum 400 kV, Babaeski–Nea Santa 220 kV",
+        "Kars–Gümrü 220 kV, Doğubeyazıt–Bazargan 154 kV",
+        "Hamitabat–Maritsa 220 kV, Borçka–Ahıska 154 kV"
       ],
       "dogru": 2,
-      "neden": "450, 1.756, 18 trafo ve yaklaşık 237.700 MVA."
+      "neden": "400 kV: Hamitabat–Maritsa, Babaeski–Nea Santa, Borçka–Ahıska. 220 kV: Hopa–Batum, Kars–Gümrü. 154 kV: Doğubeyazıt–Bazargan (İran)."
     },
     {
-      "soru": "Hamitabat–Maritsa hangi ülke ve gerilimdir?",
+      "soru": "Panel 'Bulgaristan hattının güncel transfer kapasitesi kaç MW?' diye sorarsa doğru tutum nedir?",
       "secenekler": [
-        "Gürcistan, 220 kV",
-        "İran, 154 kV",
-        "Bulgaristan, 400 kV",
-        "Yunanistan, 400 kV"
+        "Ezberden kesin bir MW değeri söyleyip konuyu kapatmak",
+        "Hattın nominal gerilimini transfer kapasitesi olarak söylemek",
+        "Kapasitenin mevsimsel olduğunu, TEİAŞ verisinden bakacağını söylemek",
+        "'Bilmiyorum' deyip konuyu hemen kapatmak"
       ],
       "dogru": 2,
-      "neden": "Senkron bölgeye giden hatlardandır. Kaynak TEİAŞ faaliyet raporu."
+      "neden": "Hat adlarını ve gerilimlerini bil, transfer kapasitesini ezberleme. Kaynağını söylemek rakam uydurmaktan güçlüdür."
     },
     {
-      "soru": "Babaeski–Nea Santa hangi ülke ve gerilimdir?",
+      "soru": "Senkron bağlantı ile HVDC bağlantının analizde doğurduğu sorular nasıl ayrılır?",
       "secenekler": [
-        "Yunanistan, 400 kV",
-        "Bulgaristan, 400 kV",
-        "Ermenistan, 220 kV",
-        "İran, 154 kV"
+        "Senkron alanda frekans ve rezerv paylaşılır; HVDC güç ayar noktasıyla kontrol edilir",
+        "Senkron bağlantı güç ayar noktasıyla kontrol edilir; HVDC frekansı paylaşır",
+        "İkisi de aynı soruları doğurur; fark yalnızca gerilim seviyesindedir",
+        "HVDC yalnızca dağıtım şebekesinde kullanılır; senkron yalnızca iletimde"
       ],
       "dogru": 0,
-      "neden": "Diğer senkron 400 kV hat Hamitabat–Maritsa'dır."
+      "neden": "Senkron bağlantıda iki ülke aynı ipe bağlı iki koşucu gibidir. HVDC aradaki bir vana gibidir; geçen miktar ayarlanır, frekans geçmez."
     },
     {
-      "soru": "Borçka–Ahıska hangi ülke ve gerilimdir?",
+      "soru": "Üç dakikalık giriş için önerilen sırada 'model büyüklüğü' nasıl söylenir?",
       "secenekler": [
-        "Gürcistan, 400 kV",
-        "Bulgaristan, 400 kV",
-        "Gürcistan, 220 kV",
-        "İran, 154 kV"
-      ],
-      "dogru": 0,
-      "neden": "Hopa–Batum ayrıca 220 kV ve Gürcistan'dadır."
-    },
-    {
-      "soru": "Parantezli ülke adları neyin notudur?",
-      "secenekler": [
-        "Karşı uçtaki şehrin ülkesi; raporda ülke adı ilk üç hatta yazılıdır",
-        "HVDC oldukları",
-        "Üç hattın da 400 kV olduğu",
-        "Kapasite değerleri"
-      ],
-      "dogru": 0,
-      "neden": "İlk üç hat Hamitabat–Maritsa, Babaeski–Nea Santa, Borçka–Ahıska'dır."
-    },
-    {
-      "soru": "Gürcistan HVDC'si belirli bir hatta bağlanır mı?",
-      "secenekler": [
-        "Bu sayfa bağlamaz; mülakatta sen de bağlama",
-        "Hamitabat'a bağlanır",
-        "Hopa–Batum'a bağlanır",
-        "Borçka–Ahıska'ya bağlanır"
-      ],
-      "dogru": 0,
-      "neden": "Back-to-back, aynı istasyonda AC-DC-AC çevirir."
-    },
-    {
-      "soru": "Back-to-back HVDC ne işe yarar?",
-      "secenekler": [
-        "Gerilimi 230 V'a indirir",
-        "İki ülkeyi aynı senkron ada yapar",
-        "Primer rezervi 30 saniyede paylaşır",
-        "İki tarafın frekansını bağımsız tutarak güç alışverişi yaptırır"
-      ],
-      "dogru": 3,
-      "neden": "HVDC, yüksek gerilim doğru akımdır."
-    },
-    {
-      "soru": "Senkron alanda konuşulan dört konu nedir?",
-      "secenekler": [
-        "Yalnızca tarife",
-        "Frekans, primer rezerv paylaşımı, bölgeler arası salınım, N-1'de komşuya etki",
-        "Yalnızca güç ayar noktası",
-        "Yalnızca trafo sayısı"
+        "Yazdığın kodun satır sayısı ve dosya sayısıyla",
+        "Bara sayısı, gerilim seviyesi ve kullanılan araçla",
+        "Projenin toplam bütçesiyle",
+        "Ekipteki mühendis sayısı ve proje süresiyle"
       ],
       "dogru": 1,
-      "neden": "HVDC frekans paylaşmaz."
+      "neden": "Sıra: kim olduğun ve 3 yılın nerede geçtiği, model büyüklüğü, çıktının hangi kararı değiştirdiği, grubun işine köprü. 'Güç sistemlerine ilgiliyim' cümlesi bu panelde zayıftır; model, varsayım, limit ve sonuç söyle."
     },
     {
-      "soru": "Güç ayar noktası ne demektir?",
+      "soru": "90 saniyelik metin 'Türkiye 400 ve 154 kV'de ENTSO-E ile senkron' der. Sayfa bu cümle için hangi uyarıyı yapar?",
       "secenekler": [
-        "Bağlantıdan ne kadar güç aktarılacağının operatörce belirlenen değeri",
-        "Nominal gerilim",
-        "Puant",
-        "PSS kazancı"
-      ],
-      "dogru": 0,
-      "neden": "HVDC bununla kontrol edilir."
-    },
-    {
-      "soru": "Üç dakikalık girişte model büyüklüğü nasıl söylenir?",
-      "secenekler": [
-        "Bara sayısı, gerilim ve araç: PowerFactory, PSS/E, MATLAB veya Python",
-        "Yalnızca şehir",
-        "Yalnızca şirket adı",
-        "Yalnızca maaş"
-      ],
-      "dogru": 0,
-      "neden": "Üçüncü adım, çıktının bir hat, trafo, ayar veya yatırımı nasıl değiştirdiğidir."
-    },
-    {
-      "soru": "İki hazır köprü cümlesi nedir?",
-      "secenekler": [
-        "Kart basarım",
-        "Güç sistemlerine ilgiliyim",
-        "Adresi okurum",
-        "Hesabı operatörün her gün kullanacağı servise taşımak; planlamayı tekrarlanabilir araca bağlamak"
-      ],
-      "dogru": 3,
-      "neden": "Somut olmayan ilgi cümlesi bu panelde zayıftır."
-    },
-    {
-      "soru": "90 saniyelik metin planlama kriterini nasıl söyler?",
-      "secenekler": [
-        "Kurulu gücün iki katı",
-        "Puantın yüzde 5 üzerinde N-1; normal frekans bandı 49,8–50,2 Hz",
-        "47,5 Hz bandı",
-        "N-2 her yerde"
+        "Cümle tamamen doğrudur; olduğu gibi kullanılır",
+        "Bölüm 9 senkronu yalnızca 400 kV hatlarla anlatır; farkı bilerek kullan",
+        "154 kV yerine 66 kV yazılmalıdır; metindeki gerilim seviyesi hatalıdır",
+        "ENTSO-E yerine EERA yazılmalıdır; kurum adı karışmıştır"
       ],
       "dogru": 1,
-      "neden": "Metindeki 36 kV ve 154 kV senkron ifadesi kullanılmadan önce kontrol edilir."
+      "neden": "Aynı şekilde metindeki 'dağıtım 36 kV ve altı' sınırı sayfanın başka yerinde geçmez; yönetmelikten teyit edilmeden kullanılmamalıdır."
     }
   ]
 }

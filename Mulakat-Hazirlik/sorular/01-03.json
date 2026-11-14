@@ -5,598 +5,268 @@
   "geri": "goruntule.html#01-Kurum-Ilan-ve-Surec%2F03-Guncel-Projeler-Yayinlar-Urunler.md",
   "sorular": [
     {
-      "soru": "Üç etiket ne işe yarar?",
+      "soru": "Bir bilgi 'İkincil' etiketi taşıyorsa mülakatta nasıl söylenir?",
       "secenekler": [
-        "Ne kadar kesin söyleyeceğini belirler: doğrulandı, ikincil, bilinmiyor",
-        "Puan formülünün üç terimidir",
-        "Üç mülakat turudur",
-        "Üç gerilim bandıdır"
-      ],
-      "dogru": 0,
-      "neden": "Doğrulandı, kurum sayfasında Kasım 2026'da okunmuş demektir."
-    },
-    {
-      "soru": "Bilinmiyor etiketi mülakatta ne yaptırır?",
-      "secenekler": [
-        "Atlamak ve başka kuruma atfetmek",
-        "Uydurmamak, sormak",
-        "Kesinmiş gibi söylemek",
-        "THS 9 saymak"
+        "Kesin bilgi gibi, kaynak belirtmeden",
+        "'Okuduğum kadarıyla' diye, kaynağını belli ederek",
+        "Hiç söylenmez; yalnızca doğrulananlar söylenir",
+        "Panelin doğrulaması için soru olarak"
       ],
       "dogru": 1,
-      "neden": "İkincil bilgide 'okuduğum kadarıyla' denir."
+      "neden": "Doğrulandı: kurumun kendi sayfasında Kasım 2026'da okundu. İkincil: haber, bildiri özeti, üçüncü taraf. Bilinmiyor: bulunamadı, uydurma, sor. Etiket hangi cümleyi ne kadar kesin söyleyeceğini belirler."
     },
     {
-      "soru": "Mülakattan önceki gün hangi iki sayfa açılır?",
+      "soru": "Birimin güncel adı ve yayınlarda hâlâ geçen eski adı hangisidir?",
       "secenekler": [
-        "Yalnızca kariyer.tubitak.gov.tr",
-        "mam.tubitak.gov.tr enerji devam eden projeler ve ytbsbilgi.teias.gov.tr",
-        "EPİAŞ ve EPDK ana sayfası",
-        "CIGRE ana sayfası"
+        "Güncel: Enerji Enstitüsü; eski: Enerji Teknolojileri Başkan Yardımcılığı",
+        "Güncel: Güç Sistemleri Araştırma Grubu; eski: TUBITAK MRC",
+        "Güncel: Enerji Teknolojileri Başkan Yardımcılığı; eski: Enerji Enstitüsü",
+        "Güncel: Enerji İzleme ve Tahmin Araştırma Grubu; eski: Enerji Enstitüsü"
+      ],
+      "dogru": 2,
+      "neden": "MRC, Marmara Research Center, yani MAM'ın İngilizce adıdır. İlandaki iş bu başkan yardımcılığındaki Güç Sistemleri Araştırma Grubu'na aittir."
+    },
+    {
+      "soru": "Rüzgâr tahmin sistemi RİTM hangi grubun ürünüdür?",
+      "secenekler": [
+        "Güç Sistemleri Araştırma Grubu'nun; YTBS ile aynı ekibin",
+        "Enerji İzleme ve Tahmin Araştırma Grubu'nun; ayrı bir grubun",
+        "TEİAŞ'ın kendi yazılım ekibinin; MAM yalnızca danışman",
+        "EPİAŞ'ın; piyasa tahmini için geliştirilmiş"
       ],
       "dogru": 1,
-      "neden": "Rakamlar değişmiş olabilir."
+      "neden": "Aynı başkan yardımcılığında başka gruplar da vardır. 'RİTM'i de bu grup yaptı' yaygın yanlıştır. RİTM 6–72 saat ufukla GFS, ECMWF, WRF hava modellerini kullanır."
     },
     {
-      "soru": "Birimin güncel ve eski adı nedir?",
+      "soru": "Proje listesindeki projelerin grup aidiyeti konusunda doğru tutum nedir?",
       "secenekler": [
-        "RİTM grubu; eski adı YTBS",
-        "Enerji Teknolojileri Başkan Yardımcılığı; eski adı Enerji Enstitüsü",
-        "MAM Gebze; eski adı Ankara",
-        "Güç Sistemleri Genel Müdürlüğü; eski adı TEİAŞ"
+        "Hepsi bu grubundur; 'grubunuzun şu projesi' denir",
+        "YTBS ve SIPS dışında doğrulanmadı; 'başkan yardımcılığının sayfasında gördüm' denir",
+        "Hiçbirinin aidiyeti bilinmez; mülakatta projelerden hiç söz edilmez",
+        "Yalnızca TEİAŞ müşterili projeler bu grubundur; diğerleri mülakatta hiç anılmaz"
       ],
       "dogru": 1,
-      "neden": "Yayınlarda TUBITAK MRC Energy Institute geçer. MRC, MAM'ın İngilizcesidir."
+      "neden": "Panel alanın içindendir; yanlış atıf tek takip sorusuyla ortaya çıkar. Belirsiz aidiyeti belirsiz söyle."
     },
     {
-      "soru": "RİTM hangi gruba aittir?",
+      "soru": "YTBS Geliştirme Faz 3 projesinin ölçeği hangi şıkta doğru verilmiştir?",
       "secenekler": [
-        "Enerji İzleme ve Tahmin Araştırma Grubu; bu ilanın grubu değildir",
-        "Güç Sistemleri Araştırma Grubu",
-        "TEİAŞ Milli Yük Tevzi",
-        "Aday araştırmacı yazılım grubu"
+        "30'dan fazla modül, 4000'den fazla arıza benzetimi, 12.000 kullanıcı",
+        "34.259 santral, 23.140 MW kurulu güç, ulusal ölçekte NMAE %2",
+        "20.678 yüksek gerilim ölçüm noktası, sahada 4150 cihaz",
+        "3 modül, 400 arıza benzetimi, 850 kullanıcı"
       ],
       "dogru": 0,
-      "neden": "Resmi açılım bu notlarda yok. Rüzgâr tahmin sistemi diye anılır."
+      "neden": "Faz 3: TEİAŞ, 2022–2026, THS 9. İkinci şık güneş tahmin projesinin, üçüncüsü TEKİS-C'nin ölçeğidir."
     },
     {
-      "soru": "Proje listesinde grup aidiyeti ne kadar kesindir?",
+      "soru": "85.000 web servis talebi ve 12.000 kullanıcı rakamlarından çıkan sonuç nedir?",
       "secenekler": [
-        "Listedeki her proje bu grubundur",
-        "YTBS ve SIPS dışında hangi projenin bu gruba ait olduğu doğrulanmadı",
-        "Hiçbiri bu grupta değildir",
-        "Yalnızca STATCOM doğrulandı"
+        "YTBS'nin henüz sahaya çıkmamış bir araştırma prototipi olduğu",
+        "YTBS'nin üretim yazılımı olduğu; yazılım geçmişin değerli",
+        "YTBS'nin aslında bir SCADA olduğu",
+        "Grubun yazılım değil saha donanımı geliştirdiği"
       ],
       "dogru": 1,
-      "neden": "Mülakatta 'başkan yardımcılığının sayfasında gördüğüm proje' de, 'grubunuzun projesi' deme."
+      "neden": "Bu ölçekte bir sistem performans, veri modeli, servis ve doğrulama ister. Üretim yazılımı disiplinini analiz yazılımına taşımak senin köprün olur."
     },
     {
-      "soru": "YTBS Faz 3 dönemi ve ölçeğinden biri nedir?",
+      "soru": "Güneş Üretim Tahmin Sistemi projesinde 'ulusal ölçekte NMAE %2' ne anlatır?",
       "secenekler": [
-        "2024–2031; 4150 kullanıcı",
-        "2025–2029; 34.259 kullanıcı",
-        "2020–2026; THS 4",
-        "2022–2026; 85.000 web servis, 12.000 kullanıcı, günde yaklaşık 100.000 ziyaret"
-      ],
-      "dogru": 3,
-      "neden": "Ayrıca 30'dan fazla modül ve 4000'den fazla arıza benzetimi vardır. THS 9."
-    },
-    {
-      "soru": "Güneş tahmin projesinin ölçeği nedir?",
-      "secenekler": [
-        "20.678 santral ve THS 8",
-        "12.000 santral ve %20 hata",
-        "Ölçek yazılmamış",
-        "34.259 santral, 23.140 MW, ulusal NMAE %2, THS 9, dönem 2023–2027"
-      ],
-      "dogru": 3,
-      "neden": "NMAE, tahmin hatasının kurulu güce oranıdır; küçük olması iyidir."
-    },
-    {
-      "soru": "TEKİS-C ne kadar büyüktür ve açılımı nedir?",
-      "secenekler": [
-        "THS 9 ve 85.000 nokta",
-        "Müşterisi TCDD'dir",
-        "Açılımı bu notlarda yazılıdır",
-        "20.678 yüksek gerilim ölçüm noktası, 4150 cihaz, THS 8; açılım uydurulmaz"
-      ],
-      "dogru": 3,
-      "neden": "Dönem 2022–2028. Müşteri sütunu boştur."
-    },
-    {
-      "soru": "TCDD, Sarıyar, Keban ve ATHOM eşleşmesi hangisidir?",
-      "secenekler": [
-        "ATHOM TCDD içindir",
-        "TCDD yerli telekomand 2022–2028; Sarıyar EÜAŞ 2020–2026; Keban ve Hirfanlı TEİAŞ 2022–2027; ATHOM DSİ 2024–2031",
-        "Sarıyar DSİ, Keban EÜAŞ",
-        "Hepsi AB projesidir"
+        "Santrallerin yüzde 2'sinin ölçülebildiğini",
+        "Tahmin hatasının kurulu güce oranının yüzde 2 olduğunu",
+        "Üretimin yüzde 2'sinin tahmin edilemediğini",
+        "Modelin yüzde 2 oranında eğitim verisi kullandığını"
       ],
       "dogru": 1,
-      "neden": "Sun-Trans AB projesidir, 2025–2029. Batman HES'in dönem ve müşterisi yazılmaz."
+      "neden": "NMAE, Normalized Mean Absolute Error, normalize edilmiş ortalama mutlak hatadır. Proje 34.259 santrali ve 23.140 MW'ı kapsar; TEİAŞ, 2023–2027, THS 9."
     },
     {
-      "soru": "YTBS bilgi sitesindeki üç tarih nedir?",
+      "soru": "'Güneş tahmini neden bir güç sistemi problemidir?' sorusuna hazır cevap hangisidir?",
       "secenekler": [
-        "Faz 4, 25 Eylül 2023",
-        "Güneş imzası 25 Eylül 2023, EDAŞ çalıştayı 17 Eylül 2025, Faz 4 imzası 18 Aralık 2025",
-        "Çalıştay 18 Aralık 2025",
-        "Üçü de 2022"
+        "Çünkü güneş panelleri güç elektroniğiyle şebekeye bağlanır ve harmonik üretir",
+        "Çünkü tahmin hatası yedek ihtiyacına döner; ölçülmeyen üretim net yükü belirsizleştirir",
+        "Çünkü güneş santrallerinin tamamı TEİAŞ'ın mülkiyetindedir",
+        "Çünkü güneş üretimi gün öncesi piyasa fiyatını doğrudan belirler"
       ],
       "dogru": 1,
-      "neden": "Faz 4 ve dağıtım entegrasyonu kadro çıkarımıdır; doğrulanmış bilgi diye sunulmaz."
+      "neden": "Net yük, tüketimden görünmeyen yerel üretimin düşülmesiyle kalan, iletim şebekesinin gördüğü yüktür. Dağıtıma bağlı küçük güneş iletim işletmecisinin göremediği üretimdir."
     },
     {
-      "soru": "Faz 4 için mülakatta nasıl sorarsın?",
+      "soru": "Güneş tahmin projesinin özü nedir?",
       "secenekler": [
-        "Algoritmayı bildiğini söylersin",
-        "Faz 4 kapsamında dağıtım şirketleriyle entegrasyonun payı nedir?",
-        "Faz 4 yoktur dersin",
-        "Faz 4'ü bu grup bitirdi dersin"
+        "Her santrale ölçüm cihazı takıp tek tek izlemek",
+        "Az sayıda ölçümden ülke toplamını kestirmek",
+        "Güneş santrallerini iletim şebekesine taşımak",
+        "Lisanssız santrallere üretim lisansı vermek"
       ],
       "dogru": 1,
-      "neden": "EDAŞ, elektrik dağıtım anonim şirketidir."
+      "neden": "SEERC 2025 bildirisi tam bu konudadır: yüksek oranda dağıtık üretimle güvenli sistem işletmesi için güneş tahmini metodolojisi."
     },
     {
-      "soru": "On binlerce dağıtık santral nasıl ele alınır?",
+      "soru": "İlandaki 'dağıtım' kelimesi bu proje tablosunda nasıl anlam kazanır?",
       "secenekler": [
-        "Tahmin gerekmez",
-        "Yalnızca lisanslılar modele girer",
-        "Az sayıda ölçümden ülke toplamı kestirilir",
-        "Her santral tek tek ölçülür"
-      ],
-      "dogru": 2,
-      "neden": "85.000 servis ve 12.000 kullanıcı bunun üretim yazılımı olduğunu söyler."
-    },
-    {
-      "soru": "RİTM'in ufku ve hava modelleri nedir?",
-      "secenekler": [
-        "6–72 saat; GFS, ECMWF ve WRF",
-        "1 yıl; ENTSO-E",
-        "1 saat; yalnızca SCADA",
-        "15 dakika; AGC"
-      ],
-      "dogru": 0,
-      "neden": "Ayrı grubun ürünüdür."
-    },
-    {
-      "soru": "STATCOM olgunluğu tabloda nasıldır?",
-      "secenekler": [
-        "THS 8 yazılır",
-        "THS 9 yazılır",
-        "Olgunluk hücresi boştur; reaktif kompanzasyon ürünüdür",
-        "Ürün listesinde yoktur"
-      ],
-      "dogru": 2,
-      "neden": "YTBS ve SIPS THS 9'dur."
-    },
-    {
-      "soru": "SEERC 2025 bildirisi ne hakkındadır ve yazarları kimdir?",
-      "secenekler": [
-        "RİTM rüzgâr modeli; DSİ",
-        "YTBS durum kestirimi; Cem Şahin",
-        "Dağıtık güneş tahmini; Yanık, Eren, Bilgen (MAM) ve Yılmaz (TEİAŞ)",
-        "2018 karar ağacı; bir üniversite"
-      ],
-      "dogru": 2,
-      "neden": "SEERC açılımı bu notlarda doğrulanmadı."
-    },
-    {
-      "soru": "Cem Şahin 2021 makalesi nerede ve DOI nedir?",
-      "secenekler": [
-        "EJOSAT; DOI 10.31590/ejosat.893539; adres Ankara Energy Institute",
-        "DOI yoktur",
-        "Gebze adresi yazar",
-        "SEERC bildirisi"
-      ],
-      "dogru": 0,
-      "neden": "Konu, Türk elektrik piyasalarında yenilenebilirin gelişimidir."
-    },
-    {
-      "soru": "YTBS algoritma makalesi bulunamadığında ne dersin?",
-      "secenekler": [
-        "Modül adlarını gördüm, yöntem ayrıntısını bulamadım; merak ediyorum",
-        "2018 karar ağacı MAM'ındır",
-        "Durum kestiriminin şu yöntemi kullandığını okudum",
-        "Algoritma yoktur"
-      ],
-      "dogru": 0,
-      "neden": "2018 üniversite çalışması MAM yayını değildir."
-    },
-    {
-      "soru": "Yaygın yanlışlardan hangisi doğrudur?",
-      "secenekler": [
-        "RİTM'i bu grup yaptı",
-        "YTBS bir SCADA'dır",
-        "Merkez Gebze'dedir; bu grup ve görev yeri Ankara'dadır",
-        "THS 9 araştırma bitti demektir"
-      ],
-      "dogru": 2,
-      "neden": "Faz 3 ve Faz 4 geliştirmenin sürdüğünü gösterir."
-    },
-    {
-      "soru": "Güneş tahmini neden güç sistemi problemidir?",
-      "secenekler": [
-        "Piyasayı etkilemez",
-        "Hata yedek ve dengeleme maliyetine döner; ölçülmeyen lisanssız üretim net yükü belirsizleştirir",
-        "Yalnızca meteoroloji problemidir",
-        "Güvenlik analizi yük dağılımından bağımsızdır"
+        "Grup 21 dağıtım şirketinin her birine ayrı SCADA yazılımı yazar",
+        "Sistem kullanıcıları entegrasyonu ve dağıtıma bağlı güneş üzerinden",
+        "Grup her dağıtım şirketi için ayrı bir YTBS kopyası kurar",
+        "Dağıtım kelimesi ilanda yanlışlıkla geçmektedir"
       ],
       "dogru": 1,
-      "neden": "Net yük, tüketimden görünmeyen yerel üretimin düşülmesidir."
+      "neden": "Sistem kullanıcısı, şebekeye bağlanan santral, dağıtım şirketi veya büyük tüketicidir. Dağıtıma bağlı üretimi tahmin etmek dağıtımı iletim işletmesine bağlar."
     },
     {
-      "soru": "Panelde proje sorusuna nasıl cevap verirsin?",
+      "soru": "TEİAŞ YTBS bilgi sitesinde doğrulanan 18 Aralık 2025 tarihli olay nedir?",
       "secenekler": [
-        "Bütün tabloyu okurum",
-        "Bilmiyorum deyip susarım",
-        "Tek proje, üç cümle: ne, kimin için, hangi ölçek; sonra bir soru. Listeyi sayma",
-        "Yalnızca THS numarası söylerim"
+        "Güneş tahmin projesinin imzası",
+        "EDAŞ çalıştayının düzenlenmesi",
+        "YTBS Geliştirme Projesi 4'ün imzası",
+        "YTBS Faz 3'ün kabulü ve kapanışı"
       ],
       "dogru": 2,
-      "neden": "Yazar adlarını ezberleme; panel üyesi olabilirler."
+      "neden": "Güneş projesi imzası 25 Eylül 2023, EDAŞ çalıştayı 17 Eylül 2025, Faz 4 imzası 18 Aralık 2025. İlanın bu yeni fazın kadrosu olması bir çıkarımdır, doğrulanmış bilgi değildir."
     },
     {
-      "soru": "MAM'ın bağlı olduğu kurumun açık adı nedir?",
+      "soru": "'Bu ilan Faz 4'ün ve dağıtım entegrasyonunun kadrosudur' çıkarımı mülakatta nasıl kullanılır?",
       "secenekler": [
-        "TÜBİTAK, Türkiye Bilimsel ve Teknolojik Araştırma Kurumu",
-        "DSİ",
-        "TEİAŞ",
-        "EPDK"
-      ],
-      "dogru": 0,
-      "neden": "MRC, Marmara Research Center, yani MAM'ın İngilizcesidir."
-    },
-    {
-      "soru": "Doğrulandı etiketi ne demektir?",
-      "secenekler": [
-        "Kurumun kendi sayfasında Kasım 2026'da okundu",
-        "Panel üyesinin sözü",
-        "Herhangi bir haberde geçti",
-        "Bulunamadı"
-      ],
-      "dogru": 0,
-      "neden": "İkincil bilgi haber, bildiri özeti veya üçüncü taraf sayfasıdır."
-    },
-    {
-      "soru": "İkincil bilgi mülakatta nasıl söylenir?",
-      "secenekler": [
-        "Okuduğum kadarıyla",
-        "Kurumun resmi kararı diye",
-        "THS 9 diye",
-        "Hiç söz edilmez"
-      ],
-      "dogru": 0,
-      "neden": "Bilinmiyorsa uydurulmaz, sorulur."
-    },
-    {
-      "soru": "Yeniden açılacak MAM adresinin yolu nedir?",
-      "secenekler": [
-        "epias.com.tr",
-        "kariyer.tubitak.gov.tr",
-        "epdk.gov.tr",
-        "mam.tubitak.gov.tr/gundem/enerji-devam-eden-projeler/"
-      ],
-      "dogru": 3,
-      "neden": "İkinci sayfa ytbsbilgi.teias.gov.tr'dir."
-    },
-    {
-      "soru": "Güneş projesinin tam adı nedir?",
-      "secenekler": [
-        "Güneş Üretim Tahmin Sistemi ve YTBS–Sistem Kullanıcıları Entegrasyonu",
-        "TEKİS-C",
-        "Sun-Trans",
-        "RİTM rüzgâr tahmini"
-      ],
-      "dogru": 0,
-      "neden": "Müşteri TEİAŞ, dönem 2023–2027'dir."
-    },
-    {
-      "soru": "NMAE'nin açılımı ve yorumu nedir?",
-      "secenekler": [
-        "Bir gerilim bandı",
-        "Nominal megavat artış eşiği",
-        "Normalized Mean Absolute Error; hata kurulu güce oranlanır, küçük olması iyidir",
-        "Ulusal minimum arz eşiği"
-      ],
-      "dogru": 2,
-      "neden": "Projede ulusal ölçekte NMAE %2 yazılır."
-    },
-    {
-      "soru": "Güneş projesinin imza tarihi nedir?",
-      "secenekler": [
-        "25 Eylül 2023",
-        "2022",
-        "17 Eylül 2025",
-        "18 Aralık 2025"
-      ],
-      "dogru": 0,
-      "neden": "EDAŞ çalıştayı 17 Eylül 2025, Faz 4 imzası 18 Aralık 2025'tir."
-    },
-    {
-      "soru": "TEKİS-C'nin THS'i ve açılım notu nedir?",
-      "secenekler": [
-        "Ürün listesinde yoktur",
-        "THS 9 ve açılımı yazılıdır",
-        "THS 4",
-        "THS 8; açılımı bu notlarda doğrulanmadı, uydurulmaz"
-      ],
-      "dogru": 3,
-      "neden": "20.678 ölçüm noktası ve 4150 cihaz vardır. Dönem 2022–2028."
-    },
-    {
-      "soru": "TCDD yerli telekomandın müşterisi ve dönemi nedir?",
-      "secenekler": [
-        "TEİAŞ, 2023–2027",
-        "EÜAŞ, 2020–2026",
-        "DSİ, 2024–2031",
-        "TCDD, 2022–2028"
-      ],
-      "dogru": 3,
-      "neden": "Telekomand, sahadaki cihazı merkezden açıp kapamaktır."
-    },
-    {
-      "soru": "Sun-Trans neyin projesidir ve dönemi nedir?",
-      "secenekler": [
-        "TCDD, 2022–2028",
-        "TEİAŞ, 2022–2026",
-        "AB projesi, 2025–2029",
-        "DSİ, 2024–2031"
-      ],
-      "dogru": 2,
-      "neden": "Açılımı uydurulmaz. Ölçek sütunu boştur."
-    },
-    {
-      "soru": "Sarıyar HES'in müşterisi ve dönemi nedir?",
-      "secenekler": [
-        "TCDD, 2022–2028",
-        "TEİAŞ, 2022–2027",
-        "DSİ, 2024–2031",
-        "EÜAŞ, 2020–2026"
-      ],
-      "dogru": 3,
-      "neden": "HES, hidroelektrik santraldir. EÜAŞ devletin üretim şirketidir."
-    },
-    {
-      "soru": "Keban ve Hirfanlı'nın müşterisi nedir?",
-      "secenekler": [
-        "DSİ",
-        "TEİAŞ; kontrol sistemleri, 2022–2027",
-        "AB",
-        "EÜAŞ"
+        "Kesin bilgi olarak: 'Faz 4 kadrosuna başvurdum'",
+        "Soru olarak: 'Faz 4'te dağıtım entegrasyonunun payı nedir?'",
+        "Hiç kullanılmaz; doğrulanmamış çıkarım mülakata taşınmaz",
+        "Panelin yanlışını düzeltmek için kanıt olarak"
       ],
       "dogru": 1,
-      "neden": "Sarıyar ise EÜAŞ'tadır."
+      "neden": "Çıkarım doğrulanmış bilgi değildir. Soru olarak sormak hem merakını gösterir hem yanlış iddia riskini kaldırır."
     },
     {
-      "soru": "Batman HES satırında ne yazılmaz?",
+      "soru": "TEKİS-C projesi için mülakatta hangi tutum doğrudur?",
       "secenekler": [
-        "THS 9 ve 12.000 kullanıcı",
-        "Yalnızca DSİ yazılıdır",
-        "Dönem ve müşteri; tabloda çizgi vardır",
-        "İkisi de yazılıdır"
-      ],
-      "dogru": 2,
-      "neden": "Çizgi, sayfada o bilginin verilmediğini gösterir."
-    },
-    {
-      "soru": "ATHOM'un müşterisi, dönemi ve açılım notu nedir?",
-      "secenekler": [
-        "TCDD, 2022–2028",
-        "AB, 2025–2029",
-        "DSİ, 2024–2031; açılım uydurulmaz",
-        "TEİAŞ, 2022–2026; açılımı yazılı"
-      ],
-      "dogru": 2,
-      "neden": "DSİ, Devlet Su İşleri'dir."
-    },
-    {
-      "soru": "Tablodan çıkan ilk sonuç nedir?",
-      "secenekler": [
-        "İşin ağırlığı dağıtım sayaç montajıdır",
-        "Hepsi ayrı grubun rüzgâr işidir",
-        "Hiçbir proje TEİAŞ'la değildir",
-        "İşin ağırlığı TEİAŞ'la iletim işletmesidir; dağıtım, sistem kullanıcısı ve güneşle anlam kazanır"
-      ],
-      "dogru": 3,
-      "neden": "Bu bir okuma sonucudur."
-    },
-    {
-      "soru": "Sistem kullanıcısı kimdir?",
-      "secenekler": [
-        "Şebekeye bağlanan santral, dağıtım şirketi veya büyük tüketici",
-        "Yalnızca sayaç okuyan görevli",
-        "Yalnızca EPDK",
-        "Yalnızca TEİAŞ personeli"
-      ],
-      "dogru": 0,
-      "neden": "Dağıtıma bağlı küçük güneş, iletimin göremediği üretimdir."
-    },
-    {
-      "soru": "EDAŞ açılımı nedir?",
-      "secenekler": [
-        "Enterkonneksiyon dengeleme anlaşması",
-        "Enerji dağıtım araştırma şubesi",
-        "Elektrik dağıtım anonim şirketi",
-        "Elektrik demand analiz sistemi"
-      ],
-      "dogru": 2,
-      "neden": "Bir bölgenin dağıtım şebekesini işletir."
-    },
-    {
-      "soru": "Faz 4 cümlesi neden kesin söylemezsin?",
-      "secenekler": [
-        "Kadro çıkarımıdır, doğrulanmış bilgi değildir",
-        "MAM sayfası kadroyu yazar",
-        "Sözleşme metni ilandadır",
-        "EPDK kararıdır"
-      ],
-      "dogru": 0,
-      "neden": "Soru olarak sor: dağıtım entegrasyonunun payı nedir?"
-    },
-    {
-      "soru": "85.000 servis ve 12.000 kullanıcı neyi gösterir?",
-      "secenekler": [
-        "Araştırma prototipi değil, üretim yazılımı",
-        "Yalnızca 12 kullanıcı",
-        "Henüz laboratuvar",
-        "Kişilik envanteri"
-      ],
-      "dogru": 0,
-      "neden": "Yazılım geçmişi burada değerlidir."
-    },
-    {
-      "soru": "RİTM'de ufuk ne demektir?",
-      "secenekler": [
-        "Proje bütçe yılı",
-        "Hat uzunluğu",
-        "Tahminin kapsadığı ileri süre; burada 6 ile 72 saat",
-        "Santralin ömrü"
-      ],
-      "dogru": 2,
-      "neden": "Modeller GFS, ECMWF ve WRF'dir."
-    },
-    {
-      "soru": "GFS, ECMWF ve WRF'nin açık adları nedir?",
-      "secenekler": [
-        "Global Forecast System; European Centre for Medium-Range Weather Forecasts; Weather Research and Forecasting",
-        "Üç yazılım lisansı",
-        "Üçü de Türkiye modelleridir ve açılımları yazılmaz",
-        "Üç gerilim bandı"
-      ],
-      "dogru": 0,
-      "neden": "RİTM ayrı grubun ürünüdür."
-    },
-    {
-      "soru": "Ürün tablosunda YTBS ne yapar?",
-      "secenekler": [
-        "Yalnızca rüzgâr tahmini",
-        "THS 8 ölçüm sistemi",
-        "Dijital ikiz, güvenlik analizi, tahmin, optimizasyon, SCADA/EMS web servisi; THS 9",
-        "Yalnızca reaktif kompanzasyon"
-      ],
-      "dogru": 2,
-      "neden": "SIPS de THS 9'dur."
-    },
-    {
-      "soru": "SEERC için açılım notu nedir?",
-      "secenekler": [
-        "Bir THS basamağıdır",
-        "Açılımı yazılıdır",
-        "Bir ürün adıdır",
-        "Konferans kısaltmasıdır; açılımı bu notlarda doğrulanmadı"
-      ],
-      "dogru": 3,
-      "neden": "Bildiri dağıtık güneş tahmini hakkındadır."
-    },
-    {
-      "soru": "DOI ne demektir?",
-      "secenekler": [
-        "Digital Object Identifier, makalenin kalıcı kimlik numarası",
-        "Bir gerilim birimi",
-        "Bir proje dönemi",
-        "Bir hata ölçütü"
-      ],
-      "dogru": 0,
-      "neden": "Cem Şahin makalesinin DOI'si 10.31590/ejosat.893539'dur."
-    },
-    {
-      "soru": "YTBS'nin iç algoritma makalesi için etiket nedir?",
-      "secenekler": [
-        "İkincil ve yöntem bellidir",
-        "Doğrulandı",
-        "Bilinmiyor; durum kestirimi ve güvenlik analizini anlatan hakemli makale bulunamadı",
-        "2018 makalesi bu boşluğu doldurur"
-      ],
-      "dogru": 2,
-      "neden": "Kamuya açık sayfada modül adı var, yöntem yok."
-    },
-    {
-      "soru": "Durum kestirimi ile güvenlik analizi farkı nedir?",
-      "secenekler": [
-        "İkisi de hava modelidir",
-        "İkisi de aynı hesap",
-        "Biri gürültülü ölçümden en olası gerilim ve açıyı bulur; diğeri eleman düşünce güvenliği sınar",
-        "İkisi de kişilik testidir"
-      ],
-      "dogru": 2,
-      "neden": "Mülakatta YTBS'nin şu algoritmayı kullandığını okudum deme."
-    },
-    {
-      "soru": "2018 karar ağacı çalışması neden tehlikelidir?",
-      "secenekler": [
-        "Cem Şahin makalesidir",
-        "Aramalarda çıkar ama MAM yayını değildir; kuruma atfetme",
-        "SEERC bildirisidir",
-        "Faz 4 sözleşmesidir"
+        "Açılımını tahmin edip kendinden emin biçimde söylemek",
+        "Ölçeğini söylemek; açılımı doğrulanmadığı için uydurmamak",
+        "Projeyi TEİAŞ'ın kendi iç projesi olarak anmak",
+        "THS 9 olduğunu ve sahada kanıtlandığını söylemek"
       ],
       "dogru": 1,
-      "neden": "Geçici hal, arızadan hemen sonra jeneratörlerin senkron kalıp kalmadığıdır."
+      "neden": "TEKİS-C 2022–2028, THS 8; müşteri sayfada verilmemiştir. TEKİS-C, ATHOM ve Sun-Trans adlarının açılımı bu notlarda doğrulanmadı."
     },
     {
-      "soru": "Yayın için yarım saatte ne yapılır?",
+      "soru": "Hangi proje–müşteri eşleşmesi doğrudur?",
       "secenekler": [
-        "Algoritma uydurulur",
-        "RİTM kodu istenir",
-        "İki özet okunur; her biri için problem, yöntem ve sonuç yazılır",
-        "Yazar adları ezberlenir"
+        "Sarıyar HES kontrol sistemi yenileme – TEİAŞ",
+        "ATHOM – EÜAŞ",
+        "Keban ve Hirfanlı HES kontrol sistemleri – TEİAŞ",
+        "TCDD Yerli Telekomand ve kontrol sistemi – DSİ"
       ],
       "dogru": 2,
-      "neden": "Yazarlar panel üyesi çıkabilir; ad ezberi şart değildir."
+      "neden": "Sarıyar HES – EÜAŞ (2020–2026), Keban ve Hirfanlı – TEİAŞ (2022–2027), ATHOM – DSİ (2024–2031), TCDD Yerli Telekomand – TCDD (2022–2028), Sun-Trans – AB projesi (2025–2029)."
     },
     {
-      "soru": "THS 9 araştırma bitti demek midir?",
+      "soru": "'Telekomand' ne demektir?",
       "secenekler": [
-        "Hayır, THS 1 demektir",
-        "Evet, iş kapanmıştır",
-        "Evet, laboratuvar demektir",
-        "Hayır; gerçek ortamda kanıtlandı demektir. Faz 3 ve Faz 4 geliştirme sürüyor der"
-      ],
-      "dogru": 3,
-      "neden": "Yaygın yanlışlar listesindedir."
-    },
-    {
-      "soru": "Rakam söylerken hangi kalıp kullanılır?",
-      "secenekler": [
-        "Hepsi CIGRE'dir",
-        "Kaynak sorma",
-        "Kaynağını ve tarihini söyle: MAM'ın proje sayfasına göre",
-        "Ezberden kesin söylerim"
-      ],
-      "dogru": 2,
-      "neden": "Mülakattan önceki gün iki sayfa yeniden açılır."
-    },
-    {
-      "soru": "Lisanssız santral ne demektir?",
-      "secenekler": [
-        "Yalnızca HES",
-        "TEİAŞ'ın kendi santrali",
-        "Nükleer santral",
-        "Belirli gücün altında, üretim lisansı almadan kurulabilen küçük santral; çoğu dağıtıma bağlı güneştir"
-      ],
-      "dogru": 3,
-      "neden": "Net yük, tüketimden bu görünmeyen üretimin düşülmesidir."
-    },
-    {
-      "soru": "90 saniyelik proje metni hangi sayıları söyler?",
-      "secenekler": [
-        "20.678 megavat",
-        "Otuz dört bin santral ve yirmi üç bin megavat; Aralık'ta dördüncü faz",
-        "85.000 santral",
-        "12.000 santral"
+        "Telefonla merkezden verilen sözlü işletme talimatı",
+        "Uzaktan kumanda; sahadaki cihazı merkezden açıp kapamak",
+        "Demiryolu telekomünikasyon altyapısı",
+        "Tren tarifesi ve sefer yönetimi"
       ],
       "dogru": 1,
-      "neden": "Algoritma ayrıntısını bilmediğini de söyler."
+      "neden": "TCDD Yerli Telekomand projesi, Türkiye Cumhuriyeti Devlet Demiryolları için yerli uzaktan kumanda sistemidir."
     },
     {
-      "soru": "Panelde tek proje cevabı nasıl biter?",
+      "soru": "Ürün tablosunda STATCOM için olgunluk sütununda ne yazar?",
       "secenekler": [
-        "Susarak",
-        "THS numaralarının ezberiyle",
-        "Bir soruyla; liste sayılmaz",
-        "Bütün tablonun okunmasıyla"
+        "THS 9 (sahada kanıtlı)",
+        "THS 8 (sahaya yakın)",
+        "— (verilmemiş)",
+        "Ayrı grubun ürünü"
       ],
       "dogru": 2,
-      "neden": "Üç cümle: ne, kimin için, hangi ölçekte."
+      "neden": "YTBS ve SIPS THS 9, STATCOM için olgunluk verilmemiş, RİTM ayrı grubun ürünüdür. Tablodaki '—' sayfada o bilginin bulunmadığını gösterir."
+    },
+    {
+      "soru": "SEERC 2025 bildirisi hangi konudadır ve yazar kadrosu neyi gösterir?",
+      "secenekler": [
+        "Geçici hal kararlılığının karar ağacıyla sınıflandırılması; üniversite yazarları",
+        "Dağıtık güneş üretiminin tahmini; MAM ve TEİAŞ yazarları panelde olabilir",
+        "Türkiye piyasasında yenilenebilirin gelişimi; tek yazarlı",
+        "STATCOM tasarımı ve saha testleri; MAM yazarları"
+      ],
+      "dogru": 1,
+      "neden": "Yazarlar Yusuf Yanık, Sinan Eren, Melih Bilgen (TÜBİTAK MAM) ve Utku Yılmaz (TEİAŞ). Adları ezberleme; panelde olabileceklerini bil."
+    },
+    {
+      "soru": "Cem Şahin'in 2021 makalesi için hangi bilgi doğrudur?",
+      "secenekler": [
+        "SEERC'te sunulmuş; YTBS algoritmalarını anlatır",
+        "EJOSAT'ta yayımlanmış; Türkiye piyasasında yenilenebilirin gelişimini anlatır",
+        "IEEE dergisinde yayımlanmış; SIPS'in saha sonuçlarını ve olay kayıtlarını anlatır",
+        "MAM'ın yayını değildir; kuruma atfedilmez"
+      ],
+      "dogru": 1,
+      "neden": "Makale 'The Development of Renewable Energy in Turkish Electricity Markets', DOI 10.31590/ejosat.893539. DOI, makalenin kalıcı kimlik numarasıdır."
+    },
+    {
+      "soru": "YTBS'nin durum kestirimi ve güvenlik analizi algoritmaları hakkında mülakatta ne söylenir?",
+      "secenekler": [
+        "'YTBS'nin WLS tabanlı durum kestirimi kullandığını okudum'",
+        "'Modül adlarını gördüm, yöntem ayrıntısını bulamadım; merak ediyorum'",
+        "'YTBS'nin algoritmaları gizlidir; bu konu mülakatta sorulmaz'",
+        "'2018 tarihli karar ağacı çalışmasında ayrıntısıyla anlatılıyor'"
+      ],
+      "dogru": 1,
+      "neden": "Bu bilgi 'Bilinmiyor' etiketlidir: hakemli makale bulunamadı. Okumadığın algoritmayı okudum deme. 2018 karar ağacı çalışması bir üniversitenindir, MAM'ın değildir."
+    },
+    {
+      "soru": "Aramalarda çıkan, geçici hal kararlılığını karar ağacıyla sınıflandıran 2018 tarihli çalışma neden tehlikelidir?",
+      "secenekler": [
+        "Yöntemi yanlıştır; karar ağacı kararlılık sınıflandırması için kullanılmaz",
+        "MAM'ın değil bir üniversitenin çalışmasıdır; kuruma atfetmek yakalanır",
+        "Gizli TEİAŞ verisi içerir; anmak sakıncalıdır",
+        "YTBS'nin asıl algoritmasını açıklar; rakip bilgisidir"
+      ],
+      "dogru": 1,
+      "neden": "Karıştırma riskidir. Geçici hal kararlılığı, büyük arızadan hemen sonra jeneratörlerin senkron kalıp kalmadığıdır; konu grubun alanıdır ama bu yayın grubun değildir."
+    },
+    {
+      "soru": "Panel 'Projelerimizden hangisini biliyorsun?' diye sorduğunda doğru yaklaşım nedir?",
+      "secenekler": [
+        "Tablodaki dokuz projeyi sırayla saymak",
+        "Tek proje seçip üç cümle söylemek, sonra bir soru sormak",
+        "'Hepsini biliyorum' deyip ayrıntıya girmemek",
+        "YTBS'nin iç mimarisini bildiğini varsayarak ayrıntısıyla anlatmak"
+      ],
+      "dogru": 1,
+      "neden": "Listeyi saymak ezber gösterir; tek projeyi ölçeğiyle anlatıp soru sormak ilgiyi ve dürüstlüğü gösterir."
+    },
+    {
+      "soru": "Mülakattan önceki gün hangi iki sayfa yeniden açılır ve neden?",
+      "secenekler": [
+        "MAM proje sayfası ve TEİAŞ YTBS bilgi sitesi; rakamlar değişmiş olabilir",
+        "EPDK yönetmelik sayfası ve EPİAŞ platformu; fiyatlar değişmiş olabilir",
+        "TÜBİTAK kariyer sitesi ve ENTSO-E haritası; kontenjan değişmiş olabilir",
+        "SEERC bildirisi ve EJOSAT makalesi; özetler değişmiş olabilir"
+      ],
+      "dogru": 0,
+      "neden": "Adresler: mam.tubitak.gov.tr/gundem/enerji-devam-eden-projeler/ ve ytbsbilgi.teias.gov.tr. Rakam söylerken 'MAM'ın proje sayfasına göre' diye kaynağını ve tarihini ver."
+    },
+    {
+      "soru": "'Lisanssız santral' nedir ve iletim işletmecisi için neden sorun yaratır?",
+      "secenekler": [
+        "Kaçak kurulmuş santraldir; EPDK tespit edince kapatır",
+        "Lisans almadan kurulabilen küçük santraldir; çoğu dağıtıma bağlı güneştir",
+        "Sanayi tesislerinin yalnızca kendi ihtiyacı için kurduğu santraldir",
+        "Lisans süresi dolmuş ve yenilenmemiş büyük santraldir"
+      ],
+      "dogru": 1,
+      "neden": "Görünmeyen üretim net yükü belirsizleştirir. Güneş tahmin projesi tam bu boşluğu kapatmak içindir."
+    },
+    {
+      "soru": "Üretim tarafı için analiz modelinin kapsamı konusunda hangi ifade doğrudur?",
+      "secenekler": [
+        "Model yalnızca lisanslı santralleri görür",
+        "Model yalnızca 400 kV'ye bağlı santralleri görür",
+        "Model lisanslı ve lisanssız üretimi birlikte görür",
+        "Lisanssız üretim ihmal edilebilecek kadar küçüktür"
+      ],
+      "dogru": 2,
+      "neden": "34.259 santral ve 23.140 MW'lık güneş kapsamı ihmal edilemez. Güvenlik analizi yanlış yük dağılımıyla koşmamalıdır."
     }
   ]
 }

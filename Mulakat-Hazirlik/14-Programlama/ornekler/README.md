@@ -20,12 +20,15 @@ Aşağıdaki komutlar şu sırayla iş görür:
 pip install -r requirements.txt
 python nr_canli_kodlama.py
 python nr_yuk_akisi.py
+python ieee14_nr_karsilastir.py
 python elle_ornekler.py
 python test_ornekler.py        # veya: pytest -q
 python dc_yuk_akisi.py
 python wls_durum_kestirimi.py
 python ekonomik_dagitim.py
 ```
+
+Görsel laboratuvar (tarayıcı): `Mulakat-Hazirlik/Lab-Ac.bat` veya `lab/index.html`.
 
 ## Dosyalar
 
@@ -35,6 +38,7 @@ Tablodaki "İlgili not" sütunu, betiğin hangi not dosyasına ait olduğunu gö
 | --- | --- | --- |
 | `nr_canli_kodlama.py` | Seyrek Ybus ve Newton-Raphson, 59 satır. Canlı kodlamada yazılacak sürüm | `14/02` |
 | `nr_yuk_akisi.py` | Tam sürüm: açık formüllü ve vektörel Jacobian, Q limitinde PV→PQ, yakınsama hatası | `05/02` |
+| `ieee14_nr_karsilastir.py` | IEEE 14 NumPy NR + pandapower `case14` karşılaştırması; `ieee14_sonuc.json` yazar | `14/02`, `15/02` |
 | `test_ornekler.py` | 7 test: analitik çözüm, güç dengesi, Jacobian eşitliği, Q limiti, çözümsüz vaka, girdi denetimi | `14/02` |
 | `elle_ornekler.py` | 02–13 klasörlerindeki bütün elle örneklerin sayısal doğrulaması | Her klasörün `02` dosyası |
 | `dc_yuk_akisi.py` | Üç barada DC yük akışı | `05/01` |
@@ -64,10 +68,9 @@ Tablodaki "İlgili not" sütunu, betiğin hangi not dosyasına ait olduğunu gö
 
 Son çalıştırma: Python 3.14, NumPy 2.3, SciPy 1.17. Yedi test geçti.
 
-## Sıradaki adım
+## pandapower doğrulama
 
-Sıradaki adım: pandapower kurup aynı üç baralı şebekeyi onun AC (Alternating Current, alternatif akım) yük akışıyla çözmek ve gerilimleri `nr_yuk_akisi.py` ile karşılaştırmak.
+`ieee14_nr_karsilastir.py` kendi NR ile `pandapower.networks.case14()` sonucunu karşılaştırır.
+Bu makinede son koşu: max |ΔV| ≈ 2e-3 pu, max |Δθ| ≈ 0.02°. Tap modeli / bara 9 şöntü milipuanlık fark bırakabilir — beklenen model farkı.
 
-Bu yapılmadı; pandapower bu makinede kurulu değil.
-
-Bu karşılaştırma neden önemli: kendi yazdığın kodun sonucunu bağımsız bir referans araçla doğrulamış olursun. Bu, testin "referans araçla karşılaştırma" katmanıdır.
+Bu karşılaştırma neden önemli: kendi yazdığın kodun sonucunu bağımsız bir referans araçla doğrulamış olursun.

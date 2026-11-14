@@ -1,40 +1,35 @@
 # 02 — Güç sistemleri temelleri
 
-Bu sayfa klasörün içindekiler listesidir. Her madde bir alt başlıktır. Altındaki cümle, o konuda ne öğreneceğini söyler.
+Bu klasörde **hesap yok**. Amaç: “bu ne?” diye sorulunca kendi dilinle anlatmak.
 
-1. **Anlık, etkin ve ortalama güç; aktif, reaktif, görünür güç**
-   Gücün neden ikiye ayrıldığını ve ekipmanın neden görünür güce (MVA) göre boyutlandığını öğreneceksin.
-2. **Fazör ve açı referansı**
-   Bir sinüsü büyüklük ve açıdan oluşan tek bir karmaşık sayıyla anlatmayı ve açının neden bir referans baraya göre söylendiğini öğreneceksin.
-3. **Tek faz eşdeğer ve üç faz dengeli varsayım**
-   Dengeli bir üç faz sistemde neden yalnızca bir fazı çözmenin yettiğini öğreneceksin.
-4. **Yıldız-üçgen, hat gerilimi ve faz gerilimi**
-   "400 kV" denince hangi gerilimin kastedildiğini ve √3 çarpanının nereden geldiğini öğreneceksin.
-5. **Güç üçgeni, güç faktörü, kompanzasyonun anlamı**
-   Güç faktörünü düzeltmenin akımı ve kaybı nasıl düşürdüğünü öğreneceksin.
-6. **Birim sistem: neden, baz seçimi, trafo kayması**
-   Farklı gerilim seviyelerini per-unit (birim değer) ile tek matriste toplamayı ve trafo plakası değerini sistem bazına çevirmeyi öğreneceksin.
-7. **Tek hat şeması ve bara-hat modeli**
-   Üç fazlı şebekenin tek çizgiyle nasıl gösterildiğini ve her elemanın bir admitansla nasıl modellendiğini öğreneceksin.
-8. **İletim hattı: kısa, orta, uzun; π modeli; sürşarj empedansı**
-   Hat uzunluğuna göre hangi modelin kullanıldığını ve hattın doğal gücünü (SIL) öğreneceksin.
-9. **Trafo modeli: sargı, kademe, kaydırma açısı, mıknatıslanma**
-   Trafonun yük akışı ve kısa devre hesabına hangi parçalarla girdiğini öğreneceksin.
-10. **Senkron makine: iç gerilim, senkron, geçici ve alt geçici reaktans**
-    Generatörün üç farklı reaktansının hangi hesapta kullanıldığını öğreneceksin.
-11. **Yük modelleri: sabit güç, sabit akım, sabit empedans, ZIP, frekans bağımlılığı**
-    Yükün gerilim ve frekans değişince çektiği gücü nasıl değiştirdiğini öğreneceksin.
-12. **Simetrik bileşenler: artı, eksi, sıfır dizi**
-    Dengesiz bir üç faz durumu üç dengeli diziye ayırmayı öğreneceksin.
-13. **Dizi şebekelerinin arıza bağlantı kuralları**
-    Her arıza türünde artı, eksi ve sıfır dizi devrelerinin nasıl bağlandığını öğreneceksin.
-14. **P–δ ilişkisi ve senkronizasyon gücü**
-    Aktif gücün iki bara arasındaki açı farkıyla nasıl aktığını ve açı marjının neden 90°'de bittiğini öğreneceksin.
-15. **Q–V ilişkisi ve gerilim desteği**
-    Reaktif gücün gerilimi nasıl belirlediğini ve neden yerinde üretilmesi gerektiğini öğreneceksin.
-16. **Kapasitenin üç sınırı: termik, gerilim, kararlılık**
-    Bir hattın taşıyabileceği gücü sınırlayan üç ayrı nedeni öğreneceksin.
-17. **Frekans ve gerilimin sistem sağlığı göstergesi olması**
-    Frekansın aktif güç dengesini, gerilimin reaktif güç dengesini gösterdiğini öğreneceksin.
-18. **Dengeli analiz ile dengesiz analizin sınırı**
-    Tek hat ve per-unit yaklaşımının nerede yetmediğini ve ne zaman simetrik bileşenlere geçildiğini öğreneceksin.
+## Nasıl kullan
+
+1. [01](01-Guc-Birim-Sistem-Modeller.md) — 10 kart. Her kartta önce “bu ne?”, sonra panel cümlesi.
+2. Bir kelime yabancı geldiyse `02`–`06` sayfasına bak (yine hesap yok).
+3. [07](07-Sozluk-ve-Kendini-Yokla.md) — “şu kelime ne demek?” listesi.
+4. İstersen [soruları dene](test.html?sayfa=02-00).
+
+## Sayfalar
+
+| Sayfa | Konu (tek cümle) |
+| --- | --- |
+| [01 Kartlar](01-Guc-Birim-Sistem-Modeller.md) | Her şeyin kısa hali |
+| [02 Güç ve fazör](02-Sifirdan-AC-Devre-ve-Fazor.md) | Elektrik ne taşır, fazör ne demek |
+| [03 Üç faz, birim sistem](03-Uc-Faz-ve-Per-Unit-Elle.md) | Neden üç tel, per-unit ne işe yarar |
+| [04 Ybus](04-Ybus-Elle-ve-Seyrek-Matris.md) | Şebekenin bilgisayardaki haritası |
+| [05 Gerilim ve reaktif](05-Reaktif-Guc-Kompanzasyon-Gerilim.md) | Gerilim neden düşer, ne yapılır |
+| [06 Yük ve trafo](06-Yuk-Modelleri-ve-Trafo-Gruplari.md) | Yük nasıl davranır, Dyn11 ne |
+| [07 Sözlük](07-Sozluk-ve-Kendini-Yokla.md) | Kelime listesi + mini kontrol |
+
+## Panelde söylemen gereken 8 düz cümle
+
+1. İş yapan güç aktif güçtür; gerilimi tutan taraf reaktif güçtür.
+2. Frekans bütün ülkede aynıdır; gerilim ise mahalle mahalle değişir.
+3. Yüksek gerilimde elektrik daha az kayıpla taşınır.
+4. Per-unit, farklı gerilimleri aynı dilde yazmaktır.
+5. Ybus, şebekenin bağlantı haritasının matris halidir.
+6. Reaktif güç uzaktan gelmez; yakında üretilir.
+7. Kondansatör ucuz ama zayıfken gücü düşer; STATCOM hızlıdır.
+8. Toprak arızasının yolu trafo bağlantısına bağlıdır.
+
+Bunları ezberleme: her birinin “bu ne?” kısmını [01](01-Guc-Birim-Sistem-Modeller.md)’de oku, kendi cümlenle söyle.

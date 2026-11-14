@@ -78,7 +78,7 @@ Dosyanın sonundaki **90 saniye** kutusunu sesli söyle. Takılırsan o kutu, m�
 1. `01` kurum, ilan, Türkiye sistemi, YTBS, SIPS. Bunları bilmeden teknik cevap havada kalır.
 2. `02` → `06` fizik ve klasik analiz.
 3. `07` → `12` güvenlik, kararlılık, kestirim, koruma, ekonomi, planlama. İlanın göbeği burası.
-4. `13` → `16` optimizasyon ve yazılım. `14-Programlama/ornekler` altındaki üç betiği kendi makinede çalıştır.
+4. `13` → `16` optimizasyon ve yazılım. `14-Programlama/ornekler` altındaki betikleri kendi makinede çalıştır. Görsel lab için `Lab-Ac.bat` (NR, WLS, DC OPF, OpenDSS/PowerFactory kartları).
 5. `17` ve `18` yenilenebilir, depolama, tahmin, yapay zekâ.
 6. `19` anlatım. `20` soru bankasını kart gibi çevir. `21` takvim.
 
@@ -98,7 +98,7 @@ Soru bankasındaki kısa cevaplar ve `ornekler` klasörü bu sınav içindir. Ay
 | Klasör | Ne işe yarar |
 | --- | --- |
 | 01 Kurum, ilan, süreç | Nereye başvurduğunu ve Türkiye sistemini kendi cümlelerinle anlatmak |
-| 02 Temeller | Fazör, birim sistem, dizi bileşenleri, P–δ ve Q–V |
+| 02 Temeller | Mülakat kartları: P–Q–S, per-unit, Ybus, Q–V, ZIP, sıfır dizi |
 | 03 İletim | 400/154/66 kV, hat, trafo, FACTS, enterkonneksiyon |
 | 04 Dağıtım | Radyal şebeke, dağıtık üretim, barındırma kapasitesi, DMS |
 | 05 Yük akışı | NR, ayrık hızlı, DC, dağıtım yük akışı |

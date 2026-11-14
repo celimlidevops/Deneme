@@ -1,218 +1,178 @@
-# Büyüklükler, birim sistem ve modeller
+# Mülakat kartları — sıfırdan
 
-Bu sayfa klasörün yoğun özetidir. İlk kez okuyorsan önce `02`–`06` dosyalarını oku, bu sayfaya en son gel. Burada her konu kısa tutulmuş ama hiçbir olgu atlanmamıştır.
+Her kart üç satır: **Bu ne?** → **Panelde söyle** → **Unutma**.
 
-## Güç
+Hesap yok. Anlamadığın kelime için [07 sözlük](07-Sozluk-ve-Kendini-Yokla.md).
 
-Gerilim ve akım sinüs biçimindeyse (sinüzoidal durum), onları fazörle, yani büyüklük ve açıdan oluşan karmaşık sayıyla anlatmak yeter.
+---
 
-Anlık güç iki parçaya ayrılır:
+## 1. Aktif güç, reaktif güç, görünür güç
 
-- **Ortalama kısım:** iş yapan, zamanla değişmeyen kısım.
-- **Salınım kısmı:** frekansın iki katında gidip gelen kısım.
+**Bu ne?**
 
-Üç faz dengeli sistemde üç fazın salınımları birbirini götürür. Toplam anlık güç sabittir. Bu yüzden iletim planlaması etkin değerle (RMS, aynı ısıyı üreten doğru akım eşdeğeri) yürür.
+Şebeke iki şey taşır:
 
-Aşağıdaki blok, gücün temel formüllerini toplar. `S` görünür güç, `P` aktif güç, `Q` reaktif güç, `V_f` ve `I_f` faz büyüklükleri, `V_L` ve `I_L` hat büyüklükleridir. `*` karmaşık eşlenik demektir. `pf` güç faktörüdür (power factor).
+- **Aktif güç (P):** gerçekten iş yapan kısım. Lamba yanar, motor döner. Birimi MW.
+- **Reaktif güç (Q):** iş yapmaz ama motor ve trafonun manyetik alanı için gerekir. Birimi Mvar. “Yararsız trafik” gibi: yolu doldurur.
+- **Görünür güç (S):** ikisinin toplamı. Trafo ve hat buna göre seçilir. Birimi MVA.
 
-```
-S = P + jQ = 3 V_f I_f* = √3 V_L I_L*
-|S| = √(P² + Q²)
-pf = P / |S| = cos φ
-Q > 0  endüktif (akım geride)
-```
+**Panelde söyle:**
 
-İşaret sözleşmesini her yazılımda kontrol et. Bazı paketler yükü pozitif çeker, bazıları enjeksiyonu (baraya verilen gücü) pozitif sayar.
+> Aktif güç iş yapar; dengesi bozulursa frekans sarsılır. Reaktif güç iş yapmaz ama akımı şişirir; dengesi bozulursa gerilim sarsılır. Cihazlar ısındığı için S’ye (MVA) göre boyutlanır.
 
-> Mülakatta şöyle söyle: "İşaret sözleşmesini baştan sabitlerim." Bu cümle hata ayıkladığını gösterir.
+**Unutma:** Reaktif güç “kayıp” değildir. Kayıp, onun şişirdiği akımın ısıya dönüşmesidir.
 
-Güç faktörünü düzeltmek, aynı aktif güç için akımı düşürür. Hat kaybı ve gerilim düşümü farklı şeylere bağlıdır:
+---
 
-| Büyüklük | Neye bağlı |
-| --- | --- |
-| Hat kaybı | `I²R`, yani akımın karesi ve direnç |
-| Gerilim düşümü | Hem `R` hem `X` (reaktans) |
+## 2. Frekans ve gerilim
 
-Hangi parametrenin baskın olduğu gerilim seviyesine göre değişir:
+**Bu ne?**
 
-| Seviye | Baskın parametre |
-| --- | --- |
-| İletim | `X` baskın |
-| Dağıtım OG (orta gerilim) | `R` ve `X` birlikte |
-| Dağıtım AG (alçak gerilim) | `R` baskınlaşır |
+- **Frekans (50 Hz):** bütün Türkiye’de aynıdır. “Üretim ile tüketim dengede mi?” sorusunun cevabıdır. Üretim azsa frekans düşer.
+- **Gerilim:** mahalle mahalle farklıdır. “Bu bölgede reaktif güç yeterli mi?” sorusunun cevabıdır.
 
-> Mülakatta şöyle söyle: "İletim formülünü dağıtıma neden taşımam?" sorusunun cevabı bu tek cümledir: iletimde X baskın, AG'de R baskındır.
+**Panelde söyle:**
 
-## Fazör ve referans
+> Frekans sistemin aktif güç sağlığıdır, her yerde aynıdır. Gerilim yereldir; reaktif eksikse o bölgede düşer, uzaktaki santral bunu kolay kurtaramaz.
 
-Gerilim açısı bağıl bir büyüklüktür. Tek başına anlamı yoktur, bir referansa göre söylenir.
+**Unutma:** Frekans = ülke. Gerilim = mahalle.
 
-- Slack (salınım) baranın açısı referanstır, yani 0 kabul edilir.
-- Aktif güç, gerilim açısı yüksek olan baradan düşük olan baraya akar.
-- Mutlak zaman bilgisi ancak PMU (Phasor Measurement Unit, fazör ölçüm birimi) ile gelir.
-- Klasik SCADA (Supervisory Control and Data Acquisition, uzaktan izleme ve kontrol sistemi) faz açısını doğrudan ölçmez. Açıyı durum kestirimi hesaplar.
+---
 
-## Birim sistem
+## 3. Neden yüksek gerilim?
 
-Büyük şebekede 400 kV ile 0,4 kV aynı matriste buluşur. Per-unit (birim değer, pu) her büyüklüğü bir baz değere bölerek bunu ölçekler. Ayrıca trafo sargılarının dönüştürme oranını yutar, böylece admitans matrisi sadeleşir.
+**Bu ne?**
 
-Aşağıdaki blok dört temel büyüklüğün pu tanımını ve iki türetilmiş bazı verir. `I_baz` ve `Z_baz`, seçilen `S_baz` ve `V_baz`'dan hesaplanır.
+Aynı gücü yüksek gerilimle taşırsan akım küçülür. Akım küçülünce tel daha az ısınır, kayıp azalır. Bu yüzden iletim 400 kV gibi yüksek değerlerdedir. Trafo gerilimi yükseltip düşürür; trafo yalnızca alternatif akımda (AC) çalışır.
 
-```
-S_pu = S_gercek / S_baz
-V_pu = V_gercek / V_baz
-I_pu = I_gercek / I_baz ,   I_baz = S_baz / (√3 V_baz)
-Z_pu = Z_gercek / Z_baz ,   Z_baz = V_baz² / S_baz
-```
+**Panelde söyle:**
 
-Kurallar:
+> Yüksek gerilim, aynı enerjiyi küçük akımla taşıyıp kaybı düşürmek içindir. Trafo yüzünden iletim AC’dir.
 
-- Sistemde tek `S_baz` seçilir. 100 MVA alışkanlıktır; paket ne kullanıyorsa onu söyle.
-- Her gerilim bölgesinin kendi `V_baz`'ı vardır. Nominal gerilim çoğunlukla baz alınır.
-- `Z_pu` yeni baza `Z_yeni = Z_eski * (S_yeni/S_eski) * (V_eski/V_yeni)²` ile taşınır.
-- Trafo kaçak reaktansı kendi plaka bazında verilir. Sistem bazına çevrilmeden Ybus'a (bara admitans matrisi) girmez.
-- Kademe, off-nominal oran (nominalden farklı dönüştürme oranı) `t` olarak π modeline girer. Admitans `y/t²`, `y/t` şeklinde iki yana dağılır. Faz kaydırıcıda `t` karmaşık olur.
-- Per-unit güç üç faz toplamıdır. Tek faz formülüyle üç faz gücünü karıştırmak klasik hatadır.
+---
 
-Mülakat türevi, adım adım:
+## 4. Fazör (çok basit)
 
-1. 400 kV'ta 100 MVA bazda `Z_baz = V²/S = 1600 ohm`. Bu adım, o gerilim bölgesinde "1 pu empedans" kaç ohm eder onu bulur.
-2. 10 ohm'luk bir hat `10/1600 = 0,00625 pu`'dur, yani çok kısadır. Bu adım ohm değerini baza bölerek elektriksel uzunluğu gösterir.
-3. Aynı ohm, 34,5 kV'ta çok daha büyük pu olur. Çünkü `Z_baz` gerilimin karesiyle küçülür.
+**Bu ne?**
 
-> Mülakatta şöyle söyle: "400 kV'ta 100 MVA bazda Z_baz = V²/S = 1600 ohm. 10 ohm'luk bir hat 10/1600 = 0,00625 pu'dur, yani çok kısadır. Aynı ohm, 34,5 kV'ta çok daha büyük pu olur."
+Prizdeki elektrik saniyede 50 kez salınan bir dalgadır. Her dalgayı iki sayıyla anlatırız: **ne kadar büyük** ve **ne kadar önde/geride** (açı). Bu ikiliye **fazör** denir.
 
-Bu örnek, kısa devre gücünün gerilimle neden patladığını da anlatır.
+Açı tek başına anlamsızdır; bir barayı “sıfır” kabul ederiz (slack / salınım barası). Diğerleri ona göre söylenir.
 
-## Tek hat ve şebeke elemanları
+**Panelde söyle:**
 
-Tek hat şeması, üç fazın simetrik olduğunu varsayar ve üç fazı tek çizgiyle gösterir. Üzerindeki her elemanın bir admitansı veya bir eşdeğer devresi vardır.
+> Frekans ortak olduğu için gerilim ve akımı büyüklük ve açıdan oluşan fazörle anlatırım. Referans baranın açısı sıfırdır. Fazör sakin, sürekli hali anlatır; arıza anının milisaniyeleri için yetmez.
 
-### Hat
+---
 
-Hat modeli uzunluğa göre seçilir:
+## 5. Üç faz ve “400 kV”
 
-| Hat | Model |
-| --- | --- |
-| Kısa | Kapasite ihmal edilir, yalnız seri `Z` |
-| Orta | Nominal π: seri `Z`, iki uca yarı yarıya şönt `B/2` |
-| Uzun | Dağıtılmış parametre, ABCD parametreleri veya hiperbolik fonksiyonlar |
+**Bu ne?**
 
-- 150 km üstü pratikte uzun sayılır.
-- 400 kV'ta Ferranti etkisi (açık uçta gerilim yükselmesi) π modeliyle bile görünür.
-- Sürşarj empedansı (karakteristik empedans) `Zc = √(z/y)`'dir.
-- Doğal güç (SIL, Surge Impedance Loading) `SIL ≈ V²/Zc`'dir.
-- Hattı SIL altında işletmek kapasitif, üstünde endüktif davranış üretir.
-- 400 kV havai hatta SIL kabaca birkaç yüz MW mertebesindedir.
+Evde çoğu zaman tek faz vardır. İletimde **üç tel** (üç faz) vardır; aralarında 120 derece kayma vardır. Daha verimli taşır, motoru kendi kendine döndürür.
 
-> Mülakatta şöyle söyle: "Rakamı hat verisinden hesaplarım, ezberlemem."
+“400 kV” denince **iki tel arası** gerilim kastedilir (hat gerilimi). Bir tel ile nötr arası daha küçüktür (faz gerilimi).
 
-### Trafo
+**Panelde söyle:**
 
-Trafo modelinin parçaları:
+> 400 kV hat gerilimidir, iki faz arasıdır. Dengeli sistemde üç fazın birini çözerim; tek hat şeması budur.
 
-- Seri kaçak empedansı.
-- Kademe.
-- İsteğe bağlı kaydırma açısı.
-- İsteğe bağlı mıknatıslanma kolu.
+**Unutma:** 400 kV ≠ faz gerilimi.
 
-Mıknatıslanma kolu yük akışında çoğu zaman ihmal edilir. Kısa devrede ve ferrorezonansta (demir çekirdek ile kapasitenin doğrusal olmayan rezonansı) ihmal edilmez.
+---
 
-Üç sargılı trafo üç bara ve bir yıldız noktasıyla modellenir.
+## 6. Per-unit (birim sistem)
 
-OLTC (On-Load Tap Changer, yük altında kademe değiştirici) gerilimi kademe adımıyla tutar. Adım çoğunlukla %1–1,25'tir. Dinamik ve günlük işletmede kademe değişimi ayrı bir kontrol döngüsüdür. Kademe sınırına dayanmış trafo, gerilim sorununu "daha fazla kademe" ile çözemez.
+**Bu ne?**
 
-### Senkron makine
+Şebekede hem 400.000 volt hem 230 volt vardır. Aynı hesaba koyunca rakamlar deli gibi büyür/küçülür. **Per-unit**, her sayıyı “normal kabul ettiğimiz değere” bölmektir. Sağlıklı gerilim hep **1 civarı** görünür. 0,9 görürsen “düşük” demektir.
 
-Senkron makinede üç farklı reaktans üç farklı hesaba girer:
+Trafo etiketindeki yüzde, o trafonun kendi dünyasına göredir. Büyük sistem hesabına koymadan önce sistemin diline çevrilir.
 
-| Durum | Kullanılan model |
-| --- | --- |
-| Sürekli hal | İç gerilim ve senkron reaktans: `E = V + j X_s I` |
-| Açı kararlılığı | Geçici reaktans ve atalet |
-| Kısa devrenin ilk çevrimleri | Alt geçici reaktans `X''` akımı belirler |
+**Panelde söyle:**
 
-Üç reaktansı karıştırmak hem kararlılık hem kesici hesabını bozar.
+> Per-unit farklı gerilim seviyelerini aynı dile çevirir. Trafo plakası kendi bazındadır; sistem matrisine girmeden çeviririm.
 
-### Yük
+**Benzetme:** Herkesin notunu 100 üzerinden yazmak gibi.
 
-- Sabit P-Q, planlama ve iletim yük akışının varsayılanıdır.
-- Gerçek yük, gerilim düşünce gücünü azaltır.
-- ZIP modeli (Z: sabit empedans, I: sabit akım, P: sabit güç karışımı) `P = P0 (a_z V² + a_i V + a_p)` şeklindedir.
-- Gerilim kararlılığında sabit güç kötümser, sabit empedans iyimser sonuç verir. Hangi varsayımı kullandığını söylemeden "sistem çöker" deme.
-- Motor yükü ek olarak frekansa ve yeniden yol alma akımına duyarlıdır.
+---
 
-## Simetrik bileşenler
+## 7. Ybus (şebeke haritası)
 
-Dengesiz arıza ve dengesiz yükte üç fazı faz faz yazmak zordur. Simetrik bileşenler, üç fazı üç ayrık, dengeli diziye böler. Bu dönüşüm Fortescue dönüşümüdür.
+**Bu ne?**
 
-Aşağıdaki blok, dizi gerilimlerinden (`V0`, `V1`, `V2`) faz gerilimlerine (`Va`, `Vb`, `Vc`) geçişi gösterir. `a`, 120° döndürme operatörüdür.
+Şebeke baralar (düğümler) ve hatlardan (bağlantılar) oluşur. Bilgisayarda bunu bir tabloya (matris) yazarız: **Ybus**.
 
-```
-[Va]   [1  1  1] [V0]
-[Vb] = [1  a² a] [V1]
-[Vc]   [1  a  a²] [V2]
+- İki bara bağlıysa tabloda ikisinin kesişiminde bir sayı vardır.
+- Bir bara hangi hatlara bağlıysa kendi kutusunda onların toplamı vardır.
 
-a = e^{j120°} = -1/2 + j√3/2
-```
+Bu tablo çok büyük ama çoğu kutu boştur (seyrek). Tersini almak yerine akıllıca çözeriz.
 
-Ters dönüşümde `V1`, `V2`, `V0` aynı matrisin eşleniğiyle, 1/3 çarpanıyla gelir.
+**Panelde söyle:**
 
-| Dizi | Anlamı |
-| --- | --- |
-| Artı dizi | Normal işletmenin döndüğü şebeke |
-| Eksi dizi | Ters yönlü döner alan. Generatör rotorunda ısınır, korumada dengesizlik ölçüsüdür |
-| Sıfır dizi | Üç fazda aynı yönlü akım. Dönüş yolu topraktan veya nötrden geçer. Üçgen sargı ve topraklanmamış yıldız sıfır diziyi geçirmez |
+> Ybus şebekenin bağlantı haritasıdır: akım = Ybus × gerilim. Çoğu eleman sıfırdır; tersini almam, seyrek çözerim.
 
-Hat ve trafonun artı ve eksi dizi empedansı pratikte yakındır. Sıfır dizi çok farklıdır. Onu toprak dönüşü, kule, guard teli (koruma iletkeni) ve trafo bağlantı grubu belirler. Kısa devre yazılımında "sıfır dizi verisi yok" ise sonuç çöptür.
+---
 
-Arıza yerinde dizi devrelerinin bağlantısı:
+## 8. Reaktif güç neden yerinde üretilir?
 
-| Arıza | Dizi bağlantısı |
-| --- | --- |
-| Üç faz dengeli | Yalnız artı dizi |
-| Tek faz-toprak | Üç dizi seri |
-| İki faz | Artı ve eksi paralel, sıfır yok |
-| İki faz-toprak | Üçü birden, artıya eksi ve sıfırın paraleli |
+**Bu ne?**
 
-Topraklama direnci ve arıza direnci bu eşdeğer devreye seri girer. Dirençli arıza, metalik arızadan daha küçük akım ve daha zor algılanan röle koşulu demektir.
+Reaktif güç uzun yolda “erir”. Uzaktaki büyük santral, senin mahallendeki gerilimi kurtaramayabilir. Bu yüzden kondansatör, STATCOM gibi cihazlar **yükün yanında** konur.
 
-## P–δ ve Q–V
+- **Kondansatör:** ucuz, yavaş, gerilim düşünce kendi gücü de düşer.
+- **STATCOM:** pahalıya yakın, çok hızlı, zor anda da işe yarar. MAM’ın milli ürünü bu aileden.
+- **Kademe (OLTC):** trafonun ayarıdır; reaktif **üretmez**, gerilimi bir taraftan diğerine kaydırır.
 
-Kısa bir hatta direnç ihmal edilirse iki uç arasındaki güç akışı aşağıdaki gibidir. `V_s` gönderen uç, `V_r` alıcı uç gerilimi, `X` hat reaktansı, `δ` iki uç arasındaki açı farkıdır.
+**Panelde söyle:**
 
-```
-P = (V_s V_r / X) sin δ
-Q_r ≈ (V_r (V_s cos δ - V_r)) / X
-```
+> Reaktif uzun hatta taşınamaz; tüketildiği yerde üretilir. Kondansatör ucuz ama gerilim düşünce zayıflar; STATCOM dinamik payı alır. Kademe reaktif üretmez.
 
-Küçük açıda `P` açıyla, `Q` gerilim farkıyla gider. Operatör sezgisi buradan gelir:
+---
 
-- Aktif güç dengesi frekansı ve açıyı belirler.
-- Reaktif güç dengesi gerilimi belirler.
+## 9. Yük nasıl davranır?
 
-Dağıtımda `R` büyükse bu ayrışma bozulur; aktif güç de gerilimi oynatır. Çatı güneşinin AG'de gerilimi yükseltmesinin nedeni budur.
+**Bu ne?**
 
-Senkronizasyon gücü, açı biraz değişince gücün ne kadar değiştiğidir: `dP/dδ = (V_s V_r / X) cos δ`.
+“100 MW yük” yazmak kolaydır. Gerçekte gerilim düşünce bazı cihazlar daha az çeker, bazıları aynı gücü zorla çeker ve akımı artırır.
 
-- Açı 90°'ye geldikçe bu türev sıfıra iner. Sistem açı olarak marjını kaybeder.
-- Kararlı hal açı sınırı ile geçici hal sınırı aynı sayı değildir.
-- Geçici halde atalet ve arıza temizleme süresi devreye girer.
+- Isıtıcı gibi → gerilim düşünce güç düşer (kolay).
+- Bilgisayar, şarj, sürücü gibi → güç aynı kalsın ister, akım artar (zor).
 
-## Kapasitenin üç sınırı
+Kararlılık çalışmasında “hangi varsayımı yaptım?” demeden “sistem çöker” denmez.
 
-Bir hattın taşıyabileceği güç üç ayrı nedenle sınırlanır:
+**Panelde söyle:**
 
-1. **Termik:** iletken sıcaklığı, sehim, hızlandırılmış yaşlanma. Mevsim ve rüzgârla değişir. Dinamik hat kapasitesi bu sınırı ölçümle gevşetir.
-2. **Gerilim:** özellikle uzun ve zayıf hatlarda, yük artınca alıcı uç çöker veya hafif yükte Ferranti etkisiyle yükselir.
-3. **Kararlılık:** açı, gerilim veya bölgeler arası salınım.
+> Sabit güç yükü gerilim düşünce akımını artırır; en zor varsayımdır. Ölçüm yoksa iyimser ve kötümser iki uç bakıp farkı söylerim.
 
-Kısa hatlar çoğunlukla termik sınıra, uzun hatlar kararlılık sınırına takılır.
+---
 
-Yazılım "hat yüzde 80 yüklü" diyorsa bunun hangi limite göre yüzde olduğunu sor. Termik yüzde ile kararlılık marjı aynı eksen değildir.
+## 10. Trafo bağlantısı ve toprak arızası
 
-Aşağıdaki metin, bu sayfanın tamamını mülakatta 90 saniyede anlatmak içindir.
+**Bu ne?**
 
-## 90 saniye
+Trafo sargıları **yıldız** veya **üçgen** bağlanır. Dağıtımda çok görülen **Dyn11**: yüksek taraf üçgen, alçak taraf yıldız (nötr dışarıda).
 
-> “Dengeli işletmede tek hat ve per-unit yeter. Güç aktif ve reaktif diye ayrılır; iletimde P açıyla, Q gerilimle gider, dağıtımda R yüzünden bu ayrışır. Arıza ve dengesizlikte simetrik bileşenlere inerim: tek faz-toprak üç diziyi seri bağlar, sıfır dizi ise trafo bağlantısı ve topraklamayla belirlenir. Hat kapasitesini termik, gerilim ve kararlılık diye üç ayrı limite bölerim.”
+Bir faz toprağa değince akan “toprak yolu” akımı, bu bağlantıya bağlıdır. Üçgen taraf, bu özel akımı diğer tarafa geçirmez. Bu yüzden ev tarafındaki toprak arızası, orta gerilim toprak rölesinde görünmeyebilir — bilinçli bir ayırmadır.
+
+**Panelde söyle:**
+
+> Sıfır dizi (toprak yolu) akımı yalnız topraklı yıldızdan akar; üçgen diğer tarafa geçirmez. Dyn11 dağıtımın klasik bağlantısıdır. Yazılımda tek faz akımı sıfırsa çoğu zaman sıfır dizi yolu yanlış girilmiştir.
+
+---
+
+## Bonus: hat ne kadar taşır?
+
+Tek sayı yoktur. Üç ayrı tavan vardır:
+
+1. **Tel ısınmasın** (termik)
+2. **Gerilim bozulmasın**
+3. **Sistem salınıp kopmasın** (kararlılık)
+
+Kısa hat çoğunlukla ısınmaya, uzun hat kararlılığa takılır.
+
+---
+
+## 90 saniye (sesli oku)
+
+> “Aktif güç iş yapar ve frekansı etkiler; reaktif güç iş yapmaz ama gerilimi etkiler. Frekans her yerde aynıdır, gerilim yerlidir. Yüksek gerilim kaybı düşürmek içindir. Per-unit farklı gerilimleri aynı dile çevirir. Ybus şebekenin bilgisayar haritasıdır. Reaktif yakında üretilir; kondansatör ucuz, STATCOM hızlıdır. Yükün gerilim düşünce nasıl davrandığı varsayıma bağlıdır. Toprak arızasının yolu trafo yıldız-üçgen bağlantısına bağlıdır.”

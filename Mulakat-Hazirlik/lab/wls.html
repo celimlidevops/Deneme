@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WLS Durum Kestirimi Lab</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="topnav">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div>
+          <strong>WLS Durum Kestirimi</strong>
+          <span>Kötü veriyi artıktan yakala</span>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Hub</a>
+        <a href="nr.html">NR yük akışı</a>
+        <a class="active" href="wls.html">WLS kestirim</a>
+        <a href="dcopf.html">DC OPF</a>
+        <a href="araclar.html">Araçlar</a>
+      </nav>
+    </header>
+
+    <div class="layout">
+      <aside class="panel side">
+        <h2>Ölçümleri boz</h2>
+        <p class="hint">Temiz sette kestirim gerçek açıya oturur. P23’e hata ekle; en büyük normalize artık ona işaret eder.</p>
+
+        <div class="field">
+          <label>P23 ölçüm hatası (pu) <strong id="errV">0.00</strong></label>
+          <input type="range" id="err" min="0" max="0.4" step="0.01" value="0">
+        </div>
+
+        <div class="formula">
+          min<sub>x</sub> (z − Hx)ᵀ W (z − Hx)<br>
+          G = HᵀWH &nbsp;·&nbsp; r<sub>N</sub> = |r| / √Ω
+        </div>
+
+        <ul class="step-list">
+          <li class="done"><span class="step-num">1</span><div><strong>Model</strong><br>H: ölçüm ← açı</div></li>
+          <li class="done"><span class="step-num">2</span><div><strong>WLS çöz</strong><br>x̂ = G⁻¹ Hᵀ W z</div></li>
+          <li class="active"><span class="step-num">3</span><div><strong>Artık test</strong><br>|r<sub>N</sub>| &gt; 3 ⇒ şüpheli</div></li>
+        </ul>
+
+        <div class="speak">
+          <p class="etiket">Mülakatta söyle</p>
+          <p>‘Üç barada DC WLS yazdım. Temiz ölçümde J≈0; P23’ü bozunca normalize artık o satırda patladı. Bu, kötü veri elemenin sezgisi.’</p>
+        </div>
+      </aside>
+
+      <main class="panel main">
+        <div class="kpi-row">
+          <div class="kpi"><span>θ₂ kestirim (rad)</span><strong id="kTh2">—</strong></div>
+          <div class="kpi"><span>θ₃ kestirim (rad)</span><strong id="kTh3">—</strong></div>
+          <div class="kpi"><span>J (χ² sezgisi)</span><strong id="kJ">—</strong></div>
+        </div>
+
+        <div class="viz">
+          <div class="canvas-wrap" id="sebeke"></div>
+          <div class="chart-wrap" id="grafik"></div>
+        </div>
+
+        <div class="table-wrap" style="margin-top:14px; min-height:auto;">
+          <table>
+            <thead>
+              <tr><th>Ölçüm</th><th>z</th><th>Hx̂</th><th>r</th><th>|r<sub>N</sub>|</th><th>İşaret</th></tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="math.js"></script>
+  <script src="wls-lab.js"></script>
+  <script>
+    const { olcumUret, kestir, OLCUM_ADLARI } = window.WlsLab;
+
+    const $ = (id) => document.getElementById(id);
+
+    function render() {
+      const err = Number($("err").value);
+      $("errV").textContent = err.toFixed(2);
+      const { H, tetaGercek, z, sigma } = olcumUret(err);
+      const { x, r, rN, J, Hx } = kestir(H, z, sigma);
+      const suclu = rN.indexOf(Math.max(...rN));
+      const esik = 3;
+
+      $("kTh2").textContent = x[0].toFixed(5);
+      $("kTh3").textContent = x[1].toFixed(5);
+      $("kJ").textContent = J.toFixed(2);
+
+      // şebeke
+      const bad = err > 0.05;
+      $("sebeke").innerHTML = `<svg viewBox="0 0 360 260">
+        <line x1="60" y1="60" x2="180" y2="60" stroke="${suclu===0 && bad ? '#ef6b6b' : '#2ec4b6'}" stroke-width="3"/>
+        <line x1="60" y1="60" x2="120" y2="200" stroke="${suclu===1 && bad ? '#ef6b6b' : '#2ec4b6'}" stroke-width="3"/>
+        <line x1="180" y1="60" x2="120" y2="200" stroke="${suclu===2 && bad ? '#ef6b6b' : '#5b8def'}" stroke-width="${suclu===2 && bad ? 5 : 3}"/>
+        <circle cx="60" cy="60" r="18" fill="#0b1220" stroke="#2ec4b6" stroke-width="2"/>
+        <circle cx="180" cy="60" r="18" fill="#0b1220" stroke="#2ec4b6" stroke-width="2"/>
+        <circle cx="120" cy="200" r="18" fill="#0b1220" stroke="#2ec4b6" stroke-width="2"/>
+        <text x="60" y="65" text-anchor="middle" fill="#e8eef7" font-size="12" font-family="IBM Plex Mono,monospace">1</text>
+        <text x="180" y="65" text-anchor="middle" fill="#e8eef7" font-size="12" font-family="IBM Plex Mono,monospace">2</text>
+        <text x="120" y="205" text-anchor="middle" fill="#e8eef7" font-size="12" font-family="IBM Plex Mono,monospace">3</text>
+        <text x="120" y="40" text-anchor="middle" fill="#8fa3bd" font-size="12">P12</text>
+        <text x="70" y="140" fill="#8fa3bd" font-size="12">P13</text>
+        <text x="170" y="140" fill="${suclu===2 && bad ? '#ef6b6b' : '#8fa3bd'}" font-size="12">P23 ${bad ? '⚠' : ''}</text>
+        <text x="24" y="246" fill="#8fa3bd" font-size="12">gerçek θ₂=${tetaGercek[0].toFixed(4)}, θ₃=${tetaGercek[1].toFixed(4)}</text>
+      </svg>`;
+
+      // bar chart residuals
+      const w = 360, h = 240, pad = 40;
+      const maxR = Math.max(...rN, esik, 1);
+      const bars = rN.map((rn, i) => {
+        const bw = 48;
+        const x0 = pad + i * 70;
+        const bh = (rn / maxR) * (h - pad - 40);
+        const y = h - 30 - bh;
+        const col = rn > esik ? "#ef6b6b" : "#2ec4b6";
+        return `<rect x="${x0}" y="${y}" width="${bw}" height="${bh}" fill="${col}" rx="4"/>
+          <text x="${x0 + bw / 2}" y="${h - 10}" text-anchor="middle" fill="#8fa3bd" font-size="11">${OLCUM_ADLARI[i]}</text>
+          <text x="${x0 + bw / 2}" y="${y - 6}" text-anchor="middle" fill="#e8eef7" font-size="11" font-family="IBM Plex Mono,monospace">${rn.toFixed(1)}</text>`;
+      }).join("");
+      const esikY = h - 30 - (esik / maxR) * (h - pad - 40);
+      $("grafik").innerHTML = `<svg viewBox="0 0 ${w} ${h}">
+        <text x="${pad}" y="22" fill="#8fa3bd" font-size="12">normalize artık |r<sub>N</sub>| · eşik = 3</text>
+        <line x1="${pad - 10}" y1="${esikY}" x2="${w - 20}" y2="${esikY}" stroke="#f0b429" stroke-dasharray="6 4"/>
+        ${bars}
+      </svg>`;
+
+      $("tbody").innerHTML = OLCUM_ADLARI.map((ad, i) => {
+        const flag = rN[i] > esik ? '<span class="compare-warn">şüpheli</span>' : '<span class="compare-ok">ok</span>';
+        return `<tr>
+          <td>${ad}</td><td>${z[i].toFixed(4)}</td><td>${Hx[i].toFixed(4)}</td>
+          <td>${r[i].toFixed(4)}</td><td>${rN[i].toFixed(2)}</td><td>${flag}</td>
+        </tr>`;
+      }).join("");
+    }
+
+    $("err").addEventListener("input", render);
+    render();
+  </script>
+</body>
+</html>

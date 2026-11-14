@@ -4,7 +4,8 @@ const KATALOG = [
   { id: "01-02", baslik: "MAM, YTBS, SIPS ve Türkiye şebekesi", grup: "01  Kurum, ilan, süreç" },
   { id: "01-03", baslik: "Güncel projeler, yayınlar, ürünler", grup: "01  Kurum, ilan, süreç" },
   { id: "01-04", baslik: "Tercih sebebi ve kanıt", grup: "01  Kurum, ilan, süreç" },
-  { id: "01-05", baslik: "Envanter ve online değerlendirme", grup: "01  Kurum, ilan, süreç" }
+  { id: "01-05", baslik: "Envanter ve online değerlendirme", grup: "01  Kurum, ilan, süreç" },
+  { id: "02-00", baslik: "Temeller — mülakat kartları", grup: "02  Temeller" }
 ];
 
 const ANAHTAR = "mam-secmeli:";

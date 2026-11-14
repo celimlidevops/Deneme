@@ -85,7 +85,7 @@ Bazı konular çizerek daha iyi anlatılır. Parantez içindeki kod, konunun anl
 | --- | --- |
 | Eşit alan ölçütü | `08/02` — [Salınım denklemi ve eşit alan](../08-Kararlilik/02-Salinim-Denklemi-Esit-Alan-Elle.md) |
 | Dizi devrelerinin bağlantısı | `06/02` — [Asimetrik arıza](../06-Kisa-Devre/02-Asimetrik-Ariza-Elle-IEC-Evirici.md) |
-| Ybus kurulumu | `02/04` — [Ybus elle ve seyrek matris](../02-Guc-Sistemleri-Temelleri/04-Ybus-Elle-ve-Seyrek-Matris.md) |
+| Ybus kurulumu | `02/04` — [Ybus panel cevapları](../02-Guc-Sistemleri-Temelleri/04-Ybus-Elle-ve-Seyrek-Matris.md) |
 | EMS (Energy Management System, enerji yönetim sistemi) veri akışı | `16/02` — [SCADA, protokoller, CIM](../16-Yazilim-Mimarisi/02-SCADA-Protokoller-CIM-TSDB-Ikiz-Siber.md) |
 | Koordinasyon eğrileri | `10/02` — [Koordinasyon, CTI, mesafe](../10-Koruma-ve-Topraklama/02-Koordinasyon-CTI-Mesafe-Evirici.md) |
 | P–V burun eğrisi | — |

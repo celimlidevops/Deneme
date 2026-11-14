@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NR Yük Akışı Lab</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="topnav">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div>
+          <strong>NR Yük Akışı</strong>
+          <span>Adım adım Newton-Raphson</span>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Hub</a>
+        <a class="active" href="nr.html">NR yük akışı</a>
+        <a href="wls.html">WLS kestirim</a>
+        <a href="dcopf.html">DC OPF</a>
+        <a href="araclar.html">Araçlar</a>
+      </nav>
+    </header>
+
+    <div class="layout">
+      <aside class="panel side">
+        <h2>Kontrol</h2>
+        <p class="hint">Önce 3 barada bir iterasyonu izle. Sonra IEEE 14 + pandapower tablosuna geç.</p>
+
+        <div class="field">
+          <label>Mod <strong id="modLabel">3 bara adım</strong></label>
+          <select id="mod">
+            <option value="3bus">3 bara — adım adım</option>
+            <option value="ieee14">IEEE 14 — pandapower karşılaştır</option>
+          </select>
+        </div>
+
+        <div id="kontrol3">
+          <div class="field">
+            <label>P₂ üretim (pu) <strong id="p2v">0.50</strong></label>
+            <input type="range" id="p2" min="0" max="1" step="0.01" value="0.5">
+          </div>
+          <div class="field">
+            <label>P₃ yük (pu) <strong id="p3v">−0.80</strong></label>
+            <input type="range" id="p3" min="-1.2" max="-0.2" step="0.01" value="-0.8">
+          </div>
+          <div class="field">
+            <label>Q₃ yük (pu) <strong id="q3v">−0.30</strong></label>
+            <input type="range" id="q3" min="-0.6" max="0" step="0.01" value="-0.3">
+          </div>
+          <div class="toolbar">
+            <button class="btn primary" id="btnAdim">Bir NR adımı</button>
+            <button class="btn" id="btnSifir">Sıfırla</button>
+            <button class="btn ghost" id="btnTam">Sonuna kadar</button>
+          </div>
+          <ul class="step-list" id="adimlar">
+            <li data-s="0" class="active"><span class="step-num">1</span><div><strong>Ybus</strong><br><span class="hint" style="margin:0">Hat admitanslarından matris</span></div></li>
+            <li data-s="1"><span class="step-num">2</span><div><strong>Güç &amp; artık</strong><br><span class="hint" style="margin:0">S = V·conj(YV), ΔP/ΔQ</span></div></li>
+            <li data-s="2"><span class="step-num">3</span><div><strong>Jacobian</strong><br><span class="hint" style="margin:0">∂P/∂θ, ∂P/∂V, ∂Q/∂θ, ∂Q/∂V</span></div></li>
+            <li data-s="3"><span class="step-num">4</span><div><strong>Düzelt &amp; tekrarla</strong><br><span class="hint" style="margin:0">θ,V ← θ,V + Δx</span></div></li>
+          </ul>
+        </div>
+
+        <div class="speak">
+          <p class="etiket">Mülakatta söyle</p>
+          <p id="speak">“Per-unit, açı radyan. Ybus kurdum, güç artığını yazdım, Jacobian ile Newton adımı attım. IEEE 14’ü kendi NR’mle çözüp pandapower case14 ile doğruladım; max |ΔV| ~ 2e-3 pu.”</p>
+        </div>
+      </aside>
+
+      <main class="panel main">
+        <div class="kpi-row" id="kpi">
+          <div class="kpi"><span>İterasyon</span><strong id="kIter">0</strong></div>
+          <div class="kpi"><span>max |artık|</span><strong id="kArtik">—</strong></div>
+          <div class="kpi"><span>Durum</span><strong id="kDurum">başlangıç</strong></div>
+        </div>
+
+        <div class="viz">
+          <div class="canvas-wrap" id="sebeke"></div>
+          <div class="chart-wrap" id="grafik"></div>
+        </div>
+
+        <div class="formula" id="formul">S<sub>i</sub> = V<sub>i</sub> · conj(Σ<sub>k</sub> Y<sub>ik</sub> V<sub>k</sub>) &nbsp;→&nbsp; Δx = J⁻¹ · ΔS</div>
+
+        <div class="table-wrap" style="margin-top:14px; min-height:auto;">
+          <table id="tablo">
+            <thead></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+
+    <p class="footer-note">
+      Python doğrulama: <code class="mono">python ieee14_nr_karsilastir.py</code> ·
+      canlı kodlama iskeleti: <code class="mono">nr_canli_kodlama.py</code>
+    </p>
+  </div>
+
+  <script src="math.js"></script>
+  <script src="nr-lab.js"></script>
+  <script>
+    const { nrBaslat, nrAdim, IEEE14, ORNEK } = window.NrLab;
+
+    const $ = (id) => document.getElementById(id);
+    let state = null;
+    let phase = 0; // 0 ybus, 1 artik, 2 jac, 3 update cycle
+
+    const pos3 = [
+      { x: 70, y: 140, label: "1 slack" },
+      { x: 240, y: 60, label: "2 PV" },
+      { x: 240, y: 220, label: "3 PQ" },
+    ];
+    const pos14 = (() => {
+      const pts = [];
+      for (let i = 0; i < 14; i++) {
+        const a = -Math.PI / 2 + (i * 2 * Math.PI) / 14;
+        pts.push({ x: 200 + 120 * Math.cos(a), y: 150 + 110 * Math.sin(a), label: String(i + 1) });
+      }
+      return pts;
+    })();
+
+    function vColor(v) {
+      // 0.95..1.1 → teal-blue
+      const t = Math.min(1, Math.max(0, (v - 0.95) / 0.15));
+      const r = Math.round(46 + (91 - 46) * t);
+      const g = Math.round(196 + (141 - 196) * t);
+      const b = Math.round(182 + (239 - 182) * t);
+      return `rgb(${r},${g},${b})`;
+    }
+
+    function cizSebeke(mode) {
+      const el = $("sebeke");
+      if (mode === "ieee14") {
+        const lines = IEEE14.hatlar.map(([a, b]) => {
+          const p = pos14[a - 1], q = pos14[b - 1];
+          return `<line x1="${p.x}" y1="${p.y}" x2="${q.x}" y2="${q.y}" stroke="rgba(140,180,220,0.35)" stroke-width="1.5"/>`;
+        }).join("");
+        const nodes = pos14.map((p, i) => {
+          const v = IEEE14.v[i];
+          return `<g class="bus-node">
+            <circle cx="${p.x}" cy="${p.y}" r="${10 + (v - 1) * 40}" fill="#0b1220" stroke="${vColor(v)}" stroke-width="2"/>
+            <text x="${p.x}" y="${p.y + 4}" text-anchor="middle" fill="#e8eef7" font-size="9" font-family="IBM Plex Mono,monospace">${i + 1}</text>
+          </g>`;
+        }).join("");
+        el.innerHTML = `<svg viewBox="0 0 400 300">${lines}${nodes}</svg>
+          <div class="legend"><span><span class="dot" style="background:#2ec4b6"></span>düşük V</span>
+          <span><span class="dot" style="background:#5b8def"></span>yüksek V</span>
+          <span>daire boyutu ≈ |V|</span></div>`;
+        return;
+      }
+      const v = state?.v ?? ORNEK.v0;
+      const edges = [[0, 1], [0, 2], [1, 2]].map(([a, b]) => {
+        const p = pos3[a], q = pos3[b];
+        return `<line x1="${p.x}" y1="${p.y}" x2="${q.x}" y2="${q.y}" stroke="rgba(46,196,182,0.55)" stroke-width="2.5"/>`;
+      }).join("");
+      const nodes = pos3.map((p, i) => `<g>
+        <circle cx="${p.x}" cy="${p.y}" r="${18 + (v[i] - 1) * 50}" fill="#0b1220" stroke="${vColor(v[i])}" stroke-width="2.5"/>
+        <text x="${p.x}" y="${p.y - 28}" text-anchor="middle" fill="#8fa3bd" font-size="12" font-family="Space Grotesk,sans-serif">${p.label}</text>
+        <text x="${p.x}" y="${p.y + 5}" text-anchor="middle" fill="#e8eef7" font-size="11" font-family="IBM Plex Mono,monospace">${v[i].toFixed(3)}</text>
+      </g>`).join("");
+      el.innerHTML = `<svg viewBox="0 0 340 280">${edges}${nodes}</svg>`;
+    }
+
+    function cizGrafik(mode) {
+      const el = $("grafik");
+      if (mode === "ieee14") {
+        const w = 360, h = 240, pad = 36;
+        const bars = IEEE14.v.map((v, i) => {
+          const x = pad + i * ((w - pad - 10) / 14);
+          const bh = ((v - 0.95) / 0.16) * (h - pad - 20);
+          const y = h - 20 - bh;
+          const dpp = Math.abs(v - IEEE14.pp.v[i]);
+          return `<rect x="${x}" y="${y}" width="16" height="${bh}" fill="${dpp > 0.0015 ? '#f0b429' : '#2ec4b6'}" rx="3"/>
+            <text x="${x + 8}" y="${h - 6}" text-anchor="middle" fill="#8fa3bd" font-size="8">${i + 1}</text>`;
+        }).join("");
+        el.innerHTML = `<svg viewBox="0 0 ${w} ${h}">
+          <text x="${pad}" y="18" fill="#8fa3bd" font-size="12">|V| profili (NR) · sarı = pandapower’dan biraz sapma</text>
+          <line x1="${pad}" y1="${h - 20}" x2="${w - 10}" y2="${h - 20}" stroke="rgba(140,180,220,0.25)"/>
+          ${bars}
+        </svg>`;
+        return;
+      }
+      const arts = state?.artiklar?.length ? state.artiklar : [1];
+      const w = 360, h = 240, pad = 40;
+      const maxA = Math.max(...arts, 1e-12);
+      const pts = arts.map((a, i) => {
+        const x = pad + (i * (w - pad - 20)) / Math.max(arts.length - 1, 1);
+        const y = pad + (1 - Math.log10(a + 1e-16) / Math.log10(maxA + 1e-16)) * (h - pad - 30);
+        return [x, Math.min(h - 25, Math.max(pad, y))];
+      });
+      // better log scale
+      const ys = arts.map((a, i) => {
+        const x = pad + (i * (w - pad - 20)) / Math.max(arts.length - 1, 1);
+        const loga = Math.log10(Math.max(a, 1e-16));
+        const logMin = -16, logMax = Math.log10(Math.max(maxA, 1e-2));
+        const y = pad + ((logMax - loga) / (logMax - logMin)) * (h - pad - 30);
+        return `${i === 0 ? "M" : "L"}${x},${y}`;
+      }).join(" ");
+      const dots = arts.map((a, i) => {
+        const x = pad + (i * (w - pad - 20)) / Math.max(arts.length - 1, 1);
+        const loga = Math.log10(Math.max(a, 1e-16));
+        const logMin = -16, logMax = Math.log10(Math.max(maxA, 1e-2));
+        const y = pad + ((logMax - loga) / (logMax - logMin)) * (h - pad - 30);
+        return `<circle cx="${x}" cy="${y}" r="4" fill="#2ec4b6"/>`;
+      }).join("");
+      el.innerHTML = `<svg viewBox="0 0 ${w} ${h}">
+        <text x="${pad}" y="22" fill="#8fa3bd" font-size="12">max |artık| (log ölçek)</text>
+        <path d="${ys || "M40,200"}" fill="none" stroke="#5b8def" stroke-width="2.5"/>
+        ${dots}
+      </svg>`;
+    }
+
+    function tablo3() {
+      const th = `<tr><th>Bara</th><th>Tip</th><th>V</th><th>θ°</th><th>P</th><th>Q</th></tr>`;
+      const S = state?.S;
+      const body = [0, 1, 2].map((i) => {
+        const tip = state.tip[i];
+        const ang = (state.teta[i] * 180) / Math.PI;
+        const p = S ? S[i].re.toFixed(4) : "—";
+        const q = S ? S[i].im.toFixed(4) : "—";
+        return `<tr><td>${i + 1}</td><td>${tip}</td><td>${state.v[i].toFixed(5)}</td><td>${ang.toFixed(3)}</td><td>${p}</td><td>${q}</td></tr>`;
+      }).join("");
+      $("tablo").querySelector("thead").innerHTML = th;
+      $("tablo").querySelector("tbody").innerHTML = body;
+    }
+
+    function tablo14() {
+      const th = `<tr><th>Bara</th><th>V_NR</th><th>V_pp</th><th>|ΔV|</th><th>θ_NR</th><th>θ_pp</th></tr>`;
+      const body = IEEE14.v.map((v, i) => {
+        const dv = Math.abs(v - IEEE14.pp.v[i]);
+        const cls = dv > 0.0015 ? "compare-warn" : "compare-ok";
+        return `<tr>
+          <td>${i + 1}</td><td>${v.toFixed(4)}</td><td>${IEEE14.pp.v[i].toFixed(4)}</td>
+          <td class="${cls}">${dv.toExponential(2)}</td>
+          <td>${IEEE14.teta_deg[i].toFixed(3)}</td><td>${IEEE14.pp.teta_deg[i].toFixed(3)}</td>
+        </tr>`;
+      }).join("");
+      $("tablo").querySelector("thead").innerHTML = th;
+      $("tablo").querySelector("tbody").innerHTML = body;
+      $("kIter").textContent = String(IEEE14.iterasyon);
+      $("kArtik").textContent = IEEE14.artiklar.at(-1).toExponential(2);
+      $("kDurum").textContent = `ΔV≤${IEEE14.pp.max_dv.toExponential(1)}`;
+    }
+
+    function setSteps() {
+      document.querySelectorAll("#adimlar li").forEach((li) => {
+        const s = Number(li.dataset.s);
+        li.classList.toggle("active", s === phase);
+        li.classList.toggle("done", s < phase);
+      });
+    }
+
+    function render() {
+      const mode = $("mod").value;
+      $("modLabel").textContent = mode === "ieee14" ? "IEEE 14" : "3 bara adım";
+      $("kontrol3").style.display = mode === "3bus" ? "block" : "none";
+      if (mode === "ieee14") {
+        cizSebeke("ieee14");
+        cizGrafik("ieee14");
+        tablo14();
+        $("formul").innerHTML = `IEEE 14 · kendi NR (${IEEE14.iterasyon} iter) ↔ pandapower case14 · max|ΔV|=${IEEE14.pp.max_dv} pu, max|Δθ|=${IEEE14.pp.max_dtheta_deg}°`;
+        $("speak").textContent = "“IEEE 14’ü NumPy ile Newton-Raphson’da çözdüm; aynı vaka pandapower.networks.case14 ile doğrulandı. Tap’lı hatlar ve bara 9 şöntü yüzünden milipuanlık fark kaldı — bu beklenen model farkı.”";
+        return;
+      }
+      $("kIter").textContent = String(state.iterasyon);
+      $("kArtik").textContent = state.artiklar.length ? state.artiklar.at(-1).toExponential(2) : "—";
+      $("kDurum").textContent = state.yakinsadi ? "yakınsadı" : phase === 0 ? "Ybus hazır" : "iterasyon";
+      cizSebeke("3bus");
+      cizGrafik("3bus");
+      tablo3();
+      setSteps();
+    }
+
+    function sifirla() {
+      const p2 = Number($("p2").value);
+      const p3 = Number($("p3").value);
+      const q3 = Number($("q3").value);
+      state = nrBaslat({ p: [0, p2, p3], q: [0, 0, q3], v0: [1, 1.02, 1] });
+      // ilk güç hesabı için bir "sıfır adımı" görünümü
+      const snap = nrAdim(state);
+      state = { ...state, S: snap.S, enBuyuk: snap.enBuyuk, artik: snap.artik, yakinsadi: false, artiklar: [] };
+      phase = 0;
+      render();
+    }
+
+    function birAdim() {
+      if ($("mod").value !== "3bus") return;
+      if (state.yakinsadi) return;
+      phase = Math.min(3, phase + 1);
+      if (phase === 3 || state.iterasyon > 0) {
+        const nxt = nrAdim(state);
+        state = {
+          ...nxt,
+          iterasyon: state.iterasyon + 1,
+          artiklar: [...state.artiklar, nxt.enBuyuk],
+        };
+        phase = state.yakinsadi ? 3 : 1;
+      }
+      render();
+    }
+
+    function tamCoz() {
+      sifirla();
+      for (let i = 0; i < 20 && !state.yakinsadi; i++) {
+        const nxt = nrAdim(state);
+        state = {
+          ...nxt,
+          iterasyon: state.iterasyon + 1,
+          artiklar: [...state.artiklar, nxt.enBuyuk],
+        };
+      }
+      phase = 3;
+      render();
+    }
+
+    ["p2", "p3", "q3"].forEach((id) => {
+      $(id).addEventListener("input", () => {
+        $("p2v").textContent = Number($("p2").value).toFixed(2);
+        $("p3v").textContent = Number($("p3").value).toFixed(2);
+        $("q3v").textContent = Number($("q3").value).toFixed(2);
+        sifirla();
+      });
+    });
+    $("mod").addEventListener("change", render);
+    $("btnAdim").addEventListener("click", birAdim);
+    $("btnSifir").addEventListener("click", sifirla);
+    $("btnTam").addEventListener("click", tamCoz);
+
+    $("p2v").textContent = "0.50";
+    sifirla();
+  </script>
+</body>
+</html>
