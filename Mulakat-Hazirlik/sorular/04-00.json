@@ -1,0 +1,118 @@
+{
+  "id": "04-00",
+  "baslik": "Dağıtım — bu ne?",
+  "grup": "04  Dağıtım",
+  "geri": "goruntule.html#04-Dagitim-Sistemleri%2F00-Alt-Basliklar.md",
+  "sorular": [
+    {
+      "soru": "Dağıtım şebekesi çoğu zaman nasıl beslenir?",
+      "secenekler": [
+        "Örgülü, çok yoldan",
+        "Radyal: tek yoldan",
+        "Yalnız HVDC",
+        "Yalnız 400 kV"
+      ],
+      "dogru": 1,
+      "neden": "Fider genelde tek kaynaktan ağaç gibi iner."
+    },
+    {
+      "soru": "Dağıtımda iletime göre ne daha görünür hale gelir?",
+      "secenekler": [
+        "Direnç (R); aktif güç de gerilimi oynatır",
+        "Hiçbir şey değişmez",
+        "Yalnız frekans",
+        "Yalnız STATCOM"
+      ],
+      "dogru": 0,
+      "neden": "Çatı güneşinin öğlen gerilim yükseltmesi buradan gelir."
+    },
+    {
+      "soru": "Fider nedir?",
+      "secenekler": [
+        "Bir kesici markası",
+        "Trafo merkezinden çıkan bir dağıtım besleme kolu",
+        "Frekans değeri",
+        "Yalnız iletim hattı"
+      ],
+      "dogru": 1,
+      "neden": "Dağıtım konuşmasının temel birimi."
+    },
+    {
+      "soru": "Barındırma kapasitesi nedir?",
+      "secenekler": [
+        "Trafo yağ kapasitesi",
+        "Limitler bozulmadan bağlanabilecek üretim miktarı",
+        "Sayaç sayısı",
+        "Kesinti süresi"
+      ],
+      "dogru": 1,
+      "neden": "Konuma ve saate bağlıdır; en küçük limit geçerlidir."
+    },
+    {
+      "soru": "Ada çalışması neden istenmez?",
+      "secenekler": [
+        "Daha ucuz olduğu için",
+        "Şebeke yokken eviricinin canlı ada bırakması tehlikelidir",
+        "Frekansı yükseltir diye",
+        "Yalnız gece yasaktır"
+      ],
+      "dogru": 1,
+      "neden": "Anti-islanding ile evirici açılmalıdır."
+    },
+    {
+      "soru": "DMS / OMS / AMI farkı (doğru eşleşme)?",
+      "secenekler": [
+        "DMS işletme yönetimi, OMS kesinti, AMI akıllı sayaç",
+        "Hepsi aynı şey",
+        "AMI yalnız iletimde",
+        "OMS yalnız üretimde"
+      ],
+      "dogru": 0,
+      "neden": "Üç katman ayrı iş görür."
+    },
+    {
+      "soru": "SAIFI ve SAIDI neyi ölçer?",
+      "secenekler": [
+        "SAIFI sıklık, SAIDI süre",
+        "SAIFI süre, SAIDI sıklık",
+        "İkisi de frekans",
+        "İkisi de gerilim"
+      ],
+      "dogru": 0,
+      "neden": "Kesinti kalitesinin iki notu."
+    },
+    {
+      "soru": "Volt-var ne yapar?",
+      "secenekler": [
+        "Eviricinin gerilime göre reaktif ayarlaması",
+        "Kesiciyi açar",
+        "Frekansı 60 yapar",
+        "Yalnız yağ sıcaklığı ölçer"
+      ],
+      "dogru": 0,
+      "neden": "Öğlen gerilim şişmesini yumuşatmanın yolu."
+    },
+    {
+      "soru": "DG bağlantısında bakılacak ana konular hangisi?",
+      "secenekler": [
+        "Yalnız fatura rengi",
+        "Gerilim, ısınma, koruma, ters akış",
+        "Yalnız logo",
+        "Yalnız kablo rengi"
+      ],
+      "dogru": 1,
+      "neden": "Tek MW sayısı yetmez."
+    },
+    {
+      "soru": "EV şarjı dağıtımda neden sorun olabilir?",
+      "secenekler": [
+        "Frekansı yükseltir",
+        "Aynı anda şarj puantı kaydırıp mahalle trafosunu doldurabilir",
+        "Hiçbir etkisi yoktur",
+        "Yalnız iletimi etkiler"
+      ],
+      "dogru": 1,
+      "neden": "Akıllı şarj / güç paylaşımı gerekir."
+    }
+  ]
+}

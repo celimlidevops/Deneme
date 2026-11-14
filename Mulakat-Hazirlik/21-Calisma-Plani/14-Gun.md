@@ -58,9 +58,9 @@ Tablo her gün için iki şey söyler. “Klasör” sütunu o gün çalışaca�
 | --- | --- | --- |
 | 1 | 01 kurum, YTBS, SIPS, Türkiye sistemi | Üç dakikalık “nereye başvurdum” |
 | 2 | 02 temeller — 01 mülakat kartları + 07 yoklama | 12 kartı sesli söyle; test.html?sayfa=02-00 |
-| 3 | 03 iletim, 04 dağıtım | İletim ve dağıtım farkını beş maddede söyle |
-| 4 | 05 yük akışı + `dc_yuk_akisi.py` | NR bloklarını ve DC’nin kör noktasını söyle |
-| 5 | 06 kısa devre, 10 koruma ve topraklama | Azami ve asgari hesabı ayır |
+| 3 | 03 iletim + 04 dağıtım — 01 kartları | test.html?sayfa=03-00 ve 04-00; farkı 5 cümlede söyle |
+| 4 | 05 yük akışı — 01 kartları (formülsüz) | Bara tipleri + DC’nin ne zaman yetmediği; test.html?sayfa=05-00 |
+| 5 | 06 kısa devre — 01 kartları | Arıza türleri + kesici/IEC; test.html?sayfa=06-00 |
 | 6 | 07 güvenlik | N-1 tarama katmanlarını sırayla çiz |
 | 7 | 08 kararlılık | Açı, gerilim, frekans için birer örnek olay |
 | 8 | 09 durum kestirimi + `wls_durum_kestirimi.py` | Kötü veriyi artıkla göster |

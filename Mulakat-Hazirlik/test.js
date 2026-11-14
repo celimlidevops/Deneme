@@ -5,7 +5,11 @@ const KATALOG = [
   { id: "01-03", baslik: "Güncel projeler, yayınlar, ürünler", grup: "01  Kurum, ilan, süreç" },
   { id: "01-04", baslik: "Tercih sebebi ve kanıt", grup: "01  Kurum, ilan, süreç" },
   { id: "01-05", baslik: "Envanter ve online değerlendirme", grup: "01  Kurum, ilan, süreç" },
-  { id: "02-00", baslik: "Temeller — mülakat kartları", grup: "02  Temeller" }
+  { id: "02-00", baslik: "Temeller — bu ne?", grup: "02  Temeller" },
+  { id: "03-00", baslik: "İletim — bu ne?", grup: "03  İletim" },
+  { id: "04-00", baslik: "Dağıtım — bu ne?", grup: "04  Dağıtım" },
+  { id: "05-00", baslik: "Yük akışı — bu ne?", grup: "05  Yük akışı" },
+  { id: "06-00", baslik: "Kısa devre — bu ne?", grup: "06  Kısa devre" }
 ];
 
 const ANAHTAR = "mam-secmeli:";

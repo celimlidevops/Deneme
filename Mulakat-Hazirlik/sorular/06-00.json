@@ -1,0 +1,118 @@
+{
+  "id": "06-00",
+  "baslik": "Kısa devre — bu ne?",
+  "grup": "06  Kısa devre",
+  "geri": "goruntule.html#06-Kisa-Devre%2F00-Alt-Basliklar.md",
+  "sorular": [
+    {
+      "soru": "Kısa devre hesabı asıl ne için yapılır?",
+      "secenekler": [
+        "Yarınki hava için",
+        "Kesici, koruma, ekipman zorlaması için",
+        "Yalnız fatura için",
+        "Yalnız boya rengi için"
+      ],
+      "dogru": 1,
+      "neden": "Yük akışının yerine geçmez; arıza anı içindir."
+    },
+    {
+      "soru": "En sık görülen arıza türü hangisidir?",
+      "secenekler": [
+        "Üç faz",
+        "Tek faz-toprak",
+        "İki faz",
+        "Hiç arıza olmaz"
+      ],
+      "dogru": 1,
+      "neden": "En büyük her zaman üç faz değildir."
+    },
+    {
+      "soru": "Tek faz-toprak arızada diziler nasıl bağlanır?",
+      "secenekler": [
+        "Yalnız artı",
+        "Artı, eksi ve sıfır seri",
+        "Yalnız sıfır",
+        "Hiç bağlanmaz"
+      ],
+      "dogru": 1,
+      "neden": "Simetrik bileşenlerin klasik kuralı."
+    },
+    {
+      "soru": "Generatör arıza akımı zamanla ne olur?",
+      "secenekler": [
+        "Hep aynı kalır",
+        "İlk anda en büyük, sonra azalır",
+        "Sıfırdan başlar sonsuza gider",
+        "Yalnız gece akar"
+      ],
+      "dogru": 1,
+      "neden": "Alt geçici → geçici → sürekli."
+    },
+    {
+      "soru": "Kesici seçiminde yalnız etkin akım yeter mi?",
+      "secenekler": [
+        "Evet, tek sayı yeter",
+        "Hayır; tepe ve X/R de önemli",
+        "Kesici seçilmez",
+        "Yalnız renk önemli"
+      ],
+      "dogru": 1,
+      "neden": "DC bileşen tepeyi şişirir."
+    },
+    {
+      "soru": "IEC 60909 nedir?",
+      "secenekler": [
+        "Bir trafo markası",
+        "Kısa devre akımı hesabı standardı",
+        "Bir fider tipi",
+        "Bir sayaç protokolü"
+      ],
+      "dogru": 1,
+      "neden": "Hangi standardı kullandığını söylemek önemli."
+    },
+    {
+      "soru": "Eviricinin kısa devre katkısı senkron makine gibi midir?",
+      "secenekler": [
+        "Evet, aynı",
+        "Hayır; sınırlı ve kontrollüdür",
+        "Evirici hiç katkı vermez",
+        "Yalnız 400 kV'ta aynıdır"
+      ],
+      "dogru": 1,
+      "neden": "Klasik makine formülü dağıtım eviricisinde yanıltır."
+    },
+    {
+      "soru": "Yazılımda tek faz akımı sıfır çıkıyorsa sık neden?",
+      "secenekler": [
+        "Ekran bozuk",
+        "Sıfır dizi yolu / trafo grubu / nötr toprağı yanlış",
+        "Frekans 50 değil",
+        "Hava güneşli"
+      ],
+      "dogru": 1,
+      "neden": "Z0 ve bağlantı grubu kritik veri."
+    },
+    {
+      "soru": "Çok zayıf bara neden sorun?",
+      "secenekler": [
+        "Arıza akımı küçük → röle görmeyebilir",
+        "Daha ucuz olduğu için",
+        "Frekans yükselir",
+        "Hiç sorun değil"
+      ],
+      "dogru": 0,
+      "neden": "Sert bara da kesiciyi zorlar; ikisi de ayrı sorun."
+    },
+    {
+      "soru": "Üçgen trafo sıfır dizi için ne yapar?",
+      "secenekler": [
+        "Diğer tarafa geçirmez (içinde dolaştırır)",
+        "Her zaman geçirir",
+        "Frekansı değiştirir",
+        "Sayaç okur"
+      ],
+      "dogru": 0,
+      "neden": "Dyn bağlantısının bilinçli etkisi."
+    }
+  ]
+}

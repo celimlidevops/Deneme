@@ -98,11 +98,11 @@ Soru bankasındaki kısa cevaplar ve `ornekler` klasörü bu sınav içindir. Ay
 | Klasör | Ne işe yarar |
 | --- | --- |
 | 01 Kurum, ilan, süreç | Nereye başvurduğunu ve Türkiye sistemini kendi cümlelerinle anlatmak |
-| 02 Temeller | Mülakat kartları: P–Q–S, per-unit, Ybus, Q–V, ZIP, sıfır dizi |
-| 03 İletim | 400/154/66 kV, hat, trafo, FACTS, enterkonneksiyon |
-| 04 Dağıtım | Radyal şebeke, dağıtık üretim, barındırma kapasitesi, DMS |
-| 05 Yük akışı | NR, ayrık hızlı, DC, dağıtım yük akışı |
-| 06 Kısa devre | Simetrik bileşenler, IEC 60909, kesici |
+| 02 Temeller | “Bu ne?” kartları: P–Q, frekans–gerilim, per-unit, Ybus |
+| 03 İletim | 400/154, örgü+N-1, FACTS/STATCOM, HVDC, kısıt |
+| 04 Dağıtım | Radyal fider, DG, barındırma, DMS/AMI, SAIDI |
+| 05 Yük akışı | Problem, bara tipleri, NR/DC/süpürme (formülsüz) |
+| 06 Kısa devre | Arıza türleri, diziler, kesici, IEC, evirici |
 | 07 Güvenlik | N-1, beklenmeyen durum taraması, düzeltici kontrol, SIPS |
 | 08 Kararlılık | Açı, gerilim, frekans; atalet, AGC, PSS |
 | 09 Durum kestirimi | WLS, gözlenebilirlik, kötü veri, PMU |
