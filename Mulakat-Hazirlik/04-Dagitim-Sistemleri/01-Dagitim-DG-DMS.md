@@ -1,107 +1,98 @@
-# Dağıtım — mülakat kartları
-
-**Bu ne? → Panelde söyle → Unutma.** Hesap yok.
+# Dağıtım — çok basit kartlar
 
 ---
 
-## 1. Dağıtım ile iletim farkı
+## 1. Dağıtım nedir?
 
-**Bu ne?**
+**Ne demek?**  
+Şehir içi elektrik. Trafo merkezinden evlere / işyerlerine.
+
+**Benzetme:**  
+İletim otoyol, dağıtım mahalle sokağı.
+
+**Mülakatta:**  
+> Dağıtım son kullanıcıya yerel dağıtımdır. Çoğunlukla radyaldir: tek yoldan beslenir.
+
+---
+
+## 2. İletimden farkı
 
 | | İletim | Dağıtım |
 | --- | --- | --- |
-| Yapı | Örgülü (çok yol) | Çoğunlukla **radyal** (tek yol) |
-| Gerilim | 400 / 154 kV | OG (ör. 34,5 kV), AG (0,4 kV) |
-| R / X | X baskın | R daha görünür |
-| Fazlar | Dengeli varsayım sık | Dengesizlik sık |
+| Yol | Birden çok yol | Çoğu zaman tek yol |
+| Gerilim | 400 / 154 kV | 34,5 kV, 0,4 kV gibi |
+| Fazlar | Daha dengeli | Evler yüzünden dengesiz olabilir |
 
-**Fider:** trafo merkezinden çıkan bir dağıtım hattı / besleme kolu.
+**Fider** = bir dağıtım kolu / besleme hattı.
 
-**Panelde söyle:**  
-> Dağıtım radyaldir, R yüksektir, fazlar dengesiz olabilir. İletim formülünü olduğu gibi taşımak yanlış olur.
-
----
-
-## 2. Gerilim neden düşer / yükselir?
-
-**Bu ne?**  
-Fider boyunca yük çekildikçe gerilim genelde **düşer**.  
-Çatı güneşi öğlen fazla basarsa, özellikle uçlara yakınsa gerilim **yükselebilir** (ters akış + R etkisi).
-
-Araçlar (ucuzdan pahalıya fikir): kademe, kondansatör, iletken büyütme, evirici volt-var, yeni trafo/fider.
-
-**Panelde söyle:**  
-> Dağıtımda aktif güç de gerilimi oynatır. Öğlen yükselmeyi çoğu zaman reaktif “üretmek” değil, eviricinin reaktif tüketmesi veya aktif sınırlama çözer.
+**Mülakatta:**  
+> Dağıtımda R daha görünür. Aktif güç de gerilimi oynatabilir.
 
 ---
 
-## 3. Dağıtık üretim (DG) bağlantı soruları
+## 3. Gerilim neden düşer / yükselir?
 
-**Bu ne?**  
-Çatı güneşi / küçük santral fidere bağlanacak. Standart sorular:
+Yük çoksa uçta gerilim düşebilir.  
+Çatı güneşi öğlen fazla basarsa gerilim yükselebilir.
 
-1. Gerilim limitini bozar mı?  
-2. Hat/trafo ısınır mı?  
-3. Koruma hâlâ doğru görür mü?  
-4. Ters akış var mı, trafo/röle buna hazır mı?  
-5. Ada tehlikesi var mı?
+**Ne yapılır?**  
+Kademe, kondansatör, evirici ayarı, gerekirse daha kalın hat / yeni trafo.
 
-**Panelde söyle:**  
-> Bağlantı çalışması tek MW sayısı değildir; gerilim, termik, koruma ve ters akış birlikte bakılır.
+**Mülakatta:**  
+> Dağıtımda öğlen gerilim şişmesi sık görülür. Evirici ayarı veya üretim kısma çözüm olabilir.
 
 ---
 
-## 4. Barındırma kapasitesi
+## 4. Çatı güneşi bağlanırken neye bakılır?
 
-**Bu ne?**  
-Bir noktaya / fidere, limitler bozulmadan **ne kadar üretim** bağlanabilir?
+1. Gerilim bozulur mu?  
+2. Tel / trafo ısınır mı?  
+3. Koruma doğru çalışır mı?  
+4. Güç geri akar mı?  
+5. Şebeke gidince tehlikeli “ada” kalır mı?
 
-En küçük limit geçerlidir (gerilim, ısınma, koruma, ters akış…).  
-Trafo yanı ile fider ucu **aynı MW değildir**.  
-En zor saat genelde: **az yük + çok üretim** (öğlen, bahar).
-
-**Panelde söyle:**  
-> Barındırma kapasitesi konuma ve saate bağlıdır; tek rakam her yere yapıştırılmaz.
-
----
-
-## 5. Ada ve tekrar kapama
-
-**Bu ne?**  
-Şebeke kesildiğinde küçük üretim “kendi adasını” canlı tutmaya çalışırsa tehlikelidir (bakım ekibi, gerilim/frekans kontrolden çıkar).
-
-Evirici şebeke gidince **açılmalıdır**.  
-Otomatik tekrar kapama (OTK) ile zamanlama çakışırsa sorun çıkar — koruma koordinasyonu konusu.
-
-**Panelde söyle:**  
-> Ada çalışmasına izin vermem; evirici anti-islanding ile çıkar, OTK ile koordinasyon şarttır.
+**Mülakatta:**  
+> Bağlantı sadece MW sayısı değildir. Gerilim, ısınma, koruma ve ters akışa birlikte bakarım.
 
 ---
 
-## 6. Dağıtım şirketi yazılımları (isim yeter)
+## 5. Barındırma kapasitesi
 
-| Kısaltma | Ne işe yarar |
+**Ne demek?**  
+Limit bozulmadan o hatta / o noktaya ne kadar üretim bağlanabilir?
+
+Trafo yanı ile hattın ucu aynı değildir.  
+En zor an çoğu zaman: az tüketim + çok üretim.
+
+**Mülakatta:**  
+> Barındırma kapasitesi yere ve saate bağlıdır.
+
+---
+
+## 6. Ada tehlikesi
+
+Şebeke kesilince küçük üretim kendi başına canlı kalırsa tehlikelidir.  
+Evirici şebeke gidince kapanmalıdır.
+
+**Mülakatta:**  
+> Ada çalışmasına izin vermem.
+
+---
+
+## 7. Dağıtım yazılımları
+
+| İsim | Ne işe yarar |
 | --- | --- |
-| GIS | Harita / şebeke coğrafyası |
-| SCADA | Canlı izleme ve kumanda |
-| DMS | Dağıtım yönetim sistemi (analiz + işletme) |
+| SCADA | Canlı izleme |
+| DMS | Dağıtımı yönetme / analiz |
 | OMS | Kesinti yönetimi |
-| AMI | Akıllı sayaç altyapısı |
+| AMI | Akıllı sayaç |
 
-**Panelde söyle:**  
-> DMS işletme beynidir; OMS kesintiyi yönetir; AMI ölçü getirir; GIS topolojiyi taşır.
-
----
-
-## 7. Kayıp iki tür
-
-- **Teknik:** tel ısınması (fizik).  
-- **Ticari:** kaçak, ölçüm hatası, kayıt hatası.
-
-İkisini karıştırmadan konuş.
+**Mülakatta:**  
+> DMS işletmeyi, OMS kesintiyi, AMI ölçüyü taşır.
 
 ---
 
-## 90 saniye
+## Sesli özet
 
-> “Dağıtım radyaldir, R görünür, dengesizlik normaldir. DG’de gerilim, ısınma, koruma ve ters akışa bakarım. Barındırma kapasitesi yere ve saate bağlıdır. Ada yasaktır. DMS–OMS–AMI katmanları ayrı işler görür.”
+> Dağıtım mahalle sokağıdır, çoğu zaman tek yoldan beslenir. Güneş bağlarken gerilim, ısınma, koruma ve ters akışa bakarım. Barındırma yere göre değişir. Ada yasaktır.

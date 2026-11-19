@@ -1,178 +1,216 @@
-# Mülakat kartları — sıfırdan
+# Temeller — çok basit kartlar
 
-Her kart üç satır: **Bu ne?** → **Panelde söyle** → **Unutma**.
+Her kartta üç şey var:
 
-Hesap yok. Anlamadığın kelime için [07 sözlük](07-Sozluk-ve-Kendini-Yokla.md).
+1. **Ne demek?** (günlük dil)
+2. **Nasıl aklında kalsın?** (benzetme)
+3. **Mülakatta ne söyle?** (tek kısa paragraf)
 
 ---
 
-## 1. Aktif güç, reaktif güç, görünür güç
+## 1. Güç nedir? (P, Q, S)
 
-**Bu ne?**
+**Ne demek?**
 
-Şebeke iki şey taşır:
+Elektrik hattından iki şey geçer:
 
-- **Aktif güç (P):** gerçekten iş yapan kısım. Lamba yanar, motor döner. Birimi MW.
-- **Reaktif güç (Q):** iş yapmaz ama motor ve trafonun manyetik alanı için gerekir. Birimi Mvar. “Yararsız trafik” gibi: yolu doldurur.
-- **Görünür güç (S):** ikisinin toplamı. Trafo ve hat buna göre seçilir. Birimi MVA.
+- **Aktif güç (P):** gerçekten iş yapan kısım. Lamba yanar, motor döner.
+- **Reaktif güç (Q):** iş yapmaz. Ama motor ve trafo çalışsın diye gerekir. Hattı boşuna doldurur.
+- **Görünür güç (S):** ikisinin birlikte hattı ne kadar doldurduğu. Trafo büyüklüğü buna göre seçilir.
 
-**Panelde söyle:**
+**Nasıl aklında kalsın?**
 
-> Aktif güç iş yapar; dengesi bozulursa frekans sarsılır. Reaktif güç iş yapmaz ama akımı şişirir; dengesi bozulursa gerilim sarsılır. Cihazlar ısındığı için S’ye (MVA) göre boyutlanır.
+Su borusu düşün:
 
-**Unutma:** Reaktif güç “kayıp” değildir. Kayıp, onun şişirdiği akımın ısıya dönüşmesidir.
+- P = musluktan çıkan, işe yarayan su
+- Q = borunun içinde gidip gelen, evde kullanılmayan su
+- S = borunun toplam doluluğu
+
+**Mülakatta ne söyle?**
+
+> Aktif güç iş yapar. Reaktif güç iş yapmaz ama hattı doldurur ve gerilimi etkiler. Cihazlar ısındığı için görünen toplam güce (S) göre seçilir.
 
 ---
 
 ## 2. Frekans ve gerilim
 
-**Bu ne?**
+**Ne demek?**
 
-- **Frekans (50 Hz):** bütün Türkiye’de aynıdır. “Üretim ile tüketim dengede mi?” sorusunun cevabıdır. Üretim azsa frekans düşer.
-- **Gerilim:** mahalle mahalle farklıdır. “Bu bölgede reaktif güç yeterli mi?” sorusunun cevabıdır.
+- **Frekans:** elektriğin saniyede kaç kez salındığı. Türkiye’de 50. Bütün ülkede aynıdır.
+- **Gerilim:** elektriğin “itme gücü”. Mahalleden mahalleye değişebilir.
 
-**Panelde söyle:**
+Üretim yetmezse frekans düşer.  
+Bir bölgede destek yetmezse o bölgenin gerilimi düşer.
 
-> Frekans sistemin aktif güç sağlığıdır, her yerde aynıdır. Gerilim yereldir; reaktif eksikse o bölgede düşer, uzaktaki santral bunu kolay kurtaramaz.
+**Nasıl aklında kalsın?**
 
-**Unutma:** Frekans = ülke. Gerilim = mahalle.
+- Frekans = bütün ülkenin nabzı
+- Gerilim = o mahallenin tansiyonu
 
----
+**Mülakatta ne söyle?**
 
-## 3. Neden yüksek gerilim?
-
-**Bu ne?**
-
-Aynı gücü yüksek gerilimle taşırsan akım küçülür. Akım küçülünce tel daha az ısınır, kayıp azalır. Bu yüzden iletim 400 kV gibi yüksek değerlerdedir. Trafo gerilimi yükseltip düşürür; trafo yalnızca alternatif akımda (AC) çalışır.
-
-**Panelde söyle:**
-
-> Yüksek gerilim, aynı enerjiyi küçük akımla taşıyıp kaybı düşürmek içindir. Trafo yüzünden iletim AC’dir.
+> Frekans ülke genelinde üretim-tüketim dengesini gösterir. Gerilim yerlidir; bir mahallede sorun varsa uzaktaki santral her zaman kurtaramaz.
 
 ---
 
-## 4. Fazör (çok basit)
+## 3. Neden teller çok yüksek gerilimde?
 
-**Bu ne?**
+**Ne demek?**
 
-Prizdeki elektrik saniyede 50 kez salınan bir dalgadır. Her dalgayı iki sayıyla anlatırız: **ne kadar büyük** ve **ne kadar önde/geride** (açı). Bu ikiliye **fazör** denir.
+Aynı enerjiyi yüksek gerilimle taşırsan akım küçülür.  
+Akım küçülünce tel daha az ısınır. Kayıp azalır.
 
-Açı tek başına anlamsızdır; bir barayı “sıfır” kabul ederiz (slack / salınım barası). Diğerleri ona göre söylenir.
+Bu yüzden şehirler arası hatlar çok yüksek gerilimdedir.  
+Şehre gelince **trafo** gerilimi düşürür.
 
-**Panelde söyle:**
+**Nasıl aklında kalsın?**
 
-> Frekans ortak olduğu için gerilim ve akımı büyüklük ve açıdan oluşan fazörle anlatırım. Referans baranın açısı sıfırdır. Fazör sakin, sürekli hali anlatır; arıza anının milisaniyeleri için yetmez.
+Aynı suyu ince hortumla yüksek basınçta taşımak gibi: akış (akım) azalır, kayıp azalır.
+
+**Mülakatta ne söyle?**
+
+> Yüksek gerilim, kaybı azaltmak için kullanılır. Trafo gerilimi yükseltir ve düşürür.
+
+---
+
+## 4. Fazör (çok kısa)
+
+**Ne demek?**
+
+Evdeki elektrik düz çizgi değil; sürekli salınan bir dalgadır.  
+Bir dalgayı anlatmak için iki bilgi yeter:
+
+1. Ne kadar büyük?
+2. Diğerine göre önde mi, geride mi?
+
+Bu ikiliye **fazör** denir.
+
+**Nasıl aklında kalsın?**
+
+Bir ok: boyu = büyüklük, yönü = açı.
+
+**Mülakatta ne söyle?**
+
+> Şebeke salınan bir dalgadır. Büyüklük ve açı ile anlatırım; buna fazör derim.
 
 ---
 
 ## 5. Üç faz ve “400 kV”
 
-**Bu ne?**
+**Ne demek?**
 
-Evde çoğu zaman tek faz vardır. İletimde **üç tel** (üç faz) vardır; aralarında 120 derece kayma vardır. Daha verimli taşır, motoru kendi kendine döndürür.
+Büyük şebekede üç tel vardır. Üçü birden çalışır. Buna **üç faz** denir.
 
-“400 kV” denince **iki tel arası** gerilim kastedilir (hat gerilimi). Bir tel ile nötr arası daha küçüktür (faz gerilimi).
+“400 kV” denince **iki tel arası** gerilim kastedilir.
 
-**Panelde söyle:**
+**Nasıl aklında kalsın?**
 
-> 400 kV hat gerilimidir, iki faz arasıdır. Dengeli sistemde üç fazın birini çözerim; tek hat şeması budur.
+Üç şeritli yol: daha çok taşıma kapasitesi.
 
-**Unutma:** 400 kV ≠ faz gerilimi.
+**Mülakatta ne söyle?**
+
+> İletimde üç faz kullanılır. 400 kV, iki faz arası hat gerilimidir.
 
 ---
 
 ## 6. Per-unit (birim sistem)
 
-**Bu ne?**
+**Ne demek?**
 
-Şebekede hem 400.000 volt hem 230 volt vardır. Aynı hesaba koyunca rakamlar deli gibi büyür/küçülür. **Per-unit**, her sayıyı “normal kabul ettiğimiz değere” bölmektir. Sağlıklı gerilim hep **1 civarı** görünür. 0,9 görürsen “düşük” demektir.
+Şebekede hem çok büyük gerilim (400.000 V) hem küçük gerilim (230 V) vardır.  
+Aynı hesaba koyunca rakamlar karmaşık olur.
 
-Trafo etiketindeki yüzde, o trafonun kendi dünyasına göredir. Büyük sistem hesabına koymadan önce sistemin diline çevrilir.
+Per-unit: her sayıyı “normale” bölmek.  
+Sağlıklı gerilim hep **1 civarı** görünür.
 
-**Panelde söyle:**
+**Nasıl aklında kalsın?**
 
-> Per-unit farklı gerilim seviyelerini aynı dile çevirir. Trafo plakası kendi bazındadır; sistem matrisine girmeden çeviririm.
+Farklı okulların notunu hep 100 üzerinden yazmak.
 
-**Benzetme:** Herkesin notunu 100 üzerinden yazmak gibi.
+**Mülakatta ne söyle?**
 
----
-
-## 7. Ybus (şebeke haritası)
-
-**Bu ne?**
-
-Şebeke baralar (düğümler) ve hatlardan (bağlantılar) oluşur. Bilgisayarda bunu bir tabloya (matris) yazarız: **Ybus**.
-
-- İki bara bağlıysa tabloda ikisinin kesişiminde bir sayı vardır.
-- Bir bara hangi hatlara bağlıysa kendi kutusunda onların toplamı vardır.
-
-Bu tablo çok büyük ama çoğu kutu boştur (seyrek). Tersini almak yerine akıllıca çözeriz.
-
-**Panelde söyle:**
-
-> Ybus şebekenin bağlantı haritasıdır: akım = Ybus × gerilim. Çoğu eleman sıfırdır; tersini almam, seyrek çözerim.
+> Per-unit farklı gerilimleri aynı dile çevirir. Sağlıklı gerilim yaklaşık 1’dir.
 
 ---
 
-## 8. Reaktif güç neden yerinde üretilir?
+## 7. Ybus (şebeke tablosu)
 
-**Bu ne?**
+**Ne demek?**
 
-Reaktif güç uzun yolda “erir”. Uzaktaki büyük santral, senin mahallendeki gerilimi kurtaramayabilir. Bu yüzden kondansatör, STATCOM gibi cihazlar **yükün yanında** konur.
+Şebeke: noktalar (bara) + teller (hat).  
+Bilgisayarda bunu bir tabloya yazarız. Bu tabloya **Ybus** denir.
 
-- **Kondansatör:** ucuz, yavaş, gerilim düşünce kendi gücü de düşer.
-- **STATCOM:** pahalıya yakın, çok hızlı, zor anda da işe yarar. MAM’ın milli ürünü bu aileden.
-- **Kademe (OLTC):** trafonun ayarıdır; reaktif **üretmez**, gerilimi bir taraftan diğerine kaydırır.
+“Kim kime bağlı?” sorusunun cevabıdır.
 
-**Panelde söyle:**
+**Nasıl aklında kalsın?**
 
-> Reaktif uzun hatta taşınamaz; tüketildiği yerde üretilir. Kondansatör ucuz ama gerilim düşünce zayıflar; STATCOM dinamik payı alır. Kademe reaktif üretmez.
+Şehir haritasındaki yolların listesi.
+
+**Mülakatta ne söyle?**
+
+> Ybus şebekenin bağlantı tablosudur. Çoğu kutu boştur; tersini almak yerine seyrek çözerim.
 
 ---
 
-## 9. Yük nasıl davranır?
+## 8. Reaktif neden yakında üretilir?
 
-**Bu ne?**
+**Ne demek?**
 
-“100 MW yük” yazmak kolaydır. Gerçekte gerilim düşünce bazı cihazlar daha az çeker, bazıları aynı gücü zorla çeker ve akımı artırır.
+Reaktif güç uzun yolda zayıflar.  
+Uzaktan göndermek zor. Bu yüzden ihtiyacın olduğu yere yakın üretilir.
 
-- Isıtıcı gibi → gerilim düşünce güç düşer (kolay).
-- Bilgisayar, şarj, sürücü gibi → güç aynı kalsın ister, akım artar (zor).
+- **Kondansatör:** ucuz destek
+- **STATCOM:** hızlı ve güçlü destek (MAM’ın ürünü bu aileden)
+- **Kademe:** trafonun ayarıdır; yeni güç üretmez, gerilimi kaydırır
 
-Kararlılık çalışmasında “hangi varsayımı yaptım?” demeden “sistem çöker” denmez.
+**Nasıl aklında kalsın?**
 
-**Panelde söyle:**
+Soğuk odayı uzak kaloriferle değil, odadaki radyatörle ısıtırsın.
 
-> Sabit güç yükü gerilim düşünce akımını artırır; en zor varsayımdır. Ölçüm yoksa iyimser ve kötümser iki uç bakıp farkı söylerim.
+**Mülakatta ne söyle?**
+
+> Reaktif güç yerinde üretilir. Kondansatör ucuzdur, STATCOM hızlıdır. Kademe reaktif üretmez.
+
+---
+
+## 9. Yük gerilim düşünce ne yapar?
+
+**Ne demek?**
+
+Bazı cihazlar gerilim düşünce daha az çeker (kolay).  
+Bazıları aynı gücü zorla çeker, akımı artırır (zor).
+
+**Nasıl aklında kalsın?**
+
+Kolay yük = yavaşlayan musluk.  
+Zor yük = “ben aynı suyu isterim” deyip musluğu daha çok açmak.
+
+**Mülakatta ne söyle?**
+
+> Sabit güç yükü gerilim düşünce akımını artırır. Bu yüzden kararlılıkta en zor varsayımdır.
 
 ---
 
 ## 10. Trafo bağlantısı ve toprak arızası
 
-**Bu ne?**
+**Ne demek?**
 
-Trafo sargıları **yıldız** veya **üçgen** bağlanır. Dağıtımda çok görülen **Dyn11**: yüksek taraf üçgen, alçak taraf yıldız (nötr dışarıda).
+Trafo sargıları yıldız veya üçgen bağlanır.  
+Dağıtımda çok görülen isim: **Dyn11**.
 
-Bir faz toprağa değince akan “toprak yolu” akımı, bu bağlantıya bağlıdır. Üçgen taraf, bu özel akımı diğer tarafa geçirmez. Bu yüzden ev tarafındaki toprak arızası, orta gerilim toprak rölesinde görünmeyebilir — bilinçli bir ayırmadır.
+Bir tel toprağa değince akan özel akımın yolu, bu bağlantıya bağlıdır.  
+Üçgen taraf bu yolu diğer tarafa geçirmez.
 
-**Panelde söyle:**
+**Nasıl aklında kalsın?**
 
-> Sıfır dizi (toprak yolu) akımı yalnız topraklı yıldızdan akar; üçgen diğer tarafa geçirmez. Dyn11 dağıtımın klasik bağlantısıdır. Yazılımda tek faz akımı sıfırsa çoğu zaman sıfır dizi yolu yanlış girilmiştir.
+Kapı bazı odalara açılır, bazılarına açılmaz.
 
----
+**Mülakatta ne söyle?**
 
-## Bonus: hat ne kadar taşır?
-
-Tek sayı yoktur. Üç ayrı tavan vardır:
-
-1. **Tel ısınmasın** (termik)
-2. **Gerilim bozulmasın**
-3. **Sistem salınıp kopmasın** (kararlılık)
-
-Kısa hat çoğunlukla ısınmaya, uzun hat kararlılığa takılır.
+> Toprak arızası yolu topraklı yıldızdan akar. Üçgen diğer tarafa geçirmez. Dyn11 dağıtımda yaygındır.
 
 ---
 
-## 90 saniye (sesli oku)
+## Sesli özet (1 dakika)
 
-> “Aktif güç iş yapar ve frekansı etkiler; reaktif güç iş yapmaz ama gerilimi etkiler. Frekans her yerde aynıdır, gerilim yerlidir. Yüksek gerilim kaybı düşürmek içindir. Per-unit farklı gerilimleri aynı dile çevirir. Ybus şebekenin bilgisayar haritasıdır. Reaktif yakında üretilir; kondansatör ucuz, STATCOM hızlıdır. Yükün gerilim düşünce nasıl davrandığı varsayıma bağlıdır. Toprak arızasının yolu trafo yıldız-üçgen bağlantısına bağlıdır.”
+> Elektrikte iş yapan güç aktif, hattı dolduran reaktif güçtür. Frekans ülke nabzı, gerilim mahalle tansiyonudur. Uzak taşıma yüksek gerilimle yapılır. Per-unit farklı gerilimleri aynı dile çevirir. Ybus bağlantı tablosudur. Reaktif yakında üretilir. Yükün gerilim düşünce davranışı varsayıma bağlıdır. Toprak arızasının yolu trafo bağlantısına bağlıdır.

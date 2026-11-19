@@ -1,118 +1,56 @@
 {
   "id": "06-00",
-  "baslik": "Kısa devre — bu ne?",
+  "baslik": "Kısa devre — çok basit",
   "grup": "06  Kısa devre",
   "geri": "goruntule.html#06-Kisa-Devre%2F00-Alt-Basliklar.md",
   "sorular": [
     {
-      "soru": "Kısa devre hesabı asıl ne için yapılır?",
-      "secenekler": [
-        "Yarınki hava için",
-        "Kesici, koruma, ekipman zorlaması için",
-        "Yalnız fatura için",
-        "Yalnız boya rengi için"
-      ],
+      "soru": "Kısa devre nedir?",
+      "secenekler": ["Normal gün", "Tellerin istemeden değmesi; akım çok büyür", "Sadece fatura", "Sadece lamba"],
       "dogru": 1,
-      "neden": "Yük akışının yerine geçmez; arıza anı içindir."
+      "neden": "Kaza anı."
     },
     {
-      "soru": "En sık görülen arıza türü hangisidir?",
-      "secenekler": [
-        "Üç faz",
-        "Tek faz-toprak",
-        "İki faz",
-        "Hiç arıza olmaz"
-      ],
-      "dogru": 1,
-      "neden": "En büyük her zaman üç faz değildir."
+      "soru": "Bu hesap asıl ne için?",
+      "secenekler": ["Kesici ve koruma için", "Hava tahmini için", "Boya için", "Sayaç rengi için"],
+      "dogru": 0,
+      "neden": "Ekipman dayanır mı, koruma görür mü."
     },
     {
-      "soru": "Tek faz-toprak arızada diziler nasıl bağlanır?",
-      "secenekler": [
-        "Yalnız artı",
-        "Artı, eksi ve sıfır seri",
-        "Yalnız sıfır",
-        "Hiç bağlanmaz"
-      ],
+      "soru": "En sık arıza hangisi?",
+      "secenekler": ["Üç faz", "Tek faz-toprak", "Hiç arıza olmaz", "Sadece iki faz"],
       "dogru": 1,
-      "neden": "Simetrik bileşenlerin klasik kuralı."
+      "neden": "Bir tel toprağa değmesi."
     },
     {
-      "soru": "Generatör arıza akımı zamanla ne olur?",
-      "secenekler": [
-        "Hep aynı kalır",
-        "İlk anda en büyük, sonra azalır",
-        "Sıfırdan başlar sonsuza gider",
-        "Yalnız gece akar"
-      ],
+      "soru": "En büyük akım her zaman üç faz mıdır?",
+      "secenekler": ["Evet", "Hayır, bazen tek faz-toprak daha büyük olabilir", "Akım hiç büyümez", "Sadece gece"],
       "dogru": 1,
-      "neden": "Alt geçici → geçici → sürekli."
+      "neden": "Klasik tuzak."
     },
     {
-      "soru": "Kesici seçiminde yalnız etkin akım yeter mi?",
-      "secenekler": [
-        "Evet, tek sayı yeter",
-        "Hayır; tepe ve X/R de önemli",
-        "Kesici seçilmez",
-        "Yalnız renk önemli"
-      ],
+      "soru": "Santral arıza akımı zamanla ne olur?",
+      "secenekler": ["Hep aynı", "İlk anda en büyük, sonra azalır", "Sıfırdan sonsuza", "Sadece gece"],
       "dogru": 1,
-      "neden": "DC bileşen tepeyi şişirir."
+      "neden": "İlk an ile sonrası farklı."
     },
     {
       "soru": "IEC 60909 nedir?",
-      "secenekler": [
-        "Bir trafo markası",
-        "Kısa devre akımı hesabı standardı",
-        "Bir fider tipi",
-        "Bir sayaç protokolü"
-      ],
+      "secenekler": ["Bir lamba", "Kısa devre hesabı kural kitabı / standardı", "Bir fider", "Bir yağ"],
       "dogru": 1,
-      "neden": "Hangi standardı kullandığını söylemek önemli."
+      "neden": "Hangi standardı kullandığını söyle."
     },
     {
-      "soru": "Eviricinin kısa devre katkısı senkron makine gibi midir?",
-      "secenekler": [
-        "Evet, aynı",
-        "Hayır; sınırlı ve kontrollüdür",
-        "Evirici hiç katkı vermez",
-        "Yalnız 400 kV'ta aynıdır"
-      ],
+      "soru": "Güneş eviricisi santral gibi midir?",
+      "secenekler": ["Evet aynı", "Hayır; katkısı sınırlı ve kontrollüdür", "Hiç akım vermez", "Sadece 400 kV'ta aynı"],
       "dogru": 1,
-      "neden": "Klasik makine formülü dağıtım eviricisinde yanıltır."
+      "neden": "Koruma şaşırabilir."
     },
     {
-      "soru": "Yazılımda tek faz akımı sıfır çıkıyorsa sık neden?",
-      "secenekler": [
-        "Ekran bozuk",
-        "Sıfır dizi yolu / trafo grubu / nötr toprağı yanlış",
-        "Frekans 50 değil",
-        "Hava güneşli"
-      ],
-      "dogru": 1,
-      "neden": "Z0 ve bağlantı grubu kritik veri."
-    },
-    {
-      "soru": "Çok zayıf bara neden sorun?",
-      "secenekler": [
-        "Arıza akımı küçük → röle görmeyebilir",
-        "Daha ucuz olduğu için",
-        "Frekans yükselir",
-        "Hiç sorun değil"
-      ],
+      "soru": "Çok zayıf nokta neden sorun?",
+      "secenekler": ["Akım küçük → koruma görmeyebilir", "Daha ucuz", "Frekans yükselir", "Hiç sorun değil"],
       "dogru": 0,
-      "neden": "Sert bara da kesiciyi zorlar; ikisi de ayrı sorun."
-    },
-    {
-      "soru": "Üçgen trafo sıfır dizi için ne yapar?",
-      "secenekler": [
-        "Diğer tarafa geçirmez (içinde dolaştırır)",
-        "Her zaman geçirir",
-        "Frekansı değiştirir",
-        "Sayaç okur"
-      ],
-      "dogru": 0,
-      "neden": "Dyn bağlantısının bilinçli etkisi."
+      "neden": "Sert nokta da kesiciyi zorlar."
     }
   ]
 }

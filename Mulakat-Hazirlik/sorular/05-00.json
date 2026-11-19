@@ -1,118 +1,56 @@
 {
   "id": "05-00",
-  "baslik": "Yük akışı — bu ne?",
+  "baslik": "Yük akışı — çok basit",
   "grup": "05  Yük akışı",
   "geri": "goruntule.html#05-Yuk-Akisi%2F00-Alt-Basliklar.md",
   "sorular": [
     {
-      "soru": "Yük akışı ne soruyu cevaplar?",
-      "secenekler": [
-        "Yalnız kesici markası",
-        "Verilen üretim ve yükte gerilim ve hat akışları nedir?",
-        "Yalnız yarınki hava",
-        "Yalnız fatura tutarı"
-      ],
+      "soru": "Yük akışı ne sorar?",
+      "secenekler": ["Yarınki hava", "Üretim-yük böyleyse gerilim ve hatlar nasıl?", "Sadece fatura", "Sadece boya"],
       "dogru": 1,
-      "neden": "Temel analiz; güvenlik ve planlama bunun üstüne oturur."
+      "neden": "Temel analiz."
     },
     {
-      "soru": "PQ barasında ne bilinir?",
-      "secenekler": [
-        "P ve Q; gerilim aranır",
-        "Yalnız açı",
-        "Yalnız frekans",
-        "Hiçbir şey"
-      ],
+      "soru": "PQ barası genelde kimdir?",
+      "secenekler": ["Yük", "Referans", "Uydu", "Sayaç"],
       "dogru": 0,
-      "neden": "Tipik yük barası."
+      "neden": "Güç bilinir, gerilim aranır."
     },
     {
-      "soru": "PV barasında ne bilinir?",
-      "secenekler": [
-        "P ve gerilim büyüklüğü; Q aranır",
-        "Yalnız Q",
-        "Yalnız kayıp",
-        "Yalnız SAIDI"
-      ],
-      "dogru": 0,
-      "neden": "Gerilim tutan üretim; Q limitine çarpınca PQ'ya düşer."
-    },
-    {
-      "soru": "Slack barası nedir?",
-      "secenekler": [
-        "Sihrî sonsuz santral",
-        "Referans + hesabın denge noktası",
-        "Yalnız dağıtım fideri",
-        "Bir kablo tipi"
-      ],
+      "soru": "Slack nedir?",
+      "secenekler": ["Sihirli sonsuz santral", "Hesabın referans / denge noktası", "Bir kablo", "Bir lamba"],
       "dogru": 1,
-      "neden": "Açı referansı; kayıp ve dengeyi tamamlar."
+      "neden": "Referans noktadır."
     },
     {
-      "soru": "Newton-Raphson yük akışında ne yapar (düz cümle)?",
-      "secenekler": [
-        "Tahmini düzeltire düzelte yakınsar",
-        "Elektriği keser",
-        "Yalnız yağ doldurur",
-        "Sayaç okur"
-      ],
+      "soru": "Bilgisayar yük akışını nasıl çözer (basitçe)?",
+      "secenekler": ["Tahmini düzelte düzelte", "Elektriği keserek", "Yağ ekleyerek", "Rastgele"],
       "dogru": 0,
-      "neden": "İletimde standart çözücü; seyrek çözer, yoğun ters almaz."
+      "neden": "Newton-Raphson fikri bu."
     },
     {
-      "soru": "DC yük akışı nerede kullanılmamalı?",
-      "secenekler": [
-        "Gerilim kararı / dağıtım / ağır reaktif iş",
-        "Kaba termik N-1 eleği",
-        "Hiçbir yerde",
-        "Yalnız gece"
-      ],
-      "dogru": 0,
-      "neden": "DC gerilimi ve Q'yu anlatmaz; elek sonrası AC doğrula."
-    },
-    {
-      "soru": "Yük akışı ıraksayınca ilk bakılacaklar?",
-      "secenekler": [
-        "Hemen başka ülke standardı",
-        "Ada/topoloji, veri hatası, Q limiti–kademe salınımı",
-        "Yalnız kablo rengi",
-        "Yalnız logo"
-      ],
+      "soru": "DC yük akışı ne için?",
+      "secenekler": ["Gerilim kararı", "Hızlı kaba 'hangi hat ısınır' bakışı", "Sayaç okuma", "Frekans ayarı"],
       "dogru": 1,
-      "neden": "Çözücü değiştirmek ilk adım değildir."
+      "neden": "Gerilim işi için yetmez."
     },
     {
-      "soru": "Dağıtım yük akışı neden ayrı düşünülür?",
-      "secenekler": [
-        "Radyal, R yüksek, dengesiz — süpürme veya üç faz gerekir",
-        "Çünkü iletim yoktur",
-        "Çünkü frekans 60'tır",
-        "Çünkü STATCOM yasaktır"
-      ],
-      "dogru": 0,
-      "neden": "Dengeli DC tarama fider ucunu gizler."
-    },
-    {
-      "soru": "PV → PQ düşmesi neden önemli?",
-      "secenekler": [
-        "Q limiti bitince gerilim tutamaz; düşmezse sonuç sahte olur",
-        "Sadece isim değişir, etki yok",
-        "Frekansı değiştirir",
-        "Sayaç bozar"
-      ],
-      "dogru": 0,
-      "neden": "Klasik mülakat tuzağı."
-    },
-    {
-      "soru": "Yük akışı çıktısı nasıl anlatılmalı?",
-      "secenekler": [
-        "Ham sayı listesi yeter",
-        "Limit ihlali ve müdahale diline çevrilmeli",
-        "Yalnız İngilizce kısaltma",
-        "Yalnız renkli grafik"
-      ],
+      "soru": "Çözüm tutmazsa ilk ne yapılır?",
+      "secenekler": ["Hemen başka ülke", "Kopukluk, veri, limitlere bakılır", "Sadece renk değiştirilir", "Hiçbir şey"],
       "dogru": 1,
-      "neden": "İşletme 'ne yapayım?' diye sorar."
+      "neden": "Çözücü değiştirmek ilk adım değil."
+    },
+    {
+      "soru": "Dağıtımda yük akışı neden ayrı?",
+      "secenekler": ["Tek yol ve dengesizlik olabilir", "Çünkü iletim yok", "Çünkü frekans 60", "Çünkü yasak"],
+      "dogru": 0,
+      "neden": "İletim yöntemi olduğu gibi taşınmaz."
+    },
+    {
+      "soru": "Sonuç nasıl anlatılır?",
+      "secenekler": ["Ham sayı yeter", "Nerede sorun var, ne yapılmalı diline çevrilir", "Sadece İngilizce", "Sadece grafik"],
+      "dogru": 1,
+      "neden": "İşletme 'ne yapayım' ister."
     }
   ]
 }

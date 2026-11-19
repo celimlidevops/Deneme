@@ -1,35 +1,22 @@
-# 02 — Güç sistemleri temelleri
+# 02 — Temeller (sıfırdan)
 
-Bu klasörde **hesap yok**. Amaç: “bu ne?” diye sorulunca kendi dilinle anlatmak.
+Bu klasör **elektriğe yeni başlayan** için yazıldı.
 
-## Nasıl kullan
+Hesap yok. Formül yok. Amaç: kelimelerin ne demek olduğunu anlamak.
 
-1. [01](01-Guc-Birim-Sistem-Modeller.md) — 10 kart. Her kartta önce “bu ne?”, sonra panel cümlesi.
-2. Bir kelime yabancı geldiyse `02`–`06` sayfasına bak (yine hesap yok).
-3. [07](07-Sozluk-ve-Kendini-Yokla.md) — “şu kelime ne demek?” listesi.
-4. İstersen [soruları dene](test.html?sayfa=02-00).
+## Ne yapacaksın?
 
-## Sayfalar
+1. [01 — Kartlar](01-Guc-Birim-Sistem-Modeller.md) dosyasını oku.
+2. Her kartı kendi cümlenle sesli söyle.
+3. Kelime takılırsa [07 — Sözlük](07-Sozluk-ve-Kendini-Yokla.md).
+4. İstersen [soru çöz](test.html?sayfa=02-00).
 
-| Sayfa | Konu (tek cümle) |
-| --- | --- |
-| [01 Kartlar](01-Guc-Birim-Sistem-Modeller.md) | Her şeyin kısa hali |
-| [02 Güç ve fazör](02-Sifirdan-AC-Devre-ve-Fazor.md) | Elektrik ne taşır, fazör ne demek |
-| [03 Üç faz, birim sistem](03-Uc-Faz-ve-Per-Unit-Elle.md) | Neden üç tel, per-unit ne işe yarar |
-| [04 Ybus](04-Ybus-Elle-ve-Seyrek-Matris.md) | Şebekenin bilgisayardaki haritası |
-| [05 Gerilim ve reaktif](05-Reaktif-Guc-Kompanzasyon-Gerilim.md) | Gerilim neden düşer, ne yapılır |
-| [06 Yük ve trafo](06-Yuk-Modelleri-ve-Trafo-Gruplari.md) | Yük nasıl davranır, Dyn11 ne |
-| [07 Sözlük](07-Sozluk-ve-Kendini-Yokla.md) | Kelime listesi + mini kontrol |
+Diğer sayfalar (`02`–`06`) isteğe bağlıdır. Önce 01 yeter.
 
-## Panelde söylemen gereken 8 düz cümle
+## En önemli 5 fikir
 
-1. İş yapan güç aktif güçtür; gerilimi tutan taraf reaktif güçtür.
-2. Frekans bütün ülkede aynıdır; gerilim ise mahalle mahalle değişir.
-3. Yüksek gerilimde elektrik daha az kayıpla taşınır.
-4. Per-unit, farklı gerilimleri aynı dilde yazmaktır.
-5. Ybus, şebekenin bağlantı haritasının matris halidir.
-6. Reaktif güç uzaktan gelmez; yakında üretilir.
-7. Kondansatör ucuz ama zayıfken gücü düşer; STATCOM hızlıdır.
-8. Toprak arızasının yolu trafo bağlantısına bağlıdır.
-
-Bunları ezberleme: her birinin “bu ne?” kısmını [01](01-Guc-Birim-Sistem-Modeller.md)’de oku, kendi cümlenle söyle.
+1. Elektrik **iş yapan** ve **yolu dolduran** diye iki parçaya ayrılır.
+2. Ülke dengesi **frekans**, mahalle dengesi **gerilim** ile anlaşılır.
+3. Uzak mesafe için gerilim **yükseltilir** (kayıp azalsın).
+4. Bilgisayarda şebeke bir **bağlantı tablosu** ile tutulur.
+5. Toprak arızasının yolu, trafonun nasıl bağlandığına bağlıdır.

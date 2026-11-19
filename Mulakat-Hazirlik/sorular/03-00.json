@@ -1,118 +1,56 @@
 {
   "id": "03-00",
-  "baslik": "İletim — bu ne?",
+  "baslik": "İletim — çok basit",
   "grup": "03  İletim",
   "geri": "goruntule.html#03-Iletim-Sebekeleri%2F00-Alt-Basliklar.md",
   "sorular": [
     {
-      "soru": "İletim ile dağıtım farkı nedir?",
-      "secenekler": [
-        "İkisi aynı şeydir",
-        "İletim santralden şehir girişine yüksek gerilim; dağıtım yerel son kullanıcıya götürür",
-        "İletim yalnız doğru akımdır",
-        "Dağıtım yalnız 400 kV'tır"
-      ],
+      "soru": "İletim nedir?",
+      "secenekler": ["Ev içi kablo", "Santralden şehre büyük yollar", "Sadece lamba", "Sadece sayaç"],
       "dogru": 1,
-      "neden": "İlan 'iletim ve dağıtım' der; ikisi farklı katmandır."
+      "neden": "Otoyol benzetmesi."
     },
     {
-      "soru": "Türkiye iletiminin ana gerilim kademeleri hangisidir?",
-      "secenekler": [
-        "230 / 400 V",
-        "400 / 154 / (az) 66 kV",
-        "Sadece 220 kV",
-        "Sadece 34,5 kV"
-      ],
+      "soru": "Türkiye'de ana iletim gerilimleri?",
+      "secenekler": ["230 V", "400 ve 154 kV", "Sadece 12 V", "Sadece 34,5 kV"],
       "dogru": 1,
-      "neden": "400 omurga, 154 bölge iletimi, 66 küçük katman."
+      "neden": "400 omurga, 154 bölge."
     },
     {
-      "soru": "İletimin 'örgü' olması ne demektir?",
-      "secenekler": [
-        "Tek yoldan beslenir",
-        "Bir noktaya birden çok yoldan güç gelebilir",
-        "Yalnız kablo kullanılır",
-        "Frekans 60 Hz'tir"
-      ],
-      "dogru": 1,
-      "neden": "Bu yüzden N-1 kritiktir; bir hat açılınca güç başka yollara kayabilir."
-    },
-    {
-      "soru": "N-1 ne demektir?",
-      "secenekler": [
-        "Bir eleman düşünce sistem hâlâ güvenli kalsın",
-        "Bütün hatların yüzde 1 yüklü olması",
-        "Yalnız bir santralin çalışması",
-        "Frekansın 1 Hz düşmesi"
-      ],
+      "soru": "N-1 ne demek?",
+      "secenekler": ["Bir eleman düşünce sistem yine güvenli kalsın", "Hiç yedek yok", "Frekans 1 Hz", "Tek santral"],
       "dogru": 0,
-      "neden": "Tek eleman kaybında limitlerin korunması."
+      "neden": "Tek kayıpta ayakta kalma."
     },
     {
-      "soru": "FACTS ailesi ne işe yarar?",
-      "secenekler": [
-        "Yalnız fatura keser",
-        "Güç elektroniğiyle gerilim veya hat akışını hızlı ayarlar",
-        "Yalnız topraklama yapar",
-        "Sayaç okur"
-      ],
+      "soru": "FACTS ne işe yarar?",
+      "secenekler": ["Fatura keser", "Gerilim veya hat akışını hızlı ayarlar", "Sayaç okur", "Yağ değiştirir"],
       "dogru": 1,
-      "neden": "Gerilimde STATCOM/SVC, akışta seri cihaz seçilir."
+      "neden": "Güç elektroniği ailesi."
     },
     {
-      "soru": "Zayıf gerilimde STATCOM neden sık öne çıkar?",
-      "secenekler": [
-        "Daha yavaştır",
-        "Zor anda desteği daha iyi tutabilir; SVC gerilim düşünce zayıflar",
-        "Reaktif üretmez",
-        "Yalnız dağıtımda yasaktır"
-      ],
+      "soru": "STATCOM ne için öne çıkar?",
+      "secenekler": ["Yavaş olduğu için", "Hızlı gerilim desteği için", "Sadece aydınlatma için", "Frekansı 60 yapmak için"],
       "dogru": 1,
-      "neden": "MAM milli STATCOM bu aileden."
+      "neden": "MAM milli ürünü bu aileden."
     },
     {
-      "soru": "Türkiye'nin Avrupa (ENTSO-E) bağlantısı nasıl?",
-      "secenekler": [
-        "Hiç bağlantı yok",
-        "Yunanistan–Bulgaristan üzerinden senkron",
-        "Yalnız uydu ile",
-        "Yalnız 0,4 kV ile"
-      ],
-      "dogru": 1,
-      "neden": "Senkron = aynı frekans adası. Gürcistan tarafı tipik HVDC/back-to-back."
-    },
-    {
-      "soru": "İletim kısıtı nedir?",
-      "secenekler": [
-        "Ucuz üretim var ama hat dolu; yüke ulaşamıyor",
-        "Frekansın 50 olması",
-        "Trafo yağının bitmesi",
-        "Sayaç arızası"
-      ],
+      "soru": "Kısıt nedir?",
+      "secenekler": ["Ucuz elektrik var ama yol tıkalı", "Frekans 50", "Lamba yanması", "Sayaç arızası"],
       "dogru": 0,
-      "neden": "Fizik ekonomiyi sınırlar; yeniden dağıtım veya yatırım gerekir."
+      "neden": "Otoyol tıkanınca pahalı market."
     },
     {
-      "soru": "PTDF / LODF ne işe yarar (düz cümle)?",
-      "secenekler": [
-        "Yalnız fatura",
-        "Transfer veya hat açılınca akışın nereye kayacağını hızlı kabaca gösterir",
-        "Yalnız rüzgâr tahmini",
-        "Kesici markası seçer"
-      ],
+      "soru": "Türkiye-Avrupa bağlantısı nasıl?",
+      "secenekler": ["Yok", "Yunanistan-Bulgaristan üzerinden senkron", "Sadece uydu", "Sadece 230 V"],
       "dogru": 1,
-      "neden": "Hızlı elek; ince gerilim için AC doğrulama gerekir."
+      "neden": "Aynı frekans adası."
     },
     {
-      "soru": "Şönt reaktör ne zaman devreye girer fikri?",
-      "secenekler": [
-        "Ağır yükte gerilimi yükseltmek için",
-        "Hafif yükte / boş hatta şişen gerilimi aşağı çekmek için",
-        "Yalnız kısa devrede",
-        "Frekansı 60 yapmak için"
-      ],
-      "dogru": 1,
-      "neden": "Ferranti / kapasitif hat davranışı gece gerilim şişirebilir."
+      "soru": "Reaktör ne zaman işe yarar?",
+      "secenekler": ["Gerilim çok yükselince aşağı çekmek için", "Her zaman frekans için", "Sadece lamba için", "Sayaç için"],
+      "dogru": 0,
+      "neden": "Özellikle gece boş hatlarda."
     }
   ]
 }

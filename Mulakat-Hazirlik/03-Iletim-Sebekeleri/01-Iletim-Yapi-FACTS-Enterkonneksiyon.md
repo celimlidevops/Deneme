@@ -1,124 +1,114 @@
-# İletim — mülakat kartları
-
-Her kart: **Bu ne?** → **Panelde söyle** → **Unutma**. Hesap yok.
+# İletim — çok basit kartlar
 
 ---
 
 ## 1. İletim nedir?
 
-**Bu ne?**  
-Santrallerden şehirlerin kapısına kadar elektriği taşıyan **yüksek gerilim omurgası**. Dağıtım ise şehir içinde evlere götüren kısımdır.
+**Ne demek?**  
+Santralden şehre kadar elektriği taşıyan **büyük hatlar**.
 
-Türkiye’de kabaca **36 kV üstü** iletim sayılır.
+**Dağıtım** ise şehir içinde evlere götüren kısımdır.
 
-**Panelde söyle:**  
-> İletim uzun mesafe yüksek gerilim taşımasıdır; dağıtım son kullanıcıya yerel dağıtımdır. İkisi birlikte ilanın “iletim ve dağıtım” cümlesidir.
+**Benzetme:**  
+İletim = şehirler arası otoyol. Dağıtım = mahalle sokağı.
+
+**Mülakatta:**  
+> İletim uzun mesafe yüksek gerilim taşımasıdır. Dağıtım son kullanıcıya yerel dağıtımdır.
 
 ---
 
-## 2. Türkiye gerilim kademeleri
+## 2. Türkiye’de hangi gerilimler?
 
-**Bu ne?**
-
-| kV | Ne işe yarar |
+| Gerilim | Ne işe yarar |
 | --- | --- |
-| 400 | Uzun mesafe, büyük santral çıkışı — omurga |
-| 154 | Bölge iletimi, büyük tüketim noktaları |
-| 66 | Küçük, kalan bir katman; omurga değil ama “yok” sayılmaz |
+| 400 kV | Ana otoyol (omurga) |
+| 154 kV | Bölge yolları |
+| 66 kV | Az kalan küçük katman |
 
-**Panelde söyle:**  
-> Nominal kademeler 400, 154 ve 66 kV. 400 omurga, 154 bölge iletimi.
-
-**Unutma:** 220 kV Türkiye iç omurgası değildir; bazı sınır hatlarında karşı ülkenin gerilimi olabilir.
+**Mülakatta:**  
+> Ana kademeler 400 ve 154 kV’tur. 400 omurga, 154 bölge iletimidir.
 
 ---
 
-## 3. Örgülü şebeke ve N-1
+## 3. Örgü ve N-1
 
-**Bu ne?**  
-İletimde bir noktaya **birden çok yoldan** güç gelebilir (örgü). Bir hat açılınca güç çoğu zaman kaybolmaz, başka yollara kayar.
+**Ne demek?**  
+İletimde bir yere çoğu zaman **birden fazla yol** vardır.  
+Bir hat kapanınca güç başka yola kayabilir.
 
-**N-1:** herhangi **tek** bir eleman (hat, trafo, santral) düşse sistem hâlâ güvenli kalsın.
+**N-1:** herhangi **tek** bir hat/trafo/santral düşünce sistem yine güvenli kalsın.
 
-**Panelde söyle:**  
-> İletim örgüldür; dağıtımdaki “hep tek yoldan akar” sezgisi burada yanlış. Analiz N-1’siz eksiktir.
+**Benzetme:**  
+Bir köprü kapanınca alternatif yol olsun.
 
----
-
-## 4. Trafo merkezi (çok kısa)
-
-**Bu ne?**  
-Hatların, trafoların, kesicilerin buluştuğu tesis. İçinde: bara, kesici, ayırıcı, ölçü trafosu, koruma, bazen reaktör/kapasitör.
-
-Bara düzeni (tek bara, çift bara…) bakım ve arıza esnekliğini belirler. Yazılım çoğu zaman barayı tek düğüm görür; gerçek hayatta kesici topolojisi daha incedir.
-
-**Panelde söyle:**  
-> Modeldeki bara ile sahadaki kesici düzeni aynı şey değildir; topoloji işlemcisi kesici konumundan model üretir.
+**Mülakatta:**  
+> İletim örgüldür. N-1, tek eleman kaybında güvenliğin korunmasıdır.
 
 ---
 
-## 5. Reaktör, kapasitör, kademe
+## 4. Trafo merkezi
 
-**Bu ne?**
+**Ne demek?**  
+Hatların ve trafoların buluştuğu tesis.  
+İçinde kesici, bara, ölçü ve koruma vardır.
 
-| Cihaz | Ne yapar |
+**Benzetme:**  
+Otoyol kavşağı + gişe.
+
+---
+
+## 5. Gerilim nasıl tutulur?
+
+| Araç | Ne yapar |
 | --- | --- |
-| Şönt reaktör | Gece / boş hatta gerilimi **aşağı** çeker |
-| Şönt kapasitör | Ağır yükte gerilimi **yukarı** destekler |
-| OLTC (kademe) | Trafonun yavaş gerilim ayarı; reaktif **üretmez** |
+| Reaktör | Gerilim çok yükselince aşağı çeker (özellikle gece) |
+| Kondansatör | Gerilim düşünce destek olur |
+| Kademe | Trafonun yavaş ayarı |
+| STATCOM / SVC | Hızlı elektronik destek |
 
-**Panelde söyle:**  
-> Hafif yükte Ferranti ile gerilim şişebilir → reaktör. Ağır yükte destek → kapasitör. Hızlı çökmede kademe yetişmez; STATCOM/uyarma yetişir.
-
----
-
-## 6. FACTS (ne ailesi?)
-
-**Bu ne?**  
-Güç elektroniğiyle **gerilimi veya hat akışını hızlı** ayarlayan cihaz ailesi.
-
-| İhtiyaç | Cihaz (isim yeter) |
-| --- | --- |
-| Gerilim / dinamik reaktif | SVC veya **STATCOM** |
-| Hat akışını kaydırmak | Seri cihaz (TCSC / SSSC) |
-| Hem P hem Q | UPFC |
-
-**Panelde söyle:**  
-> FACTS’i soruna göre seçerim: gerilimde STATCOM/SVC, akışta seri cihaz. Zayıf gerilimde STATCOM, SVC’den daha iyi destek tutar. MAM’ın milli STATCOM’u bu ailedendir.
-
-**Unutma:** Statik “sabit Q kaynağı” modeli dinamik kararı anlatmaz; kontrol modeli gerekir.
+**Mülakatta:**  
+> Hafif yükte reaktör, ağır yükte kapasitör. Hızlı ihtiyaçta STATCOM. MAM’ın milli STATCOM’u bu aileden.
 
 ---
 
-## 7. HVDC ve enterkonneksiyon
+## 6. FACTS nedir?
 
-**Bu ne?**  
-**HVDC** = yüksek gerilim **doğru akım** bağlantısı. Uzun kablo, uzun mesafe veya **senkron olmayan** iki sistemi bağlamak için.
+**Ne demek?**  
+Güç elektroniğiyle gerilimi veya hat akışını **hızlı** ayarlayan cihaz ailesi.
 
-**Back-to-back:** iki AC sistemi aynı tesiste kısa bir DC halkayla bağlamak.
+- Gerilim sorunu → STATCOM / SVC  
+- Hat çok dolu, akışı kaydır → seri cihazlar  
 
-**Türkiye:**  
-- Avrupa (ENTSO-E) ile Yunanistan–Bulgaristan üzerinden **senkron** (aynı frekans, tek ada gibi).  
-- Gürcistan tarafı tipik olarak back-to-back HVDC — aynı senkron ada değil.
-
-**Panelde söyle:**  
-> Senkron bağlanınca frekans ve rezerv paylaşılır. HVDC ile asenkron bağlanır; frekanslar ayrı kalabilir.
+**Mülakatta:**  
+> FACTS’i soruna göre seçerim. Gerilimde STATCOM, akışta seri cihaz.
 
 ---
 
-## 8. Kayıp, kısıt, planlama
+## 7. Komşu ülkeler (HVDC / senkron)
 
-**Bu ne?**  
-- **Kayıp:** hattın ısınmasıyla kaybolan enerji.  
-- **Kısıt:** ucuz üretim var ama hat dolu; yüke ulaşamıyor.  
-- **Yeniden dağıtım:** kısıtı çözmek için üretimin yerini değiştirmek (çoğu zaman daha pahalı).  
-- **Master plan:** yıllarca ileriye hangi hat/trafo gerekir diye senaryolar koşmak.
+**Ne demek?**  
+- **Senkron bağ:** aynı frekansta, birlikte dönmek. Türkiye–Avrupa (Yunanistan/Bulgaristan) böyle.  
+- **HVDC:** doğru akım köprüsü. Senkron olmayan sistemleri de bağlayabilir.
 
-**Panelde söyle:**  
-> Kısıt fizik + ekonomi kesişimidir: en ucuz MW her zaman akamaz. Çözüm yeniden dağıtım veya yeni hat olabilir.
+**Mülakatta:**  
+> Avrupa ile senkronuz. Bazı komşular HVDC ile bağlanır.
 
 ---
 
-## 90 saniye
+## 8. Kısıt nedir?
 
-> “İletim 400 ve 154 kV omurgasıdır, örgüldür, N-1 şarttır. Gerilimi reaktör/kapasitör/kademe ve FACTS tutar; dinamikte STATCOM öne çıkar. Avrupa ile senkronuz; bazı komşular HVDC ile bağlanır. Kısıt, ucuz gücün hatta takılmasıdır.”
+**Ne demek?**  
+Ucuz elektrik var ama ara hat dolu. Yüke ulaşamıyor.  
+Daha pahalı santral çalışmak zorunda kalabilir.
+
+**Benzetme:**  
+Ucuz market dolu, yol tıkalı; başka marketten almak.
+
+**Mülakatta:**  
+> Kısıt, ucuz üretimin hatta takılmasıdır. Çözüm üretimi kaydırmak veya yeni hat olabilir.
+
+---
+
+## Sesli özet
+
+> İletim otoyoldur: 400 ve 154 kV. Örgülüdür, N-1 ister. Gerilim reaktör/kapasitör/STATCOM ile tutulur. Avrupa ile senkronuz. Kısıt, ucuz gücün yola sığmamasıdır.

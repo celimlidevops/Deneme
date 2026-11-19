@@ -1,30 +1,15 @@
-# 04 — Dağıtım sistemleri
+# 04 — Dağıtım (sıfırdan)
 
-**Dağıtım** = elektriği trafo merkezinden evlere / işyerlerine götüren son kısım.
+**Dağıtım** = elektriği mahalleye ve eve götüren kısım.
 
-Hesap yok. Amaç: iletimden farkını ve çatı güneşi / EV gibi konuları düz cümleyle anlatmak.
+Önce [01 kartlar](01-Dagitim-DG-DMS.md).
 
-## Nasıl kullan
+## 5 fikir
 
-1. [01](01-Dagitim-DG-DMS.md) — ana kartlar  
-2. Derinlik → [02](02-VoltVAR-Yeniden-Yapilandirma-Guvenilirlik.md), [03](03-Dagitim-Durum-Kestirimi-AMI-DERMS-EV.md)  
-3. [Soruları dene](test.html?sayfa=04-00)
+1. Dağıtım çoğu zaman tek yoldan beslenir (radyal).
+2. Mahallede direnç daha görünür; güneş gerilimi yükseltebilir.
+3. Çatı güneşi bağlarken gerilim, ısınma, koruma bakılır.
+4. Barındırma kapasitesi = bozmadan ne kadar üretim sığar.
+5. DMS / sayaç / kesinti yazılımları ayrı işler görür.
 
-## Sayfalar
-
-| Sayfa | Konu |
-| --- | --- |
-| [01 Kartlar](01-Dagitim-DG-DMS.md) | Radyal fider, DG, ters akış, barındırma |
-| [02 Gerilim ve güvenilirlik](02-VoltVAR-Yeniden-Yapilandirma-Guvenilirlik.md) | Volt-var, yeniden yapılandırma, SAIDI/SAIFI |
-| [03 Ölçü ve EV](03-Dagitim-Durum-Kestirimi-AMI-DERMS-EV.md) | Sayaç, DERMS, elektrikli araç |
-
-## Panelde 8 düz cümle
-
-1. Dağıtım çoğunlukla **radyaldir**: güç tek yoldan akar.
-2. Dağıtımda direnç (R) daha görünür; aktif güç de gerilimi oynatır.
-3. Fazlar eşit yüklenmez; dengesizlik normaldir.
-4. Çatı güneşi bağlanınca soru: gerilim, ısınma, koruma, ters akış.
-5. **Barındırma kapasitesi** = limit bozulmadan bağlanabilecek üretim.
-6. Ada çalışması tehlikelidir; şebeke gidince evirici de açılmalıdır.
-7. DMS / OMS / AMI dağıtım şirketinin yazılım katmanlarıdır.
-8. SAIDI süre, SAIFI sıklık — kesinti kalitesinin iki ölçüsü.
+[Soruları dene](test.html?sayfa=04-00)
